@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="0b5e8ddb-f12d-4131-a71d-77acc26a798f" Version="3.11.0.2140306" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Roslyn Language Services</DisplayName>
+    <Description>C# and VB.NET language services for Visual Studio.</Description>
+    <PackageId>Microsoft.CodeAnalysis.VisualStudio.Setup</PackageId>
+    <License>EULA.rtf</License>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <Installation SystemComponent="true">
+    <InstallationTarget Version="[15.0,]" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[15.0,]" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[15.0,]" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[15.0,]" Id="Microsoft.VisualStudio.VSWinExpress" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.7.2,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.Workspaces.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.Remote.Workspaces.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.EditorFeatures.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.Features.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.CSharp.Features.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.CSharp.Workspaces.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.CSharp.EditorFeatures.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.VisualBasic.Features.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.VisualBasic.EditorFeatures.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.EditorFeatures.Wpf.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.EditorFeatures.Text.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Xaml.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.VisualBasic.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.CSharp.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Implementation.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LanguageServices.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LanguageServices.VisualBasic.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LanguageServices.CSharp.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Roslyn.VisualStudio.Setup.pkgdef" />
+    <Asset Type="DebuggerEngineExtension" Path="|ServicesVisualStudio;VsdConfigOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.CSharp.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.EditorFeatures.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.Features.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.CSharp.Features.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.CSharp.EditorFeatures.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.VisualBasic.Features.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.VisualBasic.EditorFeatures.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.VisualStudio.LanguageServices.Xaml.dll" />
+    <Asset Type="Microsoft.VisualStudio.CodeLensComponent" Path="Microsoft.VisualStudio.LanguageServices.CodeLens.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.ExternalAccess.Apex.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.ExternalAccess.Debugger.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.ExternalAccess.FSharp.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.ExternalAccess.Razor.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.LanguageServer.Protocol.dll" />
+    <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.CodeAnalysis.ExternalAccess.FSharp.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.LiveShare.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.CodeAnalysis.LanguageServer.Protocol.dll" />
+    <!-- ServiceHub assets are added by msbuild target -->
+    <Asset Type="Microsoft.ServiceHub.Service" Path="roslynRemoteHost.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.AssetSynchronization.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.AsynchronousOperationListener.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DiagnosticAnalyzer.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SemanticClassification.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SemanticClassificationCache.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DocumentHighlights.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.EncapsulateField.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.Renamer.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ConvertTupleToStructCodeRefactoring.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SymbolFinder.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.FindUsages.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.NavigateToSearch.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.NavigationBarItem.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.MissingImportDiscovery.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ExtensionMethodImportCompletion.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DependentTypeFinder.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.GlobalNotificationDelivery.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.CodeLensReferences.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DesignerAttributeDiscovery.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ProjectTelemetry.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SymbolSearchUpdate.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.TodoCommentsDiscovery.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.EditAndContinue.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.InheritanceMargin.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.UnusedReferenceAnalysis.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="roslynRemoteLanguageServer.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="roslynRemoteHost64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.AssetSynchronization64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.AsynchronousOperationListener64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DiagnosticAnalyzer64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SemanticClassification64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SemanticClassificationCache64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DocumentHighlights64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.EncapsulateField64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.Renamer64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ConvertTupleToStructCodeRefactoring64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SymbolFinder64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.FindUsages64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.NavigateToSearch64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.NavigationBarItem64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.MissingImportDiscovery64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ExtensionMethodImportCompletion64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DependentTypeFinder64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.GlobalNotificationDelivery64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.CodeLensReferences64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DesignerAttributeDiscovery64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ProjectTelemetry64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SymbolSearchUpdate64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.TodoCommentsDiscovery64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.EditAndContinue64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.InheritanceMargin64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.UnusedReferenceAnalysis64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="roslynRemoteLanguageServer64.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="roslynRemoteHost64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.AssetSynchronization64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.AsynchronousOperationListener64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DiagnosticAnalyzer64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SemanticClassification64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SemanticClassificationCache64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DocumentHighlights64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.EncapsulateField64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.Renamer64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ConvertTupleToStructCodeRefactoring64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SymbolFinder64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.FindUsages64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.NavigateToSearch64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.NavigationBarItem64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.MissingImportDiscovery64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ExtensionMethodImportCompletion64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DependentTypeFinder64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.GlobalNotificationDelivery64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.CodeLensReferences64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.DesignerAttributeDiscovery64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.ProjectTelemetry64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.SymbolSearchUpdate64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.TodoCommentsDiscovery64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.EditAndContinue64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.InheritanceMargin64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.LanguageServices.UnusedReferenceAnalysis64S.servicehub.service.json" />
+    <Asset Type="Microsoft.ServiceHub.Service" Path="roslynRemoteLanguageServer64S.servicehub.service.json" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,17.0)" DisplayName="Visual Studio core editor" />
+    <Prerequisite Id="Microsoft.DiaSymReader.Native" Version="[15.0,17.0)" DisplayName="Windows PDB reader/writer" />
+    <Prerequisite Id="Microsoft.VisualStudio.InteractiveWindow" Version="[3.0.0.0,4.0.0.0)" DisplayName="Interactive Window" />
+  </Prerequisites>
+</PackageManifest>

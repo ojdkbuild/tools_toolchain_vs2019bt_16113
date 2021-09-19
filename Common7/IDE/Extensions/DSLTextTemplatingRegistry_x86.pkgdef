@@ -1,0 +1,81 @@
+[$RootKey$\CLSID\{b9c665d2-0451-4ae2-a38c-443b85d634f2}]
+@="Generator that uses the Text Templating engine"
+"Assembly"="Microsoft.VisualStudio.TextTemplating.VSHost.15.0, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.TextTemplating.VSHost.TemplatedCodeGenerator"
+"InprocServer32"="$System$\mscoree.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\CLSID\{f56db4b6-c280-40f1-855d-5da0ed7bd270}]
+@="Generator that uses the Text Templating engine to preprocess a template for runtime use"
+"Assembly"="Microsoft.VisualStudio.TextTemplating.VSHost.15.0, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.TextTemplating.VSHost.TemplatedPreprocessor"
+"InprocServer32"="$System$\mscoree.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\Generators\{164B10B9-B200-11D0-8C61-00A0C91E29D5}\.tt]
+@="TextTemplatingFileGenerator"
+
+[$RootKey$\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\TextTemplatingFileGenerator]
+@="Generator that uses the Text Templating engine"
+"CLSID"="{b9c665d2-0451-4ae2-a38c-443b85d634f2}"
+"GeneratesDesignTimeSource"=dword:00000001
+
+[$RootKey$\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\TextTemplatingFilePreprocessor]
+@="Generator that uses the Text Templating engine to preprocess a template for runtime use"
+"CLSID"="{F56DB4B6-C280-40F1-855D-5DA0ED7BD270}"
+"GeneratesDesignTimeSource"=dword:00000001
+
+[$RootKey$\Generators\{39C9C826-8EF8-4079-8C95-428F5B1C323F}\.tt]
+@="TextTemplatingFileGenerator"
+
+[$RootKey$\Generators\{39C9C826-8EF8-4079-8C95-428F5B1C323F}\TextTemplatingFileGenerator]
+@="Generator that uses the Text Templating engine"
+"CLSID"="{b9c665d2-0451-4ae2-a38c-443b85d634f2}"
+"GeneratesDesignTimeSource"=dword:00000001
+
+[$RootKey$\Generators\{39C9C826-8EF8-4079-8C95-428F5B1C323F}\TextTemplatingFilePreprocessor]
+@="Generator that uses the Text Templating engine to preprocess a template for runtime use"
+"CLSID"="{F56DB4B6-C280-40F1-855D-5DA0ED7BD270}"
+"GeneratesDesignTimeSource"=dword:00000001
+
+[$RootKey$\Generators\{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}\.tt]
+@="TextTemplatingFileGenerator"
+
+[$RootKey$\Generators\{fae04ec1-301f-11d3-bf4b-00c04f79efbc}\TextTemplatingFileGenerator]
+@="Generator that uses the Text Templating engine"
+"CLSID"="{b9c665d2-0451-4ae2-a38c-443b85d634f2}"
+"GeneratesDesignTimeSource"=dword:00000001
+
+[$RootKey$\Generators\{fae04ec1-301f-11d3-bf4b-00c04f79efbc}\TextTemplatingFilePreprocessor]
+@="Generator that uses the Text Templating engine to preprocess a template for runtime use"
+"CLSID"="{F56DB4B6-C280-40F1-855D-5DA0ED7BD270}"
+"GeneratesDesignTimeSource"=dword:00000001
+
+[$RootKey$\Menus]
+"{a9696de6-e209-414d-bbec-a0506fb0e924}"=", 1000.ctmenu, 11"
+
+[$RootKey$\Packages\{a9696de6-e209-414d-bbec-a0506fb0e924}]
+@="Microsoft.VisualStudio.TextTemplating.VSHost.OrchestratorPackage, Microsoft.VisualStudio.TextTemplating.VSHost.15.0, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Assembly"="Microsoft.VisualStudio.TextTemplating.VSHost.15.0, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.TextTemplating.VSHost.OrchestratorPackage"
+"CompanyName"="Microsoft"
+"ID"=dword:00000064
+"InprocServer32"="$System$\mscoree.dll"
+"ProductName"="Microsoft T4"
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\FileExtensions\.tt]
+"CustomTool"="TextTemplatingFileGenerator"
+
+[$RootKey$\Services\{508349B6-6B84-4df5-91F0-309BEEBAD82D}]
+@="{a9696de6-e209-414d-bbec-a0506fb0e924}"
+"Name"="STextTemplating"
+
+[$RootKey$\ToolsOptionsPages\TextTemplating]
+@="#501"
+"Package"="{a9696de6-e209-414d-bbec-a0506fb0e924}"
+
+[$RootKey$\ToolsOptionsPages\TextTemplating\TextTemplating]
+@="#502"
+"Keywords"="#503"
+"Package"="{a9696de6-e209-414d-bbec-a0506fb0e924}"
+"Page"="{64998aaf-06ee-4517-9d19-a4787db08f4b}"

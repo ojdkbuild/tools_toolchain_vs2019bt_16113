@@ -1,0 +1,27 @@
+<!--
+***********************************************************************************************
+Microsoft.MSVC.Paths.x64.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VC_ExecutablePath_x86_x64 Condition="'$(VC_ExecutablePath_x86_x64)' == ''">$(VCToolsInstallDir)bin\HostX86\x64</VC_ExecutablePath_x86_x64>
+    <VC_ExecutablePath_x64_x64 Condition="'$(VC_ExecutablePath_x64_x64)' == ''">$(VCToolsInstallDir)bin\HostX64\x64</VC_ExecutablePath_x64_x64>
+    <VC_ReferencesPath_VC_x64 Condition="'$(VC_ReferencesPath_VC_x64)' == ''">$(VCToolsInstallDir)lib\x64</VC_ReferencesPath_VC_x64>
+    <VC_LibraryPath_VC_x64_Desktop Condition="'$(VC_LibraryPath_VC_x64_Desktop)' == ''">$(VCToolsInstallDir)lib\x64</VC_LibraryPath_VC_x64_Desktop>
+
+    <VC_ReferencesPath_x64>$(VC_ReferencesPath_ATL_x64);$(VC_ReferencesPath_VC_x64)</VC_ReferencesPath_x64>
+
+    <_VC_x64_ToolsInstalled Condition="Exists('$(VCToolsInstallDir)bin\HostX64') and '$(_VC_x64_ToolsInstalled)' == ''">true</_VC_x64_ToolsInstalled>
+
+    <VC_VC_IncludePath Condition="'$(VC_VC_IncludePath)' == ''">$(VCToolsInstallDir)include;</VC_VC_IncludePath>
+    <VC_CRT_SourcePath Condition="'$(VC_CRT_SourcePath)' == ''">$(VCToolsInstallDir)crt\src;</VC_CRT_SourcePath>
+  </PropertyGroup>
+</Project>

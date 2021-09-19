@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorWhileProcessing" xml:space="preserve">
+    <value>An error occurred while processing the snapshot:</value>
+  </data>
+  <data name="TakeSnapshot" xml:space="preserve">
+    <value>Take heap snapshot</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="ProcessingSnapshot" xml:space="preserve">
+    <value>Processing snapshot...</value>
+  </data>
+  <data name="ScreenshotNotAvailable" xml:space="preserve">
+    <value>Screenshot is not available</value>
+  </data>
+  <data name="ReferenceGraph" xml:space="preserve">
+    <value>Object references</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="CountBreakdown" xml:space="preserve">
+    <value>Breakdown</value>
+  </data>
+  <data name="TimeTaken" xml:space="preserve">
+    <value>time taken:</value>
+  </data>
+  <data name="PrivateBytes" xml:space="preserve">
+    <value>process private bytes: </value>
+  </data>
+  <data name="JavaScriptHeapSize" xml:space="preserve">
+    <value>JavaScript heap size: </value>
+  </data>
+  <data name="TotalObjectSize" xml:space="preserve">
+    <value>total object size:</value>
+  </data>
+  <data name="NumberOfObjects" xml:space="preserve">
+    <value>number of objects: </value>
+  </data>
+  <data name="NumberOfTypes" xml:space="preserve">
+    <value>number of types: </value>
+  </data>
+  <data name="JavaScriptObjects" xml:space="preserve">
+    <value>JavaScript objects: </value>
+  </data>
+  <data name="MarkupElements" xml:space="preserve">
+    <value>markup elements: </value>
+  </data>
+  <data name="WinRTObjects" xml:space="preserve">
+    <value>WinRT objects:</value>
+  </data>
+  <data name="ExternalObjects" xml:space="preserve">
+    <value>external objects: </value>
+  </data>
+  <data name="ManagedSizeLinkTooltip" xml:space="preserve">
+    <value>View details of the managed heap size</value>
+  </data>
+  <data name="ManagedCountLinkTooltip" xml:space="preserve">
+    <value>View details of the managed heap object count</value>
+  </data>
+  <data name="ManagedSizeDiffLinkTooltip" xml:space="preserve">
+    <value>View details of the managed heap size compared to the previous snapshot</value>
+  </data>
+  <data name="ManagedCountDiffLinkTooltip" xml:space="preserve">
+    <value>View details of the managed heap object count compared to the previous snapshot</value>
+  </data>
+  <data name="CompareTo" xml:space="preserve">
+    <value>Compare to</value>
+  </data>
+  <data name="HeapSnapshot" xml:space="preserve">
+    <value>Heap snapshot</value>
+  </data>
+  <data name="GeneratingComparisonView" xml:space="preserve">
+    <value>Generating comparison view...</value>
+  </data>
+  <data name="Identifiers" xml:space="preserve">
+    <value>Identifier(s)</value>
+  </data>
+  <data name="RetainedSize" xml:space="preserve">
+    <value>Retained size</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="CountDiff" xml:space="preserve">
+    <value>Count diff.</value>
+    <comment>Difference/delta in count between snapshots being compared.</comment>
+  </data>
+  <data name="SizeDiff" xml:space="preserve">
+    <value>Size diff.</value>
+    <comment>Difference/delta in size between snapshots being compared.</comment>
+  </data>
+  <data name="RetainedSizeDiff" xml:space="preserve">
+    <value>Retained size diff.</value>
+    <comment>Difference/delta in retained size between snapshots being compared.</comment>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="IdentifierFilter" xml:space="preserve">
+    <value>Identifier filter...</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SnapshotNumber" xml:space="preserve">
+    <value>Snapshot #{0}</value>
+    <comment>placeholder 0 is replaced with a number</comment>
+  </data>
+  <data name="SnapshotNumberDiff" xml:space="preserve">
+    <value>Snapshot #{0} - Snapshot #{1}</value>
+    <comment>placeholder 0 and placeholder 1 are each replaced with numbers</comment>
+  </data>
+  <data name="dominators" xml:space="preserve">
+    <value>Dominators</value>
+  </data>
+  <data name="DOM" xml:space="preserve">
+    <value>DOM</value>
+  </data>
+  <data name="roots" xml:space="preserve">
+    <value>Roots</value>
+  </data>
+  <data name="types" xml:space="preserve">
+    <value>Types</value>
+  </data>
+  <data name="winrt" xml:space="preserve">
+    <value>WinRT</value>
+  </data>
+  <data name="DiagnosticsAttachFired" xml:space="preserve">
+    <value>diagnosticsAttach fired</value>
+  </data>
+  <data name="ObjectIdNotFound" xml:space="preserve">
+    <value>Couldn't find object id "%d" in snapshot</value>
+  </data>
+  <data name="CompareToTooltip" xml:space="preserve">
+    <value>Compare this snapshot to another</value>
+  </data>
+  <data name="CountTooltip" xml:space="preserve">
+    <value>The total number of objects of this type</value>
+  </data>
+  <data name="CountDiffTooltip" xml:space="preserve">
+    <value>The number of new objects of this type</value>
+  </data>
+  <data name="dominatorsTooltip" xml:space="preserve">
+    <value>View all the objects sorted by retained size</value>
+  </data>
+  <data name="DOMTooltip" xml:space="preserve">
+    <value>View the Document Object Model (DOM) elements</value>
+  </data>
+  <data name="IdentifierFilterTooltip" xml:space="preserve">
+    <value>Filter the top level objects by identifier</value>
+  </data>
+  <data name="IdentifiersTooltip" xml:space="preserve">
+    <value>The identifier(s) of the object</value>
+  </data>
+  <data name="RetainedSizeDiffTooltip" xml:space="preserve">
+    <value>The change in retained size between the two snapshots</value>
+  </data>
+  <data name="RetainedSizeTooltip" xml:space="preserve">
+    <value>The amount of memory reclaimed by deleting the object</value>
+  </data>
+  <data name="rootsTooltip" xml:space="preserve">
+    <value>View the root objects</value>
+  </data>
+  <data name="SizeDiffTooltip" xml:space="preserve">
+    <value>The change in size between the two snapshots</value>
+  </data>
+  <data name="SizeTooltip" xml:space="preserve">
+    <value>The memory size of the object</value>
+  </data>
+  <data name="SnapshotTabTooltip" xml:space="preserve">
+    <value>View the details for {0}</value>
+    <comment>placeholder 0 is replaced with the snapshot name</comment>
+  </data>
+  <data name="SummaryTabTooltip" xml:space="preserve">
+    <value>View the summary information</value>
+  </data>
+  <data name="TakeSnapshotTooltip" xml:space="preserve">
+    <value>Take a heap snapshot of the current application</value>
+  </data>
+  <data name="typesTooltip" xml:space="preserve">
+    <value>View objects grouped by type</value>
+  </data>
+  <data name="TypeTooltip" xml:space="preserve">
+    <value>The object type</value>
+  </data>
+  <data name="winrtTooltip" xml:space="preserve">
+    <value>View the WinRT objects</value>
+  </data>
+  <data name="ApproximateSizeTooltip" xml:space="preserve">
+    <value>{0} (size is approximate)</value>
+    <comment>placeholder 0 is replaced with the size</comment>
+  </data>
+  <data name="CouldNotGetHeapSizeTooltip" xml:space="preserve">
+    <value>The heap size could not be retrieved as the ETW sink was not loaded</value>
+  </data>
+  <data name="ExternalObjectsTooltip" xml:space="preserve">
+    <value>The total number of external objects in this snapshot</value>
+  </data>
+  <data name="ManagedSizeTooltip" xml:space="preserve">
+    <value>The size of the managed heap when this snapshot was created</value>
+  </data>
+  <data name="JavaScriptObjectsTooltip" xml:space="preserve">
+    <value>The total number of JavaScript objects in this snapshot</value>
+  </data>
+  <data name="MarkupElementsTooltip" xml:space="preserve">
+    <value>The total number of markup elements in this snapshot</value>
+  </data>
+  <data name="NumberOfObjectsTooltip" xml:space="preserve">
+    <value>The total number of objects in the snapshot</value>
+  </data>
+  <data name="NumberOfTypesTooltip" xml:space="preserve">
+    <value>The total number of types in the snapshot</value>
+  </data>
+  <data name="PrivateBytesTooltip" xml:space="preserve">
+    <value>The size of the private bytes for the process when this snapshot was created</value>
+  </data>
+  <data name="TimeTakenTooltip" xml:space="preserve">
+    <value>The time this snapshot was taken</value>
+  </data>
+  <data name="TotalObjectSizeTooltip" xml:space="preserve">
+    <value>The combined size of all the objects in the heap for this snapshot</value>
+  </data>
+  <data name="WinRTObjectsTooltip" xml:space="preserve">
+    <value>The total number of WinRT objects in this snapshot</value>
+  </data>
+  <data name="WarningIncompatibleStandardsModeVS" xml:space="preserve">
+    <value>This tool only supports (1) Windows Store 8.1 apps running on Windows 8.1, (2) Windows Store 8.0 apps running on Windows 8.1, and (3) Internet Explorer 11 or higher running in document modes 10 or higher.</value>
+  </data>
+  <data name="WarningNotAttached" xml:space="preserve">
+    <value>Not currently attached to a script debug target that supports browser diagnostics.</value>
+  </data>
+  <data name="ProcessingDiffSnapshotProgress_Comparing" xml:space="preserve">
+    <value>Comparing objects</value>
+  </data>
+  <data name="ProcessingDiffSnapshotProgress_Preprocessing" xml:space="preserve">
+    <value>Preprocessing</value>
+  </data>
+  <data name="ProcessingDiffSnapshotProgress_ProcessingSnapshot" xml:space="preserve">
+    <value>Comparing snapshots</value>
+  </data>
+  <data name="ProcessingDiffSnapshotProgress_RetainedSize" xml:space="preserve">
+    <value>Setting initial retained size</value>
+  </data>
+  <data name="ProcessingDiffSnapshotProgress_Template" xml:space="preserve">
+    <value>Comparing stage {0}/{1}: {2}</value>
+    <comment>placeholder 0: stage number, placeholder 1 total number of stages, placeholder 2 sub progress text</comment>
+  </data>
+  <data name="ProcessingSnapshotProgress_BuildingGraph" xml:space="preserve">
+    <value>Building graph</value>
+  </data>
+  <data name="ProcessingSnapshotProgress_Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="ProcessingSnapshotProgress_Postprocessing" xml:space="preserve">
+    <value>Post-processing</value>
+  </data>
+  <data name="ProcessingSnapshotProgress_RetainedSize" xml:space="preserve">
+    <value>Calculating retained size</value>
+  </data>
+  <data name="ProcessingSnapshotProgress_Serializing" xml:space="preserve">
+    <value>Serializing objects</value>
+  </data>
+  <data name="ProcessingSnapshotProgress_Preprocessing" xml:space="preserve">
+    <value>Preprocessing</value>
+  </data>
+  <data name="ManagedCount" xml:space="preserve">
+    <value>{0} objects</value>
+    <comment>placeholder 0 is replaced with an integer number of objects</comment>
+  </data>
+  <data name="Baseline" xml:space="preserve">
+    <value>Baseline</value>
+  </data>
+  <data name="NoDiff" xml:space="preserve">
+    <value>No increase</value>
+  </data>
+  <data name="HubGraphHeapLegend" xml:space="preserve">
+    <value>Process memory usage (private bytes)</value>
+  </data>
+  <data name="HubGraphHeapUnits" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="HubGraphSnapshotLegend" xml:space="preserve">
+    <value>Snapshot</value>
+  </data>
+  <data name="HubGraphUserMarkLegend" xml:space="preserve">
+    <value>User mark</value>
+  </data>
+  <data name="HubTimelineTitle" xml:space="preserve">
+    <value>Total memory</value>
+  </data>
+  <data name="CompareButtonTooltipText" xml:space="preserve">
+    <value>Compare this snapshot with another from the current session</value>
+  </data>
+  <data name="DisplayObjectIDs" xml:space="preserve">
+    <value>Display object IDs</value>
+  </data>
+  <data name="ShowBuiltIns" xml:space="preserve">
+    <value>Show built-ins</value>
+  </data>
+  <data name="Screenshot" xml:space="preserve">
+    <value>Screenshot</value>
+  </data>
+  <data name="SettingsMenuButtonTooltipText" xml:space="preserve">
+    <value>Change settings</value>
+  </data>
+  <data name="ByteUnits" xml:space="preserve">
+    <value>B</value>
+    <comment>Displayed in the UI as an abbreviation for 'bytes'</comment>
+  </data>
+  <data name="GigabyteUnits" xml:space="preserve">
+    <value>GB</value>
+    <comment>Displayed in the UI as an abbreviation for 'gigabytes'</comment>
+  </data>
+  <data name="KilobyteUnits" xml:space="preserve">
+    <value>KB</value>
+    <comment>Displayed in the UI as an abbreviation for 'kilobytes'</comment>
+  </data>
+  <data name="MegabyteUnits" xml:space="preserve">
+    <value>MB</value>
+    <comment>Displayed in the UI as an abbreviation for 'megabytes'</comment>
+  </data>
+  <data name="F12ToolTitle" xml:space="preserve">
+    <value>Memory</value>
+  </data>
+  <data name="F12StartButtonTooltip" xml:space="preserve">
+    <value>Start profiling session</value>
+  </data>
+  <data name="F12StopButtonTooltip" xml:space="preserve">
+    <value>Stop profiling session</value>
+  </data>
+  <data name="F12SnapshotButtonTooltip" xml:space="preserve">
+    <value>Take heap snapshot</value>
+  </data>
+  <data name="F12StartProfilingMessage" xml:space="preserve">
+    <value>Start profiling to begin a performance session</value>
+  </data>
+  <data name="RulerMarkTooltipLabel" xml:space="preserve">
+    <value> at {0}</value>
+    <comment>placeholder 0 is replaced with the formatted time the mark fired.</comment>
+  </data>
+  <data name="RulerAriaLabel" xml:space="preserve">
+    <value>Ruler has minimum value of {0} and maximum value of {1}</value>
+    <comment>placeholder 0 and placeholder 1 are time with units</comment>
+  </data>
+  <data name="RulerLeftSliderAriaLabel" xml:space="preserve">
+    <value>Left slider</value>
+  </data>
+  <data name="RulerRightSliderAriaLabel" xml:space="preserve">
+    <value>Right slider</value>
+  </data>
+  <data name="RulerSliderAriaValueText" xml:space="preserve">
+    <value>Current value is {0}. Minimum value is {1}. Maximum value is {2}.</value>
+    <comment>placeholder 0, placeholder 1 and placeholder 2 are time with units</comment>
+  </data>
+  <data name="RulerLifecycleMarkLabel" xml:space="preserve">
+    <value>App lifecycle mark</value>
+  </data>
+  <data name="RulerUserMarkLabel" xml:space="preserve">
+    <value>User mark</value>
+  </data>
+  <data name="RulerMarkLabel" xml:space="preserve">
+    <value>A ruler mark indicating the occurrence of the following events: {0}</value>
+    <comment>placeholder 0 is replaced with the tooltip content of the ruler mark(s)</comment>
+  </data>
+  <data name="RulerTitle" xml:space="preserve">
+    <value>Diagnostic session</value>
+  </data>
+  <data name="MillisecondsLabel" xml:space="preserve">
+    <value>milliseconds</value>
+  </data>
+  <data name="MinutesLabel" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="SecondsLabel" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="MinutesAbbreviation" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="MillisecondsAbbreviation" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="SecondsAbbreviation" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="SwimlaneCollapseAriaLabel" xml:space="preserve">
+    <value>Press enter to collapse graph.</value>
+  </data>
+  <data name="SwimlaneExpandAriaLabel" xml:space="preserve">
+    <value>Press enter to expand graph.</value>
+  </data>
+  <data name="ToolbarZoomInButton" xml:space="preserve">
+    <value>Zoom in</value>
+  </data>
+  <data name="ToolbarcClearSelectionAriaLabel" xml:space="preserve">
+    <value>Click to clear selection.</value>
+  </data>
+  <data name="ToolbarClearSelectionButton" xml:space="preserve">
+    <value>Clear selection</value>
+  </data>
+  <data name="ToolbarZoomInAriaLabel" xml:space="preserve">
+    <value>Click to zoom in.</value>
+  </data>
+  <data name="ToolbarZoomOutAriaLabel" xml:space="preserve">
+    <value>Click to reset zoom.</value>
+  </data>
+  <data name="ToolbarZoomOutButton" xml:space="preserve">
+    <value>Reset zoom</value>
+  </data>
+  <data name="GraphTitle" xml:space="preserve">
+    <value>Total memory</value>
+  </data>
+  <data name="ShowInRootsViewLabel" xml:space="preserve">
+    <value>Show in roots view</value>
+  </data>
+  <data name="DetachedDomNodeWarning" xml:space="preserve">
+    <value>The selected node is not attached to the DOM and is consuming memory.</value>
+  </data>
+  <data name="DetachedDomNodeDisposableWarning" xml:space="preserve">
+    <value>The selected node is not attached to the DOM and is consuming memory. Did you forget to dispose this object?</value>
+  </data>
+  <data name="DetachedDomNodeTooltip" xml:space="preserve">
+    <value>This node is not attached to the DOM</value>
+  </data>
+  <data name="DetachedDomNodeDisposableTooltip" xml:space="preserve">
+    <value>This node is not attached to the DOM. Did you forget to dispose this object?</value>
+  </data>
+  <data name="ReachedItemsCapMessage" xml:space="preserve">
+    <value>{0} out of {1} objects are displayed above. Change the filter to update the result set.</value>
+    <comment>placeholder 0 is the number of items loaded, placeholder 1 is the total count of all items</comment>
+  </data>
+  <data name="ChildrenLoadNext" xml:space="preserve">
+    <value>Load {0} more objects</value>
+    <comment>placeholder 0 is the number of items to load next</comment>
+  </data>
+  <data name="PotentialIssuesTooltip" xml:space="preserve">
+    <value>View details of potential issues</value>
+  </data>
+  <data name="WarningIncompatibleStandardsModeF12" xml:space="preserve">
+    <value>This tool only supports document modes 10 or higher. Go to the Emulation tab and change your document mode to Edge mode to enable this tool.</value>
+  </data>
+  <data name="ERRoutOfMemory" xml:space="preserve">
+    <value>Out of memory</value>
+  </data>
+  <data name="ERRbadHexDigit" xml:space="preserve">
+    <value>Expected hexadecimal digit</value>
+  </data>
+  <data name="ERRbadNumber" xml:space="preserve">
+    <value>Invalid number</value>
+  </data>
+  <data name="ERRillegalChar" xml:space="preserve">
+    <value>Invalid character</value>
+  </data>
+  <data name="ERRnoColon" xml:space="preserve">
+    <value>Expected ':'</value>
+  </data>
+  <data name="ERRnoRbrack" xml:space="preserve">
+    <value>Expected ']'</value>
+  </data>
+  <data name="ERRnoRcurly" xml:space="preserve">
+    <value>Expected '}'</value>
+  </data>
+  <data name="ERRnoStrEnd" xml:space="preserve">
+    <value>Unterminated string constant</value>
+  </data>
+  <data name="ERRsyntax" xml:space="preserve">
+    <value>Syntax error</value>
+  </data>
+  <data name="ERRmissingObjectId" xml:space="preserve">
+    <value>Missing object ID</value>
+  </data>
+  <data name="ERRinvalidObjectID" xml:space="preserve">
+    <value>Invalid object ID</value>
+  </data>
+  <data name="ERRunknownError" xml:space="preserve">
+    <value>Error: {0}</value>
+    <comment>placeholder 0 is the error number</comment>
+  </data>
+  <data name="MemoryTooltip" xml:space="preserve">
+    <value>Memory {0}</value>
+    <comment>The id must link up with the manifest file for the debugger tool. placeholder 0 is a keyboard shortcut, like (Ctrl+1)</comment>
+  </data>
+  <data name="MemoryDisabledAtBreakpoint" xml:space="preserve">
+    <value>Profiling is disabled when paused at a breakpoint. You must stop debugging to enable profiling.</value>
+  </data>
+  <data name="DiffColumnOperationAdded" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="DiffColumnOperationModified" xml:space="preserve">
+    <value>Modified</value>
+  </data>
+  <data name="DiffColumnOperationUnchanged" xml:space="preserve">
+    <value>Unchanged</value>
+  </data>
+  <data name="DiffColumnOperationHeader" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="DisplayCircularReferences" xml:space="preserve">
+    <value>Display circular references</value>
+  </data>
+  <data name="UserMarkTooltip" xml:space="preserve">
+    <value>Indicates calls to the performance.mark() method</value>
+  </data>
+  <data name="SnapshotToggleTabLabel" xml:space="preserve">
+    <value>View Snapshot report data by:</value>
+  </data>
+  <data name="SnapshotToggleTabManagedButton" xml:space="preserve">
+    <value>Managed Heap</value>
+  </data>
+  <data name="SnapshotToggleTabNativeButton" xml:space="preserve">
+    <value>Heap</value>
+  </data>
+  <data name="NativeCount" xml:space="preserve">
+    <value>{0} allocations</value>
+  </data>
+  <data name="NativeCountLinkTooltip" xml:space="preserve">
+    <value>View details of the heap allocations count</value>
+  </data>
+  <data name="NativeCountDiffLinkTooltip" xml:space="preserve">
+    <value>View details of the heap allocations count compared to the previous snapshot</value>
+  </data>
+  <data name="NativeSizeDiffLinkTooltip" xml:space="preserve">
+    <value>View details of the heap size compared to the previous snapshot</value>
+  </data>
+  <data name="NativeSizeLinkTooltip" xml:space="preserve">
+    <value>View details of the heap size</value>
+  </data>
+  <data name="NoSnapshotsTakenWarning" xml:space="preserve">
+    <value>No snapshots were taken in the profiling session. In order to view application memory details, please start a new profiling session and take at least one snapshot using the &quot;Take snapshot&quot; button</value>
+  </data>
+  <data name="SymbolsLoaded" xml:space="preserve">
+    <value>Symbols loaded for {0}</value>
+    <comment>placeholder 0 is replaced with the binary name</comment>
+  </data>
+  <data name="SymbolsNotFound" xml:space="preserve">
+    <value>Matching symbols not found for {0}</value>
+    <comment>placeholder 0 is replaced with the binary name</comment>
+  </data>
+</root>

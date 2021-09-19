@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  <Symbols>
+    <Import Manifest="$(ManifestFolder)\Microsoft.VisualStudio.ImageCatalog.imagemanifest" />
+    <Guid Name="CommonIDEImageAssets" Value="7aae4a9a-7c05-4ece-b29c-3352abfa748f" />
+    <ID Name="FileListViewIcons" Value="1" />
+  </Symbols>
+  <ImageLists>
+    <ImageList Guid="$(CommonIDEImageAssets)" ID="$(FileListViewIcons)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(FolderClosed)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(FolderOpened)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Settings)" External="true" />
+    </ImageList>
+  </ImageLists>
+</ImageManifest>

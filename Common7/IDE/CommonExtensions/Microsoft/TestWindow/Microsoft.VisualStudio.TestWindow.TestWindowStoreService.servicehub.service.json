@@ -1,0 +1,13 @@
+﻿{
+  "host": "desktopClr",
+  "hostId": "TestWindowStoreHost",
+  "hostGroupAllowed": true,
+  "singleDomainLoaderOptimization": true,
+  "entryPoint": {
+    "assemblyPath": "Microsoft.VisualStudio.TestWindow.Host.dll",
+    "fullClassName": "Microsoft.VisualStudio.TestWindow.Host.TestWindowStoreServiceFactory",
+    "configPath": "%PkgDefApplicationConfigFile%",
+    "appBasePath": "%VSAPPIDDIR%"
+  },
+  "versionRange": "[1.0, 1.0]"
+}

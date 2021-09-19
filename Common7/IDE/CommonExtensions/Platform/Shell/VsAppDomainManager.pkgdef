@@ -1,0 +1,21 @@
+[$RootKey$\ClrHost]
+"Class"="Microsoft.VisualStudio.Platform.VsAppDomainManager"
+"Assembly"="Microsoft.VisualStudio.Platform.AppDomainManager,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+[$RootKey$\CLSID\{182C9FA0-9233-4E5A-994E-9934B4BB2EA4}]
+@="Microsoft.VisualStudio.Platform.VsManagedObjectAggregator"
+"Assembly"="Microsoft.VisualStudio.Platform.AppDomainManager,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"Class"="Microsoft.VisualStudio.Platform.VsManagedObjectAggregator"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"ThreadingModel"="Both"
+[$RootKey$\CLSID\{B69989CF-9FA7-46BD-94B1-FB46B70B1D23}]
+@="VS RCW Cleanup Private"
+"Assembly"="Microsoft.VisualStudio.Platform.AppDomainManager,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"Class"="Microsoft.VisualStudio.Platform.VsRcwCleanupPrivate"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"ThreadingModel"="Both"
+[$RootKey$\CLSID\{0F23DFDB-F5FC-4998-8588-2212FB17AC7D}]
+@="VS Cache Cleanup Private"
+"Assembly"="Microsoft.VisualStudio.Platform.AppDomainManager,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"Class"="Microsoft.VisualStudio.Platform.VsCacheCleanupPrivate"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"ThreadingModel"="Both"

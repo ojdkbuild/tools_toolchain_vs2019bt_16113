@@ -1,0 +1,60 @@
+[$RootKey$]
+
+[$RootKey$\AutoLoadPackages\{4646B819-1AE0-4E79-97F4-8A8176FDD664}]
+"{74612282-E4C8-46B4-A774-C4AA32D54446}"=dword:00000002
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.VC.ManagedPackageService]
+@="{74612282-E4C8-46B4-A774-C4AA32D54446}"
+; AllowTransitiveGuestClients = true
+"allowguestclients"=dword:00000001
+; ServiceAudience = AllClientsIncludingGuests
+"audience"=dword:00000503
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.VC.VCPkgTestBrokeredService]
+@="{74612282-E4C8-46B4-A774-C4AA32D54446}"
+; AllowTransitiveGuestClients = false
+"allowguestclients"=dword:00000000
+; ServiceAudience = RemoteExclusiveClient | Local
+"audience"=dword:00000103
+
+[$RootKey$\InstalledProducts\VCManagedPackage]
+@="#110"
+"Package"="{74612282-E4C8-46B4-A774-C4AA32D54446}"
+"PID"="1.0"
+"ProductDetails"="#112"
+"LogoID"="#400"
+
+[$RootKey$\Languages]
+
+[$RootKey$\Languages\Language Services]
+
+[$RootKey$\Languages\Language Services\C/C++]
+
+[$RootKey$\Languages\Language Services\C/C++\EditorToolsOptions]
+
+[$RootKey$\Languages\Language Services\C/C++\EditorToolsOptions\CodeStyle]
+"Package"="{74612282-E4C8-46B4-A774-C4AA32D54446}"
+@="#202"
+
+[$RootKey$\Languages\Language Services\C/C++\EditorToolsOptions\CodeStyle\General]
+"Package"="{74612282-E4C8-46B4-A774-C4AA32D54446}"
+"Page"="{AE886C79-55B3-4866-B4EF-6AD7B9D8665B}"
+"Keywords"="@101;@201;@1001"
+@="#200"
+
+
+[$RootKey$\Languages\Language Services\C/C++\EditorToolsOptions\Experimental]
+"Package"="{74612282-E4C8-46B4-A774-C4AA32D54446}"
+"Page"="{A260C487-C0DD-4A22-AAAA-9140FCA78742}"
+"Keywords"="@206;@207;@208;@1052;@1053;@1054;@1060"
+@="#208"
+
+[$RootKey$\Menus]
+"{74612282-E4C8-46B4-A774-C4AA32D54446}"=", Menus.ctmenu, 1"
+
+[$RootKey$\Packages\{74612282-E4C8-46B4-A774-C4AA32D54446}]
+@="VCManagedPackage"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.VC.Pkg.ManagedPackage"
+"CodeBase"="$ShellFolder$\Common7\IDE\Microsoft.VisualStudio.VC.dll"
+"AllowsBackgroundLoad"=dword:00000001

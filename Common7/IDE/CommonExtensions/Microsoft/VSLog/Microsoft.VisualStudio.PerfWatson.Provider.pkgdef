@@ -1,0 +1,6 @@
+﻿[$RootKey$\Packages\{b466091b-94ad-416f-bb8a-42534d423a67}]
+@="PerfWatson Event Provider Package"
+"InprocServer32"="$ShellFolder$\Common7\IDE\PrivateAssemblies\Microsoft.VisualStudio.PerfWatson.Provider.dll"
+"CompanyName"="Microsoft"
+"ProductName"="Microsoft.VisualStudio.PerfWatson.Provider"
+"ProductVersion"="1.1"

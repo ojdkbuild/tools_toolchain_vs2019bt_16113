@@ -1,0 +1,12 @@
+﻿<VSTemplateManifest Version="1.0" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateDir>
+    <RelativePath>VC\Code</RelativePath>
+    <LocalizedName Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2300" />
+    <SortOrder>10</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateDir>
+    <RelativePath>VC\Formatting</RelativePath>
+    <LocalizedName Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2303" />
+    <SortOrder>15</SortOrder>
+  </VSTemplateDir>
+</VSTemplateManifest>

@@ -1,0 +1,24 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.TextMateGrammars" Version="16.11.31.23313" Language="en-US" Publisher="Microsoft Corporation" />
+    <DisplayName>Visual Studio Extension for TextMate Grammars</DisplayName>
+    <Description xml:space="preserve">An extension that provides basic support for TextMate grammars</Description>
+    <Icon>CodeGrammarPackage_256x.png</Icon>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <Installation AllUsers="true" Experimental="false" SystemComponent="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[15.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.TextMate.VSWindows.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="TMLanguage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.TextMate.Core.dll" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

@@ -1,0 +1,22 @@
+﻿[$RootKey$\Packages\{03FD0D18-56CC-46DC-BA9B-0873A6F658D9}]
+@="Microsoft.VisualStudio.ClientDiagnostics.ClientDiagnosticsPackage"
+"InprocServer32"="$WinDir$\system32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.ClientDiagnostics.ClientDiagnosticsPackage"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ClientDiagnostics.dll"
+
+[$RootKey$\Editors\{C36D1048-5F9B-4983-9243-151442F88072}]
+@="EditorFactory"
+"DisplayName"="#101"
+"Package"="{03FD0D18-56CC-46DC-BA9B-0873A6F658D9}"
+"EditorTrustLevel"=dword:00000001
+"CommonPhysicalViewAttributes"=dword:00000000
+
+[$RootKey$\Menus]
+"{03FD0D18-56CC-46DC-BA9B-0873A6F658D9}"=", Menus.ctmenu, 1"
+
+[$RootKey$\CLSID\{0FACF275-EC07-447F-9007-F0669F64DD84}]
+@="Microsoft.VisualStudio.MemoryProfiler.MemoryProfilerSettingsPage"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.MemoryProfiler.MemoryProfilerSettingsPage"
+"CodeBase"="$PackageFolder$\MemoryProfiler\Microsoft.VisualStudio.MemoryProfiler.dll"
+"ThreadingModel"="Both"

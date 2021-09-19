@@ -1,0 +1,22 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.Commands.d1d01a95-e978-4540-bd6f-20bda7ce4929" Version="16.0" Language="en-US" Publisher="Microsoft Corperation" />
+    <DisplayName>Microsoft.VisualStudio.Commands</DisplayName>
+    <PackageId>Microsoft.VisualStudio.Commands</PackageId>
+    <Description xml:space="preserve"></Description>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <Installation SystemComponent="true" InstalledByMsi="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.3, 17.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.Commands.dll" />
+  </Assets>
+</PackageManifest>

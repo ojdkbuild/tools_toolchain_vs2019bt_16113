@@ -1,0 +1,12 @@
+VsDebugConsole.pkgdef
+VsDebugCoreUI.pkgdef
+VsDebugPresentationPackage.pkgdef
+ENCMgr.pkgdef
+SymbolLocator.pkgdef
+VSDebug.pkgdef
+VCSharp_EE_Registry_Keys_23307.pkgdef
+shmetapdb.pgkdef
+msvsmon_x86.pkgdef
+msvsmon_x64.pkgdef
+VS_Debug_Scriptle2_AppidReg_4661.pkgdef
+vsdbg-ee.pkgdef

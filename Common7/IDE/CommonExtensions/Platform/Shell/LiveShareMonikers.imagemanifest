@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ImageManifest
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  <Symbols>
+    <String Name="Resources" Value="/Microsoft.VisualStudio.Shell.UI.Internal;Component/LiveShare" />
+    <Guid Name="ShareControlMonikers" Value="{BFB9686E-1099-4509-B0CA-9DF5D0B38641}" />
+    <ID Name="imgidShare" Value="1001" />
+  </Symbols>
+  <Images>
+    <Image Guid="$(ShareControlMonikers)" ID="$(imgidShare)" AllowColorInversion="true">
+      <Source Uri="$(Resources)/Share_16x.xaml" />
+    </Image>
+  </Images>
+  <ImageLists />
+</ImageManifest>

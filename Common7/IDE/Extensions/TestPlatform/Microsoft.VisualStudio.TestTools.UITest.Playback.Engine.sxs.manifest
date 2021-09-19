@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+<assemblyIdentity
+    type="win32"
+    name="Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.sxs"
+    version="1.0.0.0" />
+
+<file name="Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.dll">
+
+    <comClass
+        description="CRPFPlayback Object"
+        clsid="{8C8700A1-80B2-4BF3-9AD6-1900CE040D7C}"
+        threadingModel="both"
+        progid="RecordAndPlayback.Playback"
+        tlbid="{A82498DC-8419-4ED0-8FB3-811F1F4A91AD}" />
+
+    <comClass
+        description="MSAAManager Object"
+        clsid="{5920E841-DE50-4EC3-BFE6-4C839484A747}"
+        threadingModel="both"
+        progid="RPFMSAAPlayback.MSAAManager"
+        tlbid="{A82498DC-8419-4ED0-8FB3-811F1F4A91AD}" />
+
+</file>
+
+</assembly>

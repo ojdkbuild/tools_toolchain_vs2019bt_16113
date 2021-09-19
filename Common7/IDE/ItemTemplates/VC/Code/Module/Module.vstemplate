@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2312"/>
+    <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2313"/>
+    <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="625"/>
+    <TemplateID>Microsoft.VisualC.Item.Module</TemplateID>
+    <ProjectType>VC</ProjectType>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Module.ixx</DefaultName>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">Module.ixx</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

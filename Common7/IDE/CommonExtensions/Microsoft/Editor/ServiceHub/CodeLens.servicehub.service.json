@@ -1,0 +1,12 @@
+﻿{
+  "$schema": "../../../schemas/servicehub.service.schema.json",
+  "host": "desktopClr.x86",
+  "hostId": "CodeLensService",
+  "hostGroupAllowed": true,
+  "entryPoint": {
+    "assemblyPath": "Microsoft.VisualStudio.CodeLens.Service.dll",
+    "fullClassName": "Microsoft.VisualStudio.CodeLens.Service.CodeLensServiceHubService",
+    "appBasePath": "%VSAPPIDDIR%",
+    "configPath": "%PkgDefApplicationConfigFile%"
+  }
+}

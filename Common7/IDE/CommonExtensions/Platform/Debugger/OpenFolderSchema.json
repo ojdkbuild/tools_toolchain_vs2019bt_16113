@@ -1,0 +1,79 @@
+{
+  "debugExtensions": {
+    "native": {
+      "vsDebugEngineGuid": "{3B476D35-A401-11D2-AAD4-00C04F990171}",
+      "VsDebugTargetInfo4": {
+        "bstrExe": "${debugInfo.target}",
+        "bstrCurDir": "${debugInfo.currentDir}"
+      },
+      "templates": [
+        {
+          "templateId": "launch",
+          "displayName": "{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}:6008",
+          "description": "{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}:8229",
+          "fileExtensions": [ "*.exe" ]
+        }
+      ],
+      "schema": {
+        "definitions": {
+          "nativeLayout": {
+            "allOf": [
+              { "$ref": "#/definitions/default" }
+            ]
+          }
+        },
+        "configuration": "#/definitions/nativeLayout"
+      }
+    },
+    "mixed": {
+      "vsDebugEngineGuid": "{92EF0900-2251-11D2-B72E-0000F87572EF}",
+      "VsDebugTargetInfo4": {
+        "bstrExe": "${debugInfo.target}",
+        "bstrCurDir": "${debugInfo.currentDir}"
+      },
+      "templates": [
+        {
+          "templateId": "launch",
+          "displayName": "{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}:8228",
+          "description": "{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}:8230",
+          "fileExtensions": [ "*.exe" ]
+        }
+      ],
+      "schema": {
+        "definitions": {
+          "mixedLayout": {
+            "allOf": [
+              { "$ref": "#/definitions/default" }
+            ]
+          }
+        },
+        "configuration": "#/definitions/mixedLayout"
+      }
+    },
+    "managed": {
+      "vsDebugEngineGuid": "{449EC4CC-30D2-4032-9256-EE18EB41B62B}",
+      "VsDebugTargetInfo4": {
+        "bstrExe": "${debugInfo.target}",
+        "bstrCurDir": "${debugInfo.currentDir}"
+      },
+      "templates": [
+        {
+          "templateId": "launch",
+          "displayName": "{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}:6012",
+          "description": "{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}:8231",
+          "fileExtensions": [ "*.exe" ]
+        }
+      ],
+      "schema": {
+        "definitions": {
+          "managedLayout": {
+            "allOf": [
+              { "$ref": "#/definitions/default" }
+            ]
+          }
+        },
+        "configuration": "#/definitions/managedLayout"
+      }
+    }
+  }
+}

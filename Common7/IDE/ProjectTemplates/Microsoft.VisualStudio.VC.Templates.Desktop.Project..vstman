@@ -1,0 +1,75 @@
+﻿<VSTemplateManifest Version="1.0" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\WindowsDesktop\WindowsApplication</RelativePathOnDisk>
+    <TemplateFileName>DesktopApplication.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2004" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2005" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="501" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>30</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.Windows.DesktopApplication</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>WindowsProject</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <CreateInPlace>true</CreateInPlace>
+        <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\WindowsDesktop\WindowsDesktopWizard</RelativePathOnDisk>
+    <TemplateFileName>WindowsDesktopWizard.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2000" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2001" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="509" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>120</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.Windows.DesktopWizard</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>Project</DefaultName>
+        <CreateInPlace>true</CreateInPlace>
+        <ProvideDefaultName>true</ProvideDefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\WindowsDesktop\WindowsDLL</RelativePathOnDisk>
+    <TemplateFileName>WindowsDLL.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2014" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2015" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="511" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>11</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.Windows.Dll</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>Dll</DefaultName>
+        <CreateInPlace>true</CreateInPlace>
+        <ProvideDefaultName>true</ProvideDefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\Other\Makefile</RelativePathOnDisk>
+    <TemplateFileName>Makefile.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2008" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2009" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="503" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>120</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.MakeFile</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>Project</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <CreateInPlace>true</CreateInPlace>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

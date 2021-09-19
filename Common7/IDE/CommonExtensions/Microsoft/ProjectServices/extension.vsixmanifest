@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.ProjectServices" Version="16.9.10.29909" Language="en-US" Publisher="Microsoft Corporation" />
+    <DisplayName>Microsoft VisualStudio ProjectServices</DisplayName>
+    <Description xml:space="preserve">Microsoft VisualStudio Project Services</Description>
+  </Metadata>
+  <Installation SystemComponent="true" AllUsers="true">
+    <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="PSHOST.exe" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.ProjectServices.dll" />
+  </Assets>
+</PackageManifest>

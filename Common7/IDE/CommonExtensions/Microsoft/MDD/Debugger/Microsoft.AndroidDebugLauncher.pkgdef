@@ -1,0 +1,4 @@
+﻿[$RootKey$\CLSID\{C9A403DA-D3AA-4632-A572-E81FF6301E9B}]
+"Assembly"="Microsoft.AndroidDebugLauncher"
+"Class"="AndroidDebugLauncher.Launcher"
+"CodeBase"="$PackageFolder$\Microsoft.AndroidDebugLauncher.dll"

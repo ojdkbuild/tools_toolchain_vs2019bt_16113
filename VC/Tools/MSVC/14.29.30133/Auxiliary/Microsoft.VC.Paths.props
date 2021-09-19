@@ -1,0 +1,52 @@
+<!--
+***********************************************************************************************
+Microsoft.VC.Paths.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VCToolsInstallDir Condition="'VCToolsInstallDir'==''">$(MSBuildThisFileDirectory)\..\</VCToolsInstallDir>
+  </PropertyGroup>
+
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.ATL.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.ATL.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.ATL.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.ATL.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.ATL.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.ATL.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.ATL.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.ATL.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.ATL.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.ATL.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.ATL.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.ATL.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.ATL.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.ATL.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.ATL.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.ATL.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.Store.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.Store.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.Store.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.Store.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.Store.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.Store.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.Store.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.Store.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.OneCore.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.OneCore.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.OneCore.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.OneCore.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.OneCore.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.OneCore.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.OneCore.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.OneCore.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.OneCore.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.OneCore.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.OneCore.Spectre.props')" Project="Microsoft.VC.Paths.ARM64.OneCore.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.OneCore.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.OneCore.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.OneCore.Spectre.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.OneCore.Spectre.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.IFC.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.IFC.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.ARM64.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x64.props" />
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.props')" Project="$(MSBuildThisFileDirectory)\Microsoft.VC.Paths.x86.props" />
+
+  <PropertyGroup>
+    <VC_VC_IncludePath Condition="'$(VC_VC_IncludePath)' == ''">$(VCToolsInstallDir)include;</VC_VC_IncludePath>
+    <VC_CRT_SourcePath Condition="'$(VC_CRT_SourcePath)' == ''">$(VCToolsInstallDir)crt\src;</VC_CRT_SourcePath>
+  </PropertyGroup
+</Project>

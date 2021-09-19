@@ -1,0 +1,109 @@
+[$RootKey$\AD7Metrics\ExpressionEvaluator\{3A12D0B7-C26C-11D0-B442-00A0244A1DD2}\{994B45C4-E6E9-11D2-903F-00C04FA302A1}]
+"AutoExp"="$BaseInstallDir$\Common7\Packages\Debugger\mcee_mc.dat"
+"CLSID"="{FDDC0D64-0720-11D3-BDA3-00C04FA302E2}"
+"SupportsObjectFavorites"=dword:00000001
+
+[$RootKey$\AD7Metrics\ExpressionEvaluator\{3A12D0B7-C26C-11D0-B442-00A0244A1DD2}\{994B45C4-E6E9-11D2-903F-00C04FA302A1}\Engine]
+"0"="{449EC4CC-30D2-4032-9256-EE18EB41B62B}"
+"1"="{92EF0900-2251-11D2-B72E-0000F87572EF}"
+"2"="{3B476D35-A401-11D2-AAD4-00C04F990171}"
+
+[$RootKey$\AD7Metrics\ExpressionEvaluator\{63A08714-FC37-11D2-904C-00C04FA302A1}\{994B45C4-E6E9-11D2-903F-00C04FA302A1}]
+"CLSID"="{FDDC0D64-0720-11D3-BDA3-00C04FA302E2}"
+
+[$RootKey$\AD7Metrics\ExpressionEvaluator\{63A08714-FC37-11D2-904C-00C04FA302A1}\{994B45C4-E6E9-11D2-903F-00C04FA302A1}\Engine]
+"0"="{449EC4CC-30D2-4032-9256-EE18EB41B62B}"
+"1"="{92EF0900-2251-11D2-B72E-0000F87572EF}"
+"2"="{3B476D35-A401-11D2-AAD4-00C04F990171}"
+
+[$RootKey$\CLSID\{1BC4FA57-AEBC-4152-BD7A-075EE0B96381}]
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\MacroPicker.dll"
+@="VCMacroPicker Class"
+
+[$RootKey$\CLSID\{3D6BA8AE-0C4A-43a2-8C92-0B6B8FC48FDE}]
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\VCProject.dll"
+@="VCProjConvert Class"
+
+[$RootKey$\CLSID\{5A0C78A8-07D8-48cd-B1DD-BA9752C79F1C}]
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VsWizard.dll"
+@="WizCombo Class"
+
+[$RootKey$\CLSID\{6adc6015-0245-4eff-9d5a-f72e681f232e}]
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\VCProject.dll"
+@="ReferencesSettingsPage Class"
+
+[$RootKey$\CLSID\{FDDC0D64-0720-11d3-BDA3-00C04FA302E2}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\mcee.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\External Tools\Sp&y++]
+"ToolCmd"="$BaseInstallDir$\Common7\Tools\spyxx.exe"
+"ToolArg"=""
+"ToolDir"="$BaseInstallDir$\Common7\Tools\"
+"ToolOpt"=dword:00000001
+"ToolTitlePkg"="{F1C25864-3097-11D2-A5C5-00C04F7968B4}"
+"ToolTitleResID"=dword:00002743
+
+// Remove the 64-bit Spy++ because it contends with 32-bit tool
+// for applocal runtime.
+//
+//[$RootKey$\External Tools\Spy++ (x64)]
+//"ToolCmd"="$BaseInstallDir$\Common7\Tools\spyxx_amd64.exe"
+//"ToolArg"=""
+//"ToolDir"="$BaseInstallDir$\Common7\Tools\"
+//"ToolOpt"=dword:00000001
+//"ToolTitlePkg"="{F1C25864-3097-11D2-A5C5-00C04F7968B4}"
+//"ToolTitleResID"=dword:00002746
+
+[$RootKey$\HandleInComingCall\{b6df1a99-8a2c-4d99-a613-e06ab43ecc90}]
+@="IENCBuildSpawnerCallback"
+
+[$RootKey$\Packages\{DA2110FE-DCAD-11D2-92FB-00C04FB98664}]
+"About"="DB Code Generator Package"
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\dbsvc.dll"
+@="DBServicesPackage Class"
+
+[$RootKey$\Packages\{DA2110FE-DCAD-11D2-92FB-00C04FB98664}\SatelliteDll]
+"DllName"="dbsvcui.dll"
+"Path"="$BaseInstallDir$\Common7\IDE\VC\VCPackages"
+
+[$RootKey$\Services\{BE9EB0A2-E162-11D2-92FC-00C04FB98664}]
+"Name"="ATL Consumer Templates Code Generator"
+@="{DA2110FE-DCAD-11D2-92FB-00C04FB98664}"
+
+[$RootKey$\Services\{dbecfca1-1a01-42ad-8158-ca1c3c543adc}]
+"Name"="VC Project Engine"
+@="{F1C25864-3097-11D2-A5C5-00C04F7968B4}"
+
+[$RootKey$\ShellFileAssociations\.cur]
+"DefaultIconMoniker"="KnownMonikers.CursorFile"
+
+// [$RootKey$\ShellFileAssociations\.mfcribbon-ms]
+// @="VisualStudio.mfcribbon-ms.15.0"
+
+[$RootKey$\ShellFileAssociations\.pal]
+"DefaultIconMoniker"="KnownMonikers.ColorPalette"
+
+[$RootKey$\ShellFileAssociations\.props]
+"DefaultIconMoniker"="KnownMonikers.Property"
+
+[$RootKey$\ShellFileAssociations\.rc]
+"DefaultIconMoniker"="KnownMonikers.DocumentGroup"
+
+[$RootKey$\ShellFileAssociations\.rc2]
+"DefaultIconMoniker"="KnownMonikers.DocumentGroup"
+
+[$RootKey$\ShellFileAssociations\.rct]
+"DefaultIconMoniker"="KnownMonikers.ResourceTemplate"
+
+[$RootKey$\ShellFileAssociations\.res]
+"DefaultIconMoniker"="KnownMonikers.DocumentGroup"
+
+[$RootKey$\ShellFileAssociations\.vsprops]
+"DefaultIconMoniker"="KnownMonikers.Property"
+
+[$RootKey$\ShellFileAssociations\.vsz]
+"DefaultIconMoniker"="KnownMonikers.Wizard"
+
+[$RootKey$\VC\Libs]
+"VC_PROJ_ITEMS_CPP"=""

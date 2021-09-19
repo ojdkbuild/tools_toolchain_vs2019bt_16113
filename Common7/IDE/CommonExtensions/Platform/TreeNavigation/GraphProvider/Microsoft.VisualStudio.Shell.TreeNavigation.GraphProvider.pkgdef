@@ -1,0 +1,6 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{200BC1AE-1AAB-4129-9EA8-D97452A44CFF}]
+"name"="Microsoft.VisualStudio.Shell.TreeNavigation.GraphProvider"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Shell.TreeNavigation.GraphProvider.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"

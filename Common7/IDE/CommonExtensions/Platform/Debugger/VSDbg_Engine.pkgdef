@@ -1,0 +1,37 @@
+;
+; Registration for "vsdbg desktop" debug engine GUIDs used for Azure Watson
+;
+
+; Engine registration
+[$RootKey$\AD7Metrics\Engine\{C91BC5DB-BE4E-47A5-8264-D0405B9D4B61}]
+"CLSID"="{DAB324E9-7B35-454C-ACA8-F6BB0D5C8673}"
+@="VSCode Debugger Host - vsdbg desktop"
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6080"
+"AlwaysLoadLocal"=dword:00000001
+"AddressBP"=dword:00000000
+"CallStackBP"=dword:00000000
+"Disassembly"=dword:00000001
+"Exceptions"=dword:00000001
+"ExceptionConditions"=dword:00000001
+"SuppressModulesRequestOnAttach"=dword:00000001
+"ExcludeLocalSymbols"=dword:00000001
+"SetNextStatement"=dword:00000001
+
+; Exception category mappings
+[$RootKey$\AD7Metrics\Engine\{C91BC5DB-BE4E-47A5-8264-D0405B9D4B61}\ExceptionCategoryMappings]
+"CPP"="{3A12D0B7-C26C-11D0-B442-00A0244A1DD2}"
+"CLR"="{449EC4CC-30D2-4032-9256-EE18EB41B62B}"
+"MDA"="{6ECE07A9-0EDE-45C4-8296-818D8FC401D4}"
+"W32"="{3B476D35-A401-11D2-AAD4-00C04F990171}"
+
+[$RootKey$\AD7Metrics\Engine\{C91BC5DB-BE4E-47A5-8264-D0405B9D4B61}\LanguageMappings\C#]
+"LanguageId"="{3F5162F8-07C6-11D3-9053-00C04FA302A1}"
+"Extensions"=".cs;.cshtml;.csx;.razor"
+
+[$RootKey$\AD7Metrics\Engine\{C91BC5DB-BE4E-47A5-8264-D0405B9D4B61}\LanguageMappings\C++]
+"LanguageId"="{3A12D0B7-C26C-11D0-B442-00A0244A1DD2}"
+"Extensions"=".cpp;.cxx;.cc;.h;.hh;.hpp;.hxx;.inl;.ipp"
+
+[$RootKey$\AD7Metrics\Engine\{C91BC5DB-BE4E-47A5-8264-D0405B9D4B61}\LanguageMappings\C]
+"LanguageId"="{63A08714-FC37-11D2-904C-00C04FA302A1}"
+"Extensions"=".c"

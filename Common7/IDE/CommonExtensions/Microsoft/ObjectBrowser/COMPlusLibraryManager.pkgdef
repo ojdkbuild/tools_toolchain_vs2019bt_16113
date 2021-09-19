@@ -1,0 +1,38 @@
+﻿[$RootKey$]
+
+//////////////////////////////////////////////////////////////////////////////
+// From vscommon\appid\Registry\vspkg.rgs_4731.ddr
+//////////////////////////////////////////////////////////////////////////////
+
+[$RootKey$]
+
+[$RootKey$\Packages]
+
+[$RootKey$\Packages\{ED8979BC-B02F-4da9-A667-D3256C36220A}]
+"Preload"=dword:00000000
+"InprocServer32"="$ShellFolder$\Common7\IDE\compluslm.dll"
+@="Visual Studio COM+ Library Manager Package"
+
+[$RootKey$\Packages\{ED8979BC-B02F-4da9-A667-D3256C36220A}\SatelliteDll]
+"DllName"="msenvui.dll"
+"Path"="$ShellFolder$\Common7\IDE\"
+
+[$RootKey$\Services]
+
+[$RootKey$\Services\{699D5E17-9B22-466b-ACFA-2E12CD64E249}]
+"Name"="SID_SVsComplusLibrary"
+@="{ED8979BC-B02F-4da9-A667-D3256C36220A}"
+
+[$RootKey$\Services\{ED8979BC-B02F-4da9-A667-D3256C36220A}]
+"Name"="CLSID_ComplusLibraryManagerPkg"
+@="{ED8979BC-B02F-4da9-A667-D3256C36220A}"
+
+[$RootKey$\Object Libraries\{1EC72FD7-C820-4273-9A21-777A5C522E03}]
+"Package"="{00000000-0000-0000-0000-000000000000}"
+"Page"="COM+"
+
+[$RootKey$\Object Libraries\{1EC72FD7-C820-4273-9A21-777A5C522E03}\Filters]
+
+[$RootKey$\Object Libraries\{1EC72FD7-C820-4273-9A21-777A5C522E03}\Filters\1]
+"FileFilter"="*.dll;*.exe;*.winmd"
+"Priority"=dword:00000064

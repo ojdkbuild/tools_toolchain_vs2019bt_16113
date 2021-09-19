@@ -1,0 +1,7 @@
+﻿[$RootKey$\FeatureFlags\RichCodeNavigation\Enabled]
+"Description"="#1002"
+"Value"=dword:00000000
+"Title"="#1001"
+"PreviewPaneChannels"="Release,*"
+"RequiredAction"="#1003"
+"packageGuid"="7938fc65-51a4-4e16-ab05-5ab5ddba763f"

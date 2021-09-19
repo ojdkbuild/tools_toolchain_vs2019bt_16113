@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                           xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  <Symbols>
+    <String Name="Resources" Value="/Microsoft.VisualStudio.ProjectSystem.VS.Implementation;Component/Package/Nodes/Nesting/Resources" />
+    <Guid Name="NestingImagesGuid" Value="{7C22BAC4-B1B1-4999-BDBC-AD89E10CACDC}" />
+    <ID Name="NestedTreeView" Value="1" />
+    <ID Name="AddProfile" Value="2" />
+    <ID Name="EditProfile" Value="3" />
+    <ID Name="NestItems" Value="4" />
+    <ID Name="UnnestItems" Value="5" />
+  </Symbols>
+  <Images>
+    <Image Guid="$(NestingImagesGuid)" ID="$(NestedTreeView)">
+      <Source Uri="$(Resources)/Icons/NestingNestedTreeView_16x.xaml" />
+      <Source Uri="$(Resources)/Icons/NestingNestedTreeView_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(NestingImagesGuid)" ID="$(AddProfile)">
+      <Source Uri="$(Resources)/Icons/NestingAddProfile_16x.xaml" />
+      <Source Uri="$(Resources)/Icons/NestingAddProfile_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(NestingImagesGuid)" ID="$(EditProfile)">
+      <Source Uri="$(Resources)/Icons/NestingEditProfile_16x.xaml" />
+      <Source Uri="$(Resources)/Icons/NestingEditProfile_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(NestingImagesGuid)" ID="$(NestItems)">
+      <Source Uri="$(Resources)/Icons/NestingNestItems_16x.xaml" />
+      <Source Uri="$(Resources)/Icons/NestingNestItems_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(NestingImagesGuid)" ID="$(UnnestItems)">
+      <Source Uri="$(Resources)/Icons/NestingUnnestItems_16x.xaml" />
+      <Source Uri="$(Resources)/Icons/NestingUnnestItems_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+  </Images>
+  <ImageLists />
+</ImageManifest>

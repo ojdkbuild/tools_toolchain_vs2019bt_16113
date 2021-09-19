@@ -1,0 +1,20 @@
+[$RootKey$\AD7Metrics\Exception\{449EC4CC-30D2-4032-9256-EE18EB41B62B}\Common Language Runtime Exceptions\JScript Exceptions]
+"Code"=dword:00000000
+"State"=dword:00000002
+
+[$RootKey$\AD7Metrics\Exception\{449EC4CC-30D2-4032-9256-EE18EB41B62B}\Common Language Runtime Exceptions\JScript Exceptions\Microsoft.JScript.JScriptException]
+"Code"=dword:00000000
+"State"=dword:0000000C
+
+[$RootKey$\AD7Metrics\ExpressionEvaluator\{3A12D0B6-C26C-11D0-B442-00A0244A1DD2}\{994B45C4-E6E9-11D2-903F-00C04FA302A1}]
+"CLSID"="{4D4D35A3-1391-4E17-813D-54D1B846096A}"
+"Language"="JScript"
+"Name"="JScript EE"
+
+[$RootKey$\AD7Metrics\ExpressionEvaluator\{3A12D0B6-C26C-11D0-B442-00A0244A1DD2}\{994B45C4-E6E9-11D2-903F-00C04FA302A1}\Engine]
+"0"="{449EC4CC-30D2-4032-9256-EE18EB41B62B}"
+"1"="{92EF0900-2251-11D2-B72E-0000F87572EF}"
+
+[$RootKey$\CLSID\{4D4D35A3-1391-4E17-813D-54D1B846096A}]
+"InprocServer32"="$ShellFolder$\Common7\Packages\Debugger\jsee.dll"
+"ThreadingModel"="Both"

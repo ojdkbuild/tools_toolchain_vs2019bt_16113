@@ -1,0 +1,25 @@
+[$RootKey$]
+
+[$RootKey$\CLSID]
+
+[$RootKey$\CLSID\{4337F6A7-CF54-4b72-BCC5-CE6DE02C881C}]
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\DirControl.dll"
+@="DirList Class"
+
+[$RootKey$\Packages]
+
+[$RootKey$\Packages\{5010C52F-44AB-4051-8CE1-D36C20D989B4}]
+"About"="Visual Studio Directory Listing Package"
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\DirControl.dll"
+@="Visual Studio Directory Listing Package"
+
+[$RootKey$\Packages\{5010C52F-44AB-4051-8CE1-D36C20D989B4}\SatelliteDll]
+"DllName"="DirControlUI.dll"
+"Path"="$BaseInstallDir$\Common7\IDE\VC\VCPackages"
+
+[$RootKey$\Services]
+
+[$RootKey$\Services\{5403AC85-C8C8-4967-BDB0-662D485F0C28}]
+"Name"="DirListService"
+@="{5010C52F-44AB-4051-8CE1-D36C20D989B4}"
+

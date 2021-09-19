@@ -1,0 +1,8 @@
+﻿{
+  "debugTemplates": {
+    // TODO: add the default templates (managed/native/mixed)
+  },
+  "ExcludedItems": [
+    "node_modules/"
+  ]
+}

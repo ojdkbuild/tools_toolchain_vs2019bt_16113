@@ -1,0 +1,4 @@
+Microsoft.VisualStudio.Editor.pkgdef
+Microsoft.VisualStudio.Editor.Implementation.pkgdef
+Microsoft.VisualStudio.Diff.CommandLineSwitch.pkgdef
+Microsoft.VisualStudio.Diff.pkgdef

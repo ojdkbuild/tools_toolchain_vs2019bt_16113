@@ -1,0 +1,130 @@
+//
+// desaturate
+//
+float3 Desaturate(
+    float3 color, 
+    float3 luminance, 
+    float percent
+    )
+{
+    float3 desatColor = dot(color, luminance);
+    return lerp(color, desatColor, percent);
+}
+
+//
+// fresnel falloff
+//
+float Fresnel(
+    float3 surfaceNormal,
+    float3 toEye,
+    float exp
+    )
+{
+    float x = 1 - saturate(dot(surfaceNormal, toEye));
+    return pow(x, exp);
+}
+
+//
+// panning offset
+//
+float2 PanningOffset(
+    float2 sourceUV,
+    float time,
+    float speedX,
+    float speedY
+    )
+{
+    float2 uvOffset = float2(time, time) * float2(speedX, speedY);
+
+    return sourceUV + uvOffset;
+}
+
+//
+// parallax offset
+//
+float2 ParallaxOffset(
+    float2 sourceUV,
+    float height,
+    float depthScale,
+    float depthPlane,
+    float3 tangentCameraVector
+    )
+{
+    float bias = -(depthScale * depthPlane);
+    float heightAdj = (depthScale * height) + bias;
+
+    return sourceUV + (tangentCameraVector.xy * heightAdj);
+}
+
+//
+// rotate offset
+//
+float2 RotateOffset(
+    float2 sourceUV,
+    float time,
+    float centerX,
+    float centerY,
+    float speed
+    )
+{
+    float2 ray = sourceUV - float2(centerX, centerY);
+    float theta = time * speed;
+
+    float cosTheta = cos(theta);
+    float sinTheta = sin(theta);
+
+    float2x2 rotMatrix = float2x2(float2(cosTheta, -sinTheta), float2(sinTheta, cosTheta));
+
+    return mul(rotMatrix, ray) + float2(centerX, centerY);
+}
+
+//
+// lambert lighting function
+//
+float3 LambertLighting(
+    float3 lightNormal,
+    float3 surfaceNormal,
+    float3 materialAmbient,
+    float3 lightAmbient,
+    float3 lightColor,
+    float3 pixelColor
+    )
+{
+    // compute amount of contribution per light
+    float diffuseAmount = saturate(dot(lightNormal, surfaceNormal));
+    float3 diffuse = diffuseAmount * lightColor * pixelColor;
+
+    // combine ambient with diffuse
+    return saturate((materialAmbient * lightAmbient) + diffuse);
+}
+
+//
+// specular contribution function
+//
+float3 SpecularContribution(
+    float3 toEye,
+    float3 lightNormal,
+    float3 surfaceNormal,
+    float3 materialSpecularColor,
+    float materialSpecularPower,
+    float lightSpecularIntensity,
+    float3 lightColor
+    )
+{
+    // compute specular contribution
+    float3 vHalf = normalize(lightNormal + toEye);
+    float specularAmount = saturate(dot(surfaceNormal, vHalf));
+    specularAmount = pow(specularAmount, max(materialSpecularPower,0.0001f)) * lightSpecularIntensity;
+    float3 specular = materialSpecularColor * lightColor * specularAmount;
+    
+    return specular;
+}
+
+//
+// combines a float3 RGB value with an alpha value into a float4
+//
+float4 CombineRGBWithAlpha(float3 rgb, float a) 
+{ 
+    return float4(rgb.r, rgb.g, rgb.b, a); 
+}
+

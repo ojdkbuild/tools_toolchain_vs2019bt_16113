@@ -1,0 +1,270 @@
+﻿/* Grid Container */
+.treeGridContainer {
+    position: relative;
+    /* TODO for Dev15 - This should be extended to everything on the DOM once we have the new grid in both scenarios */
+    box-sizing: content-box;
+}
+
+/* Grid */
+.treeGridContainer table {
+    table-layout: fixed;
+    overflow: hidden;
+   /*
+    * This is a workaround as IE does not always correctly render the bottom border of a
+    * table when border-collapse is specified. Our solution is to manually specify the correct
+    * borders and set the spacing of cells to be 0.
+    */
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.treeGridContainer thead tr:first-child th {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.treeGridContainer td:first-child, .treeGridContainer th:first-child {
+    border-left: 1px solid purple; /*[1px solid {Environment-GridLine-Background}]*/
+}
+
+.treeGridContainer td, .treeGridContainer th {
+    border-right: 1px solid purple; /*[1px solid {Environment-GridLine-Background}]*/
+    border-bottom: 1px solid purple; /*[1px solid {Environment-GridLine-Background}]*/
+    padding: 1px 4px;
+}
+
+.treeGridContainer tr {
+    /* We need a fixed row height since we calculate the virtualization with the row height */
+    height: 1.8em;
+}
+
+/* Grid Header */
+.treeGridContainer .treeGridHeader {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    background-color: chartreuse; /*[{Header-Default-Background}]*/
+    border-bottom: 1px solid purple; /*[1px solid {Header-SeparatorLine-Background}]*/
+    padding-left: 0px;
+    padding-right: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.treeGridContainer .treeGridBody {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: auto;
+}
+
+.treeGridContainer .treeGridBody thead {
+    visibility: hidden;
+}
+
+.treeGridContainer thead th {
+    position: relative;
+    min-width: 40px;
+    width: 150px;
+    padding: 4px;
+    text-align: right;
+    vertical-align: middle;
+    font-weight: normal;
+    color: chartreuse; /*[{Environment-CommandBarTextActive-Background}]*/
+    border-color: purple; /*[{Header-SeparatorLine-Background}]*/
+    border-bottom: 0px;
+    background-color: chartreuse; /*[{Header-Default-Background}]*/
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: default;
+    text-overflow: ellipsis;
+}
+
+.treeGridContainer thead tr:first-child th:hover, .treeGridContainer thead tr:first-child th:focus {
+    background-color: chartreuse; /*[{Header-MouseOver-Background}]*/
+    color: chartreuse; /*[{Environment-CommandBarTextHover-Background}]*/
+    border: 1px dotted black; /*[1px dotted {CommonControls-FocusVisual-Foreground}]*/
+}
+
+/* Grid Rows */
+.treeGridContainer tbody td {
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.treeGridContainer .treeGridRow-expander {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url("./Icons/itemCollapsed.png") no-repeat 0px 0px; /*[ url({itemCollapsed}) no-repeat 0px 0px]*/
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 70%;
+}
+
+    .treeGridContainer .treeGridRow-expander.expanded {
+        background: url("./Icons/itemExpanded.png") no-repeat 0px 0px; /*[ url({itemExpanded}) no-repeat 0px 0px]*/
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 60%;
+    }
+
+.hotHighlight {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    vertical-align: middle;
+    background-size: 100%;
+}
+
+.hotHighlight.hotPath {
+    width: 1.4em;
+    height: 1.4em;
+    background: url("./Icons/HotPath.png") no-repeat 0px 0px; /*[ url({hotPathImage}) no-repeat 0px 0px]*/
+}
+
+.hotHighlight.hotItem {
+    width: 1.4em;
+    height: 1.4em;
+    background: url("./Icons/HotItem.png") no-repeat 0px 0px; /*[ url({hotItemImage}) no-repeat 0px 0px]*/
+}
+
+.treeGridContainer tbody tr:hover {
+    color: chartreuse; /*[{plugin-treeview-content-inactive-selected-color}]*/
+    background-color: chartreuse; /*[{plugin-treeview-content-inactive-selected-background-color}]*/
+}
+
+.treeGridContainer tbody tr.selected {
+    color: chartreuse; /*[{plugin-treeview-content-selected-color}]*/
+    background-color: chartreuse; /*[{plugin-treeview-content-selected-background-color}]*/
+}
+
+.treeGridContainer .treeGridRow .treeGridCell-label {
+    color: chartreuse; /*[{CpuUsageTool-TreeGridCellLabelText}]*/
+}
+
+    .treeGridContainer tr.selected .treeGridCell-label, .treeGridContainer tr:hover .treeGridCell-label {
+        color: inherit;
+    }
+
+/* Focus:
+ * IE does not always correctly show focus rings with collapsed borders. To fix this
+ * we explicitly remove the outline focus ring and edit the borders on the rows to mimic 
+ * the same look when the body or table header row has focus.
+ */
+.treeGridContainer tbody:focus {
+    outline: none;
+}
+
+.treeGridContainer tbody:focus > tr > td {
+   border-bottom: 1px dotted black; /*[1px dotted {CommonControls-FocusVisual-Foreground}]*/
+   border-right: 1px dotted black; /*[1px dotted {CommonControls-FocusVisual-Foreground}]*/
+}
+
+.treeGridContainer tbody:focus > tr > td:first-child {
+   border-left: 1px dotted black; /*[1px dotted {CommonControls-FocusVisual-Foreground}]*/
+}
+
+.treeGridContainer thead > tr:focus > th {
+   border-bottom: 1px dotted black; /*[1px dotted {CommonControls-FocusVisual-Foreground}]*/
+   border-top: 1px dotted black; /*[1px dotted {CommonControls-FocusVisual-Foreground}]*/
+   border-right: 1px dotted black; /*[1px dotted {CommonControls-FocusVisual-Foreground}]*/
+}
+
+.treeGridContainer thead > tr:focus > th:first-child {
+   border-left: 1px dotted black; /*[1px dotted {CommonControls-FocusVisual-Foreground}]*/
+}
+
+/* Arrangeable */
+#arrangeColumn {
+    position: absolute;
+    /* We want to be on top of everything as this will only be shown when reordering columns */
+    z-index: 10001;
+    color: chartreuse; /*[{Environment-CommandBarTextActive-Background}]*/
+    background-color: chartreuse; /*[{Header-Default-Background}]*/
+    border: 1px solid purple; /*[1px solid {Header-SeparatorLine-Background}]*/
+    text-align: right;
+    vertical-align: middle;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: default;
+    text-overflow: ellipsis;
+}
+
+#arrangeDropLocation {
+    /* We want to be on top of everything except the arrangeColumn as this will only be shown when reordering columns */
+    z-index: 10000;
+    width: 8px;
+    position: absolute;
+    overflow: hidden;
+}
+
+    #arrangeDropLocation:before {
+        content: "";
+        width: 0;
+        height: 50%;
+        display: block;
+        position: absolute;
+        border-top: 4px solid red; /*[4px solid {Environment-CommandBarTextActive-Background}]*/
+        border-bottom: 4px solid red; /*[4px solid {Environment-CommandBarTextActive-Background}]*/
+        border-left: 4px solid transparent;
+    }
+
+    #arrangeDropLocation:after {
+        content: "";
+        width: 0;
+        height: 50%;
+        right: 0;
+        display: block;
+        position: absolute;
+        border-top: 4px solid red; /*[4px solid {Environment-CommandBarTextActive-Background}]*/
+        border-bottom: 4px solid red; /*[4px solid {Environment-CommandBarTextActive-Background}]*/
+        border-right: 4px solid transparent;
+    }
+
+/* Sortable */
+.treeGridContainer [aria-sort="ascending"], .treeGridContainer [aria-sort="descending"] {
+    position: relative;
+    padding-right: 1em;
+}
+
+.treeGridContainer [aria-sort="ascending"]:after, .treeGridContainer [aria-sort="descending"]:after {
+    /* These :after styles are for the up or down Marlett arrows */
+    position: absolute;
+    top: calc(100% - 1em - 4px); /* 100% - height of the text - padding of the outer element */
+    right: 0px;
+    width: 1em;
+    font-family: Marlett;
+}
+
+.treeGridContainer [aria-sort="ascending"]:after {
+    content: "5"; /* With Marlett font this will be an up arrow */
+}
+
+.treeGridContainer [aria-sort="descending"]:after {
+    content: "6"; /* With Marlett font this will be a down arrow */
+}
+
+/* Column Resizer */
+.treeGridContainer .columnResizer {
+    position: absolute;
+    display: inline-block;
+    cursor: col-resize;
+    padding: 4px 0px;
+    height: 100%;
+    top: 0px;
+    z-index: 10;
+}
+
+    .treeGridContainer .columnResizer:after {
+        /* This adds a nbsp so that the resizer is rendered */
+        content: "\00a0";
+    }

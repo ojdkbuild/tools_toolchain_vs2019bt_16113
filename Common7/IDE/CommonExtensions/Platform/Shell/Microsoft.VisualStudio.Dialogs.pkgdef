@@ -1,0 +1,39 @@
+[$RootKey$\Packages\{a1609ac6-6b91-42e1-8b92-6c8593cb4a8d}]
+@="Microsoft.VisualStudio.Dialogs"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"Class"="Microsoft.VisualStudio.Dialogs.DialogPackage"
+"Assembly"="Microsoft.VisualStudio.Dialogs,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"CodeBase"="$ShellFolder$\Common7\IDE\PrivateAssemblies\Microsoft.VisualStudio.Dialogs.dll"
+[$RootKey$\Services\{e85b2a12-255d-4acc-a3f5-337b0887f283}]
+@="{a1609ac6-6b91-42e1-8b92-6c8593cb4a8d}"
+"Name"="SVsDialogService"
+[$RootKey$\Services\{5b06e5c1-fc61-45bc-9c36-38ff9ac95bf1}]
+@="{a1609ac6-6b91-42e1-8b92-6c8593cb4a8d}"
+"Name"="SVsTagProviderFactoryService"
+[$RootKey$\Services\{FAC3A919-3ECD-4E44-803D-864D72CF617B}]
+@="{a1609ac6-6b91-42e1-8b92-6c8593cb4a8d}"
+"Name"="SVsTemplateSetupService"
+[$RootKey$\Services\{BD8F244F-1979-48EB-BF53-50574F112FFF}]
+@="{71054795-27fd-4816-9aea-667fe14edd2a}"
+"Name"="SVsNewProjectUIFactory"
+"IsAsyncQueryable"=dword:00000001
+[$RootKey$\Packages\{71054795-27fd-4816-9aea-667fe14edd2a}]
+@="New Project Dialog"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"Class"="Microsoft.VisualStudio.NewProjectDialog.DialogPackage"
+"Assembly"="Microsoft.VisualStudio.Dialogs,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"AllowsBackgroundLoad"=dword:00000001
+[$RootKey$\Menus]
+"{71054795-27fd-4816-9aea-667fe14edd2a}"=", DialogCommandPackage.ctmenu, 1"
+[$RootKey$\Settings\VS.IDE.Platform.ProjectTemplateMru]
+"IsRoamed"=dword:00000000
+"IsShared"=dword:00000000
+"IsStoredOnDisk"=dword:00000000
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Shell.TemplateProvider\0.1]
+@="{A1609AC6-6B91-42E1-8B92-6C8593CB4A8D}"
+; ServiceAudience = Local
+"Audience"=dword:00000003
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Shell.Internal.ProjectContext\0.1]
+@="{A1609AC6-6B91-42E1-8B92-6C8593CB4A8D}"
+; ServiceAudience = Local
+"Audience"=dword:00000003

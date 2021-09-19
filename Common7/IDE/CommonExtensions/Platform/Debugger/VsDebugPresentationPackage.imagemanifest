@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  <Symbols>
+    <Guid Name="RazorImagesGuid" Value="{2CDEB450-BA2C-42C2-8391-D2D1800F565C}" />  
+    <ID Name="LocalRegisters_ID" Value="101" />
+    <String Name="Resources" Value="/VsDebugPresentationPackage;Component/Resources" />
+  </Symbols>
+  <Images>
+    <Image Guid="$(RazorImagesGuid)" ID="$(LocalRegisters_ID)" >
+      <Source Uri="$(Resources)/LocalRegisters_16x.xaml" />
+      <Source Uri="$(Resources)/LocalRegisters_16x.png">
+        <Size Value="16"/>
+      </Source>
+    </Image>
+  </Images>
+  <ImageLists>
+  </ImageLists>
+</ImageManifest>

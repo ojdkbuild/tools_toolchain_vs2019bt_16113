@@ -1,0 +1,25 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.Platform.CrossRepositorySearch" Version="16.11.31.23313" Language="en-US" Publisher="Microsoft Corporation" />
+    <DisplayName>Microsoft Visual Studio Cross-Repository Search</DisplayName>
+    <Description>Microsoft Visual Studio Cross-Repository Search</Description>
+    <AllowClientRole>true</AllowClientRole>
+    <!-- This 'unlisted' tag makes sure the VSIX isn't publicly visible on vsixgallery.com -->
+    <Tags>unlisted</Tags>
+  </Metadata>
+  <Installation Experimental="false" SystemComponent="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.ServiceHub.Service" Path="ServiceHub\CrossRepositorySearch.servicehub.service.json" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.CrossRepositorySearch.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.Platform.CrossRepositorySearch.Implementation.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.Platform.CrossRepositorySearch.pkgdef" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

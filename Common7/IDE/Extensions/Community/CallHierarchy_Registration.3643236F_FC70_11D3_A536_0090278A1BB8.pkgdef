@@ -1,0 +1,19 @@
+[$RootKey$\Menus]
+"{3f3d9528-bac4-420e-8147-29896300c5c0}"=", CallHierarchy.ctmenu, 1"
+
+[$RootKey$\Packages\{3F3D9528-BAC4-420e-8147-29896300C5C0}]
+@="Visual Studio Call Hierarchy Package"
+"Assembly"="Microsoft.VisualStudio.CallHierarchy.Package.Implementation, Version=16.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.CallHierarchy.Package.Implementation.HostPackage"
+"InprocServer32"="$System$\mscoree.dll"
+
+[$RootKey$\Services\{66B94087-4468-4938-9899-FA51E2F65FAB}]
+@="{3F3D9528-BAC4-420e-8147-29896300C5C0}"
+"Name"="Visual Studio Call Hierarchy Service"
+
+[$RootKey$\ToolWindows\{3822E751-EB69-4B0E-B301-595A9E4C74D5}]
+@="{3f3d9528-bac4-420e-8147-29896300c5c0}"
+"Name"="Microsoft.VisualStudio.CallHierarchy.Package.Implementation.CallHierarchyToolWindow"
+"Orientation"="Bottom"
+"Style"="Tabbed"
+"Window"="{68487888-204A-11D3-87EB-00C04F7971A5}"

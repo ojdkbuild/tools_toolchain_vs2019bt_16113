@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is the manifest for all Shell components.  Add a new element under the Content node for each one. -->
+
+<Vsix Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="Microsoft.VisualStudio.Platform">
+    <Name>Microsoft Visual Studio Shell Components</Name>
+    <Author>Microsoft Corporation</Author>
+    <Version>11.0</Version>
+    <Description>Microsoft Visual Studio Shell Components</Description>
+    <Locale>1033</Locale>
+    <SupportedProducts>
+      <VisualStudio Version="11.0">
+        <Edition>Pro</Edition>
+        <Edition>VSTS</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Express_All</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.5" />
+    <SystemComponent>true</SystemComponent>
+    <AllowClientRole>true</AllowClientRole>
+  </Identifier>
+
+  <References />
+
+  <Content>
+    <MefComponent>..\..\..\Microsoft.VisualStudio.Shell.UI.Internal.dll</MefComponent>
+    <MefComponent>..\..\..\PrivateAssemblies\Microsoft.VisualStudio.CommonIDE.dll</MefComponent>
+    <MefComponent>..\..\..\PrivateAssemblies\Microsoft.VisualStudio.Shell.Connected.dll</MefComponent>
+    <MefComponent>..\..\..\PrivateAssemblies\Microsoft.VisualStudio.Dialogs.dll</MefComponent>
+  </Content>
+</Vsix>

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Diagnostic Analysis Window</title>
+    <link rel="stylesheet" href="Controls/css/DataGrid.css" type="text/css" data-plugin-theme="true" />
+    <link rel="stylesheet" href="Controls/css/TreeGrid.css" type="text/css" data-plugin-theme="true" />
+    <link rel="stylesheet" href="DiagnosticAnalysisWindow.css" type="text/css" data-plugin-theme="true" />
+    <script src="plugin.js" type="text/javascript"></script>
+    <script src="Knockout/knockout-3.4.0.js" type="text/javascript"></script>
+    <script src="Controls/DiagnosticsHub.js" type="text/javascript"></script>
+    <script src="Controls/Controls.js" type="text/javascript"></script>
+    <script src="Controls/Shared.js" type="text/javascript"></script>
+    <script src="DiagnosticAnalysisWindow.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        (function () {
+
+            window.addEventListener("DOMContentLoaded", function () {
+                Microsoft.Plugin.addEventListener("pluginready", pluginLoaded);
+            });
+
+            /*
+             * Use this initialization instead of above if you need to debug using F12 on startup.
+             * This delays plugin and daytona setup until a created "start" button is hit.
+             * To debug, simply run the window, attach F12 and press the "start" button.
+             *
+            window.addEventListener("DOMContentLoaded", function () {
+                var b = document.createElement("button");
+                b.innerText = "Start";
+                b.addEventListener("click", function () {
+                    Microsoft.Plugin.addEventListener("pluginready", pluginLoaded());
+                });
+                document.body.appendChild(b);
+            });
+            */
+
+            function showSimpleError(msg, url, line) {
+                alert("Error : " + msg);
+            }
+
+            function pluginLoaded() {
+                // We disable zooming via the mouse scroll since it is not a standard VS interaction.
+                // Zooming also breaks the placement of floating windows such as context menus
+                Microsoft.Plugin.VS.Keyboard.setZoomState(false);
+                Microsoft.Plugin.Tooltip.defaultTooltipContentToHTML = false;
+                Microsoft.VisualStudio.DiagnosticsHub.InitializeErrorReporting();
+
+                ko.options.deferUpdates = true;
+                requirejs.config({
+                    shim: {
+                        "knockout": {
+                            exports: "ko"
+                        },
+                    }
+                });
+
+                // For debugging purposes, override the error handler so that we can reload the page
+                // after an exception.
+                //window.onerror = showSimpleError;
+
+                // this must be done after the above shim, so the controls can
+                // find knockout.js
+                var daw = require("DiagnosticAnalysisWindow");
+                let adaptor = Microsoft.Plugin.Utilities.JSONMarshaler.attachToPublishedObject("DiagnosticAnalysisObject", {}, true);
+                window.DiagnosticAnalysisViewer = new daw.DiagnosticAnalysisViewer(adaptor);
+                // The diagnostics hub views will override this error binding. Set it back.
+                //window.onerror = showSimpleError;
+
+                // refresh after construction is complete.
+                window.DiagnosticAnalysisViewer.refreshAnalysisModel();
+            }
+        })();
+    </script>
+
+    <!-- Template for the rows of the results list. Note: DO NOT PUT WHITESPACE before the table row definition. There is a bug in
+         the DataGridView that will cause a crash with whitespace in the template. -->
+    <script type="text/html" id="ResultListRowTemplate"><tr class="dataGridRow" role="row" tabindex="-1" data-bind="dataGridRowFocus: $parent.focusedRow()===$data, css: {selected: selected()}">
+            <td role="gridCell" class="resultCode" data-bind="text: resultCode" data-columnid="resultCode"></td>
+            <td role="gridCell" class="resultName" data-columnid="resultName">
+                <div data-bind="css: iconStatusClassName" aria-hidden="true" >&nbsp;</div>
+                <span data-bind="text: resultName"></span>
+            </td>
+        </tr>
+    </script>
+
+    <!-- Note: the role for each row has to be "treeitem", not "row", otherwise the checked state will not be read by screen readers. -->
+    <script type="text/html" id="AnalyzerListRowTemplate"><tr class="treeGridRow" role="treeitem" tabindex="-1" data-bind="
+            treeGridRowFocus: $parent.focusedRow()===$data,
+            ariaExpanded: { expandable: expandable, expanded: expanded },
+            ariaCheckedState: checkedState,
+            attr: { 'aria-level': depth + 1 },
+            css: {selected: selected()}">
+            <td role="gridcell" class="name" data-columnid="name" tabindex="-1">
+                <span data-bind="rowIndent: depth">&nbsp;</span>
+                <div data-bind="treeGridExpander: expanded, style: {visibility: arrowVisibility}"></div>
+                <input type="checkbox" tabindex="-1" data-bind="checkedState: checkedState, click: onCheckboxClick"/>
+                <span data-bind="text: name"></span>
+            </td>
+        </tr>
+    </script>
+
+    <div id="analysesListSection" data-bind="with: AnalyzerListViewModel">
+        <span id="processHeader" data-bind="text: processHeader"></span>
+        <div data-bind="visible: areAnalysesVisible" tabindex="0">
+
+            <div id="analyzerList" data-bind="
+                template: {
+                name: 'TreeGridView',
+                data: analyzerList,
+                afterRender: onAfterRender }">
+            </div>
+
+            <button id="analyzeButton" data-bind="
+                text: analyzeButtonLabel,
+                enable: canRunAnalysis,
+                click: window.DiagnosticAnalysisViewer.analyzeButtonClicked.bind(window.DiagnosticAnalysisViewer)"></button>
+        </div>
+    </div>
+
+    <hr />
+
+    <div id="analysisResultSection" data-bind="with: ResultsAreaViewModel">
+        <div id="errorMessage" data-bind="visible: isErrorVisible, text: errorString" tabindex="0" aria-live="polite"></div>
+        <div id="resultsArea" data-bind="visible: isResultsVisible" tabindex="-1" aria-label="" aria-live="polite">
+            <span class="boldtext" id="resultLabel" data-bind="text: resultHeader" tabindex="0" role="heading"></span>
+            <div id="resultList"
+                data-bind="template: {
+                    name: 'DataGridView',
+                    data: resultListViewModel.dataGrid}">
+            </div>
+            <div id="resultDetails" data-bind="visible: isDetailsVisible" tabindex="-1" style="margin-top: 1em;">
+                <span class="boldtext" id="summaryLabel" data-bind="text: summaryHeader" tabindex="0" role="heading"></span>
+                <div class="textbox" tabindex="-1">
+                    <div class="copytext" id="summaryText" data-bind="text: summary, event: { keydown: window.DiagnosticAnalysisViewer.onKeydownTextBox.bind(window.DiagnosticAnalysisViewer), contextmenu: window.DiagnosticAnalysisViewer.onContextMenuTextBox.bind(window.DiagnosticAnalysisViewer) }" tabindex="0"></div>
+                    <div class="floatinglink" data-bind="visible: showStackLink" tabindex="-1"><a href="#" data-bind="text: stackLinkText, click: stackLinkClicked" role="button" tabIndex="0"></a></div>
+                </div>
+                <span class="boldtext" id="fixHeader" data-bind="text: fixHeader" tabindex="0" role="heading"></span>
+                <div class="textbox" tabindex="-1">
+                    <div class="copytext" id="fixText" data-bind="text: fix, event: { keydown: window.DiagnosticAnalysisViewer.onKeydownTextBox.bind(window.DiagnosticAnalysisViewer), contextmenu: window.DiagnosticAnalysisViewer.onContextMenuTextBox.bind(window.DiagnosticAnalysisViewer) }" tabindex="0"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

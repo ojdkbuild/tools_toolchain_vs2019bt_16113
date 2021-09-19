@@ -1,0 +1,958 @@
+[$RootKey$]
+"CLR Version"="v4.0.30319"
+[$RootKey$\Packages\{53544C4D-E3F8-4AA0-8195-8A8D16019423}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="Visual Studio Source Control Integration Package"
+[$RootKey$\Packages\{53544C4D-E3F8-4AA0-8195-8A8D16019423}\SatelliteDll]
+"DllName"="msenvui.dll"
+"Path"="$ShellFolder$\Common7\IDE"
+[$RootKey$\Services\{53544C4D-104B-4D82-AD93-074816C1A0E5}]
+"Name"="SCC Tools Options Service"
+@="{53544C4D-E3F8-4AA0-8195-8A8D16019423}"
+[$RootKey$\Services\{53544C4D-1639-11D3-A60D-005004775AB1}]
+"Name"="TrackProjectDocuments Service"
+@="{53544C4D-E3F8-4AA0-8195-8A8D16019423}"
+[$RootKey$\Services\{53544C4D-1927-4320-B9DA-13D2CB3EA93B}]
+"Name"="SVsSccManager Service"
+@="{53544C4D-E3F8-4AA0-8195-8A8D16019423}"
+[$RootKey$\Services\{53544C4D-1984-11D3-A606-005004775AB1}]
+"Name"="QueryEditQuerySave Service"
+@="{53544C4D-E3F8-4AA0-8195-8A8D16019423}"
+[$RootKey$\Services\{53544C4D-A32A-4EAf-A920-38799C8F27B8}]
+"Name"="SourceControl Automation Object Factory"
+@="{53544C4D-E3F8-4AA0-8195-8A8D16019423}"
+[$RootKey$\Services\{53544C4D-C1F3-4fa8-BEA7-EA1A8FECFDD9}]
+"Name"="Visual Studio Register Source Control Integration Provider Service"
+@="{53544C4D-E3F8-4AA0-8195-8A8D16019423}"
+[$RootKey$\ToolsOptionsPages\Source Control]
+"Package"="{53544C4D-E3F8-4AA0-8195-8A8D16019423}"
+"Sort"=dword:00000001
+@="#5005"
+[$RootKey$\ToolsOptionsPages\Source Control\General]
+"Package"="{53544C4D-E3F8-4AA0-8195-8A8D16019423}"
+"Page"="{53544C4D-1D2D-44bd-8566-4FC149E23AAF}"
+"Keywords"="#5016"
+@="#5006"
+[$RootKey$\HandleInComingCall\{0000000E-0000-0000-C000-000000000046}]
+@="IBindCtx"
+[$RootKey$\HandleInComingCall\{618736e0-3c3d-11cf-810c-00aa00389b71}]
+@="IAccessible"
+[$RootKey$\HandleInComingCall\{6e26e776-04f0-495d-80e4-3330352e3169}]
+@="IAccPropServices"
+[$RootKey$\HandleInComingCall\{76C0DBBB-15E0-4E7B-B61B-20EEEA2001E0}]
+@="IAccPropServer"
+[$RootKey$\HandleInComingCall\{7852b78d-1cfd-41c1-a615-9c0c85960b5f}]
+@="IAccIdentity"
+[$RootKey$\HandleInComingCall\{00020404-0000-0000-C000-000000000046}]
+@="IEnumVARIANT"
+[$RootKey$\HandleInComingCall\{B196B284-BAB4-101A-B69C-00AA00341D07}]
+@="IConnectionPointContainer"
+[$RootKey$\HandleInComingCall\{B196B286-BAB4-101A-B69C-00AA00341D07}]
+@="IConnectionPoint"
+[$RootKey$\HandleInComingCall\{6B43326C-AB7C-4263-A7EF-354B9DCBF3D8}]
+@="IVsSettingsStore"
+[$RootKey$\HandleInComingCall\{6D5140C1-7436-11CE-8034-00AA006009FA}]
+@="IServiceProvider"
+[$RootKey$\HandleInComingCall\{0000010E-0000-0000-C000-000000000046}]
+@="IDataObject"
+[$RootKey$\HandleInComingCall\{00000135-0000-0000-C000-000000000046}]
+@="IInterfaceFromWindowProp"
+[$RootKey$\HandleInComingCall\{3050F1FF-98B5-11CF-BB82-00AA00BDCE0B}]
+@="IHTMLElement"
+[$RootKey$\HandleInComingCall\{3050F21F-98B5-11CF-BB82-00AA00BDCE0B}]
+@="IHTMLElementCollection"
+[$RootKey$\HandleInComingCall\{332c4425-26cb-11d0-b483-00c04fd90119}]
+@="IHTMLDocument2"
+[$RootKey$\HandleInComingCall\{00000116-0000-0000-C000-000000000046}]
+@="IOleInPlaceFrame"
+[$RootKey$\HandleInComingCall\{F0D7A6F0-C722-4AB6-A5D9-C7FF13027410}]
+@="IVsResourceManager"
+[$RootKey$\HandleInComingCall\{94D59A1D-A3A8-46ab-B1DE-B7F034018137}]
+@="IVsSettingsManager"
+[$RootKey$\HandleInComingCall\{16FA7461-9E7C-4f28-B28F-AABBF73C0193}]
+@="IVsWritableSettingsStore"
+[$RootKey$\HandleInComingCall\{49429DF4-080D-4218-B4CF-9B7AB81116E9}]
+@="IVsGlobalSearch"
+[$RootKey$\HandleInComingCall\{8ED03960-F01B-4A63-A492-7E55AE118D3D}]
+@="IVsGlobalSearchUI"
+[$RootKey$\HandleInComingCall\{B71B3DF9-7A4A-4D70-8293-3874DB098FDD}]
+@="IVsSearchQueryParser"
+[$RootKey$\HandleInComingCall\{6223B428-B465-4B2B-864A-D0FFBC4741FD}]
+@="IVsSearchQuery"
+[$RootKey$\HandleInComingCall\{576DEAF2-B527-4345-9A4B-BDAB6426FE03}]
+@="IVsWindowSearchHost"
+[$RootKey$\HandleInComingCall\{B61FC35B-EEBF-4dec-BFF1-28A2DD43C38F}]
+@="IVsUIShell"
+[$RootKey$\HandleInComingCall\{11138F8A-38C0-4436-B5A6-2F5EF2C3E242}]
+@="IVsWindowFrame"
+[$RootKey$\HandleInComingCall\{DF0B3D60-548F-101B-8E65-08002B2BD119}]
+@="ISupportErrorInfo"
+[$RootKey$\HandleInComingCall\{AE31D40E-CD7A-45cb-8DEF-5EA0E44C688A}]
+@="IVsToolsOptions"
+[$RootKey$\HandleInComingCall\{7FD343B5-3EEF-4E21-BADB-593519F496B9}]
+@="IVsToolsOptionsPrivate"
+[$RootKey$\HandleInComingCallRejectInProc\{1EE6C79A-B763-42E6-AC95-FD0CC00DE315}]
+@="IVsFontAndColorStorage2"
+[$RootKey$\HandleInComingCallRejectInProc\{40BC7B1A-E625-4DA1-86B4-7660F3CCBB16}]
+@="IVsFontAndColorStorage"
+[$RootKey$\HandleInComingCallDynamicInProc\{1186FE8F-8ABA-48D6-8CE3-32CA42F53728}]
+@="IVbcHostObject3"
+[$RootKey$\HandleInComingCallDynamicInProc\{2AE3233C-8AB3-48A0-9ED9-6E3545B3C566}]
+@="IVbcHostObject4"
+[$RootKey$\HandleInComingCallDynamicInProc\{7D7AC3BE-253A-40E8-A3FF-357D0DA7C47A}]
+@="IVbcHostObject"
+[$RootKey$\HandleInComingCallDynamicInProc\{8520CC4D-64DC-4855-BE3F-4C28CCE048EE}]
+@="ICscHostObject"
+[$RootKey$\HandleInComingCallDynamicInProc\{D6D4E228-259A-4076-B5D0-0627338BCC10}]
+@="ICscHostObject2"
+[$RootKey$\HandleInComingCallDynamicInProc\{F59AFC84-D102-48B1-A090-1B90C79D3E09}]
+@="IVbcHostObject2"
+[$RootKey$\HandleInComingCallDynamicInProc\{F9353662-F1ED-4A23-A323-5F5047E85F5D}]
+@="ICscHostObject3"
+[$RootKey$\DXHardwareDenyList]
+"0"=hex: 14,14,00,00,    8c,00,00,00,    06,00,00,00, 02,00,00,00,    00,00,00,00, 00,00,00,00,    00,00, 00,00, 00,00, 00,00,    00,00, 00,00, 00,00, 00,00
+"1"=hex: 02,10,00,00,    0f,95,00,00,    00,00,00,00, 00,00,00,00,    00,00,00,00, 00,00,00,00,    00,00, 00,00, 00,00, 00,00,    00,00, 00,00, 00,00, 00,00
+[$RootKey$\AutomationProperties\TextEditor]
+"Package"="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+"Description"="#15072"
+@="#13022"
+[$RootKey$\AutomationProperties\TextEditor\AllLanguages]
+"Package"="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+"Name"="TextEditor.AllLanguages"
+"ProfileSave"=dword:00000001
+"Description"="#15120"
+@="#14059"
+"VsSettingsMigration"=dword:00000001
+[$RootKey$\AutomationProperties\TextEditor\Fonts]
+"Package"="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+"Name"="Fonts"
+"ProfileSave"=dword:00000000
+"Description"="#14889"
+@="#14604"
+[$RootKey$\AutomationProperties\TextEditor\PlainText]
+"Package"="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+"Name"="Plain Text"
+"ProfileSave"=dword:00000001
+"Description"="#14890"
+@="#13679"
+"VsSettingsMigration"=dword:00000001
+[$RootKey$\CLSID\{F5E7E718-1401-11d1-883B-0000F87579D2}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+[$RootKey$\CLSID\{F5E7E71A-1401-11d1-883B-0000F87579D2}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+[$RootKey$\CLSID\{F5E7E71D-1401-11d1-883B-0000F87579D2}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+[$RootKey$\CLSID\{261A5572-C649-11d0-A8DF-00A0C921A4D2}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsMethodTipWindow class"
+[$RootKey$\CLSID\{5A46C6DE-1FE4-43b8-8E1E-598AE65F184A}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsSmartTagTipWindow class"
+[$RootKey$\CLSID\{05DD7650-130A-11d3-AFCB-00105A9991EF}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+"ThreadingModel"="Apartment"
+@="VsTextTipWindow class"
+[$RootKey$\CLSID\{F5E7E71F-1401-11d1-883B-0000F87579D2}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+[$RootKey$\CLSID\{B2715971-D02C-11d2-AFB4-00105A9991EF}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsDefaultButtonBarImages Class"
+[$RootKey$\CLSID\{5130C7AB-85BB-11d3-B363-00C04F611E41}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsLocalUserData Class"
+[$RootKey$\CLSID\{3e77fa94-526f-4233-bf81-b2b0329a62b9}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsTextBufferCoordinator Class"
+[$RootKey$\Packages\{F5E7E720-1401-11d1-883B-0000F87579D2}\Automation]
+"TextEditor"=""
+[$RootKey$\Packages\{F5E7E720-1401-11d1-883B-0000F87579D2}\SatelliteDll]
+"DllName"="msenvui.dll"
+"Path"="$ShellFolder$\Common7\IDE"
+[$RootKey$\Packages\{F5E7E720-1401-11d1-883B-0000F87579D2}\Toolbox]
+"Formats"="1,13,16,HTML Format,MSDEVColumnSelect,MSDEVLineSelect"
+[$RootKey$\Packages\{F5E7E720-1401-11d1-883B-0000F87579D2}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="Text Management Package"
+[$RootKey$\Projects\{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{F5E7E720-1401-11d1-883B-0000F87579D2}\/1]
+"Package"="{F5E7E720-1401-11d1-883B-0000F87579D2}"
+"SortPriority"=dword:00000014
+"TemplatesDir"="$ShellFolder$\Common7\IDE\NewScriptItems"
+@="#14435"
+[$RootKey$\Services\{F5E7E71D-1401-11D1-883B-0000F87579D2}]
+"Name"="Text Management Service"
+@="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+[$RootKey$\ToolsOptionsPages\Text Editor]
+"Package"="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+"Sort"=dword:00000002
+@="#13022"
+[$RootKey$\ToolsOptionsPages\Text Editor\File Extension]
+"Keywords"="#15208"
+"Page"="{AC11E8EB-15F8-432F-B13F-4AB8F56DA235}"
+"Package"="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+"Sort"=dword:00000002
+@="#14645"
+[$RootKey$\UserSettings\Environment_Group\Environment_Expansions]
+"Package"="{F5E7E720-1401-11d1-883B-0000F87579D2}"
+"Category"="{0B9A10B2-C0D0-4a6a-8353-115E9CACF34A}"
+"ResourcePackage"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Description"="#14886"
+"VSSettingsMigration"=dword:00000002
+@="#14704"
+[$RootKey$\Packages\{4A791146-19E4-11D3-B86B-00C04F79F802}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="Visual Studio Help Package"
+[$RootKey$\Packages\{4A791146-19E4-11D3-B86B-00C04F79F802}\Automation]
+"Help"=""
+"Help2"=""
+[$RootKey$\Packages\{4A791146-19E4-11D3-B86B-00C04F79F802}\SatelliteDll]
+"DllName"="msenvui.dll"
+"Path"="$ShellFolder$\Common7\IDE\"
+[$RootKey$\Services\{31411192-A502-11D2-BBCA-00C04F8EC294}]
+"Name"="SHxSession Service"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\Services\{31411218-A502-11D2-BBCA-00C04F8EC294}]
+"Name"="SHxRegisterSession"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\Services\{4A791148-19E4-11D3-B86B-00C04F79F802}]
+"Name"="SVsHelp Service"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\Services\{4FEDAA4F-7C4E-4D4E-AC6B-86F03BB7D200}]
+"Name"="SVsHelpFirstTimeDialog Service"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\Services\{62E4D05A-8BB5-4926-AE03-70AC65E38D7A}]
+"Name"="SVsHelpBackgroundService service"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\Services\{854D7AC0-BC3D-11D0-B421-00A0C90F9DC4}]
+"Name"="IVsHelpSystem Service"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\Services\{97128F7E-2F73-47B1-B244-82653ADD59B5}]
+"Name"="SVsContextWindowHelpService Service"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\Services\{CA8A686A-0882-4E79-BCA3-AF3F3AB3EB8A}]
+"Name"="Integrated Help Service"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\AutomationProperties\Environment\WebBrowser]
+"Name"="Environment.WebBrowser"
+"Package"="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+"ProfileSave"=dword:00000001
+"Description"="#14895"
+"VsSettingsMigration"=dword:00000001
+@="#1002"
+[$RootKey$\KeyBindingTables\{e8b06f41-6d01-11d2-aa7d-00c04f990343}]
+"AllowNavKeyBinding"=dword:00000001
+"Package"="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+@="#1001"
+[$RootKey$\Packages\{e8b06f41-6d01-11d2-aa7d-00c04f990343}\SatelliteDll]
+"DllName"="msenvui.dll"
+"Path"="$ShellFolder$\Common7\IDE"
+[$RootKey$\Packages\{e8b06f41-6d01-11d2-aa7d-00c04f990343}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="Visual Studio Web Browser Package"
+[$RootKey$\Services\{5e819c22-a727-11d2-aa82-00c04f990343}]
+"Name"="SVsShellContext Service"
+@="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+[$RootKey$\Services\{79eac9ee-baf9-11ce-8c82-00aa004ba90b}]
+"Name"="SInternetSecurityManager"
+@="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+[$RootKey$\Services\{9EC9BA55-B328-11D2-9A98-00C04F79EFC3}]
+"Name"="SVsWebPreview Service"
+@="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+[$RootKey$\Services\{e8b06f3d-6d01-11d2-aa7d-00c04f990343}]
+"Name"="SVsWebURLMRU Service"
+@="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+[$RootKey$\Services\{e8b06f51-6d01-11d2-aa7d-00c04f990343}]
+"Name"="SVsWebBrowsingService"
+@="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+[$RootKey$\ToolsOptionsDefaults\WebBrowser]
+"ExtEditor"="%SYSTEMROOT%\system32\notepad.exe"
+"Flags"=dword:00000013
+"HomePage"="https://go.microsoft.com/fwlink/?linkid=32722"
+"SearchPage"="https://go.microsoft.com/fwlink/?linkid=32722"
+[$RootKey$\ToolsOptionsPages\Environment\Web Browser]
+"Keywords"="#15202"
+"Package"="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+"Page"="{e8b06f4e-6d01-11d2-aa7d-00c04f990343}"
+@="#1002"
+[$RootKey$\ToolWindows\{66dba47c-61df-11d2-aa79-00c04f990343}]
+"Name"="Dynamic Help"
+@="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+[$RootKey$\ToolWindows\{e8b06f52-6d01-11d2-aa7d-00c04f990343}]
+"Name"="Web Browser Window"
+"Style"="MDI"
+"Float"="100, 100, 400, 400"
+"DontForceCreate"=dword:00000001
+@="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+[$RootKey$\ToolWindows\{e8b06f53-6d01-11d2-aa7d-00c04f990343}]
+"Name"="Web Browser Preview Window"
+"Style"="MDI"
+"Float"="100, 100, 400, 400"
+@="{e8b06f41-6d01-11d2-aa7d-00c04f990343}"
+[$RootKey$\WMAppCommand]
+"1"="{e8b06f44-6d01-11d2-aa7d-00c04f990343}:201"
+"2"="{e8b06f44-6d01-11d2-aa7d-00c04f990343}:202"
+"3"="{e8b06f44-6d01-11d2-aa7d-00c04f990343}:204"
+"4"="{e8b06f44-6d01-11d2-aa7d-00c04f990343}:203"
+"5"="{e8b06f44-6d01-11d2-aa7d-00c04f990343}:206"
+"6"="{4A79114a-19E4-11d3-B86B-00C04F79F802}:282"
+"7"="{e8b06f44-6d01-11d2-aa7d-00c04f990343}:205"
+[$RootKey$\CLSID\{3c1f59c6-69cf-11d2-aa7c-00c04f990343}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsUserContext Module"
+[$RootKey$\AutoLoadPackages\{10534154-102D-46E2-ABA8-A6BFA25BA0BE}]
+@="UICONTEXT_SolutionExistsAndFullyLoaded"
+[$RootKey$\AutoLoadPackages\{93694FA0-0397-11D1-9F4E-00A0C911004F}]
+@="UICONTEXT_SolutionHasMultipleProjects"
+[$RootKey$\AutoLoadPackages\{ADFC4E61-0397-11D1-9F4E-00A0C911004F}]
+@="UICONTEXT_Debugging"
+[$RootKey$\AutoLoadPackages\{ADFC4E64-0397-11D1-9F4E-00A0C911004F}]
+@="UICONTEXT_NoSolution"
+[$RootKey$\AutoLoadPackages\{ADFC4E65-0397-11D1-9F4E-00A0C911004F}]
+@="UICONTEXT_EmptySolution"
+[$RootKey$\AutoLoadPackages\{ADFC4E66-0397-11D1-9F4E-00A0C911004F}]
+@="UICONTEXT_SolutionHasSingleProject"
+[$RootKey$\AutoLoadPackages\{EF4F870B-7B85-4F29-9D15-CE1ABFBE733B}]
+@="UICONTEXT_SolutionOrProjectUpgrading"
+[$RootKey$\AutoLoadPackages\{F1536EF8-92EC-443C-9ED7-FDADF150DA82}]
+@="UICONTEXT_SolutionExists"
+[$RootKey$\AutoLoadPackages\{D2567162-F94F-4091-8798-A096E61B8B50}]
+@="UICONTEXT_SolutionOpening"
+[$RootKey$\AutomationProperties]
+@="#14558"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Description"="#15069"
+[$RootKey$\AutomationProperties\Environment]
+@="#14559"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Description"="#15070"
+[$RootKey$\AutomationProperties\Environment\AddinMacrosSecurity]
+"Name"="Environment.AddinMacrosSecurity"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"ProfileSave"=dword:00000000
+@="#14639"
+[$RootKey$\AutomationProperties\Environment\Documents]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="Environment.Documents"
+"ProfileSave"=dword:00000001
+"Description"="#14892"
+"VsSettingsMigration"=dword:00000001
+@="#14562"
+[$RootKey$\AutomationProperties\Environment\FindAndReplace]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="Environment.FindAndReplace"
+"ProfileSave"=dword:00000001
+"Description"="#15090"
+"VsSettingsMigration"=dword:00000001
+@="#14326"
+[$RootKey$\AutomationProperties\Environment\Import and Export Settings]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="Environment.Import and Export Settings"
+"ProfileSave"=dword:00000001
+"Description"="#14894"
+"SecurityLevel"=dword:00000002
+"SensitivityLevel"=dword:00000001
+"VsSettingsMigration"=dword:00000000
+@="#14569"
+[$RootKey$\AutomationProperties\Environment\International]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="Environment.International"
+[$RootKey$\AutomationProperties\Environment\Keyboard]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="Environment.Keyboard"
+@="#14561"
+[$RootKey$\AutomationProperties\Environment\ProjectsAndSolution]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="Environment.ProjectsAndSolution"
+"ProfileSave"=dword:00000001
+"Description"="#14893"
+@="#14563"
+"VsSettingsMigration"=dword:00000001
+[$RootKey$\AutomationProperties\Environment\Startup]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="Environment.Startup"
+"ProfileSave"=dword:00000001
+"Description"="#14989"
+"VsSettingsMigration"=dword:00000001
+@="#13216"
+[$RootKey$\AutomationProperties\FontsAndColors\Dialogs and Tool Windows]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="FontsAndColors.Dialogs and Tool Windows"
+[$RootKey$\AutomationProperties\FontsAndColors\Printer]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="FontsAndColors.Printer"
+[$RootKey$\AutomationProperties\FontsAndColors\TextEditor]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Name"="FontsAndColors.Text Editor"
+[$RootKey$\AutomationProperties\Projects]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Description"="#15089"
+@="#14606"
+[$RootKey$\CLSID\{6114C8A2-0CE9-11d1-8BD9-00A0C90F26F7}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VS COM References Dialog"
+[$RootKey$\CLSID\{9F842E53-E27B-426f-AE69-8F075770C6F3}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsFinder Class"
+[$RootKey$\CLSID\{31A81214-5A9F-4532-ACD0-3204A9AB5D08}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsTextSpanSet Class"
+[$RootKey$\CLSID\{66B88230-2363-4992-B740-B0450A6F51CA}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VsTextImage Class"
+[$RootKey$\CLSID\{FADAC4D0-CCA2-4627-8384-778930E1FA8E}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+"ThreadingModel"="Apartment"
+@="CVsSelCtx Class"
+[$RootKey$\CLSID\{cbd71f2c-6bc5-4932-b851-b93eb3151386}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="IComWrapper"
+[$RootKey$\CLSID\{394ab223-9fc6-4893-8943-9f6c70d51891}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="IFreeThreadedComWrapper"
+[$RootKey$\ComponentPickerPages\Browse]
+"Page"="{2483F435-673D-4fa3-8ADD-B51442F65349}"
+"Sort"=dword:00002328
+"AddToMru"=dword:00000001
+"ComponentType"="File"
+[$RootKey$\ComponentPickerPages\Classic COM]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{9A341D96-5A64-11D3-BFF9-00C04F990235}"
+"Sort"=dword:00000014
+"AddToMru"=dword:00000001
+"ComponentType"="COM Type Library"
+@="#13925"
+[$RootKey$\ComponentPickerPages\COM+]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{9A341D95-5A64-11D3-BFF9-00C04F990235}"
+"Sort"=dword:0000000a
+"AddToMru"=dword:00000001
+"ComponentType"=".NET Assembly"
+@="#13924"
+[$RootKey$\ComponentPickerPages\Recent]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{19B97F03-9594-4c1c-BE28-25FF030113B3}"
+"Sort"=dword:00002710
+"AddToMru"=dword:00000001
+@="#14686"
+[$RootKey$\Editors\{CFF630F8-2DB3-44BA-9FC9-6489665DE5B8}]
+"CommonPhysicalViewAttributes"=dword:00000000
+"DisplayName"="#13103"
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"EditorTrustLevel"=dword:00000001
+@="Object Browser"
+[$RootKey$\Editors\{CFF630F8-2DB3-44BA-9FC9-6489665DE5B8}\Extensions]
+"olb"=dword:00000017
+"tlb"=dword:00000017
+"dll"=dword:00000005
+"exe"=dword:00000005
+"ocx"=dword:00000005
+[$RootKey$\FindAndReplace\FindScopeString]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"FindScopeStringID"="13813"
+[$RootKey$\FontAndColors\Dialogs and Tool Windows]
+"Package"="{FD9DC8E3-2FFC-446D-8C50-99CA4A3D2D1C}"
+"Category"="{1F987C00-E7C4-4869-8A17-23FD602268B0}"
+"CategoryVersion"=dword:00000001
+[$RootKey$\KeyBindingTables\{5efc7975-14bc-11cf-9b2b-00AA00573819}]
+"AllowNavKeyBinding"=dword:00000000
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+@="#13021"
+[$RootKey$\KeyBindingTables\{8B382828-6202-11D1-8870-0000F87579D2}]
+"AllowNavKeyBinding"=dword:00000001
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+@="#13022"
+[$RootKey$\Languages\File Extensions]
+@=""
+[$RootKey$\Languages\Language Services]
+@=""
+[$RootKey$\NewProjectTemplates\TemplateDirs\{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}\/1]
+"SortPriority"=dword:00000385
+"TemplatesDir"="$ShellFolder$\Common7\IDE\SolutionTemplates"
+"Folder"="{DCF2A94A-45B0-11D1-ADBF-00C04FB6BE4C}"
+"NewProjectDialogOnly"=dword:00000001
+@="#14055"
+[$RootKey$\Object Libraries\{18E32C04-58BA-4a1e-80DE-1C291634166A}]
+"Package"="{00000000-0000-0000-0000-000000000000}"
+"Page"="COM"
+[$RootKey$\Object Libraries\{18E32C04-58BA-4a1e-80DE-1C291634166A}\Filters\1]
+"FileFilter"="*.olb;*.tlb;*.dll;*.winmd"
+"Priority"=dword:000000c8
+@="#14303"
+[$RootKey$\Object Libraries\{18E32C04-58BA-4a1e-80DE-1C291634166A}\Filters\2]
+"FileFilter"="*.dll;*.exe;*.winmd"
+"Priority"=dword:000000c8
+@="#14304"
+[$RootKey$\Object Libraries\{18E32C04-58BA-4a1e-80DE-1C291634166A}\Filters\3]
+"FileFilter"="*.ocx"
+"Priority"=dword:000000c8
+@="#14305"
+[$RootKey$\OutputWindow\{1BD8A850-02D1-11D1-BEE7-00A0C913D1F8}]
+"InitiallyInvisible"=dword:00000001
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"ContentType"="BuildOutput"
+@="#14102"
+[$RootKey$\OutputWindow\{2032B126-7C8D-48AD-8026-0E0348004FC0}]
+"InitiallyInvisible"=dword:00000001
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"ContentType"="BuildOrderOutput"
+@="#14321"
+[$RootKey$\Packages\{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="Visual Studio Environment Package"
+[$RootKey$\Packages\{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}\SatelliteDll]
+"DllName"="msenvui.dll"
+"Path"="$ShellFolder$\Common7\IDE"
+[$RootKey$\Packages\{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}\Toolbox]
+"Formats"="InPlaceMenuEditorMenu"
+[$RootKey$\Projects\{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"DefaultProjectExtension"="dsp"
+@="Project Converter"
+"PossibleProjectExtensions"="dsp;vcp"
+[$RootKey$\Projects\{2150E333-8FDC-42A3-9474-1A3956D46DE8}]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Language(VSTemplate)"="General"
+"DisableOnlineTemplates"=dword:00000001
+"SupportsCodespaces"=dword:00000001
+@="Solution Folder Project"
+[$RootKey$\Projects\{2150E333-8FDC-42A3-9474-1A3956D46DE8}\AddItemTemplates\TemplateDirs\{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}\/1]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"SortPriority"=dword:00000001
+"TemplatesDir"="$ShellFolder$\Common7\IDE\NewFileItems"
+@="#14434"
+[$RootKey$\Projects\{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Language(VSTemplate)"="General"
+"DisableOnlineTemplates"=dword:00000001
+@="Miscellaneous Files Project"
+[$RootKey$\Projects\{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}\/1]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"SortPriority"=dword:00000001
+"TemplatesDir"="$ShellFolder$\Common7\IDE\NewFileItems"
+@="#14434"
+[$RootKey$\Projects\{D1DCDB85-C5E8-11D2-BFCA-00C04F990235}]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Language(VSTemplate)"="General"
+"SupportsCodespaces"=dword:00000001
+@="Solution Items Project"
+[$RootKey$\Projects\{D1DCDB85-C5E8-11D2-BFCA-00C04F990235}\AddItemTemplates\TemplateDirs\{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}\/1]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"SortPriority"=dword:00000001
+"TemplatesDir"="$ShellFolder$\Common7\IDE\NewFileItems"
+@="#14434"
+[$RootKey$\SolutionPersistence\AggregateGuids]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\DevStudioProjDeps]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\ExtensibilityAddIns]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\ExtensibilityGlobals]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\FolderGlobals]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\FolderStartupServices]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\NestedProjects]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\ProjectConfiguration]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\ProjectConfigurationPlatforms]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\ProjectDependencies]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\SolutionConfiguration]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\SolutionConfigurationPlatforms]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\SolutionItems]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SolutionPersistence\SolutionProperties]
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\SupportedRuntimesForFxFamily\.NETFramework\2.0]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETFramework\4.0]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETFramework\4.5]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETCore\4.5]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETCore\4.5.1]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETCore\4.5.3]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETCore\5.0]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETPortable\4.5]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETPortable\4.6]
+@=""
+[$RootKey$\SupportedRuntimesForFxFamily\.NETPortable\5.0]
+@=""
+[$RootKey$\Text Editor\External Markers]
+@=""
+[$RootKey$\ToolboxPages]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"HelpKeyword"="chooseitems"
+@="#13538"
+[$RootKey$\ToolboxPages\ActiveXControls]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{BBE42851-FEFC-11D0-8C80-00C04FC2AA89}"
+"DefaultTbx"=dword:00000014
+"HelpKeyword"="comcomponents"
+@="#13544"
+[$RootKey$\ToolsOptionsPages\Environment]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Sort"=dword:00000000
+@="#13569"
+[$RootKey$\ToolsOptionsPages\Environment\AutoRecover]
+"Keywords"="#15193"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{C1E09982-0050-4912-BCDC-866D8E1AEE27}"
+@="#13298"
+[$RootKey$\ToolsOptionsPages\Environment\Documents]
+"Keywords"="#15194"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{AAE9ECF3-0CF2-11D1-8C8D-0000F87570EE}"
+@="#13567"
+[$RootKey$\ToolsOptionsPages\Environment\FindReplace]
+"Keywords"="#14984"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{5C264115-2DC3-4D07-9FE3-19CA959D5B77}"
+@="#13830"
+[$RootKey$\ToolsOptionsPages\Environment\Fonts And Colors]
+"Keywords"="#15196"
+"Page"="{57F6B7D2-1436-11D1-883C-0000F87579D2}"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+@="#14104"
+[$RootKey$\ToolsOptionsPages\Environment\International Settings]
+"Keywords"="#15198"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{C7FA13DF-0A9B-11D1-8C8B-0000F87570EE}"
+@="#13566"
+[$RootKey$\ToolsOptionsPages\Environment\Keyboard]
+"Keywords"="#15199"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{BAFF6A1A-0CF2-11D1-8C8D-0000F87570EE}"
+@="#13568"
+[$RootKey$\ToolsOptionsPages\Environment\Profiles]
+"Keywords"="#15197"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{E339E091-4C62-49E5-903D-42DE8FC16C1C}"
+@="#14569"
+[$RootKey$\ToolsOptionsPages\Environment\Startup]
+"Keywords"="#15200"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{63DF2CE3-94F5-47be-AAD2-50F8EFB05EAD}"
+@="#13216"
+[$RootKey$\ToolsOptionsPages\Projects]
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Sort"=dword:00000000
+@="#14140"
+[$RootKey$\ToolsOptionsPages\Projects\General]
+"Keywords"="#14168"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Page"="{6B115DD7-9CBC-461A-9562-5227BBD2D115}"
+@="#14281"
+[$RootKey$\ToolWindows\{0F887920-C2B6-11D2-9375-0080C747D9A0}]
+"Name"="Find 1"
+"Style"="Float"
+"Window"="{0F887920-C2B6-11D2-9375-0080C747D9A0}"
+"DontForceCreate"=dword:00000001
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{0F887921-C2B6-11D2-9375-0080C747D9A0}]
+"Name"="Find 2"
+"Style"="Float"
+"Window"="{0F887920-C2B6-11D2-9375-0080C747D9A0}"
+"DontForceCreate"=dword:00000001
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{269A02DC-6AF8-11D3-BDC4-00C04F688E50}]
+"Name"="Object Browser"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{28836128-FC2C-11D2-A433-00C04F72D18A}]
+"Name"="Command window"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{2D7728C2-DE0A-45B5-99AA-89B609DFDE73}]
+"Name"="Resource view"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{34E76E81-EE4A-11D0-AE2E-00A0C90FFFC3}]
+"Name"="Output window"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Window"="DocumentWell"
+"Orientation"="Bottom"
+"Style"="Tabbed"
+[$RootKey$\ToolWindows\{53024D34-0EF5-11D3-87E0-00C04F7971A5}]
+"Name"="Find symbol window"
+"Style"="Float"
+"Window"="{E830EC50-C2B5-11D2-9375-0080C747D9A0}"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{5415EA3A-D813-4948-B51E-562082CE0887}]
+"Float"="100,100,450,300"
+"Name"="Call Browser"
+"Orientation"="Left"
+"Style"="Tabbed"
+"Window"="{34E76E81-EE4A-11D0-AE2E-00A0C90FFFC3}"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{588470CC-84F8-4A57-9AC4-86BCA0625FF4}]
+"Name"="Code Definition Window"
+"Orientation"="Left"
+"Float"="100,100,450,300"
+"Style"="Tabbed"
+"Window"="{34E76E81-EE4A-11D0-AE2E-00A0C90FFFC3}"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{68487888-204A-11D3-87EB-00C04F7971A5}]
+"Name"="Find symbol results window"
+"Style"="Float"
+"Window"="{0F887920-C2B6-11D2-9375-0080C747D9A0}"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{6B8E94B5-0949-4D9C-A81F-C1B9B744185C}]
+"Name"="Property Manager"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{A0C5197D-0AC7-4B63-97CD-8872A789D233}]
+"Name"="Bookmarks"
+"Orientation"="Left"
+"Float"="100,100,450,300"
+"Style"="Tabbed"
+"Window"="{34E76E81-EE4A-11D0-AE2E-00A0C90FFFC3}"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{C9C0AE26-AA77-11D2-B3F0-0000F87570EE}]
+"Name"="Class view"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{CF2DDC32-8CAD-11D2-9302-005345000000}]
+"Name"="FindReplace"
+"Float"="100,100,379,301"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{E830EC50-C2B5-11D2-9375-0080C747D9A0}]
+"Name"="Find in Files"
+"Style"="Float"
+"Window"="{E830EC50-C2B5-11D2-9375-0080C747D9A0}"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{ECB7191A-597B-41F5-9843-03A4CF275DDE}]
+"Name"="Immediate window"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\ToolWindows\{F78BCC56-71F7-4E7D-8215-F690CAE4F452}]
+"Float"="100,100,450,300"
+"Name"="Call Browser (secondary)"
+"DontForceCreate"=dword:00000001
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+[$RootKey$\UIDataConverters\VsUI.BitmapSource\{e87baacc-e415-4003-9971-2072fe1163c6}]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+@="WPF to Win32"
+[$RootKey$\UIDataSourceProviders\{F77C2145-366C-44EE-ABCC-8766492CE1E5}]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+@="Shell Package Data Source Factory"
+[$RootKey$\UserSettings\Environment_Group]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Description"="#15071"
+@="#14869"
+[$RootKey$\UserSettings\Environment_Group\Environment_Aliases]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{AD334E74-368A-4c46-9AF8-F53ABF0775F2}"
+"SecurityLevel"=dword:00000002
+"Description"="#14877"
+"VsSettingsMigration"=dword:00000001
+@="#14589"
+[$RootKey$\UserSettings\Environment_Group\Environment_CallBrowser]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{50B05A5D-9174-48eb-851A-B1C616A0B43D}"
+"Description"="#14885"
+"VsSettingsMigration"=dword:00000001
+@="#14649"
+[$RootKey$\UserSettings\Environment_Group\Environment_ClassView]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{40AF29AB-4C5B-412A-9CE8-465C4FCFE41D}"
+"Description"="#14884"
+"VsSettingsMigration"=dword:00000001
+@="#14896"
+[$RootKey$\UserSettings\Environment_Group\Environment_CommandBars]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{B9D9C123-B500-4202-B887-57C829CBD08F}"
+"Description"="#14870"
+"ImportPass"=dword:00000000
+"SecurityLevel"=dword:00000001
+"VsSettingsMigration"=dword:00000002
+@="#14534"
+[$RootKey$\UserSettings\Environment_Group\Environment_DefaultEditors]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{68161AEE-BCA8-4214-B2E4-7875263E49C5}"
+"Description"="#15073"
+@="#14982"
+"VsSettingsMigration"=dword:00000001
+[$RootKey$\UserSettings\Environment_Group\Environment_ExternalTools]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{E8FAE9E8-FBA2-4474-B134-AB0FFCFB291D}"
+"Description"="#14874"
+"SecurityLevel"=dword:00000002
+"VsSettingsMigration"=dword:00000002
+@="#14585"
+[$RootKey$\UserSettings\Environment_Group\Environment_FindSymbol]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{C93260BC-0C07-484a-8188-6F4763BD7FD4}"
+"Description"="#14887"
+@="#14858"
+"VsSettingsMigration"=dword:00000001
+[$RootKey$\UserSettings\Environment_Group\Environment_FontsAndColors]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{1EDA5DD4-927A-43a7-810E-7FD247D0DA1D}"
+"Description"="#14875"
+"AlternateParent"="AutomationProperties\Environment"
+@="#14586"
+"VSSettingsMigration"=dword:00000001
+[$RootKey$\UserSettings\Environment_Group\Environment_General]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{435668FE-00FF-429B-A970-87426874A21B}"
+"Description"="#15303"
+"AlternateParent"="AutomationProperties\Environment"
+@="#15302"
+"VSSettingsMigration"=dword:00000001
+[$RootKey$\UserSettings\Environment_Group\Environment_KeyBindings]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{F09035F1-80D2-4312-8EC4-4D354A4BCB4C}"
+"Description"="#14871"
+"AlternateParent"="AutomationProperties\Environment"
+"SecurityLevel"=dword:00000001
+"VsSettingsMigration"=dword:00000001
+@="#14568"
+[$RootKey$\UserSettings\Environment_Group\Environment_NewProjectDialogPreferredLanguage]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{77E22C0C-9F4A-4bfb-AD3A-3F3F4711E9ED}"
+"Description"="#14882"
+"VsSettingsMigration"=dword:00000001
+@="#14701"
+[$RootKey$\UserSettings\Environment_Group\Environment_ObjectBrowser]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{D98D784D-88BF-4EBF-B039-C146EC14F472}"
+"Description"="#14883"
+"VsSettingsMigration"=dword:00000001
+@="#14897"
+[$RootKey$\UserSettings\Environment_Group\Environment_OutputWindow]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{07C6CD04-100B-4f3e-BA93-DD1363E8D8E3}"
+"Description"="#14880"
+"VsSettingsMigration"=dword:00000001
+@="#14898"
+[$RootKey$\UserSettings\Environment_Group\Environment_SimplifiedToolsOptions]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{13BEDEE6-9051-4809-B9E3-2EEC749EB15A}"
+"Description"="#14873"
+"VsSettingsMigration"=dword:00000000
+"SMW"=dword:00000001
+@="#14605"
+[$RootKey$\UserSettings\Environment_Group\Environment_Toolbox]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{481999F2-7479-4e03-83D5-BE808BA142DF}"
+"Description"="#14881"
+"VsSettingsMigration"=dword:00000001
+@="#13519"
+[$RootKey$\UserSettings\Environment_Group\Environment_UnifiedFind]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{DF00ADDF-C14C-4ffd-9325-634FD605850B}"
+"Description"="#14876"
+@="#14570"
+"VsSettingsMigration"=dword:00000001
+[$RootKey$\UserSettings\Environment_Group\Environment_WindowLayout]
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+"Category"="{eb4ba109-a9db-4445-bd09-e7604bcdce84}"
+"Description"="#14872"
+"ImportPass"=dword:00000000
+"SecurityLevel"=dword:00000001
+"VsSettingsMigration"=dword:00000000
+@="#14533"
+[$RootKey$\Settings\Microsoft.VisualStudio.IDE.OnEnvironmentStartup_Dev16]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000000
+[$RootKey$\Settings\Microsoft.VisualStudio.IDE.StartPage.IsDownloadRefreshEnabled]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000000
+[$RootKey$\Settings\Microsoft.VisualStudio.IDE.StartPage.RefreshInterval]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000000
+[$RootKey$\Settings\Microsoft.VisualStudio.IDE.StartPage.NewsFeed]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000000
+[$RootKey$\Settings\Colors.*]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000001
+[$RootKey$\Settings\Fonts.*]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000001
+[$RootKey$\Settings\UserKeybindings2]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000001
+[$RootKey$\Settings\KeybindingScheme]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000001
+[$RootKey$\Settings\Microsoft.VisualStudio.CommandAliases]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000001
+[$RootKey$\Settings\Microsoft.VisualStudio.DefaultCommandAliases]
+"IsRoamed"=dword:00000000
+"IsShared"=dword:00000000
+"IsStoredOnDisk"=dword:00000001
+[$RootKey$\AppCommandLine\restartmanager]
+@="Restarted by Windows Restart Manager"
+"Arguments"="0"
+"Package"="DA9FB551-C724-11d0-AE1F-00A0C90FFFC3"
+[$RootKey$\AppCommandLine\recoveryfile]
+@="Recovery file to use when restarted by Windows Restart Manager"
+"Arguments"="1"
+"Package"="DA9FB551-C724-11d0-AE1F-00A0C90FFFC3"
+[$RootKey$\CLSID\{C964830F-91A0-11D0-B14C-0000F8041356}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="OleUndoManager Class"
+[$RootKey$\Packages\{1D76B2E0-F11B-11d2-AFC3-00105A9991EF}\SatelliteDll]
+"DllName"="msenvui.dll"
+"Path"="$ShellFolder$\Common7\IDE"
+[$RootKey$\Packages\{1D76B2E0-F11B-11d2-AFC3-00105A9991EF}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="Undo Package"
+[$RootKey$\Services\{F65478CC-96F1-4BA9-9EF9-A575ACB96031}]
+"Name"="Undo Manager Service"
+@="{1D76B2E0-F11B-11d2-AFC3-00105A9991EF}"
+[$RootKey$\Packages\{21af45b0-ffa5-11d0-b63f-00a0c922e851}\SatelliteDll]
+"DllName"="msenvui.dll"
+"Path"="$ShellFolder$\Common7\IDE"
+[$RootKey$\Packages\{21af45b0-ffa5-11d0-b63f-00a0c922e851}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="Class Outline Package"
+[$RootKey$\ToolWindows\{25f7e850-ffa1-11d0-b63f-00a0c922e851}]
+@="{21af45b0-ffa5-11d0-b63f-00a0c922e851}"
+[$RootKey$\CLSID\{EE9E0A9A-BAF8-11D2-B2CF-00C04FB17608}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VisualStudio Build Dependencies Property Page"
+[$RootKey$\CLSID\{63954172-BC86-11d2-B2CF-00C04FB17608}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VisualStudio Solution Configurations Property Page"
+[$RootKey$\CLSID\{A49C22CE-454A-11d3-8A7D-00C04F682E21}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VisualStudio Startup Project Property Page"
+[$RootKey$\CLSID\{cab2b658-026a-11d3-8a62-00c04f682e21}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VisualStudio Signing Options Property Page"
+[$RootKey$\CLSID\{99913F1F-1EE3-11D1-8A6E-00C04f682E21}]
+"InprocServer32"="$ShellFolder$\Common7\IDE\msenv.dll"
+@="VisualStudio Solution VsCfgProviderEventsHelper"
+[$RootKey$\Profile]
+"AppidSupportsProfiles"=dword:00000001
+[$RootKey$\HelpProviders\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]
+"Name"="13407"
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+@="Help3 Provider"
+[$RootKey$\HelpProviders]
+@="{C99BDC23-FF29-46bf-9658-ADD634CCAED8}"
+[$RootKey$\Services\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]
+"Name"="Help3 Provider"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+[$RootKey$\Solution]
+"CurrentSolutionVersion"=dword:0000000c
+"MaxSupportedSolutionVersion"=dword:0000000E
+"MinimumDesignTimeCompatVersion"="10.0.40219.1"
+[$RootKey$]
+"MsEnvLocation"="$ShellFolder$\Common7\IDE\msenv.dll"

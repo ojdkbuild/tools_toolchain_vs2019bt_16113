@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<telemetrymanifest version="1.9" priority="low">
+  <!--This manifest is to allow Perfwatson to send AI events, but not collect or send info in a tcdb file.-->
+  <providersets>
+    <!-- Only what is needed for typing delay stats -->
+    <providerset name="Microsoft.VisualStudio.Responsiveness">
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.TypingContextProviderFactory,Microsoft.VisualStudio.PerfWatson" />
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.LowMemoryDumpCollectorFactory,Microsoft.VisualStudio.PerfWatson" />
+    </providerset>
+  </providersets>
+  <sessions>
+    <session name="Visual Studio">
+      <rootapplication>devenv;vswinexpress;vwdexpress;wdexpress</rootapplication>
+      <persistentlogging>true</persistentlogging>
+      <upload>false</upload>
+      <providers>
+        <providerset name="Microsoft.VisualStudio.Responsiveness" />
+      </providers>
+    </session>
+  </sessions>
+</telemetrymanifest>

@@ -1,0 +1,8 @@
+[$RootKey$\Packages\{083a5893-2ab9-4424-a811-13b06749f39a}]
+@="Microsoft.VCClassWizard.ClassWizardPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VCClassWizard.ClassWizardPackage"
+"Assembly"="ClwWizard,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"CodeBase"="$PackageFolder$\ClwWizard.dll"
+[$RootKey$\Menus]
+"{083a5893-2ab9-4424-a811-13b06749f39a}"=", ClwWizard.ctmenu, 1"

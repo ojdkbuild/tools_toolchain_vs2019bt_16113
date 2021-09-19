@@ -1,0 +1,10 @@
+
+[$RootKey$\Menus]
+"{44E07B02-29A5-11D3-B882-00C04F79F802}"=",1000,1"
+
+[$RootKey$\Packages\{44E07B02-29A5-11D3-B882-00C04F79F802}]
+@="Shell Commands Definition Package"
+
+[$RootKey$\Packages\{44E07B02-29A5-11D3-B882-00C04F79F802}\SatelliteDll]
+"DllName"="cmddefui.dll"
+"Path"="$ShellFolder$\Common7\IDE"

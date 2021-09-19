@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+$projectconfigurations$
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>$keyword$</Keyword>
+    <ProjectGuid>{$guid1$}</ProjectGuid>
+    <RootNamespace>$rootnamespace$</RootNamespace>
+    <WindowsTargetPlatformVersion>$windowstargetplatformversion$</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+$labeledpropertygroups$
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared" >
+  </ImportGroup>
+$propertysheets$
+  <PropertyGroup Label="UserMacros" />
+$propertygroups$
+$itemdefinitiongroups$
+  <ItemGroup></ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

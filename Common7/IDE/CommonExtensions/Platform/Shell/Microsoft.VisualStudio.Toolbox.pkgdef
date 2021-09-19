@@ -1,0 +1,20 @@
+[$RootKey$\ToolWindows\{B1E99781-AB81-11D0-B683-00AA00A3EE26}]
+"Name"="Toolbox"
+@="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"Window"="DocumentWell"
+"Orientation"="Left"
+"Style"="Tabbed"
+[$RootKey$\Packages\{6F453E1A-31DF-4cd6-AF8B-72AE242272B9}]
+@="Microsoft.VisualStudio.Toolbox.ToolboxPackage"
+"InprocServer32"="%windir%\system32\mscoree.dll"
+"Class"="Microsoft.VisualStudio.Toolbox.ToolboxPackage"
+"Assembly"="Microsoft.VisualStudio.Toolbox,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+[$RootKey$\Services\{E5653D1B-CEBA-45df-9068-4C8254D61CA6}]
+@="{6F453E1A-31DF-4cd6-AF8B-72AE242272B9}"
+"Name"="SVsChooseToolboxItems"
+[$RootKey$\Services\{084BAB35-B0D7-4B4D-8AAF-DBE52D4BBA90}]
+@="{6F453E1A-31DF-4cd6-AF8B-72AE242272B9}"
+"Name"="SVsToolboxItemDiscoveryRegistrar"
+[$RootKey$\UIDataSourceProviders\{E6C93A15-7DAF-4df7-84E3-4ABB1023E4F8}]
+@="Choose Toolbox Items Data Source Factory"
+"Package"="{6F453E1A-31DF-4cd6-AF8B-72AE242272B9}"

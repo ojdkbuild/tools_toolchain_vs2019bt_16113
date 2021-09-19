@@ -1,0 +1,121 @@
+﻿<VSTemplateManifest Version="1.0" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item" Locale="1033">
+    <RelativePathOnDisk>VC\HLSL\1033\ComputeShader</RelativePathOnDisk>
+    <TemplateFileName>ComputeShader.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1266" />
+        <Description Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1267" />
+        <Icon Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="627" />
+        <TemplateID>Microsoft.VC.Graphics.ComputeShader</TemplateID>
+        <TemplateGroupID>WinRT-Common</TemplateGroupID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+        <DefaultName>ComputeShader.hlsl</DefaultName>
+        <ShowByDefault>false</ShowByDefault>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item" Locale="1033">
+    <RelativePathOnDisk>VC\HLSL\1033\DomainShader</RelativePathOnDisk>
+    <TemplateFileName>DomainShader.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1258" />
+        <Description Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1259" />
+        <Icon Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="627" />
+        <TemplateID>Microsoft.VC.Graphics.DomainShader</TemplateID>
+        <TemplateGroupID>WinRT-Common</TemplateGroupID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+        <DefaultName>DomainShader.hlsl</DefaultName>
+        <ShowByDefault>false</ShowByDefault>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item" Locale="1033">
+    <RelativePathOnDisk>VC\HLSL\1033\GeometryShader</RelativePathOnDisk>
+    <TemplateFileName>GeometryShader.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1264" />
+        <Description Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1265" />
+        <Icon Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="627" />
+        <TemplateID>Microsoft.VC.Graphics.GeometryShader</TemplateID>
+        <TemplateGroupID>WinRT-Common</TemplateGroupID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+        <DefaultName>GeometryShader.hlsl</DefaultName>
+        <ShowByDefault>false</ShowByDefault>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item" Locale="1033">
+    <RelativePathOnDisk>VC\HLSL\1033\Header</RelativePathOnDisk>
+    <TemplateFileName>Header.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1256" />
+        <Description Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1257" />
+        <Icon Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="627" />
+        <TemplateID>Microsoft.VC.Graphics.Header</TemplateID>
+        <TemplateGroupID>WinRT-Common</TemplateGroupID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+        <DefaultName>Header.hlsli</DefaultName>
+        <ShowByDefault>false</ShowByDefault>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item" Locale="1033">
+    <RelativePathOnDisk>VC\HLSL\1033\HullShader</RelativePathOnDisk>
+    <TemplateFileName>HullShader.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1268" />
+        <Description Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1269" />
+        <Icon Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="627" />
+        <TemplateID>Microsoft.VC.Graphics.HullShader</TemplateID>
+        <TemplateGroupID>WinRT-Common</TemplateGroupID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+        <DefaultName>HullShader.hlsl</DefaultName>
+        <ShowByDefault>false</ShowByDefault>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item" Locale="1033">
+    <RelativePathOnDisk>VC\HLSL\1033\PixelShader</RelativePathOnDisk>
+    <TemplateFileName>PixelShader.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1260" />
+        <Description Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1261" />
+        <Icon Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="627" />
+        <TemplateID>Microsoft.VC.Graphics.PixelShader</TemplateID>
+        <TemplateGroupID>WinRT-Common</TemplateGroupID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+        <DefaultName>PixelShader.hlsl</DefaultName>
+        <ShowByDefault>false</ShowByDefault>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item" Locale="1033">
+    <RelativePathOnDisk>VC\HLSL\1033\VertexShader</RelativePathOnDisk>
+    <TemplateFileName>VertexShader.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1262" />
+        <Description Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1263" />
+        <Icon Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="627" />
+        <TemplateID>Microsoft.VC.Graphics.VertexShader</TemplateID>
+        <TemplateGroupID>WinRT-Common</TemplateGroupID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
+        <DefaultName>VertexShader.hlsl</DefaultName>
+        <ShowByDefault>false</ShowByDefault>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

@@ -1,0 +1,440 @@
+[$RootKey$\FeatureFlags\ProjectSystem\ProjectFlavors\SharedProjectReferences]
+"Description"="Determines whether Shared Project Reference feature including showing the Add Shared Project References tab in the Reference Manager dialog is enabled for all ProjectFlavors."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\DiagnosticsHub\BlockedTimeTool]
+"Description"="Determines if the new Blocked Time analysis tool shows up in the Diagnostics Hub."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\DiagnosticsHub\CallStackStitching]
+"Description"="Determines if the async call stack stitching feature will be enabled in the Diagnostics Hub."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\ClrDynamicInstrumentation]
+"Description"="Enables use of dynamic instrumentation when profiling CLR projects."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\DatabaseToolEnabled]
+"Description"="Determines if the Database Tool is enabled in the Diagnostics Hub."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\DotNetAsyncToolEnabled]
+"Description"="Determines if the .NET Async Activities Tool is enabled in the Diagnostics Hub."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\EventsViewerToolSwimlaneEnabled]
+"Description"="Determines if the Events Viewer Tool Swimlane will be enabled in the Diagnostics Hub."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\DotNetCountersToolEnabled]
+"Description"="Determines if the .Net Counters Tool is enabled in the Diagnostics Hub."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\NewExecutableLauncherEnabled]
+"Description"="Determines if the new executable launcher is enabled in the Diagnostics Hub."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\InstrumentationTool]
+"Description"="Determines if the new Instrumentation tool shows up in the Diagnostics Hub"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\DiagnosticsHub\ModulesView]
+"Description"="Determines if the modules view will be enabled in the CPU Usage Tool."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\DataWarehouseResourceTracking]
+"Description"="Determines if resource tracking for the data warehouse is enabled."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\ManagedDataWarehouseEnabled]
+"Description"="Determines if the managed Data Warehouse should be used for the Diagnostics Hub Tools that support it."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\GraphHighlighting]
+"Description"="Determines if graph highlighting for the Diagnostics Hub swimlane is enabled."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\InstrumentationTool]
+"Description"="Determines if the instrumentation tool is enabled."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\SourceHighlighting]
+"Description"="Determines if the source highlighting feature in the CPU tool is enabled."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\UserMarks]
+"Description"="Determines if the user marks feature in the Diagnostics Hub is enabled."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\DiagnosticsHub\DownSkuBreakEventsEnabled]
+"Description"="Determines if the Performance Debugger break events track is enabled in non-Ultimate Visual Studio SKUs."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\DiagnosticDataDownSkuDetailsView]
+"Description"="Determines if the Performance Debugger details view is enabled in non-Ultimate Visual Studio SKUs."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\CpuToolAspNetSamplingEnabled]
+"Description"="Determines if the CPUTool will support ASP.NET projects"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\DiagnosticsHub\IntelliTraceFilter]
+"Description"="Filter/Search Events"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\IntelliTrace\DiagnosticSourceSideload]
+"Description"="If true then IntelliTrace will attempt to sideload a collector for System.Diagnostics.DiagnosticSource events."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\IntelliTrace\ProcessSnapshotAD7ALIntegration]
+"Description"="If true then we'll use the AD7AL integration in IntelliTrace snapshot mode. Otherwise, it'll use concord snapshot APIs directly."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\JavaScript\Debugger\V3CdpDebugAdapter]
+"Description"="If checked, we'll use the JavaScript multi-target debugger to debug JavaScript for various targets, including progressive web applications and web workers (but excluding Node applications)."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\JavaScript\Debugger\V3CdpNodeDebugAdapter]
+"Description"="If checked, we'll use the JavaScript multi-target debugger to debug JavaScript for Node targets."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\JavaScript\Debugger\UseServerMode]
+"Description"="If true, use the server-based mode instead of flat-session mode for the JavaScript debug adapter (v3)"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\TestingTools\UnitTesting\Pex]
+"Description"="Determines if the Pex feature to generate and persist Unit Tests automatically is to be enabled "
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\CPS\SharedProject\OnlyLoadActiveHeadProject]
+"Description"="Controls whether all head user projects of a shared project should be loaded when a shared item is opened. If set to 'true', we only load the active/preferred head project."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\CPS\AsyncProjectLoad]
+"Description"="Controls whether CPS is allowed to claim that project load has completed before it has fully populated the project tree, and other data models."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Cps\EnableConfigurableFileNesting]
+"Description"="#1514"
+"Value"=dword:00000000
+"Title"="#1513"
+"PreviewPaneChannels"="*"
+"RequiredAction"="#1515"
+"PackageGuid"="6E87CFAD-6C05-4adf-9CD7-3B7943875B7C"
+[$RootKey$\FeatureFlags\CPS\UpdatedProjectPropertiesDesigner\Local]
+"Description"="#1519"
+"Value"=dword:00000000
+"Title"="#1518"
+"PreviewPaneChannels"="*"
+"PackageGuid"="6E87CFAD-6C05-4adf-9CD7-3B7943875B7C"
+[$RootKey$\FeatureFlags\TestingTools\UnitTesting\CodeCoverage\CLRIEInstrumentationNetCore]
+"Description"="Enables CLR Instrumentation Engine instrumentation during Code Coverage collection for .NET Core and .NET 5 projects."
+"Value"=dword:00000001
+"Title"="Code Coverage using CLR Instrumentation Engine"
+"PreviewPaneChannels"="*"
+[$RootKey$\FeatureFlags\TestingTools\UnitTesting\Fakes\CPSSupport]
+"Description"="#113"
+"Value"=dword:00000001
+"Title"="#114"
+"PreviewPaneChannels"="*"
+"LearnMoreUrl"="https://aka.ms/MicrosoftFakes"
+"PackageGuid"="12b27ee7-3aa0-474e-8bb8-dd1a3bb2bced"
+[$RootKey$\FeatureFlags\TestingTools\UnitTesting\Taef]
+"Description"="Determines if the Taef engine will be used to discover and run unit tests instead of Rocksteady Engine. "
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Solution\Telemetry]
+"Description"="Controls whether Solution telemetry package is loaded."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Solution\Configurations\AnyCPUBuildableForAll]
+"Description"="Controls whether "Any CPU" managed platform will be selected for build for any solution platform."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Solution\WorkingFolders\LegacySUOMode]
+"Description"="Controls whether .suo file is writen next to solution or under local persistance settings working folder."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Solution\StartupProjectsList\LegacyFiltering]
+"Description"="Determines if the Startup Projects combobox should use the legacy filtering "
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Solution\Explorer\AddNewProject\UseSelectedFolder]
+"Description"="Determines if adding a new project should use the selected solution folder (if any)"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Solution\Loading\Deferred]
+"Description"="Determines if the solution load is deferred"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\NewProjectDialog\AllowSurrogatesInPath]
+"Description"="Determines if the project location path should allow surrogate characters or not"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\TableControl\ProgressBar]
+"Description"="Determines if the table control shows progress bar for its dirty data under processing"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\CodeLens\FLIForTFVC]
+"Description"="Determines if CodeLens File Indicators should be enabled TFVC"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Templates\ItemTemplates\EnableLegacyProjectTypeFiltering]
+"Description"="Enables legacy filtering for project item templates that uses language and template ID for the initial project type filtering."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Extensions\AutoUpdate]
+"Description"="Determines if extensions should be auto-updated"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Extensions\UseRestAPIForMarketPlace]
+"Description"="Determines if new Rest api should be used for Marketplace"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Setup\HideIPADialog]
+"Description"="Whether to hide the IPA dialog on first solution load."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Setup\UseSetupCompositionForComponentInstall]
+"Description"="Whether to use the setup composition service to install components."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Setup\EnableUpdateNotificationCustomizations]
+"Description"="Whether to allow for update notification customizations."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Setup\EnableDurationBasedUpdateNotificationBlocks]
+"Description"="Whether to allow for duration-based update notification blocks. This should be used in a mutually exclusive fashion with Setup.EnableUpdateOnClose."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Setup\EnableFeatureFlagBasedUpdateNotificationBlocks]
+"Description"="Whether to allow for feature-flag-based update notification blocks."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Setup\EnableUpdateOnClose]
+"Description"="Whether to allow for updating on close. This should used in a mutually exclusive fashion with Setup.EnableDurationBasedUpdateNotificationBlocks."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Setup\EnableCodespacesInstallOnDemand]
+"Description"="Whether to allow for installing the Codespaces workload "on demand" when a user attempts to connect."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Setup\NewUpdateCheck]
+"Description"="Whether to allow new optimized update check."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Snippets\DisableNewSnippets]
+"Description"="Disables managed implementation of IVsExpansion, aka snippets."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\OpenFolder\FastToggle]
+"Description"="Determines whether workspace views can be switched without switching solutions"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Editor\EnableCodingConventions]
+"Description"="Enables editor support for coding conventions (editorconfig)."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\TestingTools\UnitTesting\MTFM]
+"Description"="Determines if the Multi-Target Framework Moniker feature is to be enabled "
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\TestingTools\UnitTesting\UseSipToFetchSourceInformation]
+"Description"="Determines whether to use Source Information Provider for fetching source information"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\TestingTools\UnitTesting\HierarchyView]
+"Description"="Determines whether hierarchy view is to be enabled for the test explorer window."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\CMake\TestExplorerIntegration]
+"Description"="Determines whether CMake based tests show up in the Test Explorer window."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\CMake\ShowNoCacheBar]
+"Description"="Determines whether CMake will show an info bar when it detects that the CMake Cache may be out of date."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\CMake\EnableCMakePresets]
+"Description"="Determines whether CMakePresets.json and CMakeUserPresets.json are recognized as configuration files."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\VS\FreeThreadedServiceProvider\UseSendPriority]
+"Description"="Determines whether the free threaded global service provider should use send priority for scheduling tasks to run on the UI thread."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\VS\RDT\UseFreeThreadedRDT]
+"Description"="Determines whether to use the free threaded RDT."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Git\Checkout\UseBulkFileOperation]
+"Description"="Determines whether Git source control integration should use the BulkFileOperation API during checkout operations."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\VC\ShowSolutionTransitionInfoBar]
+"Description"="Detect and offer to switch to solutions when editing C++ code in folder mode"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\VC\EnableExperimentalCodeAnalysisFixits]
+"Description"="#19101"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\GetToCode\WindowEnabled]
+"Description"="Determines whether GetToCode Window is enabled or not."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\OperationProgress\ShowProjectsLoadedTip]
+"Description"="Determines whether OperationProgress should show a tip after solution has loaded."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Debugger\SnapshotDebugger\SupportTimeTravelTracing]
+"Description"="If true then Snapshot Debugger supports Time Travel tracing."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Debugger\TimeTravelDebugging\FileOpen]
+"Description"="If true then VS can load TTD .run files."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Debugger\ManagedCoreDumpDebugging\FileOpen]
+"Description"="If true then VS can open Linux Core Dump files."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\CSProj\PartialLoadMode]
+"Description"="#1503"
+"Value"=dword:00000001
+"Title"="#1504"
+"PreviewPaneChannels"="*"
+"PackageGuid"="6E87CFAD-6C05-4adf-9CD7-3B7943875B7C"
+[$RootKey$\FeatureFlags\CPS\UseOperationProgress]
+"Description"="If true then CPS-based projects notify the Operation Progress service about intellisense progress."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Roslyn\PartialLoadMode]
+"Description"="If true then Roslyn initialization is delayed until intellisense operation stage completes."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Completion\PartialLoadMode]
+"Description"="If true then Editor’s completion window shows a message to the user that the result set could be incomplete when intellisense is in progress."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Designer\PartialLoadMode]
+"Description"="If true then Shell platform shows a wait view for participating editor types when intellisense is in progress."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\PartialLoadMode\ProjectOperationProgress]
+"Description"="If true then Partial Load Mode will use the project operation progress instead of the global operation progress."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Winforms\UsePreviewDesigner]
+"Description"="If checked then the preview Windows Forms Designer for .NET Core apps is used."
+"Value"=dword:00000001
+"Title"="Use the preview Windows Forms designer for .NET Core apps (requires restart)"
+"PreviewPaneChannels"="*"
+[$RootKey$\FeatureFlags\ModelBuilder\Enable]
+"Description"="ML.NET Model Builder provides a visual interface to build, train, and deploy custom machine learning models for your .NET apps. Prior machine learning expertise is not required. Right click on any .NET project and Add > Machine Learning to your project!"
+"Value"=dword:00000000
+"Title"="Enable ML.NET Model Builder"
+"PreviewPaneChannels"="*"
+"LearnMoreUrl"="https://aka.ms/mlnet-model-builder"
+"FeedbackUrl"="https://aka.ms/model-builder-feedback"
+[$RootKey$\FeatureFlags\Solution\EnableWindowsPrefetcher]
+"Description"="If true then loading first solution in a VS session would call Windows Prefetcher API to speed up solution load."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Identity\SingleSignIn]
+"Description"="Enables using MSAL in the identity service. Removed from the PreviewFeatures pane."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Identity\NativeGithubSignIn]
+"Description"="Add, manage and use GitHub accounts inside Visual Studio."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Shell\MinimalModeEnabled]
+"Description"="#1020"
+"Value"=dword:00000001
+"Title"="#1021"
+"PreviewPaneChannels"="*"
+"RequiredAction"="#1022"
+"PackageGuid"="F384B236-B4A9-401b-BC58-3106E3ACA3EC"
+[$RootKey$\FeatureFlags\ManagedProjectSystem\UsePreviewSdk]
+"Description"="#1500"
+"Value"=dword:00000000
+"Title"="#1501"
+"PreviewPaneChannels"="Release"
+"RequiredAction"="#1502"
+"PackageGuid"="6E87CFAD-6C05-4adf-9CD7-3B7943875B7C"
+[$RootKey$\FeatureFlags\Shell\MRUProjectSearch]
+"Description"="Enables the recent project search box located on the start window."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\CSProj\OutOfProcEvaluation]
+"Description"="#1511"
+"Value"=dword:00000000
+"Title"="#1510"
+"PreviewPaneChannels"="*"
+"RequiredAction"="#1512"
+"PackageGuid"="6E87CFAD-6C05-4adf-9CD7-3B7943875B7C"
+[$RootKey$\FeatureFlags\Editor\UseDeprecatedLegacyFindExp]
+"Description"="Switch back to unsupported legacy find in files experience"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Editor\UseLegacyQuickFindExp]
+"Description"="Switch back to unsupported legacy quick find experience"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\VC\ShowCMakeVcxprojNotificationInfoBar]
+"Description"="Detect CMake-generated vcxproj and show notification"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\VC\EnableCMakeSettingsEditorInCodespaces]
+"Description"="Enable the custom CMakeSettings.json editor in Codespaces and Live Share."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Codespaces\UsePersistentRootMode]
+"Description"="Defines whether to use persistent root mode (specifying drive roots rather than the shared directory) for vsls URIs when working with codespaces, to enable access to the entire file system"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\JavaScript\Debugger\Chrome\UseChromeSuppliedPort]
+"Description"="Whether or not the Chrome debug adapter should use a debug port supplied by Chrome"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Editor\CrossRepositorySearch]
+"Description"="Provides remote or cross-repository code search powered by Azure DevOps and GitHub."
+"Value"=dword:00000000
+"Title"="Remote or cross-repository code search"
+"PreviewPaneChannels"="IntPreview,int.main,int.d16.5"
+[$RootKey$\FeatureFlags\Xaml\NewWpfFrameworkDesigner]
+"Description"="#2028"
+"Value"=dword:00000000
+"Title"="#2027"
+"PreviewPaneChannels"="*"
+"PackageGuid"="512be089-83ec-4cc6-8483-cf16565ae209"
+[$RootKey$\FeatureFlags\VS\CloudVSSearch]
+"Description"="#1027"
+"Value"=dword:00000000
+"Title"="#1028"
+"PreviewPaneChannels"="IntPreview,int.main,int.d16.6"
+"PackageGuid"="E3DD8DCD-EB2A-4ECE-A282-661E1EFA6335"
+[$RootKey$\FeatureFlags\VS\MapGoToAllToVSSearch]
+"Description"="#1030"
+"Value"=dword:00000000
+"Title"="#1029"
+"PreviewPaneChannels"="*"
+"PackageGuid"="E3DD8DCD-EB2A-4ECE-A282-661E1EFA6335"
+[$RootKey$\FeatureFlags\Editor\UseAdvancedLogging]
+"Description"="Enables advanced non-PII telemetry logging on hot paths of code like HrSave"
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Solution\Workspace\ExcludeScanners]
+"Description"="Determines whether certain file scanners can be excluded from AnyCode indexing."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Solution\Workspace\UseViewPicker]
+"Description"="#1035"
+"Value"=dword:00000001
+"Title"="#1034"
+"PreviewPaneChannels"="IntPreview,int.main,int.d16.7,int.d16.8,Preview"
+"RequiredAction"="#1036"
+"PackageGuid"="F384B236-B4A9-401b-BC58-3106E3ACA3EC"
+[$RootKey$\FeatureFlags\IntelliCode\EnableAllPreviewFeatures]
+"Description"="#2001"
+"Value"=dword:00000000
+"Title"="#2000"
+"PreviewPaneChannels"="*"
+"LearnMoreUrl"="https://aka.ms/intellicodeLicense"
+"RequiredAction"="#2002"
+"PackageGuid"="237bde42-2754-4b15-adbd-0b6cece84300"
+[$RootKey$\FeatureFlags\Xamarin\DisableiOSAka]
+"Description"="#8002"
+"Value"=dword:00000000
+"Title"="#8001"
+"PreviewPaneChannels"="*"
+"RequiredAction"="#8005"
+"PackageGuid"="2d510815-1c4e-4210-bd82-3d9d2c56c140"
+[$RootKey$\FeatureFlags\Extensions\EnableCompliant]
+"Description"="If true then only register extensions which are client compliant on client environment."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Xamarin\EnableDownloadDeveloperDiskImages]
+"Description"="Automatic download of iOS developer disk images for Xamarin Hot Restart"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\ProjectSystem\DoNotLoadProjects]
+"Description"="Improve performance by selectively loading individual projects and their dependencies"
+"Value"=dword:00000000
+"Title"="Open large solutions without loading projects"
+"PreviewPaneChannels"="IntPreview,int.main"
+[$RootKey$\FeatureFlags\ProjectSystem\ProvideTipsWhenAllProjectsUnloaded]
+"Description"="Show tips to help get started when a solution is opened with all projects unloaded."
+"Value"=dword:00000000
+"Title"="Show tips when opening large solutions without loading projects"
+"PreviewPaneChannels"="IntPreview,int.main"
+[$RootKey$\FeatureFlags\Shell\ImageService\ExperimentalCatalog]
+"Description"="#1011"
+"Value"=dword:00000000
+"Title"="#1010"
+"PreviewPaneChannels"="*"
+"RequiredAction"="#1012"
+"PackageGuid"="5E56B3DB-7964-4588-8D49-D3523AB7BDB9"
+[$RootKey$\FeatureFlags\Shell\Theming\ExperimentalDarkTheme]
+"Description"="#1014"
+"Value"=dword:00000000
+"Title"="#1013"
+"PreviewPaneChannels"="IntPreview,int.main"
+"RequiredAction"="#1015"
+"PackageGuid"="5E56B3DB-7964-4588-8D49-D3523AB7BDB9"
+[$RootKey$\FeatureFlags\VS\CodespacesMRU]
+"Description"="Create MRU entries for projects/solutions/folders opened in a Codespace"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\VS\LSPPullModelDiagnosticVSLS]
+"Description"="Enable Diagnostic Management Service in LSP Publish Model Diagnostic and enable local to remote file URI conversion."
+"Value"=dword:00000000
+"Title"="Make LSP Publish Diagnostic using newer API"
+"PreviewPaneChannels"="IntPreview,int.main"
+[$RootKey$\FeatureFlags\VS\EnableGithubFeatureFlagOnCodespacesHttpCalls]
+"Description"="Use the GitHub API for codespace operations so VS can access codespaces created by other clients"
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\VC\LSPPullModelDiagnostics]
+"Description"="Enable LSP Pull Model Diagnostics in the C++ server."
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Xaml\MVVMPreviewFeatures]
+"Description"="#2022"
+"Value"=dword:00000000
+"Title"="#2021"
+"PreviewPaneChannels"="IntPreview,Preview,int.main"
+"PackageGuid"="2EF1EC52-C8BF-4FE0-8ECE-BA9C0D5D1603"
+[$RootKey$\FeatureFlags\Xaml\EnableLspIntelliSense]
+"Description"="#2024"
+"Value"=dword:00000000
+"Title"="#2023"
+"PreviewPaneChannels"="IntPreview,int.main"
+"PackageGuid"="2EF1EC52-C8BF-4FE0-8ECE-BA9C0D5D1603"
+[$RootKey$\FeatureFlags\VC\LSPForceDocumentVersioning]
+"Description"="Force document versioning in the C++ server."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\VC\EnableCodeStoreCache]
+"Description"="Enable the C/C++ browsing information caching."
+"Value"=dword:00000000
+"Title"="Enable the C/C++ project caching"
+"PreviewPaneChannels"="IntPreview,Preview,int.main"
+[$RootKey$\FeatureFlags\VC\EnableIntelliCodePoirot]
+"Description"="Enable C++ IntelliCode Poirot code analysis."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Shell\ImageService\UseBlackAndWhiteForEnhancedContrast]
+"Description"="Render icons in black and white when necessary to meet contrast requirements."
+"Value"=dword:00000000
+[$RootKey$\FeatureFlags\Shell\FileSystem\UseConcurrentCancelableDriveDetection]
+"Description"="Use a more complex but more efficient drive detection algorithm"
+"Value"=dword:00000001

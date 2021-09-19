@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- If in future we support win 8, then we have to change this value to 10-->
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <title>Memory Profiler Summary View</title>
+
+    <link id="TabControl.css" rel="stylesheet" href="../Common/CSS/TabControl.css" type="text/css" data-plugin-theme="true" />
+    <link id="SnapshotTileView.css" rel="stylesheet" href="CSS/SnapshotTileView.css" type="text/css" data-plugin-theme="true" />
+    <link id="SummaryView.css" rel="stylesheet" href="CSS/SummaryView.css" type="text/css" data-plugin-theme="true" />
+
+    <script type="text/javascript" src="../Common/Script/plugin.js"></script>
+    <script type="text/javascript" src="../Common/Script/DiagnosticsHub.js"></script>
+    <script type="text/javascript" src="../Common/Script/CommonMerged.js"></script>
+    <script type="text/javascript" src="Script/SummaryViewMerged.js"></script>
+
+    <script id="SummaryViewTemplate" type="text/html">
+        <div class="summaryView">
+            <div id="warningSection" class="warningMessage"></div>
+            <div id="toggleTabSection" class="snapshotToggleTab"></div>
+            <div id="tilesContainer" class="snapshotTilesContainer"></div>
+        </div>
+    </script>
+
+    <script id="SnapshotHeapTypeToggleTemplate" type="text/html">
+        <div class="snapshotToggleTab" role="radiogroup">
+            <div id="snapshotToggleTabLabel" class="toggleTabLabel"></div>
+            <div id="snapshotToggleTabManagedButton" class="toggleTabButtonContainer toggleTabManagedButtonContainer" tabindex="0" role="radio"></div>
+            <div id="snapshotToggleTabdNativeButton" class="toggleTabButtonContainer toggleTabNativeButtonContainer" tabindex="0" role="radio"></div>
+        </div>
+    </script>
+
+    <script id="SnapshotTileTemplate" type="text/html">
+        <div id="snapshotTile" class="snapshotTile snapshotTileTaken">
+            <div class="snapshotTileInner">
+                <div id="snapshotTileHeader" class="snapshotTileHeader" tabindex="0">
+                    <div id="snapshotTileTitle" class="snapshotTileTitle"></div>
+                    <div id="snapshotTakenDate" class="snapshotTakenDate"></div>
+                    <div id="snapshotTileWarnings" class="snapshotTileWarnings">
+                        <div class="WarningIcon"></div>
+                        <div id="snapshotTileWarningsCount" class="BPT-FileLink snapshotTileWarningsCount" tabindex="0" role="link"></div>
+                    </div>
+                </div>
+
+                <!-- Managed summary data (overlaps the native one and becomes visible when toggled) -->
+                <div id="managedSummaryData" class="snapshotTileGrid">
+                    <!-- Managed size -->
+                    <div class="rightalign">
+                        <div id="managedSizeLink" class="BPT-FileLink" tabindex="0" role="link"></div>
+                    </div>
+
+                    <!-- Managed count -->
+                    <div class="rightColumn rightalign">
+                        <div id="managedCountLink" class="BPT-FileLink" tabindex="0" role="link"></div>
+                    </div>
+
+                    <!-- Managed size diff -->
+                    <div class="bottomRow rightalign">
+                        <div id="managedSizeDiffLink" class="BPT-FileLink" tabindex="0" role="link"></div>
+                    </div>
+                    <div id="managedSizeDiffIndicatorIcon" class="bottomRow sizeDiffIcon"></div>
+
+                    <!-- Managed count diff -->
+                    <div class="bottomRow rightColumn rightalign">
+                        <div id="managedCountDiffLink" class="BPT-FileLink" tabindex="0" role="link"></div>
+                    </div>
+                    <div id="managedCountDiffIndicatorIcon" class="bottomRow countDiffIcon"></div>
+                </div>
+
+                <!-- Native summary data (overlaps the managed one and becomes visible when toggled) -->
+                <div id="nativeSummaryData" class=" snapshotTileGrid">
+                    <!-- Native size -->
+                    <div class="rightalign">
+                        <div id="nativeSizeLink" class="BPT-FileLink" tabindex="0" role="link"></div>
+                    </div>
+
+                    <!-- Native count -->
+                    <div class="rightColumn rightalign">
+                        <div id="nativeCountLink" class="BPT-FileLink" tabindex="0" role="link"></div>
+                    </div>
+
+                    <!-- Native size diff -->
+                    <div class="bottomRow rightalign">
+                        <div id="nativeSizeDiffLink" class="BPT-FileLink" tabindex="0" role="link"></div>
+                    </div>
+                    <div id="nativeSizeDiffIndicatorIcon" class="bottomRow sizeDiffIcon"></div>
+
+                    <!-- Native count diff -->
+                    <div class="bottomRow rightColumn rightalign">
+                        <div id="nativeCountDiffLink" class="BPT-FileLink" tabindex="0" role="link"></div>
+                    </div>
+                    <div id="nativeCountDiffIndicatorIcon" class="bottomRow countDiffIcon"></div>
+                </div>
+
+                <div id="snapshotTileImageHolder" class="snapshotTileImageHolder">
+                    <img id="snapshotTileImage" class="snapshotTileImage" />
+                </div>
+                <div id="screenshotNotAvailableMessage" class="screenshotNotAvailableMessage"></div>
+
+                <progress id="loadingSnapshotProgress" class="snapshotLoadingProgress"></progress>
+            </div>
+        </div>
+    </script>
+
+</head>
+<body tabindex="-1">
+    <div id="mainContainer">
+    </div>
+</body>
+</html>

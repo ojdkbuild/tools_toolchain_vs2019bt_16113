@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Visual Studio Global TextMate Theme</string>
+    <key>settings</key>
+    <array>
+
+      <dict>
+        <key>scope</key>
+        <string>keyword, entity.source.cmake, constant.source.cmake</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>keyword</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>keyword.cmake.control_flow</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <!-- This isn't really correct, but allows us to have a different
+          color for control flow keywords without knowing which workloads
+          are installed in VS. -->
+          <string>type</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>storage.source.cmake</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>symbol reference</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>string, argument.source.cmake</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>string</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>comment</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>comment</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>variable, entity</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>identifier</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>invalid.deprecated.source.cmake</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>number</string>
+        </dict>
+      </dict>
+
+    </array>
+    <key>uuid</key>
+    <string>18ED3208-2283-401E-A2E2-0972333647AC</string>
+  </dict>
+</plist>

@@ -1,0 +1,29 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.Navigation.RichCodeNav" Version="0.1.272.30069" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Visual Studio Rich Navigation</DisplayName>
+    <Description xml:space="preserve">Enable code navigation beyond your loaded solution/folder.</Description>
+    <MoreInfo>https://aka.ms/RichNavigation</MoreInfo>
+    <PackageId>Microsoft.VisualStudio.Navigation.RichCodeNav</PackageId>
+    <License>LICENSE.txt</License>
+    <ReleaseNotes>ReleaseNotes.md</ReleaseNotes>
+    <Icon>Resources\CompassRichNav.jpg</Icon>
+    <PreviewImage>Resources\CompassRichNav.jpg</PreviewImage>
+    <Preview>true</Preview>
+    <Tags>code-navigation</Tags>
+    <RemovePerUserExtension>true</RemovePerUserExtension>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.9,17.0)" />
+  </Installation>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" TargetVersion="[16.9,17.0)" Path="Microsoft.VisualStudio.Navigation.RichCodeNav.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.Navigation.RichCodeNav.pkgdef" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Dependencies>
+    <Dependency Id="Microsoft.VisualStudio.MPF.16.0" DisplayName="Visual Studio MPF 16.0" Version="[16.0,17.0)" />
+  </Dependencies>
+</PackageManifest>

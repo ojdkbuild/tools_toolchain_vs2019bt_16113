@@ -1,0 +1,4 @@
+[$RootKey$\CLSID\{1CACE4D9-C378-42bd-87DB-3C5D27334331}]
+@="Visual Studio Project Aggregator"
+"InprocServer32"="$ShellFolder$\Common7\IDE\ProjectAggregator.dll"
+"ThreadingModel"="Apartment"

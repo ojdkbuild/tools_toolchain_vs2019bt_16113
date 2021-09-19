@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  <Symbols>
+    <Import Manifest="$(ManifestFolder)\Microsoft.VisualStudio.ImageCatalog.imagemanifest" />
+    <Guid Name="MSEnvStrips" Value="9c84a570-d9a7-4052-a340-188fb276f973" />
+    <ID Name="ErrorList" Value="1003" />
+    <ID Name="TaskListPriority" Value="1004" />
+    <ID Name="TaskListCategory" Value="1005" />
+  </Symbols>
+  <Images />
+  <ImageLists>
+    <ImageList Guid="$(MSEnvStrips)" ID="$(ErrorList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(StatusError)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(StatusWarning)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(StatusInformation)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(MSEnvStrips)" ID="$(TaskListPriority)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ExclamationPoint)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Blank)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(MoveDown)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(MSEnvStrips)" ID="$(TaskListCategory)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Compile)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Comment)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(IntellisenseKeyword)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Shortcut)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(UserTask)" External="true" />
+    </ImageList>
+  </ImageLists>
+</ImageManifest>

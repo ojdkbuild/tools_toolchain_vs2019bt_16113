@@ -1,0 +1,11 @@
+[$RootKey$\NewProjectTemplates\PseudoFolders\{152CDB9D-B85A-4513-A171-245CE5C61FCC}]
+@="Other Languages"
+"DisplayName"="#13406"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"SortPriority"=dword:0000012C
+
+[$RootKey$\NewProjectTemplates\PseudoFolders\{DCF2A94A-45B0-11D1-ADBF-00C04FB6BE4C}]
+@="Other Project Types"
+"DisplayName"="#13016"
+"Package"="{DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}"
+"SortPriority"=dword:00000384

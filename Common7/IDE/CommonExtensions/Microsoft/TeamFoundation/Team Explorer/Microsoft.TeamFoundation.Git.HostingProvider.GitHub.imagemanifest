@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  <Symbols>
+    <String Name="Resources" Value="/Microsoft.TeamFoundation.Git.HostingProvider.GitHub;Component/Images" />
+    <Guid Name="AssetsGuid" Value="{BD2963DC-E6D4-4126-B976-D71384BA1001}" />
+    <ID Name="mark_github" Value="1" />
+  </Symbols>
+  <Images>
+    <Image Guid="$(AssetsGuid)" ID="$(mark_github)">
+      <Source Uri="$(Resources)/mark_github.1024.1024.xaml" />
+    </Image>
+  </Images>
+  <ImageLists />
+</ImageManifest>

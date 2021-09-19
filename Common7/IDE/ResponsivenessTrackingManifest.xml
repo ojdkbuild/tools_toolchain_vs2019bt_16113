@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<telemetrymanifest version="1.96" priority="low">
+  <!-- It's very important that the version get updated whenever a context provider is added or removed. -->
+  <!-- Otherwise, the old version will not be overwritten and it can crash perfwatson, preventing telemetry from being collected.  -->
+  <providersets>
+    <!-- Default shipping code markers -->
+    <providerset name="Microsoft.VisualStudio.CodeMarkers">
+      <provider type="etw">
+        <etwprovider source="{641d7f6c-481c-42e8-ab7e-d18dc5e5cb9e}" level="5" logtype="all;scenario" category="VSCodeMarker" name="CodeMarker" />
+      </provider>
+    </providerset>
+    <!-- Responsiveness tracking + stack resolution -->
+    <providerset name="Microsoft.VisualStudio.Responsiveness">
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.CodeResolutionProcessorFactory,Microsoft.VisualStudio.PerfWatson" />
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.CpuMonitorContextProviderFactory,Microsoft.VisualStudio.PerfWatson" />
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.DynamicCollectionContextProviderFactory,Microsoft.VisualStudio.PerfWatson" />
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.JitContextProviderFactory,Microsoft.VisualStudio.PerfWatson" />
+
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.ResponsivenessEventProcessorFactory,Microsoft.VisualStudio.PerfWatson" />
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.TypingContextProviderFactory,Microsoft.VisualStudio.PerfWatson" />
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.GCContextProviderFactory,Microsoft.VisualStudio.PerfWatson" />
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.SatProcContextProviderFactory,Microsoft.VisualStudio.PerfWatson" />
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.LowMemoryDumpCollectorFactory,Microsoft.VisualStudio.PerfWatson" />
+
+    </providerset>
+
+    <!-- Retail Assert ETW -->
+    <providerset name="Microsoft.VisualStudio.Diagnostics.Assert">
+      <provider type="implementation" value="Microsoft.Performance.ResponseTime.EtwContextProviderFactory,Microsoft.VisualStudio.PerfWatson">
+        <configuration>
+          <source guid="{EE328C6F-4C94-45F7-ACAF-640C6A447654}" level="5" category="Assert" keywords="4" />
+          <events>
+            <event name="Assert" id="3">
+              <data name="id" type="String" />
+              <data name="callstack" type="Callstack" />
+            </event>
+          </events>
+        </configuration>
+      </provider>
+    </providerset>
+  </providersets>
+  <sessions>
+    <session name="Visual Studio">
+      <rootapplication>devenv;vswinexpress;vwdexpress;wdexpress</rootapplication>
+      <persistentlogging>true</persistentlogging>
+      <upload>true</upload>
+      <providers>
+        <providerset name="Microsoft.VisualStudio.Responsiveness" />
+        <providerset name="Microsoft.VisualStudio.CodeMarkers" />
+        <providerset name="Microsoft.VisualStudio.Diagnostics.Assert" />
+      </providers>
+    </session>
+  </sessions>
+</telemetrymanifest>

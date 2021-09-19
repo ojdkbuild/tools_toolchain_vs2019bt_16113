@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>name</key>
+  <string>PowerShell Theme, Copied from C# Theme</string>
+  <key>settings</key>
+  <array>
+    <dict>
+      <key>scope</key>
+      <string>storage.modifier, keyword, constant.language, variable.language</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>keyword</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>storage.type</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>type</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>meta.preprocessor keyword</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>preprocessor keyword</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>string, punctuation.definition.string, constant.character.escape</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>string</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>constant.numeric, constant.language.nan, constant.language.infinity</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>number</string>
+      </dict>
+    </dict>
+    
+    <dict>
+      <key>scope</key>
+      <string>keyword.operator</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>operator</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>comment, punctuation.definition.comment, entity.name.tag, entity.other.attribute-name</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>comment</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>variable, entity</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>identifier</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>constant.character.entity, invalid.illegal.bad-ampersand</string>
+      <key>settings</key>
+      <dict>
+        <key>vsclassificationtype</key>
+        <string>Literal</string>
+      </dict>
+    </dict>    
+  </array>
+  <key>uuid</key>
+  <string>8827090A-DDD8-461F-9802-A141D6671223</string>
+</dict>
+</plist>

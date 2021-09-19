@@ -1,0 +1,81 @@
+﻿<VSTemplateManifest Version="1.0" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateDir>
+    <RelativePath>VC\WindowsDesktop</RelativePath>
+    <LocalizedName Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2200" />
+    <SortOrder>1</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\WindowsDesktop\WindowsConsoleApplication</RelativePathOnDisk>
+    <TemplateFileName>WindowsConsoleApplication.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2002" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2003" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="500" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>10</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.Windows.ConsoleApplication</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>ConsoleApplication</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <CreateInPlace>true</CreateInPlace>
+        <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\WindowsDesktop\WindowsDLLExports</RelativePathOnDisk>
+    <TemplateFileName>WindowsDLLExports.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2016" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2017" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="511" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>13</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.Windows.DllExports</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>Dll</DefaultName>
+        <CreateInPlace>true</CreateInPlace>
+        <ProvideDefaultName>true</ProvideDefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\WindowsDesktop\WindowsStaticLib</RelativePathOnDisk>
+    <TemplateFileName>WindowsStaticLib.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2012" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2013" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="510" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>12</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.Windows.StaticLibrary</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>StaticLib</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <CreateInPlace>true</CreateInPlace>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\WindowsDesktop\Empty</RelativePathOnDisk>
+    <TemplateFileName>Empty.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2006" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2007" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="508" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>20</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.Empty</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>Project</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <CreateInPlace>true</CreateInPlace>
+        <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

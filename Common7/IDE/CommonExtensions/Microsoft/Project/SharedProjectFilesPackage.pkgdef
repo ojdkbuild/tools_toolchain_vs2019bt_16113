@@ -1,0 +1,20 @@
+﻿[$RootKey$\Packages\{29C54E43-6464-4762-A105-FA308DCCB107}]
+@="Microsoft.VisualStudio.ProjectSystem.VS.Implementation.SharedProjectFilesPackage.SharedProjectFilesPackage, Microsoft.VisualStudio.ProjectSystem.VS.Implementation, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.ProjectSystem.VS.Implementation.SharedProjectFilesPackage.SharedProjectFilesPackage"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.VS.Implementation.dll"
+[$RootKey$\Services\{7748BB73-AF59-4A6A-8EDB-A94326CD9A36}]
+@="{29C54E43-6464-4762-A105-FA308DCCB107}"
+"Name"="Shared Project Files Manager"
+// This project type guid is expected to match value of PROJECTID_SharedMSBuildFilesManagerHierarchy constant defined in vsshell121.idl.
+[$RootKey$\Projects\{22912BB2-3FF9-4D55-B4DB-D210B6035D4C}]
+@="Shared Project File"
+"Package"="{29C54E43-6464-4762-A105-FA308DCCB107}"
+"PossibleProjectExtensions"="projitems;items"
+[$RootKey$\SolutionPersistence\SharedProjectFiles]
+@="{29C54E43-6464-4762-A105-FA308DCCB107}"
+[$RootKey$\SolutionPersistence\SharedMSBuildProjectFiles]
+@="{29C54E43-6464-4762-A105-FA308DCCB107}"
+// Obsolete Global section name -- this can be deleted when old Solution files no longer exist.
+[$RootKey$\SolutionPersistence\SharedProjectFiles.SharedItemsImports]
+@="{29C54E43-6464-4762-A105-FA308DCCB107}"

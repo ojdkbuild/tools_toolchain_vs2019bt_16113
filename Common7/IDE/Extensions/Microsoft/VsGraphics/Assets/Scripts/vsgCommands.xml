@@ -1,0 +1,2732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Commands>
+  <!--
+  ===========================================================
+  Command Group Definitions
+  ===========================================================
+  -->
+  <Command Id="Edit" Group="Root">
+    <Name Type="string" LCID="1028" Value="編輯"/>
+    <Name Type="string" LCID="1031" Value="Bearbeiten"/>
+    <Name Type="string" LCID="1033" Value="Edit"/>
+    <Name Type="string" LCID="1046" Value="Editar"/>
+    <Name Type="string" LCID="1045" Value="Edytuj"/>
+    <Name Type="string" LCID="1029" Value="Upravit"/>
+    <Name Type="string" LCID="1055" Value="Düzenle"/>
+    <Name Type="string" LCID="1036" Value="Modifier"/>
+    <Name Type="string" LCID="1040" Value="Modifica"/>
+    <Name Type="string" LCID="1041" Value="編集"/>
+    <Name Type="string" LCID="1042" Value="편집"/>
+    <Name Type="string" LCID="1049" Value="Правка"/>
+    <Name Type="string" LCID="2052" Value="编辑"/>
+    <Name Type="string" LCID="3082" Value="Editar"/>
+  </Command>
+  
+  <Command Id="Export" Group="Root">
+    <Name Type="string" LCID="1028" Value="匯出"/>
+    <Name Type="string" LCID="1031" Value="Exportieren"/>
+    <Name Type="string" LCID="1033" Value="Export"/>
+    <Name Type="string" LCID="1046" Value="Exportar"/>
+    <Name Type="string" LCID="1045" Value="Eksportuj"/>
+    <Name Type="string" LCID="1029" Value="Exportovat"/>
+    <Name Type="string" LCID="1055" Value="Dışarı Aktar"/>
+    <Name Type="string" LCID="1036" Value="Exporter"/>
+    <Name Type="string" LCID="1040" Value="Esporta"/>
+    <Name Type="string" LCID="1041" Value="エクスポート"/>
+    <Name Type="string" LCID="1042" Value="내보내기"/>
+    <Name Type="string" LCID="1049" Value="Экспорт"/>
+    <Name Type="string" LCID="2052" Value="导出"/>
+    <Name Type="string" LCID="3082" Value="Exportar"/>
+  </Command>
+  
+  <Command Id="View" Group="Root">
+    <Name Type="string" LCID="1028" Value="檢視"/>
+    <Name Type="string" LCID="1031" Value="Ansicht"/>
+    <Name Type="string" LCID="1033" Value="View"/>
+    <Name Type="string" LCID="1046" Value="Exibir"/>
+    <Name Type="string" LCID="1045" Value="Wyświetl"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit"/>
+    <Name Type="string" LCID="1055" Value="Görüntüle"/>
+    <Name Type="string" LCID="1036" Value="Afficher"/>
+    <Name Type="string" LCID="1040" Value="Visualizza"/>
+    <Name Type="string" LCID="1041" Value="表示"/>
+    <Name Type="string" LCID="1042" Value="보기"/>
+    <Name Type="string" LCID="1049" Value="Вид"/>
+    <Name Type="string" LCID="2052" Value="视图"/>
+    <Name Type="string" LCID="3082" Value="Ver"/>
+  </Command>
+  
+  <Command Id="Channels" Group="Root">
+    <Name Type="string" LCID="1028" Value="色板"/>
+    <Name Type="string" LCID="1031" Value="Channels"/>
+    <Name Type="string" LCID="1033" Value="Channels"/>
+    <Name Type="string" LCID="1046" Value="Canais"/>
+    <Name Type="string" LCID="1045" Value="Kanały"/>
+    <Name Type="string" LCID="1029" Value="Kanály"/>
+    <Name Type="string" LCID="1055" Value="Kanallar"/>
+    <Name Type="string" LCID="1036" Value="Canaux"/>
+    <Name Type="string" LCID="1040" Value="Canali"/>
+    <Name Type="string" LCID="1041" Value="チャネル"/>
+    <Name Type="string" LCID="1042" Value="채널"/>
+    <Name Type="string" LCID="1049" Value="Каналы"/>
+    <Name Type="string" LCID="2052" Value="通道"/>
+    <Name Type="string" LCID="3082" Value="Canales"/>
+  </Command>
+
+  <Command Id="Camera" Group="Root">
+    <Name Type="string" LCID="1028" Value="照相機"/>
+    <Name Type="string" LCID="1031" Value="Kamera"/>
+    <Name Type="string" LCID="1033" Value="Camera"/>
+    <Name Type="string" LCID="1046" Value="Câmera"/>
+    <Name Type="string" LCID="1045" Value="Kamera"/>
+    <Name Type="string" LCID="1029" Value="Fotoaparát"/>
+    <Name Type="string" LCID="1055" Value="Kamera"/>
+    <Name Type="string" LCID="1046" Value="Câmera"/>
+    <Name Type="string" LCID="1045" Value="Kamera"/>
+    <Name Type="string" LCID="1029" Value="Fotoaparát"/>
+    <Name Type="string" LCID="1055" Value="Kamera"/>
+    <Name Type="string" LCID="1036" Value="Appareil photo"/>
+    <Name Type="string" LCID="1040" Value="Fotocamera"/>
+    <Name Type="string" LCID="1041" Value="カメラ"/>
+    <Name Type="string" LCID="1042" Value="카메라"/>
+    <Name Type="string" LCID="1049" Value="Камера"/>
+    <Name Type="string" LCID="2052" Value="相机"/>
+    <Name Type="string" LCID="3082" Value="Cámara"/>
+  </Command>
+
+  <Command Id="Tools" Group="Root">
+    <Name Type="string" LCID="1028" Value="工具"/>
+    <Name Type="string" LCID="1031" Value="Extras"/>
+    <Name Type="string" LCID="1033" Value="Tools"/>
+    <Name Type="string" LCID="1046" Value="Ferramentas"/>
+    <Name Type="string" LCID="1045" Value="Narzędzia"/>
+    <Name Type="string" LCID="1029" Value="Nástroje"/>
+    <Name Type="string" LCID="1055" Value="Araçlar"/>
+    <Name Type="string" LCID="1036" Value="Outils"/>
+    <Name Type="string" LCID="1040" Value="Strumenti"/>
+    <Name Type="string" LCID="1041" Value="ツール"/>
+    <Name Type="string" LCID="1042" Value="도구"/>
+    <Name Type="string" LCID="1049" Value="Средства"/>
+    <Name Type="string" LCID="2052" Value="工具"/>
+    <Name Type="string" LCID="3082" Value="Herramientas"/>
+  </Command>
+
+  <Command Id="Shapes" Group="Root">
+    <Name Type="string" LCID="1028" Value="圖案"/>
+    <Name Type="string" LCID="1031" Value="Formen"/>
+    <Name Type="string" LCID="1033" Value="Shapes"/>
+    <Name Type="string" LCID="1046" Value="Formas"/>
+    <Name Type="string" LCID="1045" Value="Kształty"/>
+    <Name Type="string" LCID="1029" Value="Obrazce"/>
+    <Name Type="string" LCID="1055" Value="Şekiller"/>
+    <Name Type="string" LCID="1036" Value="Formes"/>
+    <Name Type="string" LCID="1040" Value="Forme"/>
+    <Name Type="string" LCID="1041" Value="図形"/>
+    <Name Type="string" LCID="1042" Value="도형"/>
+    <Name Type="string" LCID="1049" Value="Фигуры"/>
+    <Name Type="string" LCID="2052" Value="形状"/>
+    <Name Type="string" LCID="3082" Value="Formas"/>
+  </Command>
+  
+  <Command Id="Materials" Group="Root">
+    <Name Type="string" LCID="1028" Value="材質"/>
+    <Name Type="string" LCID="1031" Value="Materialien"/>
+    <Name Type="string" LCID="1033" Value="Materials"/>
+    <Name Type="string" LCID="1046" Value="Materiais"/>
+    <Name Type="string" LCID="1045" Value="Materiały"/>
+    <Name Type="string" LCID="1029" Value="Materiály"/>
+    <Name Type="string" LCID="1055" Value="Malzemeler"/>
+    <Name Type="string" LCID="1036" Value="Documentation"/>
+    <Name Type="string" LCID="1040" Value="Materiali"/>
+    <Name Type="string" LCID="1041" Value="素材"/>
+    <Name Type="string" LCID="1042" Value="재질"/>
+    <Name Type="string" LCID="1049" Value="Материалы"/>
+    <Name Type="string" LCID="2052" Value="材料"/>
+    <Name Type="string" LCID="3082" Value="Materiales"/>
+  </Command>
+  
+  <Command Id="Image" Group="Root">
+    <Name Type="string" LCID="1028" Value="影像"/>
+    <Name Type="string" LCID="1031" Value="Bild"/>
+    <Name Type="string" LCID="1033" Value="Image"/>
+    <Name Type="string" LCID="1046" Value="Imagem"/>
+    <Name Type="string" LCID="1045" Value="Obraz"/>
+    <Name Type="string" LCID="1029" Value="Obrázek"/>
+    <Name Type="string" LCID="1055" Value="Görüntü"/>
+    <Name Type="string" LCID="1036" Value="Image"/>
+    <Name Type="string" LCID="1040" Value="Immagine"/>
+    <Name Type="string" LCID="1041" Value="イメージ"/>
+    <Name Type="string" LCID="1042" Value="이미지"/>
+    <Name Type="string" LCID="1049" Value="Изображение"/>
+    <Name Type="string" LCID="2052" Value="图像"/>
+    <Name Type="string" LCID="3082" Value="Imagen"/>
+  </Command>
+  
+  <Command Id="Advanced" Group="Root">
+    <Name Type="string" LCID="1028" Value="進階"/>
+    <Name Type="string" LCID="1031" Value="Erweitert"/>
+    <Name Type="string" LCID="1033" Value="Avanced"/>
+    <Name Type="string" LCID="1046" Value="Avançado"/>
+    <Name Type="string" LCID="1045" Value="Zaawansowane"/>
+    <Name Type="string" LCID="1029" Value="Rozšířené"/>
+    <Name Type="string" LCID="1055" Value="Gelişmiş"/>
+    <Name Type="string" LCID="1036" Value="Avancé"/>
+    <Name Type="string" LCID="1040" Value="Avanzate"/>
+    <Name Type="string" LCID="1041" Value="詳細"/>
+    <Name Type="string" LCID="1042" Value="고급"/>
+    <Name Type="string" LCID="1049" Value="Дополнительно"/>
+    <Name Type="string" LCID="2052" Value="高级"/>
+    <Name Type="string" LCID="3082" Value="Avanzado"/>
+  </Command>
+  
+  <Command Id="Preview Mesh" Group="Root">
+    <Name Type="string" LCID="1028" Value="網狀預覽"/>
+    <Name Type="string" LCID="1031" Value="Mesh-Vorschau"/>
+    <Name Type="string" LCID="1033" Value="Preview Mesh"/>
+    <Name Type="string" LCID="1046" Value="Visualizar malha"/>
+    <Name Type="string" LCID="1045" Value="Podgląd siatki"/>
+    <Name Type="string" LCID="1029" Value="Síťový náhled"/>
+    <Name Type="string" LCID="1055" Value="Önceki Ağ"/>
+    <Name Type="string" LCID="1036" Value="Aperçu du maillage"/>
+    <Name Type="string" LCID="1040" Value="Anteprima mesh"/>
+    <Name Type="string" LCID="1041" Value="メッシュのプレビュー"/>
+    <Name Type="string" LCID="1042" Value="망상 조직 미리 보기"/>
+    <Name Type="string" LCID="1049" Value="Просмотр сетки"/>
+    <Name Type="string" LCID="2052" Value="预览网格"/>
+    <Name Type="string" LCID="3082" Value="Vista previa de malla"/>
+  </Command>
+
+  <Command Id="TransparencyColor" Group="Root">
+    <Name Type="string" LCID="1028" Value="透明色彩"/>
+    <Name Type="string" LCID="1031" Value="Transparente Farbe"/>
+    <Name Type="string" LCID="1033" Value="Transparency Color"/>
+    <Name Type="string" LCID="1046" Value="Cor da transparência"/>
+    <Name Type="string" LCID="1045" Value="Kolor przezroczystości"/>
+    <Name Type="string" LCID="1029" Value="Barva pro průhlednost"/>
+    <Name Type="string" LCID="1055" Value="Saydam Renk"/>
+    <Name Type="string" LCID="1036" Value="Couleur de transparence"/>
+    <Name Type="string" LCID="1040" Value="Colore trasparenza"/>
+    <Name Type="string" LCID="1041" Value="透明色"/>
+    <Name Type="string" LCID="1042" Value="투명색"/>
+    <Name Type="string" LCID="1049" Value="Цвет прозрачности"/>
+    <Name Type="string" LCID="2052" Value="透明色"/>
+    <Name Type="string" LCID="3082" Value="Color de transparencia"/>
+  </Command>
+
+  <!--
+  ===========================================================
+  General Advanced Commands
+  ===========================================================
+  -->
+  <Command Id="DebugToggleCommand" Group="Advanced" Type="ToggleCommand">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Name Type="string" LCID="1028" Value="偵錯模式"/>
+    <Name Type="string" LCID="1031" Value="Debugmodus"/>
+    <Name Type="string" LCID="1033" Value="Debug Mode"/>
+    <Name Type="string" LCID="1046" Value="Modo Depuração"/>
+    <Name Type="string" LCID="1045" Value="Tryb debugowania"/>
+    <Name Type="string" LCID="1029" Value="Režim ladění"/>
+    <Name Type="string" LCID="1055" Value="Hata Ayıklama Modu"/>
+    <Name Type="string" LCID="1036" Value="Mode Débogage"/>
+    <Name Type="string" LCID="1040" Value="Modalità debug"/>
+    <Name Type="string" LCID="1041" Value="デバッグ モード"/>
+    <Name Type="string" LCID="1042" Value="디버그 모드"/>
+    <Name Type="string" LCID="1049" Value="Режим отладки"/>
+    <Name Type="string" LCID="2052" Value="调试模式"/>
+    <Name Type="string" LCID="3082" Value="Modo de depuración"/>
+  </Command>
+
+  <Command Id="OpenScriptFolder" Group="Advanced">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\openscriptfolder.js" />
+    <Name Type="string" LCID="1028" Value="開啟 [指令碼] 資料夾"/>
+    <Name Type="string" LCID="1031" Value="Skriptordner öffnen"/>
+    <Name Type="string" LCID="1033" Value="Open Scripts Folder"/>
+    <Name Type="string" LCID="1046" Value="Abrir pasta de scripts"/>
+    <Name Type="string" LCID="1045" Value="Otwórz folder skryptów"/>
+    <Name Type="string" LCID="1029" Value="Otevřít složku skriptů"/>
+    <Name Type="string" LCID="1055" Value="Betik Klasörünü Aç"/>
+    <Name Type="string" LCID="1036" Value="Ouvrir le dossier Scripts"/>
+    <Name Type="string" LCID="1040" Value="Apri cartella script"/>
+    <Name Type="string" LCID="1041" Value="Scripts フォルダーを開く"/>
+    <Name Type="string" LCID="1042" Value="스크립트 폴더 열기"/>
+    <Name Type="string" LCID="1049" Value="Открытая папка со скриптами"/>
+    <Name Type="string" LCID="2052" Value="打开脚本文件夹"/>
+    <Name Type="string" LCID="3082" Value="Abrir carpeta de scripts"/>
+  </Command>
+
+  <!--
+  ===========================================================
+  Common Commands to all designers
+  ===========================================================
+  -->
+  <!--  GENERAL  -->
+
+  <Command Id="Save" Group="General">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\save.js" />
+    <Name Type="string" LCID="1028" Value="儲存"/>
+    <Name Type="string" LCID="1031" Value="Speichern"/>
+    <Name Type="string" LCID="1033" Value="Save"/>
+    <Name Type="string" LCID="1046" Value="Salvar"/>
+    <Name Type="string" LCID="1045" Value="Zapisz"/>
+    <Name Type="string" LCID="1029" Value="Uložit"/>
+    <Name Type="string" LCID="1055" Value="Kaydet"/>
+    <Name Type="string" LCID="1036" Value="Enregistrer"/>
+    <Name Type="string" LCID="1040" Value="Salva"/>
+    <Name Type="string" LCID="1041" Value="保存"/>
+    <Name Type="string" LCID="1042" Value="저장"/>
+    <Name Type="string" LCID="1049" Value="Сохранить"/>
+    <Name Type="string" LCID="2052" Value="保存"/>
+    <Name Type="string" LCID="3082" Value="Guardar"/>
+  </Command>
+
+  <!--   EDIT   -->
+  <Command Id="Undo" Group="Edit">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\undo.js" />
+    <HudSlot Type="uint" Value="14"/>
+    <Name Type="string" LCID="1028" Value="復原"/>
+    <Name Type="string" LCID="1031" Value="Rückgängig"/>
+    <Name Type="string" LCID="1033" Value="Undo"/>
+    <Name Type="string" LCID="1046" Value="Desfazer"/>
+    <Name Type="string" LCID="1045" Value="Cofnij"/>
+    <Name Type="string" LCID="1029" Value="Zpět"/>
+    <Name Type="string" LCID="1055" Value="Geri Al"/>
+    <Name Type="string" LCID="1036" Value="Annuler"/>
+    <Name Type="string" LCID="1040" Value="Annulla"/>
+    <Name Type="string" LCID="1041" Value="元に戻す"/>
+    <Name Type="string" LCID="1042" Value="실행 취소"/>
+    <Name Type="string" LCID="1049" Value="Отменить"/>
+    <Name Type="string" LCID="2052" Value="撤消"/>
+    <Name Type="string" LCID="3082" Value="Deshacer"/>
+  </Command>
+
+  <Command Id="Redo" Group="Edit">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\redo.js" />
+    <HudSlot Type="uint" Value="15"/>
+    <Name Type="string" LCID="1028" Value="取消復原"/>
+    <Name Type="string" LCID="1031" Value="Wiederholen"/>
+    <Name Type="string" LCID="1033" Value="Redo"/>
+    <Name Type="string" LCID="1046" Value="Refazer"/>
+    <Name Type="string" LCID="1045" Value="Ponów"/>
+    <Name Type="string" LCID="1029" Value="Znovu"/>
+    <Name Type="string" LCID="1055" Value="Yinele"/>
+    <Name Type="string" LCID="1036" Value="Rétablir"/>
+    <Name Type="string" LCID="1040" Value="Ripristina"/>
+    <Name Type="string" LCID="1041" Value="やり直し"/>
+    <Name Type="string" LCID="1042" Value="다시 실행"/>
+    <Name Type="string" LCID="1049" Value="Повторить"/>
+    <Name Type="string" LCID="2052" Value="重复"/>
+    <Name Type="string" LCID="3082" Value="Rehacer"/>
+  </Command>
+
+  <Command Id="Copy" Group="Edit">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\copy.js" />
+    <Name Type="string" LCID="1028" Value="複製"/>
+    <Name Type="string" LCID="1031" Value="Kopieren"/>
+    <Name Type="string" LCID="1033" Value="Copy"/>
+    <Name Type="string" LCID="1046" Value="Copiar"/>
+    <Name Type="string" LCID="1045" Value="Kopiuj"/>
+    <Name Type="string" LCID="1029" Value="Kopírovat"/>
+    <Name Type="string" LCID="1055" Value="Kopyala"/>
+    <Name Type="string" LCID="1036" Value="Copier"/>
+    <Name Type="string" LCID="1040" Value="Copia"/>
+    <Name Type="string" LCID="1041" Value="コピー"/>
+    <Name Type="string" LCID="1042" Value="복사"/>
+    <Name Type="string" LCID="1049" Value="Копировать"/>
+    <Name Type="string" LCID="2052" Value="复制"/>
+    <Name Type="string" LCID="3082" Value="Copiar"/>
+  </Command>
+
+  <Command Id="Cut" Group="Edit">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\cut.js" />
+    <Name Type="string" LCID="1028" Value="剪下"/>
+    <Name Type="string" LCID="1031" Value="Ausschneiden"/>
+    <Name Type="string" LCID="1033" Value="Cut"/>
+    <Name Type="string" LCID="1046" Value="Cortar"/>
+    <Name Type="string" LCID="1045" Value="Wytnij"/>
+    <Name Type="string" LCID="1029" Value="Vyjmout"/>
+    <Name Type="string" LCID="1055" Value="Kes"/>
+    <Name Type="string" LCID="1036" Value="Couper"/>
+    <Name Type="string" LCID="1040" Value="Taglia"/>
+    <Name Type="string" LCID="1041" Value="切り取り"/>
+    <Name Type="string" LCID="1042" Value="잘라내기"/>
+    <Name Type="string" LCID="1049" Value="Вырезать"/>
+    <Name Type="string" LCID="2052" Value="剪切"/>
+    <Name Type="string" LCID="3082" Value="Cortar"/>
+  </Command>
+
+  <Command Id="Paste" Group="Edit">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\paste.js" />
+    <Name Type="string" LCID="1028" Value="貼上"/>
+    <Name Type="string" LCID="1031" Value="Einfügen"/>
+    <Name Type="string" LCID="1033" Value="Paste"/>
+    <Name Type="string" LCID="1046" Value="Colar"/>
+    <Name Type="string" LCID="1045" Value="Wklej"/>
+    <Name Type="string" LCID="1029" Value="Vložit"/>
+    <Name Type="string" LCID="1055" Value="Yapıştır"/>
+    <Name Type="string" LCID="1036" Value="Coller"/>
+    <Name Type="string" LCID="1040" Value="Incolla"/>
+    <Name Type="string" LCID="1041" Value="貼り付け"/>
+    <Name Type="string" LCID="1042" Value="붙여넣기"/>
+    <Name Type="string" LCID="1049" Value="Вставить"/>
+    <Name Type="string" LCID="2052" Value="粘贴"/>
+    <Name Type="string" LCID="3082" Value="Pegar"/>
+  </Command>
+
+  <Command Id="Delete" Group="Edit">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\delete.js" />
+    <HudSlot Type="uint" Value="16"/>
+    <Name Type="string" LCID="1028" Value="刪除"/>
+    <Name Type="string" LCID="1031" Value="Löschen"/>
+    <Name Type="string" LCID="1033" Value="Delete"/>
+    <Name Type="string" LCID="1046" Value="Excluir"/>
+    <Name Type="string" LCID="1045" Value="Usuń"/>
+    <Name Type="string" LCID="1029" Value="Odstranit"/>
+    <Name Type="string" LCID="1055" Value="Sil"/>
+    <Name Type="string" LCID="1036" Value="Supprimer"/>
+    <Name Type="string" LCID="1040" Value="Elimina"/>
+    <Name Type="string" LCID="1041" Value="削除"/>
+    <Name Type="string" LCID="1042" Value="삭제"/>
+    <Name Type="string" LCID="1049" Value="Удалить"/>
+    <Name Type="string" LCID="2052" Value="删除"/>
+    <Name Type="string" LCID="3082" Value="Eliminar"/>
+  </Command>
+
+  <Command Id="SelectAll" Group="Edit">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\selectall.js" />
+    <Name Type="string" LCID="1028" Value="全選"/>
+    <Name Type="string" LCID="1031" Value="Alles auswählen"/>
+    <Name Type="string" LCID="1033" Value="Select All"/>
+    <Name Type="string" LCID="1046" Value="Selecionar tudo"/>
+    <Name Type="string" LCID="1045" Value="Zaznacz wszystko"/>
+    <Name Type="string" LCID="1029" Value="Vybrat vše"/>
+    <Name Type="string" LCID="1055" Value="Tümünü Seç"/>
+    <Name Type="string" LCID="1036" Value="Sélectionner tout"/>
+    <Name Type="string" LCID="1040" Value="Seleziona tutto"/>
+    <Name Type="string" LCID="1041" Value="すべて選択"/>
+    <Name Type="string" LCID="1042" Value="모두 선택"/>
+    <Name Type="string" LCID="1049" Value="Выбрать все"/>
+    <Name Type="string" LCID="2052" Value="全选"/>
+    <Name Type="string" LCID="3082" Value="Seleccionar todo"/>
+  </Command>
+
+  <!--   VIEW   -->
+
+  <Command Id="Show FPS" Group="View">
+    <Script File="assets\scripts\show fps.js" />
+    <Name Type="string" LCID="1028" Value="畫面播放速率"/>
+    <Name Type="string" LCID="1031" Value="Framerate"/>
+    <Name Type="string" LCID="1033" Value="Frame Rate"/>
+    <Name Type="string" LCID="1046" Value="Taxa de quadros"/>
+    <Name Type="string" LCID="1045" Value="Szybkość klatek"/>
+    <Name Type="string" LCID="1029" Value="Snímková frekvence"/>
+    <Name Type="string" LCID="1055" Value="Kare Hızı"/>
+    <Name Type="string" LCID="1036" Value="Fréquence d'images"/>
+    <Name Type="string" LCID="1040" Value="Frequenza fotogrammi"/>
+    <Name Type="string" LCID="1041" Value="フレーム レート"/>
+    <Name Type="string" LCID="1042" Value="프레임 속도"/>
+    <Name Type="string" LCID="1049" Value="Частота кадров"/>
+    <Name Type="string" LCID="2052" Value="帧速率"/>
+    <Name Type="string" LCID="3082" Value="Velocidad de fotograma"/>
+  </Command>
+
+  <Command Id="Pan" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\pan.js" />
+    <HudSlot Type="uint" Value="9"/>
+    <Name Type="string" LCID="1028" Value="全景"/>
+    <Name Type="string" LCID="1031" Value="Schwenken"/>
+    <Name Type="string" LCID="1033" Value="Pan"/>
+    <Name Type="string" LCID="1046" Value="Panorâmica"/>
+    <Name Type="string" LCID="1045" Value="Przesuwanie"/>
+    <Name Type="string" LCID="1029" Value="Posouvání"/>
+    <Name Type="string" LCID="1055" Value="Yatay Kaydır"/>
+    <Name Type="string" LCID="1036" Value="Panoramique"/>
+    <Name Type="string" LCID="1040" Value="Dettaglio"/>
+    <Name Type="string" LCID="1041" Value="パン"/>
+    <Name Type="string" LCID="1042" Value="이동"/>
+    <Name Type="string" LCID="1049" Value="Сдвиг"/>
+    <Name Type="string" LCID="2052" Value="平移"/>
+    <Name Type="string" LCID="3082" Value="Panorámica"/>
+  </Command>
+
+  <Command Id="Zoom" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\zoom.js" />
+    <HudSlot Type="uint" Value="10"/>
+    <Name Type="string" LCID="1028" Value="縮放"/>
+    <Name Type="string" LCID="1031" Value="Zoom"/>
+    <Name Type="string" LCID="1033" Value="Zoom"/>
+    <Name Type="string" LCID="1046" Value="Zoom"/>
+    <Name Type="string" LCID="1045" Value="Powiększanie"/>
+    <Name Type="string" LCID="1029" Value="Lupa"/>
+    <Name Type="string" LCID="1055" Value="Yakınlaştır"/>
+    <Name Type="string" LCID="1036" Value="Agrandir"/>
+    <Name Type="string" LCID="1040" Value="Zoom"/>
+    <Name Type="string" LCID="1041" Value="ズーム"/>
+    <Name Type="string" LCID="1042" Value="확대/축소"/>
+    <Name Type="string" LCID="1049" Value="Масштаб"/>
+    <Name Type="string" LCID="2052" Value="缩放"/>
+    <Name Type="string" LCID="3082" Value="Zoom"/>
+  </Command>
+
+  <Command Id="Orbit" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\orbit.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="11"/>
+    <Name Type="string" LCID="1028" Value="軌跡"/>
+    <Name Type="string" LCID="1031" Value="Umlauf"/>
+    <Name Type="string" LCID="1033" Value="Orbit"/>
+    <Name Type="string" LCID="1046" Value="Órbita"/>
+    <Name Type="string" LCID="1045" Value="Zataczanie kręgów"/>
+    <Name Type="string" LCID="1029" Value="Průlet"/>
+    <Name Type="string" LCID="1055" Value="Yörünge"/>
+    <Name Type="string" LCID="1036" Value="Orbite"/>
+    <Name Type="string" LCID="1040" Value="Orbita"/>
+    <Name Type="string" LCID="1041" Value="オービット"/>
+    <Name Type="string" LCID="1042" Value="궤도"/>
+    <Name Type="string" LCID="1049" Value="Орбита"/>
+    <Name Type="string" LCID="2052" Value="轨道"/>
+    <Name Type="string" LCID="3082" Value="Órbita"/>
+  </Command>
+
+  <Command Id="FrameObject" Group="View">
+    <Script File="assets\scripts\FrameObject.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="12"/>
+    <Name Type="string" LCID="1028" Value="框架物件"/>
+    <Name Type="string" LCID="1031" Value="Objekt einrahmen"/>
+    <Name Type="string" LCID="1033" Value="Frame Object"/>
+    <Name Type="string" LCID="1046" Value="Objeto com moldura"/>
+    <Name Type="string" LCID="1045" Value="Obiekt ramki"/>
+    <Name Type="string" LCID="1029" Value="Objekt rámce"/>
+    <Name Type="string" LCID="1055" Value="Çerçeve Nesnesi"/>
+    <Name Type="string" LCID="1036" Value="Objet cadre"/>
+    <Name Type="string" LCID="1040" Value="Oggetto frame"/>
+    <Name Type="string" LCID="1041" Value="フレーム オブジェクト"/>
+    <Name Type="string" LCID="1042" Value="프레임 개체"/>
+    <Name Type="string" LCID="1049" Value="Объект фрейма"/>
+    <Name Type="string" LCID="2052" Value="帧对象"/>
+    <Name Type="string" LCID="3082" Value="Objeto de marco"/>
+  </Command>
+
+  <Command Id="RealTimeMode" Group="View" Type="ToggleCommand">
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="即時呈現"/>
+    <Name Type="string" LCID="1031" Value="Echtzeitrendern"/>
+    <Name Type="string" LCID="1033" Value="Real-Time Rendering"/>
+    <Name Type="string" LCID="1046" Value="Renderização em tempo real"/>
+    <Name Type="string" LCID="1045" Value="Renderowanie w czasie rzeczywistym"/>
+    <Name Type="string" LCID="1029" Value="Vykreslování v reálném čase"/>
+    <Name Type="string" LCID="1055" Value="Gerçek Zamanlı Oluşturma"/>
+    <Name Type="string" LCID="1036" Value="Rendu en temps réel"/>
+    <Name Type="string" LCID="1040" Value="Rendering in tempo reale"/>
+    <Name Type="string" LCID="1041" Value="リアルタイム レンダリング"/>
+    <Name Type="string" LCID="1042" Value="실시간 렌더링"/>
+    <Name Type="string" LCID="1049" Value="Визуализация в режиме реального времени"/>
+    <Name Type="string" LCID="2052" Value="实时呈现"/>
+    <Name Type="string" LCID="3082" Value="Representación en tiempo real"/>
+  </Command>
+
+  <Command Id="ToggleGrid" Group="View">
+    <state Type="uint" Value="2"/>
+    <Script File="assets\scripts\ToggleGrid.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="格線"/>
+    <Name Type="string" LCID="1031" Value="Raster"/>
+    <Name Type="string" LCID="1033" Value="Grid"/>
+    <Name Type="string" LCID="1046" Value="Grade"/>
+    <Name Type="string" LCID="1045" Value="Siatka"/>
+    <Name Type="string" LCID="1029" Value="Mřížka"/>
+    <Name Type="string" LCID="1055" Value="Kılavuz"/>
+    <Name Type="string" LCID="1036" Value="Grille"/>
+    <Name Type="string" LCID="1040" Value="Griglia"/>
+    <Name Type="string" LCID="1041" Value="グリッド"/>
+    <Name Type="string" LCID="1042" Value="모눈"/>
+    <Name Type="string" LCID="1049" Value="Сетка"/>
+    <Name Type="string" LCID="2052" Value="网格"/>
+    <Name Type="string" LCID="3082" Value="Cuadrícula"/>
+  </Command>
+
+  <!-- TOOLS  -->
+
+  <!-- 
+  ===========================================================
+  DSD specific groups & commands
+  ===========================================================
+  -->
+  <!-- GROUPS -->
+  <Command Id="Utility" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="公用程式"/>
+    <Name Type="string" LCID="1031" Value="Dienstprogramm"/>
+    <Name Type="string" LCID="1033" Value="Utility"/>
+    <Name Type="string" LCID="1046" Value="Utilitário"/>
+    <Name Type="string" LCID="1045" Value="Narzędzie"/>
+    <Name Type="string" LCID="1029" Value="Nástroj"/>
+    <Name Type="string" LCID="1055" Value="Yardımcı Program"/>
+    <Name Type="string" LCID="1036" Value="Utilitaire"/>
+    <Name Type="string" LCID="1040" Value="Utilità"/>
+    <Name Type="string" LCID="1041" Value="ユーティリティ"/>
+    <Name Type="string" LCID="1042" Value="유틸리티"/>
+    <Name Type="string" LCID="1049" Value="Служебная программа"/>
+    <Name Type="string" LCID="2052" Value="实用工具"/>
+    <Name Type="string" LCID="3082" Value="Utilidad"/>
+  </Command>
+  
+  <Command Id="Constants" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="常數"/>
+    <Name Type="string" LCID="1031" Value="Konstanten"/>
+    <Name Type="string" LCID="1033" Value="Constants"/>
+    <Name Type="string" LCID="1046" Value="Constantes"/>
+    <Name Type="string" LCID="1045" Value="Stałe"/>
+    <Name Type="string" LCID="1029" Value="Konstanty"/>
+    <Name Type="string" LCID="1055" Value="Sabitler"/>
+    <Name Type="string" LCID="1036" Value="Constantes"/>
+    <Name Type="string" LCID="1040" Value="Costanti"/>
+    <Name Type="string" LCID="1041" Value="定数"/>
+    <Name Type="string" LCID="1042" Value="상수"/>
+    <Name Type="string" LCID="1049" Value="Константы"/>
+    <Name Type="string" LCID="2052" Value="常量"/>
+    <Name Type="string" LCID="3082" Value="Constantes"/>
+  </Command>
+  
+  <Command Id="Math" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="數學"/>
+    <Name Type="string" LCID="1031" Value="Berechnungen"/>
+    <Name Type="string" LCID="1033" Value="Math"/>
+    <Name Type="string" LCID="1046" Value="Matemática"/>
+    <Name Type="string" LCID="1045" Value="Obliczenia"/>
+    <Name Type="string" LCID="1029" Value="Matematika"/>
+    <Name Type="string" LCID="1055" Value="Matematik"/>
+    <Name Type="string" LCID="1036" Value="Math"/>
+    <Name Type="string" LCID="1040" Value="Matematica"/>
+    <Name Type="string" LCID="1041" Value="数値演算"/>
+    <Name Type="string" LCID="1042" Value="수학"/>
+    <Name Type="string" LCID="1049" Value="Математические методы"/>
+    <Name Type="string" LCID="2052" Value="数学"/>
+    <Name Type="string" LCID="3082" Value="Texto"/>
+  </Command>
+  
+  <Command Id="Parameters" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="參數"/>
+    <Name Type="string" LCID="1031" Value="Parameter"/>
+    <Name Type="string" LCID="1033" Value="Parameters"/>
+    <Name Type="string" LCID="1046" Value="Parâmetros"/>
+    <Name Type="string" LCID="1045" Value="Parametry"/>
+    <Name Type="string" LCID="1029" Value="Parametry"/>
+    <Name Type="string" LCID="1055" Value="Parametreler"/>
+    <Name Type="string" LCID="1036" Value="Paramètres"/>
+    <Name Type="string" LCID="1040" Value="Parametri"/>
+    <Name Type="string" LCID="1041" Value="パラメーター"/>
+    <Name Type="string" LCID="1042" Value="매개 변수"/>
+    <Name Type="string" LCID="1049" Value="Параметры"/>
+    <Name Type="string" LCID="2052" Value="参数"/>
+    <Name Type="string" LCID="3082" Value="Parámetros"/>
+  </Command>
+  
+  <Command Id="Texture" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="紋理"/>
+    <Name Type="string" LCID="1031" Value="Textur"/>
+    <Name Type="string" LCID="1033" Value="Texture"/>
+    <Name Type="string" LCID="1046" Value="Textura"/>
+    <Name Type="string" LCID="1045" Value="Tekstura"/>
+    <Name Type="string" LCID="1029" Value="Textura"/>
+    <Name Type="string" LCID="1055" Value="Doku"/>
+    <Name Type="string" LCID="1036" Value="Texture"/>
+    <Name Type="string" LCID="1040" Value="Trama"/>
+    <Name Type="string" LCID="1041" Value="テクスチャ"/>
+    <Name Type="string" LCID="1042" Value="질감"/>
+    <Name Type="string" LCID="1049" Value="Текстура"/>
+    <Name Type="string" LCID="2052" Value="纹理"/>
+    <Name Type="string" LCID="3082" Value="Textura"/>
+  </Command>
+
+  <Command Id="Filters" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="篩選條件"/>
+    <Name Type="string" LCID="1031" Value="Filter"/>
+    <Name Type="string" LCID="1033" Value="Filters"/>
+    <Name Type="string" LCID="1046" Value="Filtros"/>
+    <Name Type="string" LCID="1045" Value="Filtry"/>
+    <Name Type="string" LCID="1029" Value="Filtry"/>
+    <Name Type="string" LCID="1055" Value="Filtreler"/>
+    <Name Type="string" LCID="1046" Value="Filtros"/>
+    <Name Type="string" LCID="1045" Value="Filtry"/>
+    <Name Type="string" LCID="1029" Value="Filtry"/>
+    <Name Type="string" LCID="1055" Value="Filtreler"/>
+    <Name Type="string" LCID="1036" Value="Filtres"/>
+    <Name Type="string" LCID="1040" Value="Filtri"/>
+    <Name Type="string" LCID="1041" Value="フィルター"/>
+    <Name Type="string" LCID="1042" Value="필터"/>
+    <Name Type="string" LCID="1049" Value="Фильтры"/>
+    <Name Type="string" LCID="2052" Value="筛选器"/>
+    <Name Type="string" LCID="3082" Value="Filtros"/>
+  </Command>
+
+  <!-- EXPORT -->
+  <Command Id="Export As..." Group="Export">
+    <Script File="assets\scripts\ExportDirect3DEffect.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="匯出為..."/>
+    <Name Type="string" LCID="1031" Value="Exportieren als..."/>
+    <Name Type="string" LCID="1033" Value="Export As..."/>
+    <Name Type="string" LCID="1046" Value="Exportar como..."/>
+    <Name Type="string" LCID="1045" Value="Eksportuj jako..."/>
+    <Name Type="string" LCID="1029" Value="Exportovat jako…"/>
+    <Name Type="string" LCID="1055" Value="Farklı Biçimde Dışarı Aktar..."/>
+    <Name Type="string" LCID="1036" Value="Exporter en tant que…"/>
+    <Name Type="string" LCID="1040" Value="Esporta come..."/>
+    <Name Type="string" LCID="1041" Value="名前を付けてエクスポート..."/>
+    <Name Type="string" LCID="1042" Value="다른 이름으로 내보내기…"/>
+    <Name Type="string" LCID="1049" Value="Экспортировать как..."/>
+    <Name Type="string" LCID="2052" Value="导出为..."/>
+    <Name Type="string" LCID="3082" Value="Exportar como..."/>
+  </Command>
+
+  <!-- NODE PREVIEWS -->
+  <Command Id="DSD.Preview.Sphere" Group="Preview Mesh" Type="RadioButton">
+    <state Type="uint" Value="2"/>
+    <Script>
+      <![CDATA[
+        document.setPreviewMesh("sphere");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="使用網狀球體可預覽著色器效果管線"/>
+    <Name Type="string" LCID="1031" Value="Kugel-Mesh zur Vorschau der Shadereffektpipeline verwenden"/>
+    <Name Type="string" LCID="1033" Value="Use sphere mesh to preview shader effect pipeline"/>
+    <Name Type="string" LCID="1046" Value="Usar malha da esfera para visualizar pipeline de efeito do sombreador"/>
+    <Name Type="string" LCID="1045" Value="Użyj siatki kuli, aby podejrzeć potok efektów cieniowania"/>
+    <Name Type="string" LCID="1029" Value="Použít kulovou síť pro náhled kanálu efektu shaderu"/>
+    <Name Type="string" LCID="1055" Value="Gölgelendirici efekt düzenini önizlemek için küre şeklinde ağ kullanın"/>
+    <Name Type="string" LCID="1036" Value="Utiliser le maillage sphérique pour l'aperçu du pipeline d'effets du nuanceur"/>
+    <Name Type="string" LCID="1040" Value="Utilizza mesh sfera per anteprima pipeline effetto shader"/>
+    <Name Type="string" LCID="1041" Value="球体メッシュを使用してシェーダー効果パイプラインをプレビュー"/>
+    <Name Type="string" LCID="1042" Value="셰이더 효과 파이프라인을 미리 보기 위해 구형 망상 조직 사용"/>
+    <Name Type="string" LCID="1049" Value="Использовать сферическую сетку для предварительного просмотра конвейера эффектов шейдера"/>
+    <Name Type="string" LCID="2052" Value="使用球形网格预览着色器效果管道"/>
+    <Name Type="string" LCID="3082" Value="Usar malla de esfera para obtener una vista previa de la canalización de efectos del sombreador"/>
+  </Command>
+
+  <Command Id="DSD.Preview.Cube" Group="Preview Mesh" Type="RadioButton">
+    <Script>
+      <![CDATA[
+        document.setPreviewMesh("cube");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="使用網狀立方體可預覽著色器效果管線"/>
+    <Name Type="string" LCID="1031" Value="Würfel-Mesh zur Vorschau der Shadereffektpipeline verwenden"/>
+    <Name Type="string" LCID="1033" Value="Use cube mesh to preview shader effect pipeline"/>
+    <Name Type="string" LCID="1046" Value="Usar malha do cubo para visualizar pipeline de efeito do sombreador"/>
+    <Name Type="string" LCID="1045" Value="Użyj siatki sześcianu, aby podejrzeć potok efektów cieniowania"/>
+    <Name Type="string" LCID="1029" Value="Použít krychlovou síť pro náhled kanálu efektu shaderu"/>
+    <Name Type="string" LCID="1055" Value="Gölgelendirici efekt düzenini önizlemek için küp şeklinde ağ kullanın"/>
+    <Name Type="string" LCID="1036" Value="Utiliser le maillage cubique pour l'aperçu du pipeline d'effets du nuanceur"/>
+    <Name Type="string" LCID="1040" Value="Utilizza mesh cubo per anteprima pipeline effetto shader"/>
+    <Name Type="string" LCID="1041" Value="立方体メッシュを使用してシェーダー効果パイプラインをプレビュー"/>
+    <Name Type="string" LCID="1042" Value="셰이더 효과 파이프라인을 미리 보기 위해 큐브형 망상 조직 사용"/>
+    <Name Type="string" LCID="1049" Value="Использовать кубическую сетку для предварительного просмотра конвейера эффектов шейдера"/>
+    <Name Type="string" LCID="2052" Value="使用立方体网格预览着色器效果管道"/>
+    <Name Type="string" LCID="3082" Value="Usar malla de cubo para obtener una vista previa de la canalización de efectos del sombreador"/>
+  </Command>
+
+  <Command Id="DSD.Preview.Teapot" Group="Preview Mesh" Type="RadioButton">
+    <Script>
+      <![CDATA[
+        document.setPreviewMesh("teapot");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="使用網狀茶壺形體可預覽著色器效果管線"/>
+    <Name Type="string" LCID="1031" Value="Tassen-Mesh zur Vorschau der Shadereffektpipeline verwenden"/>
+    <Name Type="string" LCID="1033" Value="Use teapot mesh to preview shader effect pipeline"/>
+    <Name Type="string" LCID="1046" Value="Usar malha do bule para visualizar pipeline de efeito do sombreador"/>
+    <Name Type="string" LCID="1045" Value="Użyj siatki czajniczka, aby podejrzeć potok efektów cieniowania"/>
+    <Name Type="string" LCID="1029" Value="Použít síť čajové konvice pro náhled kanálu efektu shaderu"/>
+    <Name Type="string" LCID="1055" Value="Gölgelendirici efekt düzenini önizlemek için çaydanlık şeklinde ağ kullanın"/>
+    <Name Type="string" LCID="1036" Value="Utiliser le maillage Théière pour l'aperçu du pipeline d'effets du nuanceur"/>
+    <Name Type="string" LCID="1040" Value="Utilizza mesh teiera per anteprima pipeline effetto shader"/>
+    <Name Type="string" LCID="1041" Value="ティーポット メッシュを使用してシェーダー効果パイプラインをプレビュー"/>
+    <Name Type="string" LCID="1042" Value="셰이더 효과 파이프라인을 미리 보기 위해 주전자형 망상 조직 사용"/>
+    <Name Type="string" LCID="1049" Value="Использовать сетку чайника для предварительного просмотра конвейера эффектов шейдера"/>
+    <Name Type="string" LCID="2052" Value="使用茶壶网格预览着色器效果管道"/>
+    <Name Type="string" LCID="3082" Value="Usar malla de tetera para obtener una vista previa de la canalización de efectos del sombreador"/>
+  </Command>
+
+  <Command Id="DSD.Preview.Plane" Group="Preview Mesh" Type="RadioButton">
+    <Script>
+      <![CDATA[
+        document.setPreviewMesh("plane");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="使用網狀平面可預覽著色器效果管線"/>
+    <Name Type="string" LCID="1031" Value="Ebenen-Mesh zur Vorschau der Shadereffektpipeline verwenden"/>
+    <Name Type="string" LCID="1033" Value="Use plane mesh to preview shader effect pipeline"/>
+    <Name Type="string" LCID="1046" Value="Usar malha do plano para visualizar pipeline de efeito do sombreador"/>
+    <Name Type="string" LCID="1045" Value="Użyj siatki płaszczyzny, aby podejrzeć potok efektów cieniowania"/>
+    <Name Type="string" LCID="1029" Value="Použít rovinnou síť pro náhled kanálu efektu shaderu"/>
+    <Name Type="string" LCID="1055" Value="Gölgelendirici efekt düzenini önizlemek için düzlem şeklinde ağ kullanın"/>
+    <Name Type="string" LCID="1036" Value="Utiliser le maillage plan pour l'aperçu du pipeline d'effets du nuanceur"/>
+    <Name Type="string" LCID="1040" Value="Utilizza mesh piano per anteprima pipeline effetto shader"/>
+    <Name Type="string" LCID="1041" Value="平面メッシュを使用してシェーダー効果パイプラインをプレビュー"/>
+    <Name Type="string" LCID="1042" Value="셰이더 효과 파이프라인을 미리 보기 위해 평면 망상 조직 사용"/>
+    <Name Type="string" LCID="1049" Value="Использовать плоскую сетку для предварительного просмотра конвейера эффектов шейдера"/>
+    <Name Type="string" LCID="2052" Value="使用平面网格预览着色器效果管道"/>
+    <Name Type="string" LCID="3082" Value="Usar malla de plano para obtener una vista previa de la canalización de efectos del sombreador"/>
+  </Command>
+
+  <Command Id="DSD.Preview.Cylinder" Group="Preview Mesh" Type="RadioButton">
+    <Script>
+      <![CDATA[
+        document.setPreviewMesh("cylinder");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="使用網狀圓柱體可預覽著色器效果管線"/>
+    <Name Type="string" LCID="1031" Value="Zylinder-Mesh zur Vorschau der Shadereffektpipeline verwenden"/>
+    <Name Type="string" LCID="1033" Value="Use cylinder mesh to preview shader effect pipeline"/>
+    <Name Type="string" LCID="1046" Value="Usar malha do cilindro para visualizar pipeline de efeito do sombreador"/>
+    <Name Type="string" LCID="1045" Value="Użyj siatki walca, aby podejrzeć potok efektów cieniowania"/>
+    <Name Type="string" LCID="1029" Value="Použít válcovou síť pro náhled kanálu efektu shaderu"/>
+    <Name Type="string" LCID="1055" Value="Gölgelendirici efekt düzenini önizlemek için silindir şeklinde ağ kullanın"/>
+    <Name Type="string" LCID="1036" Value="Utiliser le maillage cylindrique pour l'aperçu du pipeline d'effets du nuanceur"/>
+    <Name Type="string" LCID="1040" Value="Utilizza mesh cilindro per anteprima pipeline effetto shader"/>
+    <Name Type="string" LCID="1041" Value="円柱メッシュを使用してシェーダー効果パイプラインをプレビュー"/>
+    <Name Type="string" LCID="1042" Value="셰이더 효과 파이프라인을 미리 보기 위해 원통형 망상 조직 사용"/>
+    <Name Type="string" LCID="1049" Value="Использовать цилиндрическую сетку для предварительного просмотра конвейера эффектов шейдера"/>
+    <Name Type="string" LCID="2052" Value="使用圆柱体网格预览着色器效果管道"/>
+    <Name Type="string" LCID="3082" Value="Usar malla de cilindro para obtener una vista previa de la canalización de efectos del sombreador"/>
+  </Command>
+
+  <Command Id="DSD.Preview.Cone" Group="Preview Mesh" Type="RadioButton">
+    <Script>
+      <![CDATA[
+        document.setPreviewMesh("cone");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="使用網狀圓錐體可預覽著色器效果管線"/>
+    <Name Type="string" LCID="1031" Value="Kegel-Mesh zur Vorschau der Shadereffektpipeline verwenden"/>
+    <Name Type="string" LCID="1033" Value="Use cone mesh to preview shader effect pipeline"/>
+    <Name Type="string" LCID="1046" Value="Usar malha do cone para visualizar pipeline de efeito do sombreador"/>
+    <Name Type="string" LCID="1045" Value="Użyj siatki stożka, aby podejrzeć potok efektów cieniowania"/>
+    <Name Type="string" LCID="1029" Value="Použít kuželovou síť pro náhled kanálu efektu shaderu"/>
+    <Name Type="string" LCID="1055" Value="Gölgelendirici efekt düzenini önizlemek için koni şeklinde ağ kullanın"/>
+    <Name Type="string" LCID="1036" Value="Utiliser le maillage conique pour l'aperçu du pipeline d'effets du nuanceur"/>
+    <Name Type="string" LCID="1040" Value="Utilizza mesh cono per anteprima pipeline effetto shader"/>
+    <Name Type="string" LCID="1041" Value="円錐メッシュを使用してシェーダー効果パイプラインをプレビュー"/>
+    <Name Type="string" LCID="1042" Value="셰이더 효과 파이프라인을 미리 보기 위해 원뿔형 망상 조직 사용"/>
+    <Name Type="string" LCID="1049" Value="Использовать коническую сетку для предварительного просмотра конвейера эффектов шейдера"/>
+    <Name Type="string" LCID="2052" Value="使用圆锥体网格预览着色器效果管道"/>
+    <Name Type="string" LCID="3082" Value="Usar malla de cono para obtener una vista previa de la canalización de efectos del sombreador"/>
+  </Command>
+
+  <!--
+  VIEW 
+  -->
+  <Command Id="ZoomToFit" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script>
+      <![CDATA[
+        document.zoomToFit();
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="5"/>
+    <Name Type="string" LCID="1028" Value="符合全部範圍"/>
+    <Name Type="string" LCID="1031" Value="Alles anpassen"/>
+    <Name Type="string" LCID="1033" Value="Fit All"/>
+    <Name Type="string" LCID="1046" Value="Ajustar todos"/>
+    <Name Type="string" LCID="1045" Value="Dopasuj wszystko"/>
+    <Name Type="string" LCID="1029" Value="Přizpůsobit vše"/>
+    <Name Type="string" LCID="1055" Value="Tümünü Sığdır"/>
+    <Name Type="string" LCID="1046" Value="Ajustar todos"/>
+    <Name Type="string" LCID="1045" Value="Dopasuj wszystko"/>
+    <Name Type="string" LCID="1029" Value="Přizpůsobit vše"/>
+    <Name Type="string" LCID="1055" Value="Tümünü Sığdır"/>
+    <Name Type="string" LCID="1036" Value="Ajuster tout"/>
+    <Name Type="string" LCID="1040" Value="Adatta tutto"/>
+    <Name Type="string" LCID="1041" Value="すべてを合わせる"/>
+    <Name Type="string" LCID="1042" Value="모두 맞춤"/>
+    <Name Type="string" LCID="1049" Value="Вписать"/>
+    <Name Type="string" LCID="2052" Value="全部适应"/>
+    <Name Type="string" LCID="3082" Value="Ajustar todo"/>
+  </Command>
+
+
+
+  <!-- 
+  ===========================================================
+  TRE specific commands
+  ===========================================================
+  -->
+  <!--
+  VIEW 
+  -->
+  <Command Id="ZoomToActualSize" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script>
+      <![CDATA[
+        var kOrthographicCameraUniqueId = "Microsoft.VisualStudio.3D.OrthographicCamera";
+        var kOrthographicCameraZoomFactorTraitId = "ZoomFactor";
+        var kOrthographicCameraMatrixTraitId = "CameraMatrix";
+
+        var cameraElement = document.elements.getElement(kOrthographicCameraUniqueId);
+        var zoomFactorTrait = cameraElement.getTrait(kOrthographicCameraZoomFactorTraitId);
+        zoomFactorTrait.value = 1.0;
+
+        // re-position the camera at the origin
+        var cameraMatrixTrait = cameraElement.getTrait(kOrthographicCameraMatrixTraitId);
+        var cameraMatrix = cameraMatrixTrait.value;
+        var translation = math.getTranslation(cameraMatrix);
+        translation[0] = 0;
+        translation[1] = 0;
+        math.setTranslation(cameraMatrix, translation);
+        cameraMatrixTrait.value = cameraMatrix;      
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="縮放至實際大小"/>
+    <Name Type="string" LCID="1031" Value="Originalgröße anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Zoom To Actual Size"/>
+    <Name Type="string" LCID="1046" Value="Zoom para tamanho real"/>
+    <Name Type="string" LCID="1045" Value="Powiększ do rzeczywistego rozmiaru"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit ve skutečné velikosti"/>
+    <Name Type="string" LCID="1055" Value="Gerçek Boyuta Yakınlaştır"/>
+    <Name Type="string" LCID="1036" Value="Zoom à la taille réelle"/>
+    <Name Type="string" LCID="1040" Value="Dimensioni effettive"/>
+    <Name Type="string" LCID="1041" Value="実際のサイズで表示"/>
+    <Name Type="string" LCID="1042" Value="실제 크기로 확대/축소"/>
+    <Name Type="string" LCID="1049" Value="Фактический размер"/>
+    <Name Type="string" LCID="2052" Value="缩放为实际大小"/>
+    <Name Type="string" LCID="3082" Value="Ajustar a tamaño real"/>
+  </Command>
+
+  <Command Id="ZoomToFit" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\zoomtofit.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="5"/>
+    <Name Type="string" LCID="1028" Value="符合全部範圍"/>
+    <Name Type="string" LCID="1031" Value="Alles anpassen"/>
+    <Name Type="string" LCID="1033" Value="Fit All"/>
+    <Name Type="string" LCID="1046" Value="Ajustar todos"/>
+    <Name Type="string" LCID="1045" Value="Dopasuj wszystko"/>
+    <Name Type="string" LCID="1029" Value="Přizpůsobit vše"/>
+    <Name Type="string" LCID="1055" Value="Tümünü Sığdır"/>
+    <Name Type="string" LCID="1046" Value="Ajustar todos"/>
+    <Name Type="string" LCID="1045" Value="Dopasuj wszystko"/>
+    <Name Type="string" LCID="1029" Value="Přizpůsobit vše"/>
+    <Name Type="string" LCID="1055" Value="Tümünü Sığdır"/>
+    <Name Type="string" LCID="1036" Value="Ajuster tout"/>
+    <Name Type="string" LCID="1040" Value="Adatta tutto"/>
+    <Name Type="string" LCID="1041" Value="すべてを合わせる"/>
+    <Name Type="string" LCID="1042" Value="모두 맞춤"/>
+    <Name Type="string" LCID="1049" Value="Вписать"/>
+    <Name Type="string" LCID="2052" Value="全部适应"/>
+    <Name Type="string" LCID="3082" Value="Ajustar todo"/>
+  </Command>
+
+  <Command Id="ZoomToScreenWidth" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\zoomtoscreenwidth.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="6"/>
+    <Name Type="string" LCID="1028" Value="符合寬度"/>
+    <Name Type="string" LCID="1031" Value="Breite anpassen"/>
+    <Name Type="string" LCID="1033" Value="Fit Width"/>
+    <Name Type="string" LCID="1046" Value="Ajustar largura"/>
+    <Name Type="string" LCID="1045" Value="Dopasuj szerokość"/>
+    <Name Type="string" LCID="1029" Value="Přizpůsobit šířku"/>
+    <Name Type="string" LCID="1055" Value="Genişliği Sığdır"/>
+    <Name Type="string" LCID="1036" Value="Ajuster en largeur"/>
+    <Name Type="string" LCID="1040" Value="Adatta larghezza"/>
+    <Name Type="string" LCID="1041" Value="幅を合わせる"/>
+    <Name Type="string" LCID="1042" Value="너비 맞춤"/>
+    <Name Type="string" LCID="1049" Value="Вписать по ширине"/>
+    <Name Type="string" LCID="2052" Value="适应宽度"/>
+    <Name Type="string" LCID="3082" Value="Ajustar a ancho"/>
+  </Command>
+
+  <Command Id="ToggleBackground" Group="View" Type="ToggleCommand">
+    <state Type="uint" Value="2"/>
+    <Script>
+      <![CDATA[
+        if (command.getTrait("state").value == 0) {
+            services.commands.getCommandData("AnimateBackground").getTrait("state").value = 0;
+        }
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="顯示背景"/>
+    <Name Type="string" LCID="1031" Value="Hintergrund anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Background"/>
+    <Name Type="string" LCID="1046" Value="Exibir tela de fundo"/>
+    <Name Type="string" LCID="1045" Value="Pokaż tło"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit pozadí"/>
+    <Name Type="string" LCID="1055" Value="Arka Planı Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher l'arrière-plan"/>
+    <Name Type="string" LCID="1040" Value="Mostra sfondo"/>
+    <Name Type="string" LCID="1041" Value="背景の表示"/>
+    <Name Type="string" LCID="1042" Value="배경 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать фон"/>
+    <Name Type="string" LCID="2052" Value="显示背景"/>
+    <Name Type="string" LCID="3082" Value="Mostrar fondo"/>
+  </Command>
+
+  <Command Id="AnimateBackground" Group="View" Type="ToggleCommand">
+    <Script>
+      <![CDATA[
+        if (command.getTrait("state").value == 2) {
+            services.commands.getCommandData("ToggleBackground").getTrait("state").value = 2;
+        }
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="動畫背景"/>
+    <Name Type="string" LCID="1031" Value="Animierter Hintergrund"/>
+    <Name Type="string" LCID="1033" Value="Animated Background"/>
+    <Name Type="string" LCID="1046" Value="Tela de fundo animada"/>
+    <Name Type="string" LCID="1045" Value="Animowane tło"/>
+    <Name Type="string" LCID="1029" Value="Animované pozadí"/>
+    <Name Type="string" LCID="1055" Value="Hareketli Arka Plan"/>
+    <Name Type="string" LCID="1036" Value="Arrière-plan animé"/>
+    <Name Type="string" LCID="1040" Value="Sfondo animato"/>
+    <Name Type="string" LCID="1041" Value="アニメーション背景"/>
+    <Name Type="string" LCID="1042" Value="애니메이션 배경"/>
+    <Name Type="string" LCID="1049" Value="Анимированный фон"/>
+    <Name Type="string" LCID="2052" Value="动态背景"/>
+    <Name Type="string" LCID="3082" Value="Fondo animado"/>
+  </Command>
+
+ 
+  <Command Id="WhiteTransparency" Group="TransparencyColor" Type="RadioToggleButton">
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="白色"/>
+    <Name Type="string" LCID="1031" Value="Weiß"/>
+    <Name Type="string" LCID="1033" Value="White"/>
+    <Name Type="string" LCID="1046" Value="Branco"/>
+    <Name Type="string" LCID="1045" Value="Biały"/>
+    <Name Type="string" LCID="1029" Value="Bílá"/>
+    <Name Type="string" LCID="1055" Value="Beyaz"/>
+    <Name Type="string" LCID="1036" Value="Blanc"/>
+    <Name Type="string" LCID="1040" Value="Bianco"/>
+    <Name Type="string" LCID="1041" Value="白"/>
+    <Name Type="string" LCID="1042" Value="흰색"/>
+    <Name Type="string" LCID="1049" Value="Белый"/>
+    <Name Type="string" LCID="2052" Value="白色"/>
+    <Name Type="string" LCID="3082" Value="Blanco"/>
+  </Command>
+
+  <Command Id="BlackTransparency" Group="TransparencyColor" Type="RadioToggleButton">
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="黑色"/>
+    <Name Type="string" LCID="1031" Value="Schwarz"/>
+    <Name Type="string" LCID="1033" Value="Black"/>
+    <Name Type="string" LCID="1046" Value="Preto"/>
+    <Name Type="string" LCID="1045" Value="Czarny"/>
+    <Name Type="string" LCID="1029" Value="Černá"/>
+    <Name Type="string" LCID="1055" Value="Siyah"/>
+    <Name Type="string" LCID="1036" Value="Noir"/>
+    <Name Type="string" LCID="1040" Value="Nero"/>
+    <Name Type="string" LCID="1041" Value="黒"/>
+    <Name Type="string" LCID="1042" Value="검은색"/>
+    <Name Type="string" LCID="1049" Value="Черный"/>
+    <Name Type="string" LCID="2052" Value="黑色"/>
+    <Name Type="string" LCID="3082" Value="Negro"/>
+  </Command>
+
+  <!--
+  CHANNELS
+  -->
+  <Command Id="ToggleRed" Group="Channels">
+    <state Type="uint" Value="2"/>
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\togglered.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="0"/>
+    <Name Type="string" LCID="1028" Value="顯示紅色色板"/>
+    <Name Type="string" LCID="1031" Value="Roten Kanal anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Red Channel"/>
+    <Name Type="string" LCID="1046" Value="Exibir canal vermelho"/>
+    <Name Type="string" LCID="1045" Value="Pokaż kanał czerwonego"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit červený kanál"/>
+    <Name Type="string" LCID="1055" Value="Kırmızı Kanalı Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher le canal rouge"/>
+    <Name Type="string" LCID="1040" Value="Mostra canale rosso"/>
+    <Name Type="string" LCID="1041" Value="赤のチャネルの表示"/>
+    <Name Type="string" LCID="1042" Value="빨간색 채널 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать красный канал"/>
+    <Name Type="string" LCID="2052" Value="显示红色通道"/>
+    <Name Type="string" LCID="3082" Value="Mostrar canal rojo"/>
+  </Command>
+
+  <Command Id="ToggleGreen" Group="Channels">
+    <state Type="uint" Value="2"/>
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\togglegreen.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="1"/>
+    <Name Type="string" LCID="1028" Value="顯示綠色色板"/>
+    <Name Type="string" LCID="1031" Value="Grünen Kanal anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Green Channel"/>
+    <Name Type="string" LCID="1046" Value="Exibir canal verde"/>
+    <Name Type="string" LCID="1045" Value="Pokaż kanał zielonego"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit zelený kanál"/>
+    <Name Type="string" LCID="1055" Value="Yeşil Kanalı Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher le canal vert"/>
+    <Name Type="string" LCID="1040" Value="Mostra canale verde"/>
+    <Name Type="string" LCID="1041" Value="緑のチャネルの表示"/>
+    <Name Type="string" LCID="1042" Value="녹색 채널 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать зеленый канал"/>
+    <Name Type="string" LCID="2052" Value="显示绿色通道"/>
+    <Name Type="string" LCID="3082" Value="Mostrar canal verde"/>
+  </Command>
+
+  <Command Id="ToggleBlue" Group="Channels">
+    <state Type="uint" Value="2"/>
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\toggleblue.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="2"/>
+    <Name Type="string" LCID="1028" Value="顯示藍色色板"/>
+    <Name Type="string" LCID="1031" Value="Blauen Kanal anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Blue Channel"/>
+    <Name Type="string" LCID="1046" Value="Exibir canal azul"/>
+    <Name Type="string" LCID="1045" Value="Pokaż kanał niebieskiego"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit modrý kanál"/>
+    <Name Type="string" LCID="1055" Value="Mavi Kanalı Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher le canal bleu"/>
+    <Name Type="string" LCID="1040" Value="Mostra canale blu"/>
+    <Name Type="string" LCID="1041" Value="青のチャネルの表示"/>
+    <Name Type="string" LCID="1042" Value="파란색 채널 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать синий канал"/>
+    <Name Type="string" LCID="2052" Value="显示蓝色通道"/>
+    <Name Type="string" LCID="3082" Value="Mostrar canal azul"/>
+  </Command>
+
+  <Command Id="ToggleAlpha" Group="Channels">
+    <state Type="uint" Value="2"/>
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\togglealpha.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="3"/>
+    <Name Type="string" LCID="1028" Value="顯示 Alpha 色板"/>
+    <Name Type="string" LCID="1031" Value="Alphakanal anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Alpha Channel"/>
+    <Name Type="string" LCID="1046" Value="Exibir canal alfa"/>
+    <Name Type="string" LCID="1045" Value="Pokaż kanał alfa"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit alfa  kanál"/>
+    <Name Type="string" LCID="1055" Value="Alpha Kanalını Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher le canal Alpha"/>
+    <Name Type="string" LCID="1040" Value="Mostra canale alfa"/>
+    <Name Type="string" LCID="1041" Value="アルファ チャネルの表示"/>
+    <Name Type="string" LCID="1042" Value="알파 채널 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать альфа-канал"/>
+    <Name Type="string" LCID="2052" Value="显示 Alpha 通道"/>
+    <Name Type="string" LCID="3082" Value="Mostrar canal alfa"/>
+
+  </Command>
+
+  <!-- TOOLS -->
+  <Command Id="DecMip" Group="Tools">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\DecMip.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="減少 MIP"/>
+    <Name Type="string" LCID="1031" Value="MIP verringern"/>
+    <Name Type="string" LCID="1033" Value="Decrease MIP"/>
+    <Name Type="string" LCID="1046" Value="Diminuir MIP"/>
+    <Name Type="string" LCID="1045" Value="Zmniejsz mipmapę"/>
+    <Name Type="string" LCID="1029" Value="Snížit MIP"/>
+    <Name Type="string" LCID="1055" Value="MIP'i Azalt"/>
+    <Name Type="string" LCID="1036" Value="Réduire MIP"/>
+    <Name Type="string" LCID="1040" Value="Riduci MIP"/>
+    <Name Type="string" LCID="1041" Value="MIP の減少"/>
+    <Name Type="string" LCID="1042" Value="MIP 줄이기"/>
+    <Name Type="string" LCID="1049" Value="Уменьшить MIP"/>
+    <Name Type="string" LCID="2052" Value="减少 MIP"/>
+    <Name Type="string" LCID="3082" Value="Reducir MIP"/>
+  </Command>
+
+  <Command Id="IncMip" Group="Tools">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\IncMip.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="增加 MIP"/>
+    <Name Type="string" LCID="1031" Value="MIP erhöhen"/>
+    <Name Type="string" LCID="1033" Value="Increase MIP"/>
+    <Name Type="string" LCID="1046" Value="Aumentar MIP"/>
+    <Name Type="string" LCID="1045" Value="Zwiększ mipmapę"/>
+    <Name Type="string" LCID="1029" Value="Zvýšit MIP"/>
+    <Name Type="string" LCID="1055" Value="MIP'i Artır"/>
+    <Name Type="string" LCID="1036" Value="Augmenter MIP"/>
+    <Name Type="string" LCID="1040" Value="Aumenta MIP"/>
+    <Name Type="string" LCID="1041" Value="MIP の増加"/>
+    <Name Type="string" LCID="1042" Value="MIP 늘리기"/>
+    <Name Type="string" LCID="1049" Value="Увеличить MIP"/>
+    <Name Type="string" LCID="2052" Value="增加 MIP"/>
+    <Name Type="string" LCID="3082" Value="Aumentar MIP"/>
+  </Command>
+
+  
+  <!-- FILTERS -->
+  <Command Id="Filter" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="篩選條件"/>
+    <Name Type="string" LCID="1031" Value="Filter"/>
+    <Name Type="string" LCID="1033" Value="Filters"/>
+    <Name Type="string" LCID="1046" Value="Filtros"/>
+    <Name Type="string" LCID="1045" Value="Filtry"/>
+    <Name Type="string" LCID="1029" Value="Filtry"/>
+    <Name Type="string" LCID="1055" Value="Filtreler"/>
+    <Name Type="string" LCID="1046" Value="Filtros"/>
+    <Name Type="string" LCID="1045" Value="Filtry"/>
+    <Name Type="string" LCID="1029" Value="Filtry"/>
+    <Name Type="string" LCID="1055" Value="Filtreler"/>
+    <Name Type="string" LCID="1036" Value="Filtres"/>
+    <Name Type="string" LCID="1040" Value="Filtri"/>
+    <Name Type="string" LCID="1041" Value="フィルター"/>
+    <Name Type="string" LCID="1042" Value="필터"/>
+    <Name Type="string" LCID="1049" Value="Фильтры"/>
+    <Name Type="string" LCID="2052" Value="筛选器"/>
+    <Name Type="string" LCID="3082" Value="Filtros"/>
+  </Command>
+
+  <Command Id="BlackAndWhite" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("BlackAndWhite", "BlackAndWhite.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="黑白"/>
+    <Name Type="string" LCID="1031" Value="Schwarz und weiß"/>
+    <Name Type="string" LCID="1033" Value="Black and White"/>
+    <Name Type="string" LCID="1046" Value="Preto e branco"/>
+    <Name Type="string" LCID="1045" Value="Czarny i biały"/>
+    <Name Type="string" LCID="1029" Value="Černobíle"/>
+    <Name Type="string" LCID="1055" Value="Siyah ve Beyaz"/>
+    <Name Type="string" LCID="1036" Value="Noir et blanc"/>
+    <Name Type="string" LCID="1040" Value="Bianco e nero"/>
+    <Name Type="string" LCID="1041" Value="白黒"/>
+    <Name Type="string" LCID="1042" Value="흑백"/>
+    <Name Type="string" LCID="1049" Value="Черно-белый"/>
+    <Name Type="string" LCID="2052" Value="黑色和白色"/>
+    <Name Type="string" LCID="3082" Value="Blanco y negro"/>
+  </Command>
+
+  <Command Id="Brighten" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("Brighten", "Brighten.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="變亮"/>
+    <Name Type="string" LCID="1031" Value="Aufhellen"/>
+    <Name Type="string" LCID="1033" Value="Brighten"/>
+    <Name Type="string" LCID="1046" Value="Mais claro"/>
+    <Name Type="string" LCID="1045" Value="Rozjaśnienie"/>
+    <Name Type="string" LCID="1029" Value="Zesvětlit"/>
+    <Name Type="string" LCID="1055" Value="Parlaklaştır"/>
+    <Name Type="string" LCID="1036" Value="Éclaircir"/>
+    <Name Type="string" LCID="1040" Value="Più chiaro"/>
+    <Name Type="string" LCID="1041" Value="明るくする"/>
+    <Name Type="string" LCID="1042" Value="밝게"/>
+    <Name Type="string" LCID="1049" Value="Светлее"/>
+    <Name Type="string" LCID="2052" Value="加亮"/>
+    <Name Type="string" LCID="3082" Value="Dar más brillo"/>
+  </Command>
+
+  <Command Id="Darken" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("Darken", "Darken.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="變暗"/>
+    <Name Type="string" LCID="1031" Value="Abdunkeln"/>
+    <Name Type="string" LCID="1033" Value="Darken"/>
+    <Name Type="string" LCID="1046" Value="Mais escuro"/>
+    <Name Type="string" LCID="1045" Value="Ściemnienie"/>
+    <Name Type="string" LCID="1029" Value="Ztmavit"/>
+    <Name Type="string" LCID="1055" Value="Karart"/>
+    <Name Type="string" LCID="1036" Value="Assombrir"/>
+    <Name Type="string" LCID="1040" Value="Più scuro"/>
+    <Name Type="string" LCID="1041" Value="暗くする"/>
+    <Name Type="string" LCID="1042" Value="어둡게"/>
+    <Name Type="string" LCID="1049" Value="Темнее"/>
+    <Name Type="string" LCID="2052" Value="减暗"/>
+    <Name Type="string" LCID="3082" Value="Oscurecer"/>
+  </Command>
+
+  <Command Id="EdgeDetection" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("EdgeDetection", "EdgeDetection.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="邊緣偵測"/>
+    <Name Type="string" LCID="1031" Value="Kantenerkennung"/>
+    <Name Type="string" LCID="1033" Value="Edge Detection"/>
+    <Name Type="string" LCID="1046" Value="Detecção de borda"/>
+    <Name Type="string" LCID="1045" Value="Wykrywanie krawędzi"/>
+    <Name Type="string" LCID="1029" Value="Zjištění okraje"/>
+    <Name Type="string" LCID="1055" Value="Kenar Saptama"/>
+    <Name Type="string" LCID="1036" Value="Détection des bords"/>
+    <Name Type="string" LCID="1040" Value="Rilevamento bordi"/>
+    <Name Type="string" LCID="1041" Value="境界の検出"/>
+    <Name Type="string" LCID="1042" Value="가장자리 탐지"/>
+    <Name Type="string" LCID="1049" Value="Определение границ"/>
+    <Name Type="string" LCID="2052" Value="边缘检测"/>
+    <Name Type="string" LCID="3082" Value="Detección de bordes"/>
+  </Command>
+
+  <Command Id="Emboss" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("Emboss", "Emboss.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="浮凸"/>
+    <Name Type="string" LCID="1031" Value="Relief"/>
+    <Name Type="string" LCID="1033" Value="Emboss"/>
+    <Name Type="string" LCID="1046" Value="Alto-relevo"/>
+    <Name Type="string" LCID="1045" Value="Uwypuklenie"/>
+    <Name Type="string" LCID="1029" Value="Reliéf"/>
+    <Name Type="string" LCID="1055" Value="Kabartma"/>
+    <Name Type="string" LCID="1036" Value="Relief"/>
+    <Name Type="string" LCID="1040" Value="Rilievo"/>
+    <Name Type="string" LCID="1041" Value="エンボス"/>
+    <Name Type="string" LCID="1042" Value="볼록"/>
+    <Name Type="string" LCID="1049" Value="Тиснение"/>
+    <Name Type="string" LCID="2052" Value="浮雕"/>
+    <Name Type="string" LCID="3082" Value="Relieve"/>
+  </Command>
+
+  <Command Id="Ripple" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("Ripple", "Ripple.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="漣漪"/>
+    <Name Type="string" LCID="1031" Value="Riffel"/>
+    <Name Type="string" LCID="1033" Value="Ripple"/>
+    <Name Type="string" LCID="1046" Value="Onda"/>
+    <Name Type="string" LCID="1045" Value="Falowanie"/>
+    <Name Type="string" LCID="1029" Value="Vlnění"/>
+    <Name Type="string" LCID="1055" Value="Dalgacık"/>
+    <Name Type="string" LCID="1036" Value="Ondulation"/>
+    <Name Type="string" LCID="1040" Value="Increspatura"/>
+    <Name Type="string" LCID="1041" Value="さざ波"/>
+    <Name Type="string" LCID="1042" Value="물결"/>
+    <Name Type="string" LCID="1049" Value="Рябь"/>
+    <Name Type="string" LCID="2052" Value="波纹"/>
+    <Name Type="string" LCID="3082" Value="Ondulación"/>
+  </Command>
+
+  <Command Id="SepiaTone" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("SepiaTone", "SepiaTone.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="深褐色調"/>
+    <Name Type="string" LCID="1031" Value="Sepiafarben"/>
+    <Name Type="string" LCID="1033" Value="Sepia Tone"/>
+    <Name Type="string" LCID="1046" Value="Tom de sépia"/>
+    <Name Type="string" LCID="1045" Value="Sepia"/>
+    <Name Type="string" LCID="1029" Value="Sépiový tón"/>
+    <Name Type="string" LCID="1055" Value="Sepya Tonu"/>
+    <Name Type="string" LCID="1036" Value="Ton sépia"/>
+    <Name Type="string" LCID="1040" Value="Seppia"/>
+    <Name Type="string" LCID="1041" Value="セピア調"/>
+    <Name Type="string" LCID="1042" Value="세피아 톤"/>
+    <Name Type="string" LCID="1049" Value="Оттенок сепия"/>
+    <Name Type="string" LCID="2052" Value="棕褐色调"/>
+    <Name Type="string" LCID="3082" Value="Tono sepia"/>
+  </Command>
+
+  <Command Id="Blur" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("Blur", "Blur.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="模糊"/>
+    <Name Type="string" LCID="1031" Value="Weichzeichnen"/>
+    <Name Type="string" LCID="1033" Value="Blur"/>
+    <Name Type="string" LCID="1046" Value="Desfoque"/>
+    <Name Type="string" LCID="1045" Value="Rozmycie"/>
+    <Name Type="string" LCID="1029" Value="Rozostřit"/>
+    <Name Type="string" LCID="1055" Value="Bulanık"/>
+    <Name Type="string" LCID="1036" Value="Flou"/>
+    <Name Type="string" LCID="1040" Value="Sfocatura"/>
+    <Name Type="string" LCID="1041" Value="ぼかし"/>
+    <Name Type="string" LCID="1042" Value="흐리게"/>
+    <Name Type="string" LCID="1049" Value="Размытие"/>
+    <Name Type="string" LCID="2052" Value="模糊"/>
+    <Name Type="string" LCID="3082" Value="Desenfocar"/>
+  </Command>
+
+  <Command Id="Sharpen" Group="Filter">
+    <Script>
+      <![CDATA[
+        document.applyFilter("Sharpen", "Sharpen.dgsl");
+      ]]>
+    </Script>
+    <Designers DefaultValidation="false">
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="銳化"/>
+    <Name Type="string" LCID="1031" Value="Scharfzeichnen"/>
+    <Name Type="string" LCID="1033" Value="Sharpen"/>
+    <Name Type="string" LCID="1046" Value="Nitidez"/>
+    <Name Type="string" LCID="1045" Value="Wyostrzenie"/>
+    <Name Type="string" LCID="1029" Value="Zaostřit"/>
+    <Name Type="string" LCID="1055" Value="Netleştir"/>
+    <Name Type="string" LCID="1036" Value="Accentuer"/>
+    <Name Type="string" LCID="1040" Value="Nitidezza"/>
+    <Name Type="string" LCID="1041" Value="シャープネス"/>
+    <Name Type="string" LCID="1042" Value="선명하게"/>
+    <Name Type="string" LCID="1049" Value="Усиление резкости"/>
+    <Name Type="string" LCID="2052" Value="锐化"/>
+    <Name Type="string" LCID="3082" Value="Dar nitidez"/>
+  </Command>
+
+
+  <!-- 
+  ===========================================================
+  MRE specific commands
+  ===========================================================
+  -->
+
+  <!--
+  Camera
+  -->
+  <Command Id="Camera" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="照相機"/>
+    <Name Type="string" LCID="1031" Value="Kamera"/>
+    <Name Type="string" LCID="1033" Value="Camera"/>
+    <Name Type="string" LCID="1046" Value="Câmera"/>
+    <Name Type="string" LCID="1045" Value="Kamera"/>
+    <Name Type="string" LCID="1029" Value="Fotoaparát"/>
+    <Name Type="string" LCID="1055" Value="Kamera"/>
+    <Name Type="string" LCID="1046" Value="Câmera"/>
+    <Name Type="string" LCID="1045" Value="Kamera"/>
+    <Name Type="string" LCID="1029" Value="Fotoaparát"/>
+    <Name Type="string" LCID="1055" Value="Kamera"/>
+    <Name Type="string" LCID="1036" Value="Appareil photo"/>
+    <Name Type="string" LCID="1040" Value="Fotocamera"/>
+    <Name Type="string" LCID="1041" Value="カメラ"/>
+    <Name Type="string" LCID="1042" Value="카메라"/>
+    <Name Type="string" LCID="1049" Value="Камера"/>
+    <Name Type="string" LCID="2052" Value="相机"/>
+    <Name Type="string" LCID="3082" Value="Cámara"/>
+  </Command>
+
+  <Command Id="Orthographic Front" Group="Camera">
+    <Script  File="assets\scripts\MreOrthographic.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="正視圖正面"/>
+    <Name Type="string" LCID="1031" Value="Orthografische Vorderseite"/>
+    <Name Type="string" LCID="1033" Value="Orthographic Front"/>
+    <Name Type="string" LCID="1046" Value="Frente ortográfica"/>
+    <Name Type="string" LCID="1045" Value="Powierzchnia ortogonalna"/>
+    <Name Type="string" LCID="1029" Value="Ortografický nárys"/>
+    <Name Type="string" LCID="1055" Value="Ortografik Yazı Tipi"/>
+    <Name Type="string" LCID="1036" Value="Vue avant orthographique"/>
+    <Name Type="string" LCID="1040" Value="Ortogonale"/>
+    <Name Type="string" LCID="1041" Value="正投影フロント"/>
+    <Name Type="string" LCID="1042" Value="직교 정면"/>
+    <Name Type="string" LCID="1049" Value="Ортогональный фронтальный"/>
+    <Name Type="string" LCID="2052" Value="正射影图正面"/>
+    <Name Type="string" LCID="3082" Value="Frontal ortogonal"/>
+  </Command>
+
+  <Command Id="Perspective" Group="Camera">
+    <Script  File="assets\scripts\MrePerspective.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="透視圖"/>
+    <Name Type="string" LCID="1031" Value="Perspektive"/>
+    <Name Type="string" LCID="1033" Value="Perspective"/>
+    <Name Type="string" LCID="1046" Value="Perspectiva"/>
+    <Name Type="string" LCID="1045" Value="Perspektywa"/>
+    <Name Type="string" LCID="1029" Value="Perspektiva"/>
+    <Name Type="string" LCID="1055" Value="Perspektif"/>
+    <Name Type="string" LCID="1036" Value="Perspective"/>
+    <Name Type="string" LCID="1040" Value="Prospettiva"/>
+    <Name Type="string" LCID="1041" Value="透視投影"/>
+    <Name Type="string" LCID="1042" Value="큐브 뷰"/>
+    <Name Type="string" LCID="1049" Value="Перспектива"/>
+    <Name Type="string" LCID="2052" Value="透视图"/>
+    <Name Type="string" LCID="3082" Value="Perspectiva"/>
+  </Command>
+
+  <!--
+  Scene management
+  -->
+  <Command Id="Scene management" Group="Root">
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="場景管理"/>
+    <Name Type="string" LCID="1031" Value="Szenenverwaltung"/>
+    <Name Type="string" LCID="1033" Value="Scene Management"/>
+    <Name Type="string" LCID="1046" Value="Gerenciamento de cena"/>
+    <Name Type="string" LCID="1045" Value="Zarządzanie sceną"/>
+    <Name Type="string" LCID="1029" Value="Správa scény"/>
+    <Name Type="string" LCID="1055" Value="Sahne Yönetimi"/>
+    <Name Type="string" LCID="1036" Value="Gestion de la scène"/>
+    <Name Type="string" LCID="1040" Value="Gestione scena"/>
+    <Name Type="string" LCID="1041" Value="シーン管理"/>
+    <Name Type="string" LCID="1042" Value="장면 관리"/>
+    <Name Type="string" LCID="1049" Value="Управление сценой"/>
+    <Name Type="string" LCID="2052" Value="场景管理"/>
+    <Name Type="string" LCID="3082" Value="Administración de escenas"/>
+  </Command>
+
+  <Command Id="SetParent" Group="Scene management">
+    <Script File="assets\scripts\SetParent.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="附加至父代"/>
+    <Name Type="string" LCID="1031" Value="An übergeordnetes Element anhängen"/>
+    <Name Type="string" LCID="1033" Value="Attach to Parent"/>
+    <Name Type="string" LCID="1046" Value="Anexar ao pai"/>
+    <Name Type="string" LCID="1045" Value="Dołącz do obiektu nadrzędnego"/>
+    <Name Type="string" LCID="1029" Value="Připojit k nadřazenému"/>
+    <Name Type="string" LCID="1055" Value="Üst Öğeye Ekle"/>
+    <Name Type="string" LCID="1036" Value="Attacher au parent"/>
+    <Name Type="string" LCID="1040" Value="Associa a padre"/>
+    <Name Type="string" LCID="1041" Value="親にアタッチ"/>
+    <Name Type="string" LCID="1042" Value="부모에 연결"/>
+    <Name Type="string" LCID="1049" Value="Прикрепить к родительскому"/>
+    <Name Type="string" LCID="2052" Value="附加到父级"/>
+    <Name Type="string" LCID="3082" Value="Asociar a primario"/>
+  </Command>
+
+  <Command Id="RemoveParent" Group="Scene management">
+    <Script File="assets\scripts\RemoveParent.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="與父代中斷連結"/>
+    <Name Type="string" LCID="1031" Value="Von übergeordnetem Element trennen"/>
+    <Name Type="string" LCID="1033" Value="Detach from Parent"/>
+    <Name Type="string" LCID="1046" Value="Desanexar do pai"/>
+    <Name Type="string" LCID="1045" Value="Odłącz od obiektu nadrzędnego"/>
+    <Name Type="string" LCID="1029" Value="Odpojit od nadřazeného"/>
+    <Name Type="string" LCID="1055" Value="Üst Öğeden Ayır"/>
+    <Name Type="string" LCID="1036" Value="Détacher du parent"/>
+    <Name Type="string" LCID="1040" Value="Scollega da padre"/>
+    <Name Type="string" LCID="1041" Value="親からデタッチ"/>
+    <Name Type="string" LCID="1042" Value="부모에서 분리"/>
+    <Name Type="string" LCID="1049" Value="Открепить от родительского"/>
+    <Name Type="string" LCID="2052" Value="从父级分离"/>
+    <Name Type="string" LCID="3082" Value="Desasociar de primario"/>
+  </Command>
+
+  <Command Id="CreateGroup" Group="Scene management">
+    <Script File="assets\scripts\CreateGroup.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="建立群組"/>
+    <Name Type="string" LCID="1031" Value="Gruppe erstellen"/>
+    <Name Type="string" LCID="1033" Value="Create Group"/>
+    <Name Type="string" LCID="1046" Value="Criar grupo"/>
+    <Name Type="string" LCID="1045" Value="Utwórz grupę"/>
+    <Name Type="string" LCID="1029" Value="Vytvořit skupinu"/>
+    <Name Type="string" LCID="1055" Value="Grup Oluştur"/>
+    <Name Type="string" LCID="1036" Value="Créer un groupe"/>
+    <Name Type="string" LCID="1040" Value="Crea gruppo"/>
+    <Name Type="string" LCID="1041" Value="グループの作成"/>
+    <Name Type="string" LCID="1042" Value="그룹 만들기"/>
+    <Name Type="string" LCID="1049" Value="Создать группу"/>
+    <Name Type="string" LCID="2052" Value="创建组"/>
+    <Name Type="string" LCID="3082" Value="Crear grupo"/>
+  </Command>
+
+  <Command Id="Merge Objects" Group="Scene management">
+    <Script File="assets\scripts\MergeObjects.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="合併物件"/>
+    <Name Type="string" LCID="1031" Value="Objekte zusammenführen"/>
+    <Name Type="string" LCID="1033" Value="Merge Objects"/>
+    <Name Type="string" LCID="1046" Value="Mesclar objetos"/>
+    <Name Type="string" LCID="1045" Value="Scal obiekty"/>
+    <Name Type="string" LCID="1029" Value="Sloučit objekty"/>
+    <Name Type="string" LCID="1055" Value="Nesneleri Birleştir"/>
+    <Name Type="string" LCID="1036" Value="Fusionner les objets"/>
+    <Name Type="string" LCID="1040" Value="Merge oggetti"/>
+    <Name Type="string" LCID="1041" Value="オブジェクトのマージ"/>
+    <Name Type="string" LCID="1042" Value="개체 병합"/>
+    <Name Type="string" LCID="1049" Value="Объединить объекты"/>
+    <Name Type="string" LCID="2052" Value="合并对象"/>
+    <Name Type="string" LCID="3082" Value="Combinar objetos"/>
+  </Command>
+
+  <Command Id="Create New Object From Polygon Selection" Group="Scene management">
+    <Script File="assets\scripts\CreateNewObjectFromPolygonSelection.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="從多邊形選取範圍建立新物件"/>
+    <Name Type="string" LCID="1031" Value="Neues Objekt aus Polygonauswahl erstellen"/>
+    <Name Type="string" LCID="1033" Value="Create New Object From Polygon Selection"/>
+    <Name Type="string" LCID="1046" Value="Criar novo objeto a partir de seleção do polígono"/>
+    <Name Type="string" LCID="1045" Value="Utwórz nowy obiekt na podstawie zaznaczenia wielokątów"/>
+    <Name Type="string" LCID="1029" Value="Vytvořit nový objekt z výběru polygonu"/>
+    <Name Type="string" LCID="1055" Value="Çokgen Seçiminden Yeni Nesne Oluştur"/>
+    <Name Type="string" LCID="1036" Value="Créer un objet à partir du polygone sélectionné"/>
+    <Name Type="string" LCID="1040" Value="Crea nuovo oggetto da selezione poligono"/>
+    <Name Type="string" LCID="1041" Value="多角形選択領域からの新しいオブジェクトの作成"/>
+    <Name Type="string" LCID="1042" Value="다각형 선택에서 새 개체 만들기"/>
+    <Name Type="string" LCID="1049" Value="Создать новый объект из выбранных многоугольников"/>
+    <Name Type="string" LCID="2052" Value="从多边形选项创建新对象"/>
+    <Name Type="string" LCID="3082" Value="Crear nuevo objeto a partir de selección de polígono"/>
+  </Command>
+
+  <!-- TOOLS -->
+  <Command Id="ToggleEmbedMediaOnExport" Group="Tools">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\ToggleEmbedMediaOnExport.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="匯出時內嵌媒體"/>
+    <Name Type="string" LCID="1031" Value="Medien beim Exportieren einbetten"/>
+    <Name Type="string" LCID="1033" Value="Embed Media On Export"/>
+    <Name Type="string" LCID="1046" Value="Inserir mídia ao exportar"/>
+    <Name Type="string" LCID="1045" Value="Osadź multimedia przy eksporcie"/>
+    <Name Type="string" LCID="1029" Value="Vnořit média při exportu"/>
+    <Name Type="string" LCID="1055" Value="Dışarı Aktarılan Ortamları Ekle"/>
+    <Name Type="string" LCID="1036" Value="Incorporer le média lors de l'exportation"/>
+    <Name Type="string" LCID="1040" Value="Incorpora elementi multimediali durante esportazione"/>
+    <Name Type="string" LCID="1041" Value="エクスポート時のメディアの埋め込み"/>
+    <Name Type="string" LCID="1042" Value="내보내기에 미디어 포함"/>
+    <Name Type="string" LCID="1049" Value="Внедрить мультимедиа при экспорте"/>
+    <Name Type="string" LCID="2052" Value="导出时嵌入介质"/>
+    <Name Type="string" LCID="3082" Value="Incrustar contenido multimedia al exportar"/>
+  </Command>
+
+  <Command Id="ToggleExportAsText" Group="Tools">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\ToggleExportAsText.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="匯出為文字"/>
+    <Name Type="string" LCID="1031" Value="Als Text exportieren"/>
+    <Name Type="string" LCID="1033" Value="Export As Text"/>
+    <Name Type="string" LCID="1046" Value="Exportar como texto"/>
+    <Name Type="string" LCID="1045" Value="Eksportuj jako tekst"/>
+    <Name Type="string" LCID="1029" Value="Exportovat jako text"/>
+    <Name Type="string" LCID="1055" Value="Metin Olarak Dışarı Aktar"/>
+    <Name Type="string" LCID="1036" Value="Exporter en tant que texte"/>
+    <Name Type="string" LCID="1040" Value="Esporta come testo"/>
+    <Name Type="string" LCID="1041" Value="テキストとしてエクスポート"/>
+    <Name Type="string" LCID="1042" Value="텍스트로 내보내기"/>
+    <Name Type="string" LCID="1049" Value="Экспортировать как текст"/>
+    <Name Type="string" LCID="2052" Value="导出为文本"/>
+    <Name Type="string" LCID="3082" Value="Exportar como texto"/>
+  </Command>
+
+  <Command Id="Snap" Group="Tools">
+    <Script File="assets\scripts\snap.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="貼齊"/>
+    <Name Type="string" LCID="1031" Value="Andocken"/>
+    <Name Type="string" LCID="1033" Value="Snap"/>
+    <Name Type="string" LCID="1046" Value="Ajustar"/>
+    <Name Type="string" LCID="1045" Value="Przyciągaj"/>
+    <Name Type="string" LCID="1029" Value="Přichytit"/>
+    <Name Type="string" LCID="1055" Value="Yasla"/>
+    <Name Type="string" LCID="1036" Value="Instantané"/>
+    <Name Type="string" LCID="1040" Value="Snap"/>
+    <Name Type="string" LCID="1041" Value="スナップ"/>
+    <Name Type="string" LCID="1042" Value="맞추기"/>
+    <Name Type="string" LCID="1049" Value="Привязка"/>
+    <Name Type="string" LCID="2052" Value="对齐"/>
+    <Name Type="string" LCID="3082" Value="Ajustar"/>
+  </Command>
+
+  <Command Id="ToggleWorldMode" Group="Tools">
+    <Script File="assets\scripts\ToggleWorldMode.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="4"/>
+    <Name Type="string" LCID="1028" Value="世界模式"/>
+    <Name Type="string" LCID="1031" Value="Weltmodus"/>
+    <Name Type="string" LCID="1033" Value="World Mode"/>
+    <Name Type="string" LCID="1046" Value="Modo Mundo"/>
+    <Name Type="string" LCID="1045" Value="Tryb świata"/>
+    <Name Type="string" LCID="1029" Value="Režim zeměkoule"/>
+    <Name Type="string" LCID="1055" Value="Dünya Modu"/>
+    <Name Type="string" LCID="1036" Value="Mode Monde"/>
+    <Name Type="string" LCID="1040" Value="Modalità globale"/>
+    <Name Type="string" LCID="1041" Value="ワールド モード"/>
+    <Name Type="string" LCID="1042" Value="월드 모드"/>
+    <Name Type="string" LCID="1049" Value="Модель в реальном мире"/>
+    <Name Type="string" LCID="2052" Value="全球模式"/>
+    <Name Type="string" LCID="3082" Value="Modo universal"/>
+  </Command>
+
+  <Command Id="TogglePivot" Group="Tools">
+    <Script File="assets\scripts\TogglePivot.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="5"/>
+    <Name Type="string" LCID="1028" Value="樞軸"/>
+    <Name Type="string" LCID="1031" Value="Pivot"/>
+    <Name Type="string" LCID="1033" Value="Pivot"/>
+    <Name Type="string" LCID="1046" Value="Pivô"/>
+    <Name Type="string" LCID="1045" Value="Przestawienie"/>
+    <Name Type="string" LCID="1029" Value="Střed"/>
+    <Name Type="string" LCID="1055" Value="Özet"/>
+    <Name Type="string" LCID="1036" Value="Pivoter"/>
+    <Name Type="string" LCID="1040" Value="Pivot"/>
+    <Name Type="string" LCID="1041" Value="ピボット"/>
+    <Name Type="string" LCID="1042" Value="피벗"/>
+    <Name Type="string" LCID="1049" Value="Опорный элемент"/>
+    <Name Type="string" LCID="2052" Value="透视"/>
+    <Name Type="string" LCID="3082" Value="Pivotar"/>
+  </Command>
+
+  <Command Id="Translate" Group="Tools">
+    <Script File="assets\scripts\Translate.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="1"/>
+    <Name Type="string" LCID="1028" Value="平移"/>
+    <Name Type="string" LCID="1031" Value="Übersetzen"/>
+    <Name Type="string" LCID="1033" Value="Translate"/>
+    <Name Type="string" LCID="1046" Value="Converter"/>
+    <Name Type="string" LCID="1045" Value="Przekształcenie"/>
+    <Name Type="string" LCID="1029" Value="Přeložit"/>
+    <Name Type="string" LCID="1055" Value="Çevir"/>
+    <Name Type="string" LCID="1036" Value="Traduire"/>
+    <Name Type="string" LCID="1040" Value="Trasla"/>
+    <Name Type="string" LCID="1041" Value="変換"/>
+    <Name Type="string" LCID="1042" Value="변환"/>
+    <Name Type="string" LCID="1049" Value="Трансляция"/>
+    <Name Type="string" LCID="2052" Value="平移"/>
+    <Name Type="string" LCID="3082" Value="Trasladar"/>
+  </Command>
+
+  <Command Id="Scale" Group="Tools">
+    <Script File="assets\scripts\scale.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="2"/>
+    <Name Type="string" LCID="1028" Value="縮放"/>
+    <Name Type="string" LCID="1031" Value="Skalieren"/>
+    <Name Type="string" LCID="1033" Value="Scale"/>
+    <Name Type="string" LCID="1046" Value="Dimensionar"/>
+    <Name Type="string" LCID="1045" Value="Skalowanie"/>
+    <Name Type="string" LCID="1029" Value="Měřítko"/>
+    <Name Type="string" LCID="1055" Value="Ölçeklendir"/>
+    <Name Type="string" LCID="1036" Value="Mettre à l'échelle"/>
+    <Name Type="string" LCID="1040" Value="Ridimensiona"/>
+    <Name Type="string" LCID="1041" Value="スケール"/>
+    <Name Type="string" LCID="1042" Value="배율"/>
+    <Name Type="string" LCID="1049" Value="Масштаб"/>
+    <Name Type="string" LCID="2052" Value="缩放"/>
+    <Name Type="string" LCID="3082" Value="Escala"/>
+  </Command>
+
+  <Command Id="Rotate" Group="Tools">
+    <Script File="assets\scripts\rotate.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="3"/>
+    <Name Type="string" LCID="1028" Value="旋轉"/>
+    <Name Type="string" LCID="1031" Value="Drehen"/>
+    <Name Type="string" LCID="1033" Value="Rotate"/>
+    <Name Type="string" LCID="1046" Value="Girar"/>
+    <Name Type="string" LCID="1045" Value="Obrót"/>
+    <Name Type="string" LCID="1029" Value="Otočit"/>
+    <Name Type="string" LCID="1055" Value="Döndür"/>
+    <Name Type="string" LCID="1036" Value="Faire pivoter"/>
+    <Name Type="string" LCID="1040" Value="Ruota"/>
+    <Name Type="string" LCID="1041" Value="回転"/>
+    <Name Type="string" LCID="1042" Value="회전"/>
+    <Name Type="string" LCID="1049" Value="Поворот"/>
+    <Name Type="string" LCID="2052" Value="旋转"/>
+    <Name Type="string" LCID="3082" Value="Girar"/>
+  </Command>
+
+  <Command Id="Reset" Group="Tools">
+    <Script File="assets\scripts\Reset.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="重設"/>
+    <Name Type="string" LCID="1031" Value="Zurücksetzen"/>
+    <Name Type="string" LCID="1033" Value="Reset"/>
+    <Name Type="string" LCID="1046" Value="Redefinir"/>
+    <Name Type="string" LCID="1045" Value="Reset"/>
+    <Name Type="string" LCID="1029" Value="Obnovit"/>
+    <Name Type="string" LCID="1055" Value="Sıfırla"/>
+    <Name Type="string" LCID="1036" Value="Réinitialiser"/>
+    <Name Type="string" LCID="1040" Value="Reimposta"/>
+    <Name Type="string" LCID="1041" Value="リセット"/>
+    <Name Type="string" LCID="1042" Value="다시 설정"/>
+    <Name Type="string" LCID="1049" Value="Сброс"/>
+    <Name Type="string" LCID="2052" Value="重置"/>
+    <Name Type="string" LCID="3082" Value="Restablecer"/>
+  </Command>
+
+  <Command Id="Extrude" Group="Tools" >
+    <state Type="uint" Value="1"/>
+    <Script File="assets\scripts\extrude.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="擠壓"/>
+    <Name Type="string" LCID="1031" Value="Extrudieren"/>
+    <Name Type="string" LCID="1033" Value="Extrude"/>
+    <Name Type="string" LCID="1046" Value="Extrusão"/>
+    <Name Type="string" LCID="1045" Value="Wyciągnięcie"/>
+    <Name Type="string" LCID="1029" Value="Vyloučit"/>
+    <Name Type="string" LCID="1055" Value="Derinlik"/>
+    <Name Type="string" LCID="1036" Value="Extruder"/>
+    <Name Type="string" LCID="1040" Value="Estrudi"/>
+    <Name Type="string" LCID="1041" Value="浮き出し"/>
+    <Name Type="string" LCID="1042" Value="돌출"/>
+    <Name Type="string" LCID="1049" Value="Выдавливание"/>
+    <Name Type="string" LCID="2052" Value="延伸"/>
+    <Name Type="string" LCID="3082" Value="Extruir"/>
+  </Command>
+
+  <Command Id="Triangulate" Group="Tools" >
+    <Script File="assets\scripts\triangulate.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="三角的"/>
+    <Name Type="string" LCID="1031" Value="Triangulieren"/>
+    <Name Type="string" LCID="1033" Value="Triangulate"/>
+    <Name Type="string" LCID="1046" Value="Triangular"/>
+    <Name Type="string" LCID="1045" Value="Triangulacja"/>
+    <Name Type="string" LCID="1029" Value="Triangulovat"/>
+    <Name Type="string" LCID="1055" Value="Üçgenlere Ayır"/>
+    <Name Type="string" LCID="1036" Value="Trianguler"/>
+    <Name Type="string" LCID="1040" Value="Triangola"/>
+    <Name Type="string" LCID="1041" Value="三角形化"/>
+    <Name Type="string" LCID="1042" Value="삼각형"/>
+    <Name Type="string" LCID="1049" Value="Триангуляция"/>
+    <Name Type="string" LCID="2052" Value="三角化"/>
+    <Name Type="string" LCID="3082" Value="Triangular"/>
+  </Command>
+
+  <Command Id="AddSubdivisions" Group="Tools" >
+    <state Type="uint" Value="1"/>
+    <Script File="assets\scripts\AddSubdivisions.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="細分"/>
+    <Name Type="string" LCID="1031" Value="Unterteilen"/>
+    <Name Type="string" LCID="1033" Value="Subdivide"/>
+    <Name Type="string" LCID="1046" Value="Subdividir"/>
+    <Name Type="string" LCID="1045" Value="Podział"/>
+    <Name Type="string" LCID="1029" Value="Rozdělit"/>
+    <Name Type="string" LCID="1055" Value="Alt Bölümlere Ayır"/>
+    <Name Type="string" LCID="1036" Value="Subdiviser"/>
+    <Name Type="string" LCID="1040" Value="Suddividi"/>
+    <Name Type="string" LCID="1041" Value="細分化"/>
+    <Name Type="string" LCID="1042" Value="세분"/>
+    <Name Type="string" LCID="1049" Value="Деление"/>
+    <Name Type="string" LCID="2052" Value="细分"/>
+    <Name Type="string" LCID="3082" Value="Subdividir"/>
+  </Command>
+
+  <Command Id="FlipPolygons" Group="Tools" >
+    <Script File="assets\scripts\FlipPolygons.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="捲繞翻轉多邊形"/>
+    <Name Type="string" LCID="1031" Value="Polygonwicklung spiegeln"/>
+    <Name Type="string" LCID="1033" Value="Flip Polygon Winding"/>
+    <Name Type="string" LCID="1046" Value="Inverter espiral do polígono"/>
+    <Name Type="string" LCID="1045" Value="Odwróć kolejność wierzchołków wielokąta"/>
+    <Name Type="string" LCID="1029" Value="Převrátit obtáčení mnohoúhelníků"/>
+    <Name Type="string" LCID="1055" Value="Çokgen Sargıyı Çevir"/>
+    <Name Type="string" LCID="1036" Value="Inverser l'enroulement de polygone"/>
+    <Name Type="string" LCID="1040" Value="Capovolgi vertici del poligono"/>
+    <Name Type="string" LCID="1041" Value="多角巻線の反転"/>
+    <Name Type="string" LCID="1042" Value="다각형 권선 대칭 이동"/>
+    <Name Type="string" LCID="1049" Value="Изменить направление обхода многоугольника"/>
+    <Name Type="string" LCID="2052" Value="翻转多边形绕组"/>
+    <Name Type="string" LCID="3082" Value="Voltear devanado de polígono"/>
+  </Command>
+
+  <Command Id="Remove All Animation" Group="Tools">
+    <ShowInScriptMenu Type="bool" Value="true"/>
+    <Script File="assets\scripts\Remove All Animation.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="移除所有動畫"/>
+    <Name Type="string" LCID="1031" Value="Alle Animationen entfernen"/>
+    <Name Type="string" LCID="1033" Value="Remove All Animation"/>
+    <Name Type="string" LCID="1046" Value="Remover toda animação"/>
+    <Name Type="string" LCID="1045" Value="Usuń wszystkie animacje"/>
+    <Name Type="string" LCID="1029" Value="Odebrat všechny animace"/>
+    <Name Type="string" LCID="1055" Value="Tüm Animasyonu Kaldır"/>
+    <Name Type="string" LCID="1036" Value="Supprimer toute l'animation"/>
+    <Name Type="string" LCID="1040" Value="Rimuovi tutta l'animazione"/>
+    <Name Type="string" LCID="1041" Value="すべてのアニメーションの削除"/>
+    <Name Type="string" LCID="1042" Value="모든 애니메이션 제거"/>
+    <Name Type="string" LCID="1049" Value="Удалить всю анимацию"/>
+    <Name Type="string" LCID="2052" Value="移除所有动画"/>
+    <Name Type="string" LCID="3082" Value="Quitar toda animación"/>
+  </Command>
+  
+  <Command Id="Remove Materials" Group="Tools">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Script File="assets\scripts\Remove Materials.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="移除材質"/>
+    <Name Type="string" LCID="1031" Value="Materialien entfernen"/>
+    <Name Type="string" LCID="1033" Value="Remove Materials"/>
+    <Name Type="string" LCID="1046" Value="Remover materiais"/>
+    <Name Type="string" LCID="1045" Value="Usuń materiały"/>
+    <Name Type="string" LCID="1029" Value="Odebrat materiály"/>
+    <Name Type="string" LCID="1055" Value="Malzemeleri Kaldır"/>
+    <Name Type="string" LCID="1036" Value="Supprimer les matériaux"/>
+    <Name Type="string" LCID="1040" Value="Rimuovi materiali"/>
+    <Name Type="string" LCID="1041" Value="素材の削除"/>
+    <Name Type="string" LCID="1042" Value="재질 제거"/>
+    <Name Type="string" LCID="1049" Value="Удалить материалы"/>
+    <Name Type="string" LCID="2052" Value="移除材料"/>
+    <Name Type="string" LCID="3082" Value="Quitar materiales"/>
+  </Command>
+
+  <!--  SHAPES  -->
+  <Command Id="Cone" Group="Shapes">
+    <Script File="assets\scripts\Cone.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <ShowInToolbox Type="bool" Value="true"/>
+    <ToolboxIconFilename Type="string" Value="assets\images\mrecone.bmp"/>
+    <Name Type="string" LCID="1028" Value="圓錐體"/>
+    <Name Type="string" LCID="1031" Value="Kegel"/>
+    <Name Type="string" LCID="1033" Value="Cone"/>
+    <Name Type="string" LCID="1046" Value="Cone"/>
+    <Name Type="string" LCID="1045" Value="Stożek"/>
+    <Name Type="string" LCID="1029" Value="Kužel"/>
+    <Name Type="string" LCID="1055" Value="Koni"/>
+    <Name Type="string" LCID="1036" Value="Cône"/>
+    <Name Type="string" LCID="1040" Value="Cono"/>
+    <Name Type="string" LCID="1041" Value="円錐"/>
+    <Name Type="string" LCID="1042" Value="원뿔"/>
+    <Name Type="string" LCID="1049" Value="Конус"/>
+    <Name Type="string" LCID="2052" Value="圆锥体"/>
+    <Name Type="string" LCID="3082" Value="Cono"/>
+    <Tooltip Type="string" LCID="1028" Value="將圓錐體加入至使用中文件。"/>
+    <Tooltip Type="string" LCID="1031" Value="Fügen Sie einen Kegel zum aktiven Dokument hinzu."/>
+    <Tooltip Type="string" LCID="1033" Value="Add a cone to the active document."/>
+    <Tooltip Type="string" LCID="1046" Value="Adicionar um cone ao documento ativo."/>
+    <Tooltip Type="string" LCID="1045" Value="Dodaj stożek do aktywnego dokumentu."/>
+    <Tooltip Type="string" LCID="1029" Value="Přidat kužel k aktivnímu dokumentu."/>
+    <Tooltip Type="string" LCID="1055" Value="Etkin belgeye bir koni ekler."/>
+    <Tooltip Type="string" LCID="1036" Value="Ajouter un cône au document actif."/>
+    <Tooltip Type="string" LCID="1040" Value="Aggiungere un cono al documento attivo."/>
+    <Tooltip Type="string" LCID="1041" Value="アクティブなドキュメントに円錐を追加します。"/>
+    <Tooltip Type="string" LCID="1042" Value="활성 문서에 원뿔을 추가합니다."/>
+    <Tooltip Type="string" LCID="1049" Value="Добавить конус в активный документ."/>
+    <Tooltip Type="string" LCID="2052" Value="将圆锥体添加到活动文档。"/>
+    <Tooltip Type="string" LCID="3082" Value="Agregue un cono al documento activo."/>
+  </Command>
+
+  <Command Id="Cube" Group="Shapes">
+    <Script File="assets\scripts\Cube.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <ShowInToolbox Type="bool" Value="true"/>
+    <ToolboxIconFilename Type="string" Value="assets\images\mrecube.bmp"/>
+    <Name Type="string" LCID="1028" Value="立方體"/>
+    <Name Type="string" LCID="1031" Value="Würfel"/>
+    <Name Type="string" LCID="1033" Value="Cube"/>
+    <Name Type="string" LCID="1046" Value="Cubo"/>
+    <Name Type="string" LCID="1045" Value="Sześcian"/>
+    <Name Type="string" LCID="1029" Value="Krychle"/>
+    <Name Type="string" LCID="1055" Value="Küp"/>
+    <Name Type="string" LCID="1036" Value="Cube"/>
+    <Name Type="string" LCID="1040" Value="Cubo"/>
+    <Name Type="string" LCID="1041" Value="立方体"/>
+    <Name Type="string" LCID="1042" Value="큐브"/>
+    <Name Type="string" LCID="1049" Value="Куб"/>
+    <Name Type="string" LCID="2052" Value="立方体"/>
+    <Name Type="string" LCID="3082" Value="Cubo"/>
+    <Tooltip Type="string" LCID="1028" Value="將立方體體加入至使用中文件。"/>
+    <Tooltip Type="string" LCID="1031" Value="Fügen Sie einen Würfel zum aktiven Dokument hinzu."/>
+    <Tooltip Type="string" LCID="1033" Value="Add a cube to the active document."/>
+    <Tooltip Type="string" LCID="1046" Value="Adicionar um cubo ao documento ativo."/>
+    <Tooltip Type="string" LCID="1045" Value="Dodaj sześcian do aktywnego dokumentu."/>
+    <Tooltip Type="string" LCID="1029" Value="Přidat krychli k aktivnímu dokumentu."/>
+    <Tooltip Type="string" LCID="1055" Value="Etkin belgeye bir küp ekler."/>
+    <Tooltip Type="string" LCID="1036" Value="Ajouter un cube au document actif."/>
+    <Tooltip Type="string" LCID="1040" Value="Aggiungere un cubo al documento attivo."/>
+    <Tooltip Type="string" LCID="1041" Value="アクティブなドキュメントに立方体を追加します。"/>
+    <Tooltip Type="string" LCID="1042" Value="활성 문서에 큐브를 추가합니다."/>
+    <Tooltip Type="string" LCID="1049" Value="Добавить куб в активный документ."/>
+    <Tooltip Type="string" LCID="2052" Value="将立方体添加到活动文档。"/>
+    <Tooltip Type="string" LCID="3082" Value="Agregue un cubo al documento activo."/>
+  </Command>
+
+  <Command Id="Cylinder" Group="Shapes">
+    <Script File="assets\scripts\Cylinder.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <ShowInToolbox Type="bool" Value="true"/>
+    <ToolboxIconFilename Type="string" Value="assets\images\mrecylinder.bmp"/>
+    <Name Type="string" LCID="1028" Value="圓柱體"/>
+    <Name Type="string" LCID="1031" Value="Zylinder"/>
+    <Name Type="string" LCID="1033" Value="Cylinder"/>
+    <Name Type="string" LCID="1046" Value="Cilindro"/>
+    <Name Type="string" LCID="1045" Value="Walec"/>
+    <Name Type="string" LCID="1029" Value="Válec"/>
+    <Name Type="string" LCID="1055" Value="Silindir"/>
+    <Name Type="string" LCID="1036" Value="Cylindre"/>
+    <Name Type="string" LCID="1040" Value="Cilindro"/>
+    <Name Type="string" LCID="1041" Value="円柱"/>
+    <Name Type="string" LCID="1042" Value="원통"/>
+    <Name Type="string" LCID="1049" Value="Цилиндр"/>
+    <Name Type="string" LCID="2052" Value="圆柱体"/>
+    <Name Type="string" LCID="3082" Value="Cilindro"/>
+    <Tooltip Type="string" LCID="1028" Value="將圓柱體加入至使用中文件。"/>
+    <Tooltip Type="string" LCID="1031" Value="Fügen Sie einen Zylinder zum aktiven Dokument hinzu."/>
+    <Tooltip Type="string" LCID="1033" Value="Add a cylinder to the active document."/>
+    <Tooltip Type="string" LCID="1046" Value="Adicionar um cilindro ao documento ativo."/>
+    <Tooltip Type="string" LCID="1045" Value="Dodaj walec do aktywnego dokumentu."/>
+    <Tooltip Type="string" LCID="1029" Value="Přidat válec k aktivnímu dokumentu."/>
+    <Tooltip Type="string" LCID="1055" Value="Etkin belgeye bir silindir ekler."/>
+    <Tooltip Type="string" LCID="1036" Value="Ajouter un cylindre au document actif."/>
+    <Tooltip Type="string" LCID="1040" Value="Aggiungere un cilindro al documento attivo."/>
+    <Tooltip Type="string" LCID="1041" Value="アクティブなドキュメントに円柱を追加します。"/>
+    <Tooltip Type="string" LCID="1042" Value="활성 문서에 원통을 추가합니다."/>
+    <Tooltip Type="string" LCID="1049" Value="Добавить цилиндр в активный документ."/>
+    <Tooltip Type="string" LCID="2052" Value="将圆柱体添加到活动文档。"/>
+    <Tooltip Type="string" LCID="3082" Value="Agregue un cilindro al documento activo."/>    
+  </Command>
+
+  <Command Id="Disc" Group="Shapes">
+    <Script File="assets\scripts\Disc.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <ShowInToolbox Type="bool" Value="true"/>
+    <ToolboxIconFilename Type="string" Value="assets\images\mredisc.bmp"/>
+    <Name Type="string" LCID="1028" Value="碟形"/>
+    <Name Type="string" LCID="1031" Value="Scheibe"/>
+    <Name Type="string" LCID="1033" Value="Disc"/>
+    <Name Type="string" LCID="1046" Value="Disco"/>
+    <Name Type="string" LCID="1045" Value="Dysk"/>
+    <Name Type="string" LCID="1029" Value="Kruh"/>
+    <Name Type="string" LCID="1055" Value="Disk"/>
+    <Name Type="string" LCID="1036" Value="Disque"/>
+    <Name Type="string" LCID="1040" Value="Disco"/>
+    <Name Type="string" LCID="1041" Value="円盤"/>
+    <Name Type="string" LCID="1042" Value="원반"/>
+    <Name Type="string" LCID="1049" Value="Диск"/>
+    <Name Type="string" LCID="2052" Value="圆盘"/>
+    <Name Type="string" LCID="3082" Value="Disco"/>
+    <Tooltip Type="string" LCID="1028" Value="將實心圓加入至使用中文件。"/>
+    <Tooltip Type="string" LCID="1031" Value="Fügen Sie eine Scheibe zum aktiven Dokument hinzu."/>
+    <Tooltip Type="string" LCID="1033" Value="Add a disc to the active document."/>
+    <Tooltip Type="string" LCID="1046" Value="Adicionar um disco ao documento ativo."/>
+    <Tooltip Type="string" LCID="1045" Value="Dodaj dysk do aktywnego dokumentu."/>
+    <Tooltip Type="string" LCID="1029" Value="Přidat kruh k aktivnímu dokumentu."/>
+    <Tooltip Type="string" LCID="1055" Value="Etkin belgeye bir disk ekler."/>
+    <Tooltip Type="string" LCID="1036" Value="Ajouter un disque au document actif."/>
+    <Tooltip Type="string" LCID="1040" Value="Aggiungere un disco al documento attivo."/>
+    <Tooltip Type="string" LCID="1041" Value="アクティブなドキュメントに円盤を追加します。"/>
+    <Tooltip Type="string" LCID="1042" Value="활성 문서에 원반을 추가합니다."/>
+    <Tooltip Type="string" LCID="1049" Value="Добавить диск в активный документ."/>
+    <Tooltip Type="string" LCID="2052" Value="将圆盘添加到活动文档。"/>
+    <Tooltip Type="string" LCID="3082" Value="Agregue un disco al documento activo."/>
+  </Command>
+
+  <Command Id="Plane" Group="Shapes">
+    <Script File="assets\scripts\Plane.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <ShowInToolbox Type="bool" Value="true"/>
+    <ToolboxIconFilename Type="string" Value="assets\images\mreplane.bmp"/>
+    <Name Type="string" LCID="1028" Value="平面"/>
+    <Name Type="string" LCID="1031" Value="Ebene"/>
+    <Name Type="string" LCID="1033" Value="Plane"/>
+    <Name Type="string" LCID="1046" Value="Plano"/>
+    <Name Type="string" LCID="1045" Value="Płaszczyzna"/>
+    <Name Type="string" LCID="1029" Value="Rovina"/>
+    <Name Type="string" LCID="1055" Value="Düzlem"/>
+    <Name Type="string" LCID="1036" Value="Plan"/>
+    <Name Type="string" LCID="1040" Value="Piano"/>
+    <Name Type="string" LCID="1041" Value="平面"/>
+    <Name Type="string" LCID="1042" Value="평면"/>
+    <Name Type="string" LCID="1049" Value="Плоскость"/>
+    <Name Type="string" LCID="2052" Value="平面"/>
+    <Name Type="string" LCID="3082" Value="Plano"/>
+    <Tooltip Type="string" LCID="1028" Value="將平面加入至使用中文件。"/>
+    <Tooltip Type="string" LCID="1031" Value="Fügen Sie eine Ebene zum aktiven Dokument hinzu."/>
+    <Tooltip Type="string" LCID="1033" Value="Add a plane to the active document."/>
+    <Tooltip Type="string" LCID="1046" Value="Adicionar um plano ao documento ativo."/>
+    <Tooltip Type="string" LCID="1045" Value="Dodaj płaszczyznę do aktywnego dokumentu."/>
+    <Tooltip Type="string" LCID="1029" Value="Přidat rovinu k aktivnímu dokumentu."/>
+    <Tooltip Type="string" LCID="1055" Value="Etkin belgeye bir düzlem ekler."/>
+    <Tooltip Type="string" LCID="1036" Value="Ajouter un plan au document actif."/>
+    <Tooltip Type="string" LCID="1040" Value="Aggiungere un piano al documento attivo."/>
+    <Tooltip Type="string" LCID="1041" Value="アクティブなドキュメントに平面を追加します。"/>
+    <Tooltip Type="string" LCID="1042" Value="활성 문서에 평면을 추가합니다."/>
+    <Tooltip Type="string" LCID="1049" Value="Добавить плоскость в активный документ."/>
+    <Tooltip Type="string" LCID="2052" Value="将平面添加到活动文档。"/>
+    <Tooltip Type="string" LCID="3082" Value="Agregue un plano al documento activo."/>    
+  </Command>
+
+  <Command Id="Sphere" Group="Shapes">
+    <Script File="assets\scripts\Sphere.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <ShowInToolbox Type="bool" Value="true"/>
+    <ToolboxIconFilename Type="string" Value="assets\images\mresphere.bmp"/>
+    <Name Type="string" LCID="1028" Value="球體"/>
+    <Name Type="string" LCID="1031" Value="Kugel"/>
+    <Name Type="string" LCID="1033" Value="Sphere"/>
+    <Name Type="string" LCID="1046" Value="Esfera"/>
+    <Name Type="string" LCID="1045" Value="Kula"/>
+    <Name Type="string" LCID="1029" Value="Koule"/>
+    <Name Type="string" LCID="1055" Value="Küre"/>
+    <Name Type="string" LCID="1036" Value="Sphère"/>
+    <Name Type="string" LCID="1040" Value="Sfera"/>
+    <Name Type="string" LCID="1041" Value="球体"/>
+    <Name Type="string" LCID="1042" Value="구"/>
+    <Name Type="string" LCID="1049" Value="Сфера"/>
+    <Name Type="string" LCID="2052" Value="球体"/>
+    <Name Type="string" LCID="3082" Value="Esfera"/>
+    <Tooltip Type="string" LCID="1028" Value="將球體加入至使用中文件。"/>
+    <Tooltip Type="string" LCID="1031" Value="Fügen Sie eine Kugel zum aktiven Dokument hinzu."/>
+    <Tooltip Type="string" LCID="1033" Value="Add a sphere to the active document."/>
+    <Tooltip Type="string" LCID="1046" Value="Adicionar uma esfera ao documento ativo."/>
+    <Tooltip Type="string" LCID="1045" Value="Dodaj kulę do aktywnego dokumentu."/>
+    <Tooltip Type="string" LCID="1029" Value="Přidat kouli k aktivnímu dokumentu."/>
+    <Tooltip Type="string" LCID="1055" Value="Etkin belgeye bir küre ekler."/>
+    <Tooltip Type="string" LCID="1036" Value="Ajouter une sphère au document actif."/>
+    <Tooltip Type="string" LCID="1040" Value="Aggiungere una sfera al documento attivo."/>
+    <Tooltip Type="string" LCID="1041" Value="アクティブなドキュメントに球体を追加します。"/>
+    <Tooltip Type="string" LCID="1042" Value="활성 문서에 구를 추가합니다."/>
+    <Tooltip Type="string" LCID="1049" Value="Добавить сферу в активный документ."/>
+    <Tooltip Type="string" LCID="2052" Value="将球体添加到活动文档。"/>
+    <Tooltip Type="string" LCID="3082" Value="Agregue una esfera al documento activo."/>
+  </Command>
+
+  <Command Id="Teapot" Group="Shapes">
+    <Script File="assets\scripts\Teapot.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <ShowInToolbox Type="bool" Value="true"/>
+    <ToolboxIconFilename Type="string" Value="assets\images\mreteapot.bmp"/>
+    
+    <Name Type="string" LCID="1028" Value="茶壺形"/>
+    <Name Type="string" LCID="1031" Value="Teekanne"/>
+    <Name Type="string" LCID="1033" Value="Teapot"/>
+    <Name Type="string" LCID="1046" Value="Bule"/>
+    <Name Type="string" LCID="1045" Value="Czajniczek"/>
+    <Name Type="string" LCID="1029" Value="Čajová konvice"/>
+    <Name Type="string" LCID="1055" Value="Çaydanlık"/>
+    <Name Type="string" LCID="1036" Value="Théière"/>
+    <Name Type="string" LCID="1040" Value="Teiera"/>
+    <Name Type="string" LCID="1041" Value="ティーポット"/>
+    <Name Type="string" LCID="1042" Value="주전자"/>
+    <Name Type="string" LCID="1049" Value="Чайник"/>
+    <Name Type="string" LCID="2052" Value="茶壶"/>
+    <Name Type="string" LCID="3082" Value="Tetera"/>
+    <Tooltip Type="string" LCID="1028" Value="將茶壺形加入至使用中文件。"/>
+    <Tooltip Type="string" LCID="1031" Value="Fügen Sie eine Teekanne zum aktiven Dokument hinzu."/>
+    <Tooltip Type="string" LCID="1033" Value="Add a teapot to the active document."/>
+    <Tooltip Type="string" LCID="1046" Value="Adicionar um bule ao documento ativo."/>
+    <Tooltip Type="string" LCID="1045" Value="Dodaj czajniczek do aktywnego dokumentu."/>
+    <Tooltip Type="string" LCID="1029" Value="Přidat čajovou konvici k aktivnímu dokumentu."/>
+    <Tooltip Type="string" LCID="1055" Value="Etkin belgeye bir çaydanlık ekler."/>
+    <Tooltip Type="string" LCID="1036" Value="Ajouter une théière au document actif."/>
+    <Tooltip Type="string" LCID="1040" Value="Aggiungere una teiera al documento attivo."/>
+    <Tooltip Type="string" LCID="1041" Value="アクティブなドキュメントにティーポットを追加します。"/>
+    <Tooltip Type="string" LCID="1042" Value="활성 문서에 주전자를 추가합니다."/>
+    <Tooltip Type="string" LCID="1049" Value="Добавить чайник в активный документ."/>
+    <Tooltip Type="string" LCID="2052" Value="将茶壶添加到活动文档。"/>
+    <Tooltip Type="string" LCID="3082" Value="Agregue una tetera al documento activo."/>    
+  </Command>
+
+  <!--  VIEW   -->
+  <Command Id="OverdrawMode" Group="RenderMode" Type="RadioToggleButton">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="過度繪製模式"/>
+    <Name Type="string" LCID="1031" Value="Modus für Überzeichnen"/>
+    <Name Type="string" LCID="1033" Value="Overdraw Mode"/>
+    <Name Type="string" LCID="1046" Value="Modo Exagero"/>
+    <Name Type="string" LCID="1045" Value="Tryb przerysowywania"/>
+    <Name Type="string" LCID="1029" Value="Režim překreslování"/>
+    <Name Type="string" LCID="1055" Value="Üstüne Çizim Modu"/>
+    <Name Type="string" LCID="1036" Value="Mode de recouvrement"/>
+    <Name Type="string" LCID="1040" Value="Modalità carico"/>
+    <Name Type="string" LCID="1041" Value="誇張描画モード"/>
+    <Name Type="string" LCID="1042" Value="겹쳐 그리기 모드"/>
+    <Name Type="string" LCID="1049" Value="Режим наложения"/>
+    <Name Type="string" LCID="2052" Value="超量绘制模式"/>
+    <Name Type="string" LCID="3082" Value="Modo Sobredibujar"/>
+  </Command>
+
+  <Command Id="FlatShadedMode" Group="RenderMode" Type="RadioToggleButton">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="平面網底模式"/>
+    <Name Type="string" LCID="1031" Value="Modus für flache Schattierung"/>
+    <Name Type="string" LCID="1033" Value="Flat Shading Mode"/>
+    <Name Type="string" LCID="1046" Value="Modo Sombreamento Constante"/>
+    <Name Type="string" LCID="1045" Value="Tryb płaskiego cieniowania"/>
+    <Name Type="string" LCID="1029" Value="Režim konstantního stínování"/>
+    <Name Type="string" LCID="1055" Value="Düz Gölgelendirme Modu"/>
+    <Name Type="string" LCID="1036" Value="Mode d'ombrage plat"/>
+    <Name Type="string" LCID="1040" Value="Modalità ombreggiatura semplice"/>
+    <Name Type="string" LCID="1041" Value="フラット シェーディング モード"/>
+    <Name Type="string" LCID="1042" Value="플랫 음영 모드"/>
+    <Name Type="string" LCID="1049" Value="Режим плоской заливки"/>
+    <Name Type="string" LCID="2052" Value="平面着色模式"/>
+    <Name Type="string" LCID="3082" Value="Modo Sombreado plano"/>
+  </Command>
+  
+  <Command Id="Show All" Group="View">
+    <Script File="assets\scripts\ShowAll.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="全部顯示"/>
+    <Name Type="string" LCID="1031" Value="Alle anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show All"/>
+    <Name Type="string" LCID="1046" Value="Exibir tudo"/>
+    <Name Type="string" LCID="1045" Value="Pokaż wszystko"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit vše"/>
+    <Name Type="string" LCID="1055" Value="Hepsini Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher tout"/>
+    <Name Type="string" LCID="1040" Value="Mostra tutto"/>
+    <Name Type="string" LCID="1041" Value="すべて表示"/>
+    <Name Type="string" LCID="1042" Value="모두 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать все"/>
+    <Name Type="string" LCID="2052" Value="全部显示"/>
+    <Name Type="string" LCID="3082" Value="Mostrar todo"/>
+  </Command>
+
+  <Command Id="Show Empty Nodes" Group="View">
+    <Script File="assets\scripts\ShowEmptyNodes.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="顯示預留位置節點"/>
+    <Name Type="string" LCID="1031" Value="Platzhalterknoten anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Placeholder Nodes"/>
+    <Name Type="string" LCID="1046" Value="Exibir nós do espaço reservado"/>
+    <Name Type="string" LCID="1045" Value="Pokaż węzły zastępcze"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit zástupné uzly"/>
+    <Name Type="string" LCID="1055" Value="Yer Tutucu Düğümleri Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher les nœuds d'espace réservé"/>
+    <Name Type="string" LCID="1040" Value="Mostra nodi segnaposto"/>
+    <Name Type="string" LCID="1041" Value="プレースホルダー ノードの表示"/>
+    <Name Type="string" LCID="1042" Value="자리 표시자 노드 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать узлы заполнителей"/>
+    <Name Type="string" LCID="2052" Value="显示占位符节点"/>
+    <Name Type="string" LCID="3082" Value="Mostrar nodos de marcador de posición"/>
+  </Command>
+
+  <Command Id="Show Vertex Normals" Group="View">
+    <Script File="assets\scripts\ShowVertexNormals.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="顯示端點標準"/>
+    <Name Type="string" LCID="1031" Value="Scheitelpunktnormale anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Vertex Normals"/>
+    <Name Type="string" LCID="1046" Value="Exibir normais do vértice"/>
+    <Name Type="string" LCID="1045" Value="Pokaż normalne wierzchołków"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit kolmice vrcholů"/>
+    <Name Type="string" LCID="1055" Value="Köşe Normallerini Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher les vecteurs normaux du sommet"/>
+    <Name Type="string" LCID="1040" Value="Mostra normali vertici"/>
+    <Name Type="string" LCID="1041" Value="頂点法線の表示"/>
+    <Name Type="string" LCID="1042" Value="버텍스 법선 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать нормали вершин"/>
+    <Name Type="string" LCID="2052" Value="显示顶点法线"/>
+    <Name Type="string" LCID="3082" Value="Mostrar normales de vértice"/>
+  </Command>
+
+  <Command Id="Show Face Normals" Group="View">
+    <Script File="assets\scripts\ShowFaceNormals.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="顯示表面標準"/>
+    <Name Type="string" LCID="1031" Value="Oberflächennormale anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Face Normals"/>
+    <Name Type="string" LCID="1046" Value="Exibir normais da face"/>
+    <Name Type="string" LCID="1045" Value="Pokaż normalne powierzchni"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit kolmice vnějších stran"/>
+    <Name Type="string" LCID="1055" Value="Yüz Normallerini Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher les vecteurs normaux de la face"/>
+    <Name Type="string" LCID="1040" Value="Mostra normali facce"/>
+    <Name Type="string" LCID="1041" Value="面法線の表示"/>
+    <Name Type="string" LCID="1042" Value="면 법선 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать нормали граней"/>
+    <Name Type="string" LCID="2052" Value="显示面法线"/>
+    <Name Type="string" LCID="3082" Value="Mostrar normales de cara"/>
+  </Command>
+
+  <Command Id="ViewBackfaceCulling" Group="View" Type="ToggleCommand">
+    <state Type="uint" Value="0"/>
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="背面剔除"/>
+    <Name Type="string" LCID="1031" Value="Backface Culling"/>
+    <Name Type="string" LCID="1033" Value="Backface Culling"/>
+    <Name Type="string" LCID="1046" Value="Escolher face traseira"/>
+    <Name Type="string" LCID="1045" Value="Usuwanie niewidocznych powierzchni"/>
+    <Name Type="string" LCID="1029" Value="Viditelnost polygonu"/>
+    <Name Type="string" LCID="1055" Value="Arka Yüz Ayırma"/>
+    <Name Type="string" LCID="1036" Value="Élimination de face arrière"/>
+    <Name Type="string" LCID="1040" Value="Backface culling"/>
+    <Name Type="string" LCID="1041" Value="背面除去"/>
+    <Name Type="string" LCID="1042" Value="백페이스 컬링"/>
+    <Name Type="string" LCID="1049" Value="Отсечение задних поверхностей"/>
+    <Name Type="string" LCID="2052" Value="背面消隐"/>
+    <Name Type="string" LCID="3082" Value="Eliminación de caras traseras"/>
+  </Command>
+
+  <Command Id="ShowPivot" Group="View">
+    <Script File="assets\scripts\showpivot.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <HudSlot Type="uint" Value="7"/>
+    <Name Type="string" LCID="1028" Value="顯示樞軸"/>
+    <Name Type="string" LCID="1031" Value="Pivot anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Pivot"/>
+    <Name Type="string" LCID="1046" Value="Exibir pivô"/>
+    <Name Type="string" LCID="1045" Value="Pokaż przestawienie"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit střed"/>
+    <Name Type="string" LCID="1055" Value="Pivotu Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher l'élément pivot"/>
+    <Name Type="string" LCID="1040" Value="Mostra pivot"/>
+    <Name Type="string" LCID="1041" Value="ピボットの表示"/>
+    <Name Type="string" LCID="1042" Value="피벗 표시"/>
+    <Name Type="string" LCID="1049" Value="Показать опорный элемент"/>
+    <Name Type="string" LCID="2052" Value="显示透视"/>
+    <Name Type="string" LCID="3082" Value="Mostrar pivote"/>
+  </Command>
+
+  <Command Id="ToggleWireframe" Group="RenderMode" HudIconSource="assets\images\togglewireframe.png"  Type="RadioToggleButton">
+  <ShowInScriptMenu Type="bool" Value="false"/>
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="框線圖"/>
+    <Name Type="string" LCID="1031" Value="Drahtrahmen"/>
+    <Name Type="string" LCID="1033" Value="Wire Frame"/>
+    <Name Type="string" LCID="1046" Value="Esboço"/>
+    <Name Type="string" LCID="1045" Value="Siatka"/>
+    <Name Type="string" LCID="1029" Value="Drátěný model"/>
+    <Name Type="string" LCID="1055" Value="Tel Çerçeve"/>
+    <Name Type="string" LCID="1036" Value="Filaire"/>
+    <Name Type="string" LCID="1040" Value="Gabbia metallica"/>
+    <Name Type="string" LCID="1041" Value="ワイヤ フレーム"/>
+    <Name Type="string" LCID="1042" Value="와이어 프레임"/>
+    <Name Type="string" LCID="1049" Value="Каркас"/>
+    <Name Type="string" LCID="2052" Value="透明框架"/>
+    <Name Type="string" LCID="3082" Value="Contorno reticular"/>
+  </Command>
+
+  <Command Id="ViewBack" Group="View">
+    <Script File="assets\scripts\ViewBack.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="檢視背面"/>
+    <Name Type="string" LCID="1031" Value="Rückseite anzeigen"/>
+    <Name Type="string" LCID="1033" Value="View Back"/>
+    <Name Type="string" LCID="1046" Value="Exibir parte traseira"/>
+    <Name Type="string" LCID="1045" Value="Wyświetl tył"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit zezadu"/>
+    <Name Type="string" LCID="1055" Value="Arkayı Görüntüle"/>
+    <Name Type="string" LCID="1036" Value="Vue arrière"/>
+    <Name Type="string" LCID="1040" Value="Vista retro"/>
+    <Name Type="string" LCID="1041" Value="後ろを表示"/>
+    <Name Type="string" LCID="1042" Value="뒷면 보기"/>
+    <Name Type="string" LCID="1049" Value="Вид назад"/>
+    <Name Type="string" LCID="2052" Value="查看后部"/>
+    <Name Type="string" LCID="3082" Value="Ver parte posterior"/>
+  </Command>
+
+  <Command Id="ViewBottom" Group="View">
+    <Script File="assets\scripts\ViewBottom.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="檢視底部"/>
+    <Name Type="string" LCID="1031" Value="Unterseite anzeigen"/>
+    <Name Type="string" LCID="1033" Value="View Bottom"/>
+    <Name Type="string" LCID="1046" Value="Exibir parte inferior"/>
+    <Name Type="string" LCID="1045" Value="Wyświetl dół"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit zespodu"/>
+    <Name Type="string" LCID="1055" Value="Altı Görüntüle"/>
+    <Name Type="string" LCID="1036" Value="Vue du dessous"/>
+    <Name Type="string" LCID="1040" Value="Vista in basso"/>
+    <Name Type="string" LCID="1041" Value="下部を表示"/>
+    <Name Type="string" LCID="1042" Value="아래 보기"/>
+    <Name Type="string" LCID="1049" Value="Вид вниз"/>
+    <Name Type="string" LCID="2052" Value="查看底部"/>
+    <Name Type="string" LCID="3082" Value="Ver parte inferior"/>
+  </Command>
+
+  <Command Id="ViewFront" Group="View">
+    <Script File="assets\scripts\ViewFront.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="檢視正面"/>
+    <Name Type="string" LCID="1031" Value="Vorderseite anzeigen"/>
+    <Name Type="string" LCID="1033" Value="View Front"/>
+    <Name Type="string" LCID="1046" Value="Exibir parte dianteira"/>
+    <Name Type="string" LCID="1045" Value="Wyświetl przód"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit zepředu"/>
+    <Name Type="string" LCID="1055" Value="Önü Görüntüle"/>
+    <Name Type="string" LCID="1036" Value="Vue avant"/>
+    <Name Type="string" LCID="1040" Value="Vista fronte"/>
+    <Name Type="string" LCID="1041" Value="前を表示"/>
+    <Name Type="string" LCID="1042" Value="앞면 보기"/>
+    <Name Type="string" LCID="1049" Value="Вид вперед"/>
+    <Name Type="string" LCID="2052" Value="查看前部"/>
+    <Name Type="string" LCID="3082" Value="Ver parte delantera"/>
+  </Command>
+
+  <Command Id="ViewLeft" Group="View">
+    <Script File="assets\scripts\ViewLeft.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="檢視左側"/>
+    <Name Type="string" LCID="1031" Value="Linke Seite anzeigen"/>
+    <Name Type="string" LCID="1033" Value="View Left"/>
+    <Name Type="string" LCID="1046" Value="Exibir parte esquerda"/>
+    <Name Type="string" LCID="1045" Value="Wyświetl lewą stronę"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit zleva"/>
+    <Name Type="string" LCID="1055" Value="Solu Görüntüle"/>
+    <Name Type="string" LCID="1036" Value="Vue gauche"/>
+    <Name Type="string" LCID="1040" Value="Vista a sinistra"/>
+    <Name Type="string" LCID="1041" Value="左を表示"/>
+    <Name Type="string" LCID="1042" Value="왼쪽 보기"/>
+    <Name Type="string" LCID="1049" Value="Вид влево"/>
+    <Name Type="string" LCID="2052" Value="查看左侧"/>
+    <Name Type="string" LCID="3082" Value="Ver parte izquierda"/>
+  </Command>
+
+  <Command Id="ViewRight" Group="View">
+    <Script File="assets\scripts\ViewRight.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="檢視右側"/>
+    <Name Type="string" LCID="1031" Value="Rechte Seite anzeigen"/>
+    <Name Type="string" LCID="1033" Value="View Right"/>
+    <Name Type="string" LCID="1046" Value="Exibir parte direita"/>
+    <Name Type="string" LCID="1045" Value="Wyświetl prawą stronę"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit zprava"/>
+    <Name Type="string" LCID="1055" Value="Sağı Görüntüle"/>
+    <Name Type="string" LCID="1036" Value="Vue droite"/>
+    <Name Type="string" LCID="1040" Value="Vista a destra"/>
+    <Name Type="string" LCID="1041" Value="右を表示"/>
+    <Name Type="string" LCID="1042" Value="오른쪽 보기"/>
+    <Name Type="string" LCID="1049" Value="Вид вправо"/>
+    <Name Type="string" LCID="2052" Value="查看右侧"/>
+    <Name Type="string" LCID="3082" Value="Ver parte derecha"/>
+  </Command>
+
+  <Command Id="ViewTop" Group="View">
+    <Script File="assets\scripts\ViewTop.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="檢視頂部"/>
+    <Name Type="string" LCID="1031" Value="Oberseite anzeigen"/>
+    <Name Type="string" LCID="1033" Value="View Top"/>
+    <Name Type="string" LCID="1046" Value="Exibir parte superior"/>
+    <Name Type="string" LCID="1045" Value="Wyświetl górę"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit zeshora"/>
+    <Name Type="string" LCID="1055" Value="Üstü Görüntüle"/>
+    <Name Type="string" LCID="1036" Value="Vue du dessus"/>
+    <Name Type="string" LCID="1040" Value="Vista in alto"/>
+    <Name Type="string" LCID="1041" Value="上部を表示"/>
+    <Name Type="string" LCID="1042" Value="윗면 보기"/>
+    <Name Type="string" LCID="1049" Value="Вид вверх"/>
+    <Name Type="string" LCID="2052" Value="查看顶部"/>
+    <Name Type="string" LCID="3082" Value="Ver parte superior"/>
+  </Command>
+
+  <Command Id="AxisLock" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+  </Command>
+    
+   <Command Id="RenderMode" Group="View">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+  </Command>
+    
+  <Command Id="X" Group="AxisLock" HudIconSource="assets\images\x.png" Type="RadioToggleButton">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="X"/>
+    <Name Type="string" LCID="1031" Value="X"/>
+    <Name Type="string" LCID="1033" Value="X"/>
+    <Name Type="string" LCID="1046" Value="X"/>
+    <Name Type="string" LCID="1045" Value="X"/>
+    <Name Type="string" LCID="1029" Value="X"/>
+    <Name Type="string" LCID="1055" Value="X"/>
+    <Name Type="string" LCID="1036" Value="X"/>
+    <Name Type="string" LCID="1040" Value="X"/>
+    <Name Type="string" LCID="1041" Value="X"/>
+    <Name Type="string" LCID="1042" Value="X"/>
+    <Name Type="string" LCID="1049" Value="X"/>
+    <Name Type="string" LCID="2052" Value="X"/>
+    <Name Type="string" LCID="3082" Value="X"/>
+  </Command>
+
+  <Command Id="Y" Group="AxisLock" Type="RadioToggleButton">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="Y"/>
+    <Name Type="string" LCID="1031" Value="Y"/>
+    <Name Type="string" LCID="1033" Value="Y"/>
+    <Name Type="string" LCID="1046" Value="Y"/>
+    <Name Type="string" LCID="1045" Value="Y"/>
+    <Name Type="string" LCID="1029" Value="Y"/>
+    <Name Type="string" LCID="1055" Value="Y"/>
+    <Name Type="string" LCID="1036" Value="Y"/>
+    <Name Type="string" LCID="1040" Value="Y"/>
+    <Name Type="string" LCID="1041" Value="Y"/>
+    <Name Type="string" LCID="1042" Value="Y"/>
+    <Name Type="string" LCID="1049" Value="Y"/>
+    <Name Type="string" LCID="2052" Value="Y"/>
+    <Name Type="string" LCID="3082" Value="Y"/>
+  </Command>
+
+  <Command Id="Z" Group="AxisLock" Type="RadioToggleButton">
+    <ShowInScriptMenu Type="bool" Value="false"/>
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="Z"/>
+    <Name Type="string" LCID="1031" Value="Z"/>
+    <Name Type="string" LCID="1033" Value="Z"/>
+    <Name Type="string" LCID="1046" Value="Z"/>
+    <Name Type="string" LCID="1045" Value="Z"/>
+    <Name Type="string" LCID="1029" Value="Z"/>
+    <Name Type="string" LCID="1055" Value="Z"/>
+    <Name Type="string" LCID="1036" Value="Z"/>
+    <Name Type="string" LCID="1040" Value="Z"/>
+    <Name Type="string" LCID="1041" Value="Z"/>
+    <Name Type="string" LCID="1042" Value="Z"/>
+    <Name Type="string" LCID="1049" Value="Z"/>
+    <Name Type="string" LCID="2052" Value="Z"/>
+    <Name Type="string" LCID="3082" Value="Z"/>
+  </Command>
+
+  <Command Id="ViewMaterialErrors" Group="View">
+    <Script File="assets\scripts\ViewMaterialErrors.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="MRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="顯示遺漏材質"/>
+    <Name Type="string" LCID="1031" Value="Fehlende Materialien anzeigen"/>
+    <Name Type="string" LCID="1033" Value="Show Missing Materials"/>
+    <Name Type="string" LCID="1046" Value="Exibir Materiais Ausentes"/>
+    <Name Type="string" LCID="1045" Value="Pokaż brakujące materiały"/>
+    <Name Type="string" LCID="1029" Value="Zobrazit chybějící materiály"/>
+    <Name Type="string" LCID="1055" Value="Eksik Malzemeleri Göster"/>
+    <Name Type="string" LCID="1036" Value="Afficher les matériaux manquants"/>
+    <Name Type="string" LCID="1040" Value="Mostra materiali mancanti"/>
+    <Name Type="string" LCID="1041" Value="欠落している素材の表示"/>
+    <Name Type="string" LCID="1042" Value="누락된 재질 보기"/>
+    <Name Type="string" LCID="1049" Value="Показать отсутствующие материалы"/>
+    <Name Type="string" LCID="2052" Value="显示缺失的材料"/>
+    <Name Type="string" LCID="3082" Value="Mostrar materiales que faltan"/>
+  </Command>
+  
+  <!-- 
+  ===========================================================
+  Startup Commands
+  ===========================================================
+  -->
+  <Command Id="RegisterDsdNodes">
+    <Script Event="OnStartup" File="assets\scripts\RegisterDsdNodes.js" />
+    <Designers DefaultValidation="false">
+      <Designer Name="DSD" Valid="true"/>
+      <Designer Name="MRE" Valid="true"/>
+      <Designer Name="TRE" Valid="true"/>
+    </Designers>
+    <Name Type="string" LCID="1028" Value="註冊節點"/>
+    <Name Type="string" LCID="1031" Value="Knoten registrieren"/>
+    <Name Type="string" LCID="1033" Value="Register Nodes"/>
+    <Name Type="string" LCID="1046" Value="Registrar Nós"/>
+    <Name Type="string" LCID="1045" Value="Zarejestruj węzły"/>
+    <Name Type="string" LCID="1029" Value="Registrovat uzly"/>
+    <Name Type="string" LCID="1055" Value="Düğümleri Kaydet"/>
+    <Name Type="string" LCID="1036" Value="Enregistrer les nœuds"/>
+    <Name Type="string" LCID="1040" Value="Registra nodi"/>
+    <Name Type="string" LCID="1041" Value="ノードの登録"/>
+    <Name Type="string" LCID="1042" Value="노드 등록"/>
+    <Name Type="string" LCID="1049" Value="Регистрация узлов"/>
+    <Name Type="string" LCID="2052" Value="注册节点"/>
+    <Name Type="string" LCID="3082" Value="Registrar nodos"/>
+  </Command>
+
+</Commands>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity
+      type="win32"
+      name="Microsoft.VisualStudio.TestTools.UITest.Extension.IE.Communication.sxs"
+      version="1.0.0.0" />
+
+  <file name="Microsoft.VisualStudio.TestTools.UITest.Extension.IE.Communication.dll" >
+
+    <typelib tlbid="{F902DFE4-8BE5-4BF5-8F04-58887AF3C785}" version="1.0" helpdir="" resourceid="0" flags="HASDISKIMAGE" />
+    <comClass clsid="{C9760181-7401-4D2F-8FE3-BB3A90E0F647}" threadingModel="Apartment" tlbid="{F902DFE4-8BE5-4BF5-8F04-58887AF3C785}" progid="Microsoft.VisualStudio.TestTools.UITest.Extension.IE.Communication.6" description="IECommunicator Class" />
+  </file>
+
+  <comInterfaceExternalProxyStub
+    name="IIECommunicator"
+    iid="{D874629B-E26F-46CC-9F19-19E41DA0660C}"
+    proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"
+    baseInterface="{00000000-0000-0000-C000-000000000046}"
+    tlbid = "{F902DFE4-8BE5-4BF5-8F04-58887AF3C785}" />
+
+</assembly>

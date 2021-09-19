@@ -1,0 +1,31 @@
+; The following keys have random GUIDs that don't have to match anything, but must be unique.
+; Every assembly included in the VSIX must be defined here so that the CLR can find the assembly at runtime.
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{B9783A74-A13D-4BDF-A2DE-3D9D933E96B5}]
+"Name"="Microsoft.VisualStudio.ProjectSystem"
+"PublicKeyToken"="b03f5f7f11d50a3a"
+"Culture"="neutral"
+"Version"="16.0.0.0"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.dll"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{E5D4B638-B570-46F9-922B-E5BD618E5BFE}]
+"Name"="Microsoft.VisualStudio.ProjectSystem.VS"
+"PublicKeyToken"="b03f5f7f11d50a3a"
+"Culture"="neutral"
+"Version"="16.0.0.0"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.VS.dll"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{49A20B63-9BC2-4119-935E-A0516531C382}]
+"name"="Microsoft.VisualStudio.ProjectSystem"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"oldVersion"="15.0.0.0"
+"newVersion"="16.0.0.0"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{50A3EDD4-4C9E-43F1-9782-B4BB70E92277}]
+"name"="Microsoft.VisualStudio.ProjectSystem.VS"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.VS.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"oldVersion"="15.0.0.0"
+"newVersion"="16.0.0.0"

@@ -1,0 +1,12 @@
+[$RootKey$]
+
+[$RootKey$\CLSID]
+
+[$RootKey$\CLSID\{8b223f60-81ae-4d37-9a35-2621bc61801b}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\ecbuild.dll"
+@="ENCBuild Class"
+
+[$RootKey$\CLSID\{db7e39d5-1bfc-451d-8321-f54d76bf962f}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\ecbuild.dll"
+@="ENCBuild Class, Ver 2"
+

@@ -1,0 +1,4 @@
+Microsoft.VisualStudio.Debugger.Parallel.Extension.pkgdef
+Microsoft.VisualStudio.Debugger.Parallel.pkgdef
+PfxTaskProvider.pkgdef
+PplTaskProvider.pkgdef

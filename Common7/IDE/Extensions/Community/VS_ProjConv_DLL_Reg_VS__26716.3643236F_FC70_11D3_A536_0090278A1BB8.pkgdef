@@ -1,0 +1,76 @@
+[$RootKey$\CLSID\{2BC77861-E64C-3BA2-941E-8DCDDCC6AA62}]
+@="Microsoft.VisualStudio.ProjectConverters.tagPOINTS"
+"Assembly"="Microsoft.VisualStudio.ProjectConverters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.ProjectConverters.tagPOINTS"
+"InprocServer32"="$System$\mscoree.dll"
+"RuntimeVersion"="v4.0.30319"
+"ThreadingModel"="Both"
+
+[$RootKey$\CLSID\{2BC77861-E64C-3BA2-941E-8DCDDCC6AA62}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[$RootKey$\CLSID\{2BC77861-E64C-3BA2-941E-8DCDDCC6AA62}\InprocServer32\12.0.0.0]
+"Assembly"="Microsoft.VisualStudio.ProjectConverters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.ProjectConverters.tagPOINTS"
+"RuntimeVersion"="v4.0.30319"
+
+[$RootKey$\CLSID\{2BC77861-E64C-3BA2-941E-8DCDDCC6AA62}\ProgId]
+@="Microsoft.VisualStudio.ProjectConverters.tagPOINTS"
+
+[$RootKey$\CLSID\{57AF72C8-AEB6-43E3-91B1-9DC1D1467214}]
+@="Microsoft.VisualStudio.ProjectConverters.Connect"
+"Assembly"="Microsoft.VisualStudio.ProjectConverters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.ProjectConverters.Connect"
+"InprocServer32"="$System$\mscoree.dll"
+"RuntimeVersion"="v4.0.30319"
+"ThreadingModel"="Both"
+
+[$RootKey$\CLSID\{57AF72C8-AEB6-43E3-91B1-9DC1D1467214}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[$RootKey$\CLSID\{57AF72C8-AEB6-43E3-91B1-9DC1D1467214}\InprocServer32\12.0.0.0]
+"Assembly"="Microsoft.VisualStudio.ProjectConverters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.ProjectConverters.Connect"
+"RuntimeVersion"="v4.0.30319"
+
+[$RootKey$\CLSID\{57AF72C8-AEB6-43E3-91B1-9DC1D1467214}\ProgId]
+@="ProjectConverters.Connect_7_1"
+
+[$RootKey$\CLSID\{57AF72C9-AEB6-43E3-91B1-9DC1D1467214}]
+@="Microsoft.VisualStudio.ProjectConverters.Picker"
+"Assembly"="Microsoft.VisualStudio.ProjectConverters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.ProjectConverters.Picker"
+"InprocServer32"="$System$\mscoree.dll"
+"RuntimeVersion"="v4.0.30319"
+"ThreadingModel"="Both"
+
+[$RootKey$\CLSID\{57AF72C9-AEB6-43E3-91B1-9DC1D1467214}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[$RootKey$\CLSID\{57AF72C9-AEB6-43E3-91B1-9DC1D1467214}\InprocServer32\12.0.0.0]
+"Assembly"="Microsoft.VisualStudio.ProjectConverters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.ProjectConverters.Picker"
+"RuntimeVersion"="v4.0.30319"
+
+[$RootKey$\CLSID\{57AF72C9-AEB6-43E3-91B1-9DC1D1467214}\ProgId]
+@="ConverterPicker.Picker_7_1"
+
+[$RootKey$\ProgId\ConverterPicker.Picker_7_1]
+@="Microsoft.VisualStudio.ProjectConverters.Picker"
+
+[$RootKey$\ProgId\ConverterPicker.Picker_7_1\CLSID]
+@="{57AF72C9-AEB6-43E3-91B1-9DC1D1467214}"
+
+[$RootKey$\ProgId\Microsoft.VisualStudio.ProjectConverters.tagPOINTS]
+@="Microsoft.VisualStudio.ProjectConverters.tagPOINTS"
+
+[$RootKey$\ProgId\Microsoft.VisualStudio.ProjectConverters.tagPOINTS\CLSID]
+@="{2BC77861-E64C-3BA2-941E-8DCDDCC6AA62}"
+
+[$RootKey$\ProgId\ProjectConverters.Connect_7_1]
+@="Microsoft.VisualStudio.ProjectConverters.Connect"
+
+[$RootKey$\ProgId\ProjectConverters.Connect_7_1\CLSID]
+@="{57AF72C8-AEB6-43E3-91B1-9DC1D1467214}"
+
+[$RootKey$\ProgId\Record\{D139E444-006D-33C3-9359-73277D3B116F}\12.0.0.0]
+"Assembly"="Microsoft.VisualStudio.ProjectConverters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.ProjectConverters.UIDLGLOGFONT"
+"RuntimeVersion"="v4.0.30319"

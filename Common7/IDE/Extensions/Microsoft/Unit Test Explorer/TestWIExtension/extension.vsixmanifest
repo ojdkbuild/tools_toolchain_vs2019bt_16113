@@ -1,0 +1,25 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="6e008c95-9cf6-47cd-9ecd-cfdf33277f8c" Version="1.0" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Associate Test Method to Work Item</DisplayName>
+    <Description>Provides support for associating test method to work item from test explorer</Description>
+  </Metadata>
+  <Installation SystemComponent="true" InstalledByMsi="false">
+    <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Pro" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" Version="[15.0]" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <!-- This entry causes VS to know that this vsix contains MEF component. This allows VS testwindow to load ICommandContainer/IUICommandContainer or other components used within project -->
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.TeamFoundation.TestManagement.TestMethodAssociationExtension.dll" />
+    <!-- This entry causes VS to know that this vsix contains VsPackage. VsPackage will not get loaded without this entry. -->
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.TeamFoundation.TestManagement.TestMethodAssociationExtension.pkgdef" />
+  </Assets>
+</PackageManifest>

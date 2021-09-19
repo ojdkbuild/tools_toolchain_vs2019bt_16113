@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Wizard.TestProjectWizards" version="16.0.0.0" publicKeyToken="b03f5f7f11d50a3a" processorArchitecture="msil"></assemblyIdentity>
+  <clrClass clsid="{57EC84DE-BDE4-4172-AA5D-699E622DDBC5}" progid="VsWizard.TestWizard.16.0" threadingModel="Both" name="Microsoft.VisualStudio.TestTools.TestProjectWizards.TestProjectWizard" runtimeVersion="v4.0.30319"></clrClass>
+  <file name="Microsoft.VisualStudio.QualityTools.Wizard.TestProjectWizards.dll" hashalg="SHA1"></file>
+</assembly>

@@ -1,0 +1,8 @@
+[$RootKey$\Packages\{54befe64-0558-4d8c-9fd5-ab0b54733b08}]
+@="VSTelemetryPackage"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.Telemetry.VSTelemetryPackage"
+"Assembly"="Microsoft.VisualStudio.Telemetry.Package,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+[$RootKey$\Services\{959069c9-9e93-4fa1-bf16-3f8120d7db0c}]
+@="{54befe64-0558-4d8c-9fd5-ab0b54733b08}"
+"Name"="SVSTelemetryService"

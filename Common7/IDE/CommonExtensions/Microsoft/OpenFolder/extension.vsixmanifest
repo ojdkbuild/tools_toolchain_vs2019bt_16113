@@ -1,0 +1,28 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.AnyCode" Version="16.10.53.62548" Language="en-US" Publisher="Microsoft Corporation" />
+    <DisplayName>Visual Studio AnyCode</DisplayName>
+    <Description xml:space="preserve">Fast editing of all files in your source tree, regardless of VS-compatible projects or solutions.</Description>
+    <PackageId>Microsoft.VisualStudio.OpenFolder.VSIX</PackageId>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <Installation SystemComponent="true" AllUsers="true">
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.Workspace.VSIntegration.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="VSIntegrationPackage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="DefaultGenericSettings.json" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.Workspace.Extensions.Implementation.VS.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.Workspace.Extensions.Implementation.dll" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0, 17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

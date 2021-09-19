@@ -1,0 +1,6 @@
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.CacheService\0.2]
+@="11AD60FC-6D87-4674-8F88-9ABE79176CBE"
+"IsServiceHub"=dword:00000001
+"ServiceLocation"="$PackageFolder$"
+; audience: Local
+"audience"=dword:00000003

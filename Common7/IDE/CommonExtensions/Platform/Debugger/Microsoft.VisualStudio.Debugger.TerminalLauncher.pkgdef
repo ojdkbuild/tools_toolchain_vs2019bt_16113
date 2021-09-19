@@ -1,0 +1,10 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{C4E51694-009B-4423-8710-BA942AE72308}]
+"name"="Microsoft.VisualStudio.Debugger.TerminalLauncher"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="1.0.0.0"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Debugger.TerminalLauncher.dll"
+
+; Indicate to LiveShare that debugger support for the shared terminal is enabled
+[$RootKey$\Debugger]
+"EnableSharedTerminal"=dword:00000001

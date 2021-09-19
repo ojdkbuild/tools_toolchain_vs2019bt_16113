@@ -1,0 +1,64 @@
+[$RootKey$\AutomationProperties\Environment\TaskList]
+@="@TaskListOptions"
+"Name"="Environment.TaskList"
+"Package"="{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}"
+"ProfileSave" = dword:1
+"vsSettingsMigration" = dword:1
+[$RootKey$\KeyBindingTables\{1FA1FD06-3592-4D1D-AC75-0B953320140C}]
+@="#120"
+"Package"="{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}"
+[$RootKey$\Menus]
+"{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}"=", Menus.ctmenu, 1"
+[$RootKey$\Packages\{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}]
+@="ErrorListPackage"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.ErrorListPkg.ErrorListPackage"
+"Assembly"="Microsoft.VisualStudio.ErrorListPkg,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"AllowsBackgroundLoad" = dword:1
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{D422EA52-1379-41B8-B131-BF9B8E7FEECE}]
+"name"="Microsoft.VisualStudio.ErrorListPkg"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.ErrorListPkg.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"
+[$RootKey$\Services\{599BCD9E-CAFA-43DF-AA03-129C0004C2BD}]
+"Name"="Error list"
+@="{4A9B7E50-AA16-11D0-A8C5-00A0C921A4D2}"
+"IsAsyncQueryable" = dword:1
+[$RootKey$\Services\{9D21BCC5-2C63-4A61-B055-2F3DF78EB30A}]
+"Name"="Task list"
+@="{4A9B7E50-AA16-11D0-A8C5-00A0C921A4D2}"
+"IsAsyncQueryable" = dword:1
+[$RootKey$\Services\{F0B519C7-AA71-4C77-BDD0-349E65623BA1}]
+"Name"="Find all references"
+@="{4A9B7E50-AA16-11D0-A8C5-00A0C921A4D2}"
+"IsAsyncQueryable" = dword:1
+[$RootKey$\Services\{8C762D6C-A671-4436-9F0E-DBE925F4D0EA}]
+"Name"="Find results"
+@="{4A9B7E50-AA16-11D0-A8C5-00A0C921A4D2}"
+"IsAsyncQueryable" = dword:1
+[$RootKey$\ToolsOptionsPages\Environment\Task List]
+@="#13719"
+"Package"="{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}"
+"Page"="{bef96440-1769-11d1-8f8d-00a0c91bbfa2}"
+"Keywords"="#14985"
+[$RootKey$\ToolWindows\{d78612c7-9962-4b83-95d9-268046dad23a}]
+@="{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}"
+"Name"="Microsoft.VisualStudio.ErrorListPkg.Shims.ErrorListWindow"
+[$RootKey$\ToolWindows\{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}]
+@="{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}"
+"Name"="Microsoft.VisualStudio.ErrorListPkg.Shims.TaskListWindow"
+[$RootKey$\ToolWindows\{a80febb4-e7e0-4147-b476-21aaf2453969}]
+@="{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}"
+"Name"="FindAllReferences.FindAllReferencesWindow"
+"Orientation"="Right"
+"Style"="Tabbed"
+"Window"="{4A9B7E51-AA16-11D0-A8C5-00A0C921A4D2}"
+"DontForceCreate"=dword:00000001
+[$RootKey$\ToolWindows\{004BE353-6879-467C-9D1E-9AC23CDF6D49}]
+@="{4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2}"
+"Name"="FindResults.FindResultsWindow"
+"Orientation"="Right"
+"Style"="Tabbed"
+"Window"="{4A9B7E51-AA16-11D0-A8C5-00A0C921A4D2}"
+"DontForceCreate"=dword:00000001

@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+
+    <link id="grid.css" rel="stylesheet" href="CSS/grid.css" type="text/css" data-plugin-theme="true" />
+    <link id="TabControl.css" rel="stylesheet" href="../Common/CSS/TabControl.css" type="text/css" data-plugin-theme="true" />
+    <link id="DetailsView.css" rel="stylesheet" href="CSS/DetailsView.css" type="text/css" data-plugin-theme="true" />
+
+    <script type="text/javascript" src="../Common/Script/plugin.js"></script>
+    <script type="text/javascript" src="../Common/Script/CommonMerged.js"></script>
+    <script type="text/javascript" src="Script/JSTreeDynamicGridControl.js"></script>
+    <script type="text/javascript" src="Script/DetailsViewMerged.js"></script>
+    <script type="text/javascript" src="../Common/Script/DiagnosticsHub.js"></script>
+
+    <script id="DetailsViewTemplate" type="text/html">
+
+        <div id="snapshotTab" class="snapshotTab">
+            <div id="snapshotProcessing" class="snapshotProcessing">
+                <div id="snapshotProcessingError" class="snapshotError">
+                    <div id="snapshotProcessingErrorFrown" class="snapshotProcessingErrorFrown">:(</div>
+                    <span id="snapshotProcessingErrorLabel"></span>
+                    <div id="snapshotProcessingErrorMsg"></div>
+                </div>
+                <div id="snapshotProcessingProgressDiv" class="snapshotProcessingProgressDiv">
+                    <div class="progressContent">
+                        <p id="progressText"></p>
+                        <progress id="progressBar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+    <script id="SettingsTemplate" type="text/html">
+        <div class="settingsContainer">
+            <input id="filterInput" class="filterInput" type="text" tabindex="2" />
+            <div id="settingsMenuButton" class="settingsMenuButton" tabindex="2">
+                <div class="settingsIcon"></div>
+            </div>
+        </div>
+    </script>
+
+    <script id="ManagedHeapTemplate" type="text/html">
+        <div class="dataView">
+            <div id="notificationArea" class="notificationArea">
+                <div id="notificationBar" class="notificationBar">
+                    <div id="notificationBarInfoIcon" class="notificationBarInfoIcon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div id="notificationBarMessage" class="notificationBarMessage"></div>
+                </div>
+                <div id="progressBar" class="managedHeapProgress">
+                    <progress />
+                </div>
+            </div>
+            <div id="snapshotViewContainer" class="snapshotViewContainer">
+                <div id="ManagedHeapTypesViewerContainer" class="detailsTopGridContainer"></div>
+            </div>
+            <div id="snapshotViewGridSplitter" class="gridSplitter gridSplitter-Vertical" role="separator" aria-orientation="horizontal" tabindex="0"></div>
+            <div id="referenceView" class="detailsBottomView">
+                <div id="RefGraphHeader" class="detailsBottomGridHeader">
+                    <table>
+                        <tr role="tablist">
+                            <td><a id="ReferencingGraph" href="#" role="tab" /></td>
+                            <td class="separator">|</td>
+                            <td><a id="ReferencedGraph" href="#" role="tab" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="ManagedHeapViewerRefGraphNoData" class="detailsBottomGridContainerNoData"></div>
+                <div id="ManagedHeapViewerForwardTypeRefGraphContainer" class="detailsBottomGridContainer"></div>
+                <div id="ManagedHeapViewerBackwardTypeRefGraphContainer" class="detailsBottomGridContainer"></div>
+                <div id="ManagedHeapViewerForwardObjectRefGraphContainer" class="detailsBottomGridContainer"></div>
+                <div id="ManagedHeapViewerBackwardObjectRefGraphContainer" class="detailsBottomGridContainer"></div>
+            </div>
+        </div>
+        <div id="heapViewOverlay" class="heapContainerOverlay"></div>
+    </script>
+
+    <script id="NativeHeapTemplate" type="text/html">
+        <div class="dataView">
+            <div id="notificationArea" class="notificationArea">
+                <div id="notificationBar" class="notificationBar">
+                    <div id="notificationBarInfoIcon" class="notificationBarInfoIcon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div id="notificationBarMessage" class="notificationBarMessage"></div>
+                </div>
+                <div id="progressBar" class="nativeHeapProgress">
+                    <progress />
+                </div>
+            </div>
+            <div id="snapshotViewContainer" class="snapshotViewContainer">
+                <div id="NativeHeapMasterDetailContainer" class="detailsTopGridContainer"></div>
+            </div>
+            <div id="snapshotViewGridSplitter" class="gridSplitter gridSplitter-Vertical" role="separator" aria-orientation="horizontal" tabindex="0"></div>
+            <div id="nativeHeapAllocationListView" class="detailsBottomView">
+                <div id="nativeHeapAllocationListHeader" class="detailsBottomGridHeader">
+                    <table>
+                        <tr>
+                            <td><a id="allocationsTree" href="#" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="NativeHeapViewerAllocationListNoData" class="detailsBottomGridContainerNoData"></div>
+                <div id="NativeHeapViewerAllocationListContainer" class="detailsBottomGridContainer"></div>
+            </div>
+        </div>
+        <div id="heapViewOverlay" class="heapContainerOverlay"></div>
+    </script>
+
+    <script id="ToggleTabTemplate" type="text/html">
+        <div class="ToggleButton" role="radiogroup">
+            <div id="aggregationToggleTabLabel" class="toggleTabLabel"></div>
+            <div id="aggregationToggleTabTopButton" class="toggleTabButtonContainer toggleTabFirstButtonContainer" tabindex="0" role="radio"></div>
+            <div id="aggregationToggleTabBottomButton" class="toggleTabButtonContainer toggleTabSecondButtonContainer" tabindex="0" role="radio"></div>
+        </div>
+    </script>
+
+</head>
+<body tabindex="-1">
+    <div id="mainContainer">
+    </div>
+</body>
+</html>

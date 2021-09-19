@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (C) 1981-2007 Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <noInheritable/>
+<file name="vcpackages\DirControl.dll">
+    <comClass clsid="{394a33e7-b754-4088-a711-acf5d2b68f85}" tlbid="{38a9c42b-55bb-4c01-9bff-e7bd0bb0f63e}"/>
+    <typelib tlbid="{38a9c42b-55bb-4c01-9bff-e7bd0bb0f63e}" version="10.0" helpdir=""/>
+</file>
+  <comInterfaceExternalProxyStub name="IDirList" iid="{07f86395-273c-11d7-8bf6-00b0d03daa06}" numMethods="18" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{38a9c42b-55bb-4c01-9bff-e7bd0bb0f63e}"/>
+  <comInterfaceExternalProxyStub name="IDirListEvents" iid="{07f86394-273c-11d7-8bf6-00b0d03daa06}" numMethods="8" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{38a9c42b-55bb-4c01-9bff-e7bd0bb0f63e}"/>
+</assembly>

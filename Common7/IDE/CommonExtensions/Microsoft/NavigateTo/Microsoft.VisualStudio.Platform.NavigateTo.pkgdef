@@ -1,0 +1,13 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{7F619DB9-FAC9-4484-842D-7B6EF49638A6}]
+"name"="Microsoft.VisualStudio.Language.NavigateTo.Interfaces"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Language.NavigateTo.Interfaces.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{25EBEB6C-2986-4250-B1E7-DA5BA932C0B5}]
+"name"="Microsoft.VisualStudio.Language.NavigateTo.Implementation"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Language.NavigateTo.Implementation.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"

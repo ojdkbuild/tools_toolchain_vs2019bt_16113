@@ -1,0 +1,10 @@
+{
+  "host": "desktopClr.x86",
+  "hostId": "TerminalPTYService",
+  "entryPoint": {
+    "assemblyPath": "Microsoft.VisualStudio.Terminal.ServiceHub.dll",
+    "fullClassName": "Microsoft.VisualStudio.Terminal.ServiceHub.PtyServiceFactory",
+    "appBasePath": "%VSAPPIDDIR%",
+    "configPath": "%PkgDefApplicationConfigFile%"
+  }
+}

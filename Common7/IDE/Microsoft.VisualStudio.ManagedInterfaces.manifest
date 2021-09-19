@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity name="Microsoft.VisualStudio.ManagedInterfaces" version="8.0.0.0" publicKeyToken="b03f5f7f11d50a3a" processorArchitecture="msil"></assemblyIdentity>
+  <clrSurrogate clsid="{12F49949-7B60-49CD-B6A0-2B5E4A638AAF}" name="Microsoft.VisualStudio.ManagedInterfaces.Publish.ComponentsLocation"></clrSurrogate>
+  <clrSurrogate clsid="{DEC16A2B-CD72-402e-B788-C56211DDAD81}" name="Microsoft.VisualStudio.ManagedInterfaces.Publish.UpdateMode"></clrSurrogate>
+  <clrSurrogate clsid="{2C8B280A-5A15-4048-9032-CF24D9387C22}" name="Microsoft.VisualStudio.ManagedInterfaces.Publish.UpdateIntervalUnits"></clrSurrogate>
+  <clrSurrogate clsid="{FCEF3D3C-E193-46a5-9114-E982EBC7D540}" name="Microsoft.VisualStudio.ManagedInterfaces.Publish.InstallFrom"></clrSurrogate>
+  <clrSurrogate clsid="{A8D84FC4-E49C-478a-B21E-3FB4B22CBCC0}" name="Microsoft.VisualStudio.ManagedInterfaces.Publish.PublishStatus"></clrSurrogate>
+  <file name="Microsoft.VisualStudio.ManagedInterfaces.dll" hashalg="SHA1"></file>
+</assembly>

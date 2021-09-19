@@ -1,0 +1,5 @@
+[$RootKey$\Debugger]
+"SnapshotBufferSize"=dword:0000064
+[$RootKey$\Debugger]
+"SnapshotCleanupProcessPath"="$BaseInstallDir$\Common7\ide\CommonExtensions\Microsoft\IntelliTrace\ProcessSnapshotCleanup.exe"
+"JustMyCodeStepping"=dword:00000001

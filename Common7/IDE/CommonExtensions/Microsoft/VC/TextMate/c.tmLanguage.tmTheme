@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>C Theme</string>
+    <key>settings</key>
+    <array>
+
+      <dict>
+        <key>scope</key>
+        <string>storage.modifier, keyword, storage.type, constant.language</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>keyword</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>keyword.control</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>CppControlKeyword</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>keyword.control.directive</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>preprocessor keyword</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>meta.preprocessor keyword</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>preprocessor keyword</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>string, punctuation.definition.string, constant.character.escape</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>string</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>support.type, entity.name.type</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>CppType</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>entity.name.function</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>CppFunction</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>entity.name.function.preprocessor</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>CppMacro</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>constant.numeric</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>number</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>keyword.operator, punctuation.definition</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>operator</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>comment, punctuation.definition.comment</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>comment</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>comment.block.preprocessor</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>preprocessor keyword</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>variable, entity - entity.name.type</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>identifier</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>variable.parameter</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>CppParameter</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>variable.other.property</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>CppMemberField</string>
+        </dict>
+      </dict>
+
+    </array>
+    <key>uuid</key>
+    <string>6D998F71-0602-43E7-9DD8-E7E2CD3B8F63</string>
+  </dict>
+</plist>

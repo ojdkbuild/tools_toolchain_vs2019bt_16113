@@ -1,0 +1,420 @@
+﻿/*
+ * TemplateControl
+ */
+
+.BPT-hidden {
+    display: none !important;
+}
+
+/* 
+ *  Toolbar
+ */
+
+.BPT-Toolbar {
+    width: 100%;
+    color: TRANSPARENT; /*[{plugin-color}]*/
+    background-color: TRANSPARENT; /*[{f12-toolbar-background-color}]*/
+    border-bottom: 1px solid TRANSPARENT; /*[1px solid {plugin-treeview-content-inactive-selected-background-color}]*/
+    display: -ms-grid;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    -ms-grid-rows: auto;
+    -ms-grid-columns: 1fr auto;
+    cursor: default;
+}
+
+    .BPT-Toolbar > .BPT-ToolbarContents {
+        -ms-grid-column: 1;
+        margin-top: 1px;
+        padding-left: 14px;
+    }
+
+        .BPT-Toolbar > .BPT-ToolbarContents > .buttons {
+            display: inline-block;
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+
+        .BPT-Toolbar > .BPT-ToolbarContents > .BPT-ToolTitle {
+            font-family: "Segoe UI", Arial, sans-serif; /*[{plugin-font-family} , Arial, sans-serif]*/
+            font-size: 20px;
+            font-weight: 200;
+            padding-right: 42px;
+            line-height: 29px;
+        }
+
+        .BPT-Toolbar > .BPT-ToolbarContents > .shellButtonSpacer {
+            display: inline-block;
+            float: right;
+            height: 29px;
+            width: 0; /* 0 is replaced during 'hostinfochanged' events */
+        }
+
+/* 
+ *  Button
+ */
+
+.BPT-button {
+    display: inline-block;
+    padding: 2px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: TRANSPARENT; /*[{plugin-color}]*/
+}
+
+    .BPT-button.iconButton24x24 {
+        height: 24px;
+        width: 24px;
+    }
+
+    .BPT-button.menuButton33x24 {
+        height: 24px;
+        width: 33px;
+    }
+
+    .BPT-button.labeledIconButton,
+    .BPT-button.labeledIconButton33x24,
+    .BPT-button.iconButton {
+        padding-bottom: 0px;
+    }
+
+    .BPT-button .buttonIcon {
+        background-color: transparent;
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    .BPT-button.iconButton24x24 .buttonIcon {
+        background-size: 18px 54px;
+        height: 18px;
+        width: 18px;
+    }
+
+    .BPT-button.menuButton33x24 .buttonIcon {
+        background-size: 27px 54px;
+        height: 18px;
+        width: 27px;
+    }
+
+    .BPT-button.iconButton .buttonIcon,
+    .BPT-button.labeledIconButton .buttonIcon {
+        background-size: 18px 54px;
+        padding-bottom: 0px;
+        height: 18px;
+        width: 18px;
+    }
+
+    .BPT-button.labeledIconButton33x24 .buttonIcon {
+        background-size: 27px 54px;
+        padding-bottom: 0px;
+        height: 18px;
+        width: 27px;
+    }
+
+    .BPT-button.imageStates5 .buttonIcon {
+        background-size: 27px 90px;
+    }
+
+    .BPT-button .buttonText {
+        display: inline-block;
+        float: right;
+        min-width: 8px;
+        margin: 0px 5px 0px 5px;
+        text-align: right;
+        cursor: default;
+    }
+
+    .BPT-button.checked {
+        color: TRANSPARENT; /*[{f12-toolbar-button-selected-text-color}]*/
+        border-color: TRANSPARENT; /*[{f12-toolbar-button-selected-border-color}]*/
+    }
+
+        .BPT-button.checked .buttonIcon {
+            background-position-y: -18px;
+        }
+
+    .BPT-button:hover {
+        color: TRANSPARENT; /*[{f12-toolbar-button-hover-text-color}]*/
+        background-color: TRANSPARENT; /*[{f12-toolbar-button-hover-color}]*/
+    }
+
+        .BPT-button:hover .buttonIcon {
+            background-position-y: -18px;
+        }
+
+    .BPT-button.menuButton33x24:hover .buttonIcon {
+        background-position-y: -18px;
+    }
+
+    .BPT-button.pressed {
+        background-color: TRANSPARENT; /*[{f12-toolbar-button-pressed-color}]*/
+    }
+
+    .BPT-button.disabled {
+        background-color: transparent;
+    }
+
+    .BPT-button.iconButton.disabled .buttonIcon {
+        background-position-y: -36px;
+    }
+
+    .BPT-button.iconButton24x24.disabled .buttonIcon {
+        background-position-y: -36px;
+    }
+
+    .BPT-button.menuButton33x24.disabled .buttonIcon {
+        background-position-y: -72px;
+    }
+
+    .BPT-button.labeledIconButton.disabled .buttonIcon {
+        background-position-y: -36px;
+    }
+
+    .BPT-button.hidden {
+        display: none;
+    }
+
+    .BPT-button:focus {
+        outline: invert dotted thin;
+    }
+
+.BPT-Toolbar .BPT-button {
+    margin-right: 7px;
+}
+
+/* 
+ *  Textbox
+ */
+
+.BPT-TextBox:not([disabled]):-ms-input-placeholder {
+    background-color: TRANSPARENT; /*[{plugin-searchcontrol-unfocused-background-color}]*/
+    color: TRANSPARENT; /*[{plugin-searchcontrol-unfocused-watermark-text-color}]*/
+}
+
+.BPT-TextBox:not([disabled]):hover:-ms-input-placeholder {
+    background-color: TRANSPARENT; /*[{plugin-searchcontrol-mouseover-background-background-color}]*/
+    color: TRANSPARENT; /*[{plugin-searchcontrol-mouseover-watermark-text-color}]*/
+}
+
+
+/* 
+ *  Searchbox 
+ */
+
+#searchNextResult {
+    right: 0;
+    top: 2px;
+}
+
+#searchPreviousResult {
+    right: 11px;
+    top: 2px;
+}
+
+.BPT-SearchBox {
+    color: TRANSPARENT; /*[{plugin-searchcontrol-mouseover-background-foreground-color}]*/
+    background-color: transparent;
+    border: none;
+    height: 18px;
+    width: 119px;
+    padding: 1px 2px;
+    margin-right: 26px;
+}
+
+    .BPT-SearchBox::selection {
+        background-color: TRANSPARENT; /*[{plugin-searchcontrol-selection-color}]*/
+    }
+
+    .BPT-SearchBox:-ms-input-placeholder {
+        color: TRANSPARENT; /*[{plugin-searchcontrol-unfocused-watermark-text-color}]*/
+        background-color: TRANSPARENT; /*[{plugin-searchcontrol-unfocused-background-color}]*/
+    }
+
+.BPT-SearchBox-Border {
+    float: right;
+    background-color: TRANSPARENT; /*[{plugin-searchcontrol-mouseover-background-background-color}]*/
+    border: 1px solid TRANSPARENT; /*[1px solid {plugin-searchcontrol-unfocused-border-color}]*/
+    margin-top: 3px;
+    padding: 1px;
+    display: inline-block;
+    position: relative;
+}
+
+    .BPT-SearchBox-Border:hover {
+        background-color: TRANSPARENT; /*[{plugin-searchcontrol-mouseover-background-background-color}]*/
+        border: 1px solid TRANSPARENT; /*[1px solid {plugin-searchcontrol-mouseover-border-color}]*/
+    }
+
+.BPT-SearchBox-NoResult {
+    border: 1px solid TRANSPARENT; /*[1px solid {plugin-font-console-error-color}]*/
+}
+
+    .BPT-SearchBox-NoResult:hover {
+        border: 1px solid TRANSPARENT; /*[1px solid {plugin-font-console-error-color}]*/
+    }
+
+.BPT-Toolbar .BPT-Search-Button {
+    display: inline-block;
+    position: absolute;
+}
+
+    .BPT-Toolbar .BPT-Search-Button:not([disabled]):hover div {
+        background-position-x: -16px;
+    }
+
+    .BPT-Toolbar .BPT-Search-Button[disabled] div {
+        visibility: hidden;
+    }
+
+/* 
+ *  Popup
+ */
+
+.BPT-popup {
+    position: absolute;
+    z-index: 2000;
+}
+
+/* 
+ *  Menu
+ */
+
+.BPT-menuControl {
+    border: 1px solid TRANSPARENT; /*[1px solid {f12-toolbar-button-selected-border-color}]*/
+    box-shadow: 2px 2px 2px TRANSPARENT; /*[2px 2px 2px {plugin-textbox-border-color rgba(0.5)}]*/
+    background-color: TRANSPARENT; /*[{plugin-menucontrol-background-color}]*/
+    display: table-cell;
+    width: auto;
+    white-space: nowrap;
+}
+
+.BPT-menuContent {
+    list-style-type: none;
+    padding: 2px;
+    margin: 0px;
+}
+
+    .BPT-menuContent > li.menuItem {
+        cursor: default;
+        padding: 4px;
+    }
+
+        .BPT-menuContent > li.menuItem:not([disabled]):hover {
+            cursor: pointer;
+            color: TRANSPARENT; /*[{plugin-treeview-content-mouseover-color}]*/
+            background-color: TRANSPARENT; /*[{plugin-treeview-content-mouseover-background-color}]*/
+        }
+
+        .BPT-menuContent > li.menuItem.selected {
+            color: TRANSPARENT; /*[{plugin-treeview-content-mouseover-color}]*/
+            background-color: TRANSPARENT; /*[{plugin-treeview-content-mouseover-background-color}]*/
+        }
+
+        .BPT-menuContent > li.menuItem > .gutter {
+            height: 12px;
+            width: 12px;
+            padding-right: 3px;
+            vertical-align: middle;
+            float: left;
+        }
+
+        .BPT-menuContent > li.menuItem.hiddenCheckMark > .menuToggleItem {
+            visibility: hidden;
+        }
+
+    .BPT-menuContent > hr {
+        border: none;
+        border-top: 1px solid TRANSPARENT; /*[1px solid {vs-command-bar-menu-separator-color}]*/
+        margin: 2px -2px 2px -2px;
+    }
+
+    /* Override for checkbocMenuItem*/
+    .BPT-menuContent > li.menuItem > input[type="checkbox"] {
+        margin-top: -2px;
+    }
+
+    /* Override for comboBoxMenuItem */
+    .BPT-menuContent > li.menuItem > select {
+        width: 100%;
+    }
+
+    .BPT-menuContent > li.menuItem:not([disabled]).comboBoxMenuItem {
+        background-color: TRANSPARENT;
+    }
+
+    /* Override for textBoxMenuItem */
+    .BPT-menuContent > li.menuItem:not([disabled]).textBoxMenuItem {
+        background-color: TRANSPARENT;
+    }
+
+/* 
+ *  Popup
+ */
+
+.BPT-popupActive {
+    background-color: TRANSPARENT !important; /*[{f12-toolbar-button-selected-color}  !important]*/
+    border-color: TRANSPARENT !important; /*[{f12-toolbar-button-selected-border-color} !important]*/
+}
+
+/* 
+ *  Miscellaneous
+ */
+
+/* Hide the tool title in VS but not in F12 */
+.BPT-ToolTitle {
+    display: none;
+}
+
+html.hostedF12 .BPT-ToolTitle {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.iconShell_18x18 {
+    background-color: transparent;
+    border: 1px solid transparent;
+    height: 18px;
+    width: 18px;
+    margin-left: 8px;
+}
+
+.iconShell_24x24 {
+    background-color: transparent;
+    border: 1px solid transparent;
+    height: 24px;
+    width: 24px;
+}
+
+.iconShell_33x24 {
+    background-color: transparent;
+    border: 1px solid transparent;
+    height: 24px;
+    width: 33px;
+}
+
+.icon_14x14 {
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 16px 48px;
+    height: 16px;
+    width: 16px;
+}
+
+.icon_16x16 {
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 18px 54px;
+    height: 18px;
+    margin: 3px 0px 0px 3px;
+    width: 18px;
+}
+
+.icon_25x16 {
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 27px 90px;
+    height: 18px;
+    margin: 3px 0px 0px 3px;
+    width: 27px;
+}

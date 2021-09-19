@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity type="win32" name="Automation\wfinterop.tlb" processorArchitecture="X86" version="1.0.0.0"></assemblyIdentity>
+    <file name="wfinterop.tlb" hashalg="SHA1">
+        <comClass clsid="{79D28542-E33C-4BF4-9C27-DCC67F47FD08}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" description="Nugget Events 2"></comClass>
+        <comClass clsid="{9D3A1CEA-44C7-4845-946D-D77F5EB4EF4C}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" description="HTML Editor Async Code Generator Callback"></comClass>
+        <comClass clsid="{78570B00-1886-46F6-88F2-84EE5144D4AD}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" description="Tag Navigator Host"></comClass>
+        <typelib tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+    </file>
+    <comInterfaceExternalProxyStub name="INuggetEvents" iid="{79D28542-E33C-4BF4-9C27-DCC67F47FD07}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+    <comInterfaceExternalProxyStub name="IHtmlCodeGenerationResults" iid="{BBDB62CF-F611-48E7-8E2D-418FD66C6259}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+<!--    <comInterfaceExternalProxyStub name="IVsEnumCodeBlocks" iid="{07A45A82-5354-4DDE-AC7D-60F2CDD5573B}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" proxyStubClsid32="{07A45A82-5354-4DDE-AC7D-60F2CDD5573B}"></comInterfaceExternalProxyStub> -->
+    <comInterfaceExternalProxyStub name="IASPCodeGeneratorCallback" iid="{9B23BD78-60CB-4CF5-8F55-28E589634745}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+    <comInterfaceExternalProxyStub name="IASPSchemaGeneratorCallback" iid="{968EFDC1-A4E0-4FC2-94D2-C2882A9600AC}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+    <comInterfaceExternalProxyStub name="ITagNavigatorHost" iid="{3CD372BC-677D-4C99-93E2-30D7650945EE}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+    <comInterfaceExternalProxyStub name="IBrowserCapsCacheSink" iid="{CBA6B547-A9C2-4EC5-8420-5E91CC00C1B4}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+    <comInterfaceExternalProxyStub name="IHtmIntellisenseProject" iid="{F89301B3-CF38-4FD2-83A2-DB23468EB24A}" tlbid="{1E490041-A713-4C60-A5B7-1D2D0A8E93FC}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+</assembly>

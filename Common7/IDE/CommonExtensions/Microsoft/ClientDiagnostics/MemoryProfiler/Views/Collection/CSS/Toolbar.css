@@ -1,0 +1,113 @@
+﻿#header-float {
+    overflow: visible;
+    width: 100%;
+}
+
+.toolbar-separator {
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: black; /*[{Environment-CommandBarToolBarSeparator-Background}]*/
+    margin-left: 4px;
+    margin-right: 4px;
+    border-top: solid 3px grey; /*[solid 3px {Environment-CommandBarToolBarSeparator-Background}]*/
+    border-bottom: solid 3px grey; /*[solid 3px {Environment-CommandBarToolBarSeparator-Background}]*/
+}
+
+/* The button.* rules are so each selector is specific enough to override default styles injected by daytona */
+.toolbar-button, button.toolbar-button {
+    padding: 2px;
+    background-image: none; /*This overrides a background image injected by Plugin.css*/
+    background-color: transparent;
+    color: lawngreen; /*[{Environment-CommandBarTextActive-Background}]*/
+    height: 100%;
+    -ms-grid-columns: auto auto;
+    -ms-grid-rows: 1fr;
+    display: -ms-inline-grid;
+    border: 1px solid transparent;
+}
+
+    .toolbar-button:hover, button.toolbar-button:hover {
+        border: 1px solid lawngreen; /*[1px solid {Environment-CommandBarBorder-Background}]*/
+        background-color: fuchsia; /*[{Environment-CommandBarMouseOverBackgroundBegin-Background}]*/
+        color: lawngreen; /*[{Environment-CommandBarTextHover-Background}]*/
+    }
+
+    .toolbar-button:active, button.toolbar-button:active {
+        background-color: fuchsia; /*[{Environment-CommandBarMouseDownBackgroundBegin-Background}]*/
+        color: lawngreen; /*[{Environment-CommandBarTextMouseDown-Background}]*/
+        border-color: fuchsia; /*[{Environment-CommandBarBorder-Background}]*/
+    }
+
+    .toolbar-button > .svg-disabled, button.toolbar-button > .svg-disabled {
+        visibility: collapse;
+    }
+
+    .toolbar-button > .svg-enabled, button.toolbar-button > .svg-enabled {
+        visibility: visible;
+    }
+
+.toolbar-button-disabled, button.toolbar-button-disabled {
+    padding: 2px;
+    background-color: transparent;
+    color: lawngreen; /*[{Environment-CommandBarTextInactive-Background}]*/
+    height: 100%;
+    -ms-grid-columns: auto auto;
+    -ms-grid-rows: 1fr;
+    display: -ms-inline-grid;
+    border: 1px solid transparent;
+}
+
+    .toolbar-button-disabled > .svg-disabled, button.toolbar-button-disabled > .svg-disabled {
+        visibility: visible;
+    }
+
+    .toolbar-button-disabled > .svg-enabled, button.toolbar-button-disabled > .svg.svg-enabled {
+        visibility: collapse;
+    }
+
+.button-text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    background-color: transparent;
+    color: inherit;
+    height: 100%;
+    padding-left: 3px;
+    display: block;
+    width: 100%;
+    transition: width .5s ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.limitedSpace .button-text {
+    width: 0px;
+}
+
+.button-text-disabled {
+    color: #c0c0c0; /*[{diagnostics-host-toolbar-text-disabled}]*/
+}
+
+.button-image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: center;
+    height: 1.333em;
+    width: 1.333em;
+    display: block;
+    background-color: inherit;
+}
+
+.toolbar-container {
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black; /*[{plugin-color}]*/
+    font-size: 9pt; /*[{plugin-font-size}]*/
+    font-family: "Segoe UI", Arial, sans-serif; /*[{plugin-font-family} , Arial, sans-serif]*/
+    background-color: grey; /*[{vs-command-bar-gradient-begin-color}]*/
+    float: left;
+    overflow: visible;
+    white-space: nowrap;
+}

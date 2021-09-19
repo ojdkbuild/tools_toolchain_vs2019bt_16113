@@ -1,0 +1,6 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{3B2D71E6-C16E-4F29-BA05-E30890C667DE}]
+"name"="Microsoft.VisualStudio.Shell.TreeNavigation.HierarchyProvider"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Shell.TreeNavigation.HierarchyProvider.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"

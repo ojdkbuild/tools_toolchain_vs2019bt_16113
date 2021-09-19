@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.Debugger.BrokeredServices" Version="16.10.0.2140502" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>VS Debugger Brokered Services Package</DisplayName>
+    <Description xml:space="preserve">Brokered services for the VS Debugger.</Description>
+    <PackageId>Microsoft.VisualStudio.Debugger.BrokeredServices</PackageId>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <!-- Arcade SDK replaces the Experimental flag for SystemComponent afterwards. -->
+  <Installation AllUsers="true" SystemComponent="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.8, 17.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.Debugger.BrokeredServices.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.Debugger.BrokeredServices.pkgdef" />
+  </Assets>
+</PackageManifest>

@@ -1,0 +1,12 @@
+{
+  "host": "desktopClr",
+  "hostId": "RoslynCodeAnalysisService",
+  "hostGroupAllowed": true,
+  "serviceOverride": true, 
+  "entryPoint": {
+    "assemblyPath": ".\\Microsoft.CodeAnalysis.Remote.ServiceHub.dll",
+    "fullClassName": "Microsoft.CodeAnalysis.EditAndContinue.RemoteEditAndContinueService+Factory",
+    "appBasePath": "%VSAPPIDDIR%",
+    "configPath": "%PkgDefApplicationConfigFile%"
+  }
+}

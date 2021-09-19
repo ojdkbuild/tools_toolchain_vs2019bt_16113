@@ -1,0 +1,22 @@
+﻿html, body {
+    -ms-high-contrast-adjust: none;
+    cursor: default;
+    height: 100%;
+    margin: 0px;
+}
+
+#mainContainer {
+    height: 100%;
+    width: 100%;
+    background-color: TRANSPARENT; /*[{plugin-background-color}]*/
+}
+
+#errorMessage {
+    color: red; /*[{plugin-memory-error-text}]*/
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    top: 10%;
+}

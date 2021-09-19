@@ -1,0 +1,16 @@
+[$RootKey$]
+[$RootKey$\Projects]
+[$RootKey$\Projects\{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}]
+"DefaultProjectExtension"="csproj"
+"DisplayProjectFileExtensions"="#2030"
+"DesignerTemplatesDir"="$BaseInstallDir$VC#\DesignerTemplates"
+"DisplayProjectType(VsTemplate)"="#2345"
+"ItemTemplatesDir"="$BaseInstallDir$VC#\CSharpProjectItems"
+"Language(VsTemplate)"="CSharp"
+"NewProjectRequiresNewFolder(VsTemplate)"=dword:00000001
+"Package"="{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}"
+"PossibleProjectExtensions"="csproj;btproj"
+"ProjectTemplatesDir"="$BaseInstallDir$VC#\CSharpProjects"
+"ResourcesFolderBehavior"=dword:00000001
+"WizardsTemplatesDir"="$BaseInstallDir$VC#\VC#Wizards"
+@="#2346"

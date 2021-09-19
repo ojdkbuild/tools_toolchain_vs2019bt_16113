@@ -1,0 +1,39 @@
+[$RootKey$\Menus]
+"{7494682b-37a0-11d2-a273-00c04f8ef4ff}"=", 1, 1"
+[$RootKey$\Packages\{7494682b-37a0-11d2-a273-00c04f8ef4ff}]
+@="Windows Forms Designer Package"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"Class"="Microsoft.VisualStudio.VSCorePackage"
+"Assembly"="Microsoft.VisualStudio,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+[$RootKey$\Packages\{7494682b-37a0-11d2-a273-00c04f8ef4ff}\SatelliteDll]
+"Path"="$ShellFolder$\Common7\IDE"
+"DllName"="Microsoft.VisualStudioUI.dll"
+[$RootKey$\Services\{e50c8d58-3c49-301c-a498-c1b81c69a0f0}]
+@="{7494682b-37a0-11d2-a273-00c04f8ef4ff}"
+"Name"="IComponentDiscoveryService"
+[$RootKey$\Services\{4bacd258-de64-4048-bc4e-fedbef9acb76}]
+@="{7494682b-37a0-11d2-a273-00c04f8ef4ff}"
+"Name"="IToolboxService"
+[$RootKey$\Services\{06a9c74b-5e32-4561-be73-381b37869f4f}]
+@="{7494682b-37a0-11d2-a273-00c04f8ef4ff}"
+"Name"="IUIService"
+[$RootKey$\Services\{74946810-37a0-11d2-a273-00c04f8ef4ff}]
+@="{7494682b-37a0-11d2-a273-00c04f8ef4ff}"
+"Name"="IVSMDPropertyBrowser"
+[$RootKey$\ToolWindows\{74946810-37a0-11d2-a273-00c04f8ef4ff}]
+@="{7494682b-37a0-11d2-a273-00c04f8ef4ff}"
+"Name"="Microsoft.VisualStudio.Designer.Interfaces.IVSMDPropertyBrowser"
+[$RootKey$\Toolbox Item Types\{7036b125-fa82-3aba-acb8-bdbc97782a06}]
+"Name"="#1002"
+"Package"="{7494682b-37a0-11d2-a273-00c04f8ef4ff}"
+"HelpKeyword"="frameworkcomponents"
+"Order"=dword:a
+"HelperObjectType"="typeof(Microsoft.VisualStudio.Toolbox.ToolboxItemDiscoveryHelper)"
+[$RootKey$\Toolbox Item Types\{7036b125-fa82-3aba-acb8-bdbc97782a06}\FrameworksToEnumerate]
+".NETFramework"=""
+[$RootKey$\UserSettings\Environment_Group\Environment_PropertiesWindow]
+@="#1004"
+"Package"="{7494682b-37a0-11d2-a273-00c04f8ef4ff}"
+"Category"="{731a3cc7-de5e-49ca-9115-9a03e46624b0}"
+"Description"="#1005"
+"VsSettingsMigration"=dword:1

@@ -1,0 +1,10 @@
+﻿{
+  "$schema": "../../../schemas/servicehub.service.schema.json",
+  "host": "desktopClr",
+  "hostId": "CrossRepositorySearch",
+  "hostGroupAllowed": true,
+  "entryPoint": {
+    "assemblyPath": "Microsoft.VisualStudio.Platform.CrossRepositorySearch.Service.dll",
+    "fullClassName": "Microsoft.VisualStudio.Platform.CrossRepositorySearch.Service.CrossRepositorySearchServiceHubService"
+  }
+}

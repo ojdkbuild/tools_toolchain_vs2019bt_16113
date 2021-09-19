@@ -1,0 +1,84 @@
+<CompatibilityList Timeout="7">
+    <!-- Web Essentials for RTM -->
+    <Extension>
+        <ExtensionId>5fb7364d-2e8c-44a4-95eb-2a382e30fec9</ExtensionId>
+        <ExtensionVersion>(,0.5)</ExtensionVersion>
+        <VisualStudioVersion>[14.0.23000,)</VisualStudioVersion>
+    </Extension>
+    <!-- .NET Compiler Platform SDK Templates for RC -->
+    <Extension>
+        <ExtensionId>3a012d4e-6057-4e7c-8123-6d4be1d4723c-RC</ExtensionId>
+        <ExtensionVersion>(,1.0)</ExtensionVersion>
+        <VisualStudioVersion>[14.0.22528,)</VisualStudioVersion>
+    </Extension>
+    <!-- .NET Compiler Platform SDK Templates for VS 2015 -->
+    <Extension>
+        <ExtensionId>3a012d4e-6057-4e7c-8123-6d4be1d4723c</ExtensionId>
+        <ExtensionVersion>(,42.42.42.42)</ExtensionVersion>
+        <Action>Disable</Action>
+        <VisualStudioVersion>(15.0.27031,)</VisualStudioVersion>
+    </Extension>
+    <!-- Deployment Project -->
+    <Extension>
+        <ExtensionId>DeploymentProject.14.0.VSIX.42D3833A-56C3-440E-8127-558CCE16AE00</ExtensionId>
+        <ExtensionVersion>(,2.6)</ExtensionVersion>
+        <Action>Warning</Action>
+        <VisualStudioVersion>[14.0.23010,)</VisualStudioVersion>
+    </Extension>
+    <!-- Team Explorer Extensions -->
+    <Extension>
+        <ExtensionId>177DDE05-53AD-4611-A5A7-1D52F75AA3F0</ExtensionId>
+        <ExtensionVersion>(,2.6)</ExtensionVersion>
+        <Action>Warning</Action>
+        <VisualStudioVersion>[14.0.23010,)</VisualStudioVersion>
+    </Extension>
+    <!-- Color Theme Editor -->
+    <Extension>
+        <ExtensionId>VSColorThemeEditor.26c6a2c2-1956-480f-845d-c32d9a14e1b4</ExtensionId>
+        <ExtensionVersion>(,)</ExtensionVersion>
+        <VisualStudioVersion>[16.0.28608.199,)</VisualStudioVersion>
+    </Extension>
+  <!-- Scope Studio -->
+  <Extension>
+      <ExtensionId>1e906ff5-9da8-4091-a299-5c253c55fdc9</ExtensionId>
+      <ExtensionVersion>[2.4.1000.1,2.4.1000.2)</ExtensionVersion>
+      <Action>Disable</Action>
+      <VisualStudioVersion>[15.0,17.0)</VisualStudioVersion>
+  </Extension>
+  <Extension>
+      <ExtensionId>1e906ff5-9da8-4091-a299-5c253c55fdc9</ExtensionId>
+      <ExtensionVersion>[2.4.2000.1,2.4.2000.2)</ExtensionVersion>
+      <Action>Disable</Action>
+      <VisualStudioVersion>[15.0,17.0)</VisualStudioVersion>
+  </Extension>
+  <Extension>
+      <ExtensionId>1e906ff5-9da8-4091-a299-5c253c55fdc9</ExtensionId>
+      <ExtensionVersion>[2.4.3000.0,2.4.3000.1)</ExtensionVersion>
+      <Action>Disable</Action>
+      <VisualStudioVersion>[15.0,17.0)</VisualStudioVersion>
+  </Extension>
+  <Extension>
+      <ExtensionId>1e906ff5-9da8-4091-a299-5c253c55fdc9</ExtensionId>
+      <ExtensionVersion>[2.4.5001.6,2.4.5001.7)</ExtensionVersion>
+      <Action>Disable</Action>
+      <VisualStudioVersion>[15.0,17.0)</VisualStudioVersion>
+  </Extension>
+  <Extension>
+      <ExtensionId>1e906ff5-9da8-4091-a299-5c253c55fdc9</ExtensionId>
+      <ExtensionVersion>[2.4.8000.0,2.4.8000.2)</ExtensionVersion>
+      <Action>Disable</Action>
+      <VisualStudioVersion>[15.0,17.0)</VisualStudioVersion>
+  </Extension>
+  <Extension>
+      <ExtensionId>1e906ff5-9da8-4091-a299-5c253c55fdc9</ExtensionId>
+      <ExtensionVersion>[2.4.9000.1,2.4.9000.2)</ExtensionVersion>
+      <Action>Disable</Action>
+      <VisualStudioVersion>[15.0,17.0)</VisualStudioVersion>
+  </Extension>
+  <Extension>
+      <ExtensionId>1e906ff5-9da8-4091-a299-5c253c55fdc9</ExtensionId>
+      <ExtensionVersion>[2.5.0000.0,2.5.0000.3)</ExtensionVersion>
+      <Action>Disable</Action>
+      <VisualStudioVersion>[15.0,17.0)</VisualStudioVersion>
+  </Extension>
+</CompatibilityList>

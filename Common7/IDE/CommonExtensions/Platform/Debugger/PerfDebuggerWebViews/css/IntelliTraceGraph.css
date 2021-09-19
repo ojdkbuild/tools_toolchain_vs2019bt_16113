@@ -1,0 +1,177 @@
+﻿div.track-common {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    border: solid;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-color: darkgray;
+    background-color: transparent;
+}
+
+div.activated-event {
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    border: dashed;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+    /* Since we are left-aligned, and there are actually 2 pixels being drawn
+       (one each for the left and right borders), shift the drawing of
+       the line left by one pixel. */
+    margin-left: -1px;
+    /* Note the border color matches the HistoricalCurrentStatementMarker 
+       in debugger\vsdebug\package\dbgmarkers.cpp*/
+    border-color: rgb(254, 203, 172);
+    background-color: transparent;
+    /* Setting the z-index greater than any other events */
+    z-index: 120;
+}
+
+div.discrete-event-clickable-area {
+    transform: rotate(45deg);
+    background: none;
+    /* This enables pointer events for this div in ie11 onwards.
+       Does not work in ie10 and earlier. */
+    pointer-events: all;
+    margin: 2px 0px 0px 2px;
+}
+
+div.discrete-event {
+    position: absolute;
+    /* This disables pointer events for this div in ie11 onwards.
+       Does not work in ie10 and earlier. */
+    pointer-events: none;
+    border: none;
+    /* Set the z-index higher than the vertical time scale notches
+       in the swimlane, and higher than the grey time selection
+       indicators.*/
+    z-index: 111;
+}
+
+div.discrete-event-size-normal {
+    width: 14px;
+    height: 14px;
+    margin: 4px 0px 0px -7px;
+}
+
+div.discrete-event-size-normal > .clickable-area-size {
+    width: 9.9px;
+    height: 9.9px;
+}
+
+div.discrete-event-size-activated {
+    width: 16px;
+    height: 16px;
+    margin: 3px 0px 0px -8px;
+}
+
+div.discrete-event-size-activated > .clickable-area-size {
+    width: 11.3px;
+    height: 11.3px;
+}
+
+/**
+ * Make the z-index for break-event higher than the gray unselected area (Z-Index 110) to facilitate time-range filtering
+ * by clicking on break events that are in the track.
+ */
+
+div.break-event {
+    box-sizing: content-box;
+    position: absolute;
+    height: 14px;
+    border: solid;
+    top: 50%;
+    margin: -7px 0px 0px 0px;
+    border-color: transparent; /*[{plugin-background-color}]*/
+    background-color: rgba(113,113,113,1);
+    border-width: 0px 0px 0px 0px;
+    z-index: 111;
+}
+
+div.break-event.activated {
+    height: 18px;
+    margin: -9px 0px 0px 0px;
+    z-index: 113;
+}
+
+div.break-event.none {
+    /* When we show pink, it means we have errors in determining the break event type */
+    border-color: pink;
+}
+
+div.break-event.asyncbreak > div.hat {
+    background-color: rgba(17, 122, 209, 1);
+}
+
+div.break-event.breakpoint > div.hat {
+    background-color: rgba(191,63,0,1);
+}
+
+div.break-event.exception > div.hat {
+    /* note that linear-gradient is for IE 10+. */
+    background-image: repeating-linear-gradient(45deg, rgba(191, 63, 0, 1), rgba(191, 63, 0, 1) 5px, rgba(0, 0, 0, 1) 5px, rgba(0, 0, 0, 1) 7px);
+}
+
+div.break-event.stepcomplete > div.hat {
+    background-color: rgba(252,183,20,1);
+}
+
+div.break-event.exceptionintercepted > div.hat {
+    background-color: rgba(191,63,0,1);
+}
+
+div.break-event.entrypoint > div.hat {
+    background-color: rgba(252,183,20,1);
+}
+
+div.break-track:focus div.break-event > div.hat {
+    display: block;
+}
+
+div.show-hat > div.break-event > div.hat {
+    display: block;
+}
+
+div.break-event > div.hat {
+    /* We don't want to generate an mouse over/mouse out event when moving between .break-event and .hat. That'll affect telemetry data. So disable pointer-events in .hat. */
+    pointer-events: none;
+    display: none;
+    width: 100%;
+    height: 3px;
+    /* background-color should be overriden in a more specific css rule such as div.break-event.entrypoint > div.hat.
+       When we show pink, it means we have errors in determining the break event type */
+    background-color: pink;
+}
+
+div.break-event.activated > div.hat {
+    height: 5px;
+    display: block;
+}
+
+div.track-icon-common {
+    position: relative;
+    height: 24px;
+    width: 16px;
+    right: 5px;
+    float: right;
+    padding: 3px 0px 5px 0px;
+    clear: both;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+svg {
+    display: block;
+}

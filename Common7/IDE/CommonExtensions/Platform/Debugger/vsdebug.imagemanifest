@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  <Symbols>
+    <Import Manifest="$(ManifestFolder)\\..\\Shell\\Microsoft.VisualStudio.ImageCatalog.imagemanifest" />
+    <Guid Name="VSDebugStrips" Value="31846660-EF7C-43F9-A550-114CE69F3B6E" />
+    <String Name="VSDebugResource" Value="$(ManifestFolder)\..\..\..\..\Packages\Debugger\1033\vsdebugui.dll" />
+    <ID Name="EvaluateList" Value="1" />
+    <ID Name="ExpanderList" Value="2" />
+    <ID Name="IconList" Value="3" />
+    <ID Name="IndicatorList" Value="4" />
+    <ID Name="MarkerList" Value="5" />
+    <ID Name="SymbolSettingsButtonList" Value="6"/>
+    <ID Name="PinnableList" Value="7"/>
+    <ID Name="DropdownList" Value="8"/>
+    <ID Name="RunOutlineNoColor" Value="9" />
+    <ID Name="RunOutlineNoColorSourceXAML" Value="309" />
+  </Symbols>
+  <Images>
+    <Image Guid="$(VSDebugStrips)" ID="$(RunOutlineNoColor)">
+      <Source Uri="$(VSDebugResource)">
+        <NativeResource ID="$(RunOutlineNoColorSourceXAML)" Type="XAML" />
+      </Source>
+    </Image>
+  </Images>
+  <ImageLists>
+    <ImageList Guid="$(VSDebugStrips)" ID="$(EvaluateList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Refresh)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Thread)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(StatusWarning)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(VSDebugStrips)" ID="$(ExpanderList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ScrollbarArrowCollapsed)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ScrollbarArrowCollapsed)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ScrollbarArrowDownRight)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ScrollbarArrowCollapsed)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(VSDebugStrips)" ID="$(IconList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ModulePublic)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ModuleError)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ScriptGroup)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Process)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(VSDebugStrips)" ID="$(IndicatorList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ClassPublic)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ConstantPublic)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(EventPublic)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(FieldPublic)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(MethodPublic)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(PropertyPublic)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Namespace)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(OverlayLock)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(OverlayProtected)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(OverlaySealed)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(OverlayFriend)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(OverlayStatic)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(StatusError)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(TimelineMarkPurple)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(TimelineMarkRed)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(TimelineMarkGray)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(VSDebugStrips)" ID="$(MarkerList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(CurrentInstructionPointer)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(DraggedCurrentInstructionPointer)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(CurrentInstructionPointerStopped)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(CallReturnInstructionPointer)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(CallReturnInstructionPointerAlert)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(BreakpointEnabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(BreakpointDisabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedBreakpointEnabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedBreakpointDisabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(MappedBreakpointEnabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(MappedBreakpointDisabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(BreakpointWarning)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(BreakpointError)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(TracepointEnabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(TracepointDisabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedTracePointEnabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedTracePointDisabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(MappedTracepointEnabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(MappedTracepointDisabled)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(TracepointWarning)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(TracepointError)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionBreakpointOn)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionBreakpointOff)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionBreakpointWarning)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionBreakpointError)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionBreakpointAlert)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionBreakpointDashed)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionBreakpointOK)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedProductionBreakpointOn)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedProductionBreakpointOff)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedProductionBreakpointAlert)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedProductionBreakpointOK)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionTracepointOn)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionTracepointOff)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionTracepointWarning)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionTracepointError)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionTracepointAlert)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ProductionTracepointDashed)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedProductionTracepointOn)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedProductionTracepointOff)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AdvancedProductionTracepointAlert)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(HistoricInstructionPointer)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(HistoricCallReturn)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(VSDebugStrips)" ID="$(SymbolSettingsButtonList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Add)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(AddRemoteServer)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(RemoveCommand)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(MoveUp)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(MoveDown)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(VSDebugStrips)" ID="$(PinnableList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Pin)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(Unpin)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(StatusExcluded)" External="true" />
+    </ImageList>
+    <ImageList Guid="$(VSDebugStrips)" ID="$(DropdownList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(GlyphDown)" External="true" />
+    </ImageList>
+  </ImageLists>
+</ImageManifest>

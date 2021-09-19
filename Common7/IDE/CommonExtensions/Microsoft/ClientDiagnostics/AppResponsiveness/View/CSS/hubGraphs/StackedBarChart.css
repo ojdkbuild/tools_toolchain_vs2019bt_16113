@@ -1,0 +1,20 @@
+﻿.stackedBarChart {
+    -ms-grid-columns: auto auto auto;
+    display: -ms-grid;
+}
+
+    .stackedBarChart .barGraph {
+        -ms-grid-column: 2;
+        background-color: transparent;
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+    }
+
+    .stackedBarChart .bar {
+        position: absolute;
+    }
+
+    .stackedBarChart:focus {
+        border-bottom: dotted 2px;
+    }

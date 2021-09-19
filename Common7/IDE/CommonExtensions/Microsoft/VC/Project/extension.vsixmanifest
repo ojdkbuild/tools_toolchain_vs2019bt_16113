@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Vsix Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="Microsoft.VisualStudio.Project.VisualC">
+    <Name>Visual C++ Project Engine</Name>
+    <Author>Microsoft Corporation</Author>
+    <Version>11.0</Version>
+    <Description>Microsoft Visual Studio C++ Project Engine</Description>
+    <Locale>1033</Locale>
+    <SupportedProducts>
+      <VisualStudio Version="14.0">
+        <Edition>VST_All</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.5" MaxVersion="4.5" />
+    <SystemComponent>true</SystemComponent>
+    <AllowClientRole>true</AllowClientRole>
+  </Identifier>
+
+  <References/>
+
+  <Content>
+    <MefComponent>Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll</MefComponent>
+  </Content>
+</Vsix>

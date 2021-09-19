@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/servicehub.config.schema.json",
+  "controller": {
+    "args": [ "$PIPE" ],
+    "executable": "./ServiceHub/controller/Microsoft.ServiceHub.Controller.exe",
+    "contextEnvironmentVariables": [ "VSAPPIDDIR", "VSAPPIDNAME", "VSROOTSUFFIX" ],
+    "additionalEnvironmentVariables": { 
+      "NODE_OPTIONS": "",
+      "COMPLUS_FusionEnableForcedFullClosureWalk": 1
+    }
+  },
+  "hosts": {
+    "rootDir": "./ServiceHub/Hosts"
+  },
+  "services": {
+    "rootDir": "./ServiceHub/Services",
+    "discoveryServices": [ "VsixServiceDiscovery" ]
+  }
+}

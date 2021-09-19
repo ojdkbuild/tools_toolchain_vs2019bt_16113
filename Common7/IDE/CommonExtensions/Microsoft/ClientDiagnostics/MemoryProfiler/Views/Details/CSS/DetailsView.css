@@ -1,0 +1,500 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    -ms-high-contrast-adjust: none;
+}
+
+#mainContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.menuControl {
+    background-color: TRANSPARENT; /*[{plugin-perftools-menu}]*/
+    border: 1px solid TRANSPARENT; /*[1px solid {plugin-perftools-menu-border}]*/
+    box-shadow: 2px 2px 2px TRANSPARENT; /*[2px 2px 2px {plugin-perftools-menu-drop-shadow rgba(0.5)}]*/
+    display: none;
+    list-style-type: none;
+    padding: 2px;
+    position: absolute;
+    width: auto;
+    z-index: 10;
+}
+
+    .menuControl > li {
+        padding: 2px 5px 2px 5px;
+        width: 100%;
+    }
+
+        .menuControl > li:hover {
+            background-color: TRANSPARENT; /*[{plugin-perftools-menu-hover}]*/
+            color: TRANSPARENT; /*[{plugin-perftools-menu-hover-text}]*/
+            cursor: pointer;
+        }
+
+        .menuControl > li:focus {
+            background-color: TRANSPARENT; /*[{plugin-perftools-menu-focus}]*/
+            color: TRANSPARENT; /*[{plugin-perftools-menu-focus-text}]*/
+        }
+
+        .menuControl > li > .menuToggleIcon {
+            height: 12px;
+            margin-top: -2px;
+            margin-right: 5px;
+            vertical-align: middle;
+            width: 12px;
+        }
+
+            .menuControl > li > .menuToggleIcon.hiddenCheckMark {
+                visibility: hidden;
+            }
+
+input:-ms-input-placeholder {
+    color: TRANSPARENT; /*[{plugin-perftools-watermark-text}]*/
+}
+
+input {
+    padding: 2px;
+}
+
+.settingsContainer {
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 3px;
+}
+
+    .settingsContainer > .filterInput {
+        font-size: 90%;
+        margin-top: 3px;
+        vertical-align: top;
+        width: 300px;
+    }
+
+    .settingsContainer > .settingsMenuButton {
+        background-color: TRANSPARENT; /*[{plugin-memory-drop-down-button}]*/
+        background-image: none;
+        border: 1px solid transparent;
+        display: inline-block;
+        height: 25px;
+        min-width: 0;
+        padding: 3px 0px 0px 1px;
+        width: 31px;
+    }
+
+        .settingsContainer > .settingsMenuButton:hover:not(.menuControlActive) {
+            background-color: TRANSPARENT; /*[{plugin-memory-drop-down-button-hover}]*/
+            border: 1px solid transparent;
+        }
+
+    .settingsContainer > .menuControlActive {
+        background-color: TRANSPARENT; /*[{plugin-memory-drop-down-button-focus}]*/
+        border-left: 1px solid TRANSPARENT; /*[1px solid {plugin-memory-drop-down-button-focus-border}]*/
+        border-right: 1px solid TRANSPARENT; /*[1px solid {plugin-memory-drop-down-button-focus-border}]*/
+        border-top: 1px solid TRANSPARENT; /*[1px solid {plugin-memory-drop-down-button-focus-border}]*/
+    }
+
+    .settingsContainer > .settingsMenuButton > .settingsIcon {
+        background: url('images/i_table_options.png') no-repeat 0px 0px; /*[url({image-settings}) no-repeat 0px 0px]*/
+        background-size: 27px 54px;
+        height: 18px;
+        width: 27px;
+    }
+
+.snapshotTab {
+    height: 100%;
+}
+
+    .snapshotTab > .dataViewers {
+        height: 100%;
+    }
+
+    .snapshotTab > .dataViewersHidden {
+        display: none;
+    }
+
+    .snapshotTab > .snapshotProcessing {
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .snapshotTab > .snapshotProcessing > .snapshotError {
+            font-size: 20px;
+        }
+
+            .snapshotTab > .snapshotProcessing > .snapshotError > .snapshotProcessingErrorFrown {
+                font-size: 100px;
+                margin-bottom: 20px;
+            }
+
+        .snapshotTab > .snapshotProcessing > .snapshotProcessingProgressDiv {
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -150px;
+        }
+
+            .snapshotTab > .snapshotProcessing > .snapshotProcessingProgressDiv > .progressContent {
+                text-align: center;
+            }
+
+.dataView {
+    height: 100%;
+    width: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 3fr;
+    -ms-grid-rows: auto .6fr .4fr;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.managedHeapProgress {
+        background-color: transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -140px;
+        margin-top: -20px;
+        width: 280px;
+        display: none;
+    }
+
+.nativeHeapProgress {
+        background-color: transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -140px;
+        margin-top: 10px;
+        width: 280px;
+    }
+
+.heapContainerOverlay {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(200,200,200,0.50);
+    opacity: 0.3;
+    z-index: 10000;
+}
+
+.heapContainerDisable {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.dataView > .notificationArea {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    background-color: transparent; /*[{plugin-memory-tab-header}]*/
+    box-sizing: border-box;
+    margin-bottom: 9px;
+    margin-left: -10px;
+}
+
+    .dataView > .notificationArea .notificationBarInfoIcon {
+        display: inline;
+        background: url("./images/misc-icons.png") no-repeat -3950px -16px !important;
+        background-size: 16px 16px;
+        height: 16px;
+        width: 16px;
+    }
+
+.icon-information {
+    display: inline;
+    background: url("./images/misc-icons.png") no-repeat -3950px -16px !important;
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+}
+
+.dataView > .notificationArea .notificationBarMessage {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.dataView > .notificationArea .notificationBar {
+    display: none;
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    cursor: default;
+    margin-left: 10px;
+    padding-bottom: 6px;
+}
+
+.dataView > .snapshotViewContainer {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    box-sizing: border-box;
+}
+
+    .dataView > .snapshotViewContainer > .detailsTopGridContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+.dataView > .gridSplitter {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.dataView > .detailsBottomView {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    box-sizing: border-box;
+}
+
+    .dataView > .detailsBottomView > .detailsBottomGridHeader {
+        padding-left: 0em;
+        padding-top: 1em;
+    }
+
+    .dataView > .detailsBottomView table {
+        font-weight: bold;
+    }
+
+        .dataView > .detailsBottomView table td {
+        }
+
+            .dataView > .detailsBottomView table td.separator {
+                opacity: 0.3;
+                font-weight: bold;
+                padding-left: 0.1em;
+                padding-right: 0.1em;
+            }
+
+        .dataView > .detailsBottomView table a.enabled {
+            font-weight: normal;
+            text-decoration: none;
+            color: rgb(0, 0, 0); /*[{plugin-color}]*/
+        }
+
+            .dataView > .detailsBottomView table a.enabled:hover {
+                font-weight: normal;
+                text-decoration: none;
+                color: rgb(13, 112, 192); /*[{vs-tab-title-link}]*/
+                cursor: pointer;
+            }
+
+        .dataView > .detailsBottomView table a.disabled {
+            color: rgb(13, 112, 192); /*[{vs-tab-title-link}]*/
+            font-weight: bold;
+            text-decoration: none;
+            cursor: default;
+        }
+
+    .dataView > .detailsBottomView > .detailsBottomGridContainerNoData {
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+
+    .dataView > .detailsBottomView > .detailsBottomGridContainer {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.5em;
+        padding-bottom: 30px;
+    }
+
+.disabledColor {
+    color: #A2A4A5; /*[{plugin-textbox-disabled-color}]*/
+}
+
+    .disabledColor:hover {
+        color: #A2A4A5; /*[{plugin-textbox-disabled-color}]*/
+    }
+
+.snapshotDetailView > .snapshotDetailViewContainer {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    box-sizing: border-box;
+}
+
+.rightAlignedColumn {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.rightAlignedColumnHeader {
+    text-align: right !important;
+    width: 100% !important;
+}
+
+.grid-cell-ref {
+    padding-top: 1px;
+    width: 100px;
+    height: 100%;
+    text-align: left;
+    text-indent: 2px;
+    overflow: visible;
+    vertical-align: middle;
+    float: left;
+    display: table-cell;
+    white-space: nowrap;
+    position: relative;
+    cursor: default;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: #FAFAFA; /*[{plugin-table-header-background-color}]*/
+    border-style: solid;
+}
+
+.grid-cell-source a {
+    color: TRANSPARENT;  /*[{plugin-link-color}]*/
+    cursor: pointer;
+}
+
+    .grid-cell-source:hover a {
+        color: TRANSPARENT;  /*[{plugin-treeview-content-inactive-selected-color}]*/
+    }
+
+.grid-cell-source-selected a {
+    color: TRANSPARENT; /*[{plugin-treeview-content-selected-color}]*/
+    cursor: pointer;
+}
+
+.grid-cell-source-selected-blurred a {
+    color: TRANSPARENT; /*[{plugin-treeview-content-inactive-selected-color}]*/
+    cursor: pointer;
+}
+
+.icon-tree-collapsed {
+    margin-top: 1px;
+}
+
+.icon-tree-expanded {
+    margin-top: 1px;
+}
+
+.grid-header-column * .indented-title {
+    text-indent: 0px;
+}
+
+.grid-row {
+    height: 1.75em;
+}
+
+.grid-row-normal {
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-left-width: 1px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: #FAFAFA; /*[{plugin-table-header-background-color}]*/
+}
+
+.grid-header {
+    background-color: #FAFAFA; /*[{plugin-table-header-background-color}]*/
+    border-color: rgb(204, 204, 204); /*[{vs-tree-view-selected-item-inactive-color}]*/
+    border-width: 1px;
+    border-style: solid;
+}
+
+.grid-header-canvas {
+    border-bottom-color: transparent;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+}
+
+.grid-cell {
+    padding-top: 1px;
+    height: 100%;
+    border-style: solid;
+    border-right-width: 1px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: #FAFAFA; /*[{plugin-table-header-background-color}]*/
+}
+
+.grid-header-column {
+    border-color: rgb(204, 204, 204); /*[{vs-tree-view-selected-item-inactive-color}]*/
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-style: solid;
+}
+
+.ToggleButton {
+    -ms-grid-row: 2;
+    display: -ms-grid,inline;
+    -ms-grid-columns: auto auto auto;
+    -ms-grid-rows: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 9pt; /*[{plugin-font-size}]*/
+    font-family: "Segoe UI", Arial, sans-serif; /*[{plugin-font-family} , Arial, sans-serif]*/
+}
+
+    .ToggleButton a:focus {
+        outline: 1px dotted TRANSPARENT; /*[1px dotted {plugin-perftools-focusdots}]*/
+    }
+
+    .ToggleButton > .toggleTabLabel {
+        display: inline-block;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        -ms-grid-column: 1;
+    }
+
+    .ToggleButton > .toggleTabButtonContainer {
+        display: inline-block;
+        border-top: 2px solid TRANSPARENT;
+        border-right: 2px solid TRANSPARENT;
+        border-bottom: 2px solid TRANSPARENT;
+        border-left: 2px solid TRANSPARENT;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+        .ToggleButton > .toggleTabButtonContainer:focus {
+            background-color: TRANSPARENT; /*[{environment-commandbar-hover}]*/
+            outline: 0px;
+        }
+
+        .ToggleButton > .toggleTabButtonContainer:hover {
+            background-color: TRANSPARENT; /*[{environment-commandbar-hover}]*/
+        }
+
+    .ToggleButton > .toggleTabButtonContainerSelected {
+        display: inline-block;
+        border-top: 2px solid TRANSPARENT;
+        border-right: 2px solid TRANSPARENT;
+        border-bottom: 2px solid TRANSPARENT;
+        border-left: 2px solid TRANSPARENT;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+        .ToggleButton > .toggleTabButtonContainerSelected:focus {
+            background-color: TRANSPARENT; /*[{environment-commandbar-hover}]*/
+            outline: 0px;
+        }
+
+        .ToggleButton > .toggleTabButtonContainerSelected:hover {
+            background-color: TRANSPARENT; /*[{environment-commandbar-hover}]*/
+        }
+
+.toggleTabSelectedButtonOutline {
+    outline: 1px solid !important;
+    outline-color: TRANSPARENT !important; /*[{environment-commandbar-selected-border} !important]*/
+    background-color: TRANSPARENT; /*[{environment-commandbar-selected}]*/
+}
+
+.ToggleButton > .toggleTabFirstButtonContainer {
+    -ms-grid-column: 2;
+}
+
+.ToggleButton > .toggleTabSecondButtonContainer {
+    -ms-grid-column: 3;
+}

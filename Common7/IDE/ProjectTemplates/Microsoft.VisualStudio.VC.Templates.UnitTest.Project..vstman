@@ -1,0 +1,25 @@
+﻿<VSTemplateManifest Version="1.0" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateDir>
+    <RelativePath>VC\Test</RelativePath>
+    <LocalizedName Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2206" />
+    <SortOrder>60</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>VC\Test\NativeUnitTest</RelativePathOnDisk>
+    <TemplateFileName>NativeUnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2060" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2061" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="513" />
+        <ProjectType>VC</ProjectType>
+        <SortOrder>10</SortOrder>
+        <TemplateID>Microsoft.VisualC.Project.Test.Unit.Native</TemplateID>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>UnitTest</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <CreateInPlace>true</CreateInPlace>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

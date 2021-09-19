@@ -1,0 +1,13 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{5316CC3C-F5E2-4944-8DF5-AA40A6F77553}]
+"name"="Microsoft.VisualStudio.Language.CallHierarchy"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Language.CallHierarchy.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{9BEDBEA4-7DA4-4F65-8C3C-7C5130B8D0B8}]
+"name"="Microsoft.VisualStudio.Language.CallHierarchy.Implementation"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Language.CallHierarchy.Implementation.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"

@@ -1,0 +1,14 @@
+#include "versions.h"
+
+// SearchProviders Package ---------------------------------------------------------------
+[$RootKey$\Packages\{54DB0172-CC19-4944-9E43-D517D95BF496}]
+@="SearchProviders Package"
+"InprocServer32"="%windir%\system32\mscoree.dll"
+"Class"="Microsoft.VisualStudio.Platform.SearchProviders.Legacy.SearchProvidersPackage"
+"assembly"="Microsoft.VisualStudio.Platform.SearchProviders,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+
+// Registered search providers ------------------------------------------------------------------------
+
+[$RootKey$\SearchProviders\{258EBB6F-5C3B-4241-B929-71EC7A18DBF0}]
+"Package"="{54DB0172-CC19-4944-9E43-D517D95BF496}"
+@="Tools Options"

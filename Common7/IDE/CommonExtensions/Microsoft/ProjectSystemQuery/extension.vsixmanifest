@@ -1,0 +1,22 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.ProjectSystem.Query" Version="16.10.340.1743" Language="en-US" Publisher="Microsoft Corporation" />
+    <DisplayName>Visual Studio Project System Query</DisplayName>
+    <Description>Provides remotable project system APIs.</Description>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <Installation SystemComponent="true" AllUsers="true" Experimental="false">
+    <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
+  </Installation>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.ProjectSystem.Query.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.ProjectSystem.Query.VS.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.ProjectSystem.Query.dll" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

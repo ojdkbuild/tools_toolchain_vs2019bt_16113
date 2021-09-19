@@ -1,0 +1,27 @@
+[$RootKey$\Menus]
+"{A8DC7E73-6BF8-4D90-840A-9A95832A2B47}"=", 102, 1"
+
+[$RootKey$\Packages\{A8DC7E73-6BF8-4D90-840A-9A95832A2B47}]
+@="Microsoft.VisualStudio.Metrics.Package.MetricsPackage, MetricsPackage, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.Metrics.Package.MetricsPackage"
+"CodeBase"="$ShellFolder$\Common7\IDE\PrivateAssemblies\MetricsPackage.dll"
+"CompanyName"="Microsoft Corporation"
+"ID"=dword:00000001
+"InprocServer32"="$System$\mscoree.dll"
+"MinEdition"="Standard"
+"ProductName"="Microsoft Visual Studio Team System Metrics Package"
+"ProductVersion"="15.0"
+
+[$RootKey$\Packages\{A8DC7E73-6BF8-4D90-840A-9A95832A2B47}\SatelliteDll]
+"DllName"="MetricsPackageUI.dll"
+"Path"="$ShellFolder$\Common7\IDE\PrivateAssemblies"
+
+[$RootKey$\Services\{9BE410DE-1714-3EEB-B68C-59D661F8E8CC}]
+@="{A8DC7E73-6BF8-4D90-840A-9A95832A2B47}"
+"Name"="ICodeMetricsService"
+
+[$RootKey$\ToolWindows\{9A7CEBBB-DC5C-4986-BC49-962DA46AA506}]
+@="{A8DC7E73-6BF8-4D90-840A-9A95832A2B47}"
+"Name"="Microsoft.VisualStudio.Metrics.Package.UI.CodeMetricsToolWindowPane"
+"Style"="Tabbed"
+"Window"="{34E76E81-EE4A-11D0-AE2E-00A0C90FFFC3}"

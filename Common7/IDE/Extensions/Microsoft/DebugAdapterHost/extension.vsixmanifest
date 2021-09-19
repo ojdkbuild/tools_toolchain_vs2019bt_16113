@@ -1,0 +1,28 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost.Microsoft.42741dc7-574b-4d5b-b8d7-02b7d23cbc85" Version="16.9.50429.2" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost</DisplayName>
+    <PackageId>Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost</PackageId>
+    <!-- Since this vsix is not user installable, no user visible strings need to be in this manifest. -->
+    <Description xml:space="preserve"></Description>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <Installation SystemComponent="true" AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost.dll" AssemblyName="Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost, Version=16.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.VisualStudio.Shared.VSCodeDebugProtocol.dll" AssemblyName="Microsoft.VisualStudio.Shared.VSCodeDebugProtocol, Version=16.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.VisualStudio.Debugger.DebugAdapterHost.Interfaces.dll" AssemblyName="Microsoft.VisualStudio.Debugger.DebugAdapterHost.Interfaces, Version=1.6.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ReferenceAssemblyRegistration.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="EngineRegistration.pkgdef" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

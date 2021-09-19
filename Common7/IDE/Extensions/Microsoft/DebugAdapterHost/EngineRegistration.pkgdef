@@ -1,0 +1,24 @@
+; This file registers the VSCodeDebuggerHost engine with Visual Studio.
+
+[$RootKey$\CLSID\{DAB324E9-7B35-454C-ACA8-F6BB0D5C8673}]
+"Assembly"="Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost"
+"Class"="Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost.AD7.Implementation.AD7Engine"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.Debugger.VSCodeDebuggerHost.dll"
+
+;
+; Registration for a generic debug adapter host which reads all settings from launch.json
+;
+
+; Engine registration
+[$RootKey$\AD7Metrics\Engine\{2833D225-C477-4388-9353-544D168F6030}]
+"CLSID"="{DAB324E9-7B35-454C-ACA8-F6BB0D5C8673}"
+"AlwaysLoadLocal"=dword:00000001
+"Attach"=dword:00000001
+"AddressBP"=dword:00000000
+"AutoSelectPriority"=dword:00000004
+"CallstackBP"=dword:00000000
+"Exceptions"=dword:00000001
+"ExceptionConditions"=dword:00000001
+"Name"="Visual Studio Debug Adapter Host"
+"SuppressModulesRequestOnAttach"=dword:00000001
+@="Visual Studio Debug Adapter Host"

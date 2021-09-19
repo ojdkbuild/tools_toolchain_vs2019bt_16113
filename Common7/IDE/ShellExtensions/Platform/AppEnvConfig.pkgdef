@@ -1,0 +1,31 @@
+
+[$RootKey$\Packages\{647F920C-4230-4c5b-830D-B65F79620AE8}]
+"InprocServer32"="$PackageFolder$\appenvmnu.dll"
+@="Appenv package"
+
+[$RootKey$\Packages\{647F920C-4230-4c5b-830D-B65F79620AE8}\SatelliteDll]
+"DllName"="AppEnvmUI.dll"
+"Path"="$PackageFolder$"
+
+[$RootKey$\BindingPaths\{00000000-0000-0000-0000-000000000000}]
+"$ShellFolder$\Common7\IDE"=""
+"$ShellFolder$\Common7\IDE\PrivateAssemblies"=""
+"$ShellFolder$\Common7\IDE\PublicAssemblies"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\DataDesign"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Editor"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\TemplateProviders"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\Platform\NavigateTo"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\Platform\NavigateTo\FileProvider"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\Platform\Debugger"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Language\GenerateType"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Language\CallHierarchy"=""
+"$ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\VB\LanguageService"=""
+"$ShellFolder$\Common7\IDE\Xml"=""
+
+
+[$RootKey$\Menus]
+"{647F920C-4230-4c5b-830D-B65F79620AE8}"=",1000,1"
+
+[$RootKey$\Services\{0C539790-12E4-11CF-B661-00AA004CD6D8}]
+"Name"="SApplicationObject Service"
+@="{647F920C-4230-4c5b-830D-B65F79620AE8}"

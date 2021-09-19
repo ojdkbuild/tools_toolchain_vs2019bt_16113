@@ -1,0 +1,109 @@
+﻿<VSTemplateManifest Version="1.0" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VC\Code\AddClass</RelativePathOnDisk>
+    <TemplateFileName>AddClass.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="1146" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="1147" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="600" />
+        <TemplateID>Microsoft.VisualC.Item.Class</TemplateID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+        <DefaultName>Class</DefaultName>
+        <LocationField>Disabled</LocationField>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VC\Code\AddClass</RelativePathOnDisk>
+    <TemplateFileName>OpenFolderAddClass.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="1146" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="1147" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="600" />
+        <TemplateID>Microsoft.VisualC.Item.OpenFolder.Class</TemplateID>
+        <ProjectType>OpenFolderVC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+        <DefaultName>Class</DefaultName>
+        <LocationField>Disabled</LocationField>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VC\Code\Module</RelativePathOnDisk>
+    <TemplateFileName>Module.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2312" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2313" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="625" />
+        <TemplateID>Microsoft.VisualC.Item.Module</TemplateID>
+        <ProjectType>VC</ProjectType>
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+        <DefaultName>Module.ixx</DefaultName>
+        <SortOrder>1000</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateDir>
+    <RelativePath>VC\Data</RelativePath>
+    <LocalizedName Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="1062" />
+    <SortOrder>30</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateDir>
+    <RelativePath>VC\Formatting</RelativePath>
+    <LocalizedName Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2303" />
+    <SortOrder>15</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VC\Formatting\ClangFormat</RelativePathOnDisk>
+    <TemplateFileName>ClangFormat.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="1200" />
+        <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="1201" />
+        <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="620" />
+        <TemplateID>Microsoft.VisualC.Item.ClangFormat</TemplateID>
+        <ProjectType>VC</ProjectType>
+        <DefaultName>.clang-format</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateDir>
+    <RelativePath>VC\HLSL</RelativePath>
+    <LocalizedName Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="2311" />
+    <SortOrder>90</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateDir>
+    <RelativePath>VC\PropertySheets</RelativePath>
+    <LocalizedName Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="2310" />
+    <SortOrder>70</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateDir>
+    <RelativePath>VC\Resource</RelativePath>
+    <LocalizedName Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="2306" />
+    <SortOrder>40</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateDir>
+    <RelativePath>VC\Test</RelativePath>
+    <LocalizedName Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="2309" />
+    <SortOrder>80</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateDir>
+    <RelativePath>VC\UI</RelativePath>
+    <LocalizedName Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="2304" />
+    <SortOrder>20</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateDir>
+    <RelativePath>VC\Utility</RelativePath>
+    <LocalizedName Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="2308" />
+    <SortOrder>60</SortOrder>
+  </VSTemplateDir>
+  <VSTemplateDir>
+    <RelativePath>VC\Web</RelativePath>
+    <LocalizedName Package="{976CF7D5-2A72-47A3-9E46-5B7C3DB95F17}" ID="2307" />
+    <SortOrder>50</SortOrder>
+  </VSTemplateDir>
+</VSTemplateManifest>

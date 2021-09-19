@@ -1,0 +1,4 @@
+Microsoft.VisualStudio.LanguageServices.pkgdef
+Microsoft.VisualStudio.LanguageServices.VisualBasic.pkgdef
+Microsoft.VisualStudio.LanguageServices.CSharp.pkgdef
+Roslyn.VisualStudio.Setup.pkgdef

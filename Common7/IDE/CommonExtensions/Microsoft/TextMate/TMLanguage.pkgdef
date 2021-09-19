@@ -1,0 +1,50 @@
+﻿[$RootKey$]
+
+[$RootKey$\Packages\{37f69003-4ac4-4b33-aa3a-4d620be07696}]
+@="CommonEditorPackage"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.TextMate.VSWindows.CommonEditorPackage"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.TextMate.VSWindows.dll"
+
+[$RootKey$\Editors\{3B902123-F8A7-4915-9F01-361F908088D0}]
+"CommonPhysicalViewAttributes"=dword:00000002
+"DisplayName"="#113"
+"EditorTrustLevel"=dword:00000001
+"ExcludeDefTextEditor"=dword:00000000
+"Package"="{37f69003-4ac4-4b33-aa3a-4d620be07696}"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+@="Common Language Editor Supporting TextMate Bundles"
+
+[$RootKey$\Editors\{3B902123-F8A7-4915-9F01-361F908088D0}\Extensions]
+"*"=dword:00000025
+
+// Special cased file name shell editor-factory associations.
+// For these special-cased filename associations to work properly, these values must be kept in sync
+// with the grammar file's filename associations.
+[$RootKey$\Editors\{3B902123-F8A7-4915-9F01-361F908088D0}\FileNames]
+"CMakeLists.txt"=dword:00000043
+"Makefile"=dword:00000025
+"GNUMakefile"=dword:00000025
+"OCamlMakefile"=dword:00000025
+"Dockerfile"=dword:00000025
+
+[$RootKey$\Editors\{3B902123-F8A7-4915-9F01-361F908088D0}\LogicalViews]
+"{7651a700-06e5-11d1-8ebd-00a0c90f26ea}"=""
+"{7651a701-06e5-11d1-8ebd-00a0c90f26ea}"=""
+"{7651a703-06e5-11d1-8ebd-00a0c90f26ea}"=""
+
+[$RootKey$\Services\{CBED51B8-2910-4E95-86CE-7DB0D15A49C8}]
+"Name"="TextMate service"
+@="{37f69003-4ac4-4b33-aa3a-4d620be07696}"
+
+// Defines where is the language configuration file for a given 
+// grammar name (value of the ScopeName tag in the tmlanguage file).
+[$RootKey$\TextMate\LanguageConfiguration\GrammarMapping]
+"source.cpp"="$PackageFolder$\Starterkit\Extensions\cpp\syntaxes\language-configuration.json"
+
+// Defines where is the language configuration file for a given 
+// content type name.
+[$RootKey$\TextMate\LanguageConfiguration\ContentTypeMapping]
+"code++.C++"="$PackageFolder$\Starterkit\Extensions\cpp\syntaxes\language-configuration.json"
+[$RootKey$\TextMate\LanguageConfiguration\ContentTypeMapping]
+"C/C++"="$PackageFolder$\Starterkit\Extensions\cpp\syntaxes\language-configuration.json"

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity type="win32" processorArchitecture="x86" name="VS SCC\msemp.dll" version="1.0.0.0" />
+  <file name="msemp.dll" hashalg="SHA1">
+    <comClass clsid="{6856262F-19D4-4090-A0CD-A486A148709C}" threadingModel="Both" description="VSEE Versioning Enlistment Manager Proxy Data Source"></comClass>
+  </file>
+</assembly>

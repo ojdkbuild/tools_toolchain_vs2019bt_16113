@@ -1,0 +1,123 @@
+[$RootKey$\CLSID\{0c075ae9-42ac-4bef-87a1-85c1bfed9f1f}]
+@="Primary Interop Assembly Wrapper Tool (9.0)"
+"InprocServer32"="$ShellFolder$\Common7\Packages\Compsvcspkg.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\CLSID\{E2905C7C-4435-4212-9148-BE9614BD377B}]
+@="MSBuild Task File Manager Host Object"
+"InprocServer32"="$ShellFolder$\Common7\Packages\Compsvcspkg.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\ComponentPickerPages\SQL Server]
+@="#3100"
+"ComponentType"="SQLCLR assembly"
+"Package"="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Page"="{BBA3635A-F590-4397-9036-E826053E25AD}"
+"Sort"=dword:00000015
+
+[$RootKey$\Packages\{588205e0-66e0-11d3-8600-00c04f6123b3}]
+@="Visual Studio Component Enumerator Package"
+"InprocServer32"="$ShellFolder$\Common7\Packages\Compsvcspkg.dll"
+
+[$RootKey$\Packages\{588205e0-66e0-11d3-8600-00c04f6123b3}\SatelliteDll]
+"DllName"="compsvcspkgui.dll"
+"Path"="$ShellFolder$\Common7\Packages\"
+
+[$RootKey$\Services\{26EB4812-18FE-4A11-BC23-7DC1C9B453A3}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="Web Config Runtime Bindings Service"
+
+[$RootKey$\Services\{33a24090-6565-11d3-85fc-00c04f6123b3}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="SID_SCompEnumService"
+
+[$RootKey$\Services\{4A3116FC-942B-4692-B9F4-344E08285712}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="App Config Runtime Bindings Service"
+
+[$RootKey$\Services\{52F0DAB8-99A9-4aea-A037-42581B7009D2}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="SID_SVsSmartOpenScope"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="SID_SVsSQLCLRReferences"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\CustomMarshalers.dll]
+@="CustomMarshalers"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\Microsoft.VisualBasic.dll]
+@="Microsoft.VisualBasic"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\Microsoft.VisualC.dll]
+@="Microsoft.VisualC"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\mscorlib.dll]
+@="mscorlib"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Configuration.dll]
+@="System.Configuration"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Core.dll]
+@="system.core"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.dll]
+@="System.Data"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.OracleClient.dll]
+@="System.Data.OracleClient"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Data.SqlXml.dll]
+@="System.Data.SqlXml"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Deployment.dll]
+@="System.Deployment"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.dll]
+@="System"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Security.dll]
+@="System.Security"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Transactions.dll]
+@="System.Transactions"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Web.Services.dll]
+@="System.Web.Services"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Xml.dll]
+@="system.xml"
+
+[$RootKey$\Services\{8ED9966C-102F-45b0-8293-BB9F2463A6F2}\SQL .NET References\System.Xml.Linq.dll]
+@="system.xml.linq"
+
+[$RootKey$\Services\{97BAE668-2CF2-4ed8-A019-D279E3D74C80}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="SID_SVsStrongNameKeys"
+
+[$RootKey$\Services\{BD71396F-39C6-4e3f-BBA2-79CE33A8B302}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="SID_SVsAddWebReferenceDlg"
+
+[$RootKey$\Services\{C269ADA8-95F9-4987-A247-151FB2DDFB34}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+
+[$RootKey$\Services\{C269ADA8-95F9-4987-A247-151FB2DDFB34}\TargetFrameworks\v3.0]
+"VersionMaj"=dword:00000003
+"VersionMin"=dword:00000000
+
+[$RootKey$\Services\{C269ADA8-95F9-4987-A247-151FB2DDFB34}\TargetFrameworks\v3.5]
+"VersionMaj"=dword:00000003
+"VersionMin"=dword:00000005
+
+[$RootKey$\Services\{C269ADA8-95F9-4987-A247-151FB2DDFB34}\TargetFrameworks\v4.0]
+"VersionMaj"=dword:00000004
+"VersionMin"=dword:00000000
+
+[$RootKey$\Services\{C67A5F0C-31C0-4316-9EF9-B451B30C829E}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="SID_SVsSymbolicNavigationManager"
+
+[$RootKey$\Services\{D4D51B8E-6ECF-4C42-A3E2-E0925E5115D6}]
+@="{588205e0-66e0-11d3-8600-00c04f6123b3}"
+"Name"="SID_SVsFrameworkRetargetingDlg"

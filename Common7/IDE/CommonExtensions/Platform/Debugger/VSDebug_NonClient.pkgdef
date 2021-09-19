@@ -1,0 +1,14 @@
+[$RootKey$]
+
+[$RootKey$\ToolsOptionsPages]
+
+[$RootKey$\ToolsOptionPages\Debugger]
+
+[$RootKey$\ToolsOptionsPages\Debugger\JIT]
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Page"="{B9EFCAF2-9EAE-4022-9E39-FA947666ADD9}"
+"Keywords"="#8048"
+@="#5036"
+
+[$RootKey$\ToolsOptionsPages\Debugger\JIT\VisibilityCmdUIContexts]
+"{CA99BB24-1434-44AD-8BF7-E50615989FB3}"="1"

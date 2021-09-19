@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AFG_Legend" xml:space="preserve">
+    <value>Frames per second</value>
+  </data>
+  <data name="AFG_Title" xml:space="preserve">
+    <value>Visual throughput</value>
+  </data>
+  <data name="AFG_Unit" xml:space="preserve">
+    <value>FPS</value>
+  </data>
+  <data name="AnalyzeDataStatus" xml:space="preserve">
+    <value>Analyzing the collected data:</value>
+  </data>
+  <data name="CPUChartTitle" xml:space="preserve">
+    <value>CPU utilization (%)</value>
+  </data>
+  <data name="CPUTooltipCategoryLabel" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CPUTooltipUtilizationLabel" xml:space="preserve">
+    <value>Utilization</value>
+  </data>
+  <data name="DurationLabelInclusive" xml:space="preserve">
+    <value>Duration (total): {0}</value>
+    <comment>placeholder 0 is replaced with a string containing the number of ms</comment>
+  </data>
+  <data name="GCLegendTooltip" xml:space="preserve">
+    <value>Indicates time spent collecting memory for objects that are no longer in use</value>
+  </data>
+  <data name="GenericDataProcessingError" xml:space="preserve">
+    <value>An error occurred while processing the collected data. The error code is: {0}.</value>
+    <comment>placeholder 0 is replaced with a number that the product team or CSS can use to help diagnose the issue</comment>
+  </data>
+  <data name="HubGraphHeapLegend" xml:space="preserve">
+    <value>Process memory usage (private bytes)</value>
+  </data>
+  <data name="RulerLifecycleMarkLabel" xml:space="preserve">
+    <value>App lifecycle mark</value>
+  </data>
+  <data name="RulerUserMarkLabel" xml:space="preserve">
+    <value>User mark</value>
+  </data>
+  <data name="MillisecondsAbbreviation" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="Milliseconds" xml:space="preserve">
+    <value>milliseconds</value>
+    <comment>Unit of time; plural.</comment>
+  </data>
+  <data name="Ruler_LifeCycleEvents" xml:space="preserve">
+    <value>App lifecycle event</value>
+  </data>
+  <data name="Ruler_UserMarks" xml:space="preserve">
+    <value>User mark</value>
+  </data>
+  <data name="RulerMarkLabel" xml:space="preserve">
+    <value>A ruler mark indicating the occurrence of the following events: {0}</value>
+    <comment>placeholder 0 is replaced with the tooltip content of the ruler mark(s)</comment>
+  </data>
+  <data name="Scripting_Category" xml:space="preserve">
+    <value>Scripting</value>
+    <comment>Used in the legend &amp; in the tooltips for the CPU graph</comment>
+  </data>
+  <data name="ScriptingLegendTooltip" xml:space="preserve">
+    <value>Indicates time spent parsing and executing JavaScript. This includes DOM events, timers, script evaluation, and animation frame callbacks</value>
+  </data>
+  <data name="SecondsAbbreviation" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value>seconds</value>
+    <comment>Unit of time; plural.</comment>
+  </data>
+  <data name="StartTimeLabel" xml:space="preserve">
+    <value>Start time: {0}</value>
+    <comment>placeholder 0 is replaced with a string containing the number of ms</comment>
+  </data>
+  <data name="TimelineLabel" xml:space="preserve">
+    <value>Timeline details</value>
+  </data>
+  <data name="TimelineSortDuration" xml:space="preserve">
+    <value>Duration (total)</value>
+  </data>
+  <data name="TimelineSortLabel" xml:space="preserve">
+    <value>Sort by:</value>
+  </data>
+  <data name="TimelineSortStartTime" xml:space="preserve">
+    <value>Start time</value>
+  </data>
+  <data name="Unknown_Category" xml:space="preserve">
+    <value>Other</value>
+    <comment>Used in the legend &amp; in the tooltips for the CPU graph</comment>
+  </data>
+  <data name="UnknownLegendTooltip" xml:space="preserve">
+    <value>Indicates uncategorized work on known threads</value>
+  </data>
+  <data name="RulerTitle" xml:space="preserve">
+    <value>Diagnostic session</value>
+  </data>
+  <data name="ToolbarButtonClearSelection" xml:space="preserve">
+    <value>Clear selection</value>
+  </data>
+  <data name="ToolbarButtonResetZoom" xml:space="preserve">
+    <value>Reset zoom</value>
+  </data>
+  <data name="ToolbarButtonZoomIn" xml:space="preserve">
+    <value>Zoom in</value>
+  </data>
+  <data name="AddressNameLabel" xml:space="preserve">
+    <value>Address name</value>
+  </data>
+  <data name="AtTargetEventPhaseLabel" xml:space="preserve">
+    <value>At target</value>
+  </data>
+  <data name="DefaultPreventedLabel" xml:space="preserve">
+    <value>Default prevented</value>
+  </data>
+  <data name="EventNameLabel" xml:space="preserve">
+    <value>Event name</value>
+  </data>
+  <data name="EventPhaseLabel" xml:space="preserve">
+    <value>Event phase</value>
+  </data>
+  <data name="ListenerUsesCaptureLabel" xml:space="preserve">
+    <value>Listener uses capture</value>
+  </data>
+  <data name="NoLabel" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="PropagationStoppedLabel" xml:space="preserve">
+    <value>Propagation stopped</value>
+  </data>
+  <data name="ScriptUrlLabel" xml:space="preserve">
+    <value>Script URL</value>
+  </data>
+  <data name="StatusCodeLabel" xml:space="preserve">
+    <value>Status code</value>
+  </data>
+  <data name="YesLabel" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="TimerTypeLabel" xml:space="preserve">
+    <value>Timer type</value>
+  </data>
+  <data name="TimerFiredEventDescription" xml:space="preserve">
+    <value>A scheduled timer elapsed which resulted in the execution of its associated callback.</value>
+  </data>
+  <data name="Layout" xml:space="preserve">
+    <value>Layout</value>
+    <comment>This resource name is referenced in Timeline.Intervals.xml.</comment>
+  </data>
+  <data name="TimerFired" xml:space="preserve">
+    <value>Timer</value>
+    <comment>This resource name is referenced in Timeline.Intervals.xml.</comment>
+  </data>
+  <data name="MillisecondsLabel" xml:space="preserve">
+    <value>milliseconds</value>
+  </data>
+  <data name="MinutesLabel" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="RulerMarkTooltipLabel" xml:space="preserve">
+    <value> at {0}</value>
+    <comment>placeholder 0 is replaced with the formatted time the mark fired.</comment>
+  </data>
+  <data name="SecondsLabel" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="MinutesAbbreviation" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="AlignedBeat" xml:space="preserve">
+    <value>Frame</value>
+    <comment>This resource name is referenced in Timeline.Intervals.xml.</comment>
+  </data>
+  <data name="EventHeaderLabel" xml:space="preserve">
+    <value>Event name</value>
+  </data>
+  <data name="ThreadContextLabel" xml:space="preserve">
+    <value>Thread: {0}</value>
+    <comment>placeholder 0 is replaced with the threadId</comment>
+  </data>
+  <data name="UIThreadContext" xml:space="preserve">
+    <value>UI thread</value>
+  </data>
+  <data name="CPUBarAriaLabel" xml:space="preserve">
+    <value>{0} utilized {1}% of CPU time at {2}</value>
+    <comment>placeholder 0 is replaced with the category, placeholder 1 is replaced with the percentage of time spent, and placeholder 2 is replaced with the formatted time</comment>
+  </data>
+  <data name="CPUGraphAriaLabel" xml:space="preserve">
+    <value>A bar graph representing the CPU utilization of the application. Press the right and left arrows to navigate.</value>
+  </data>
+  <data name="VisualThroughputGraphAriaLabel" xml:space="preserve">
+    <value>A step line graph representing the visual throughput, reported in frames per second, of the application. Press the right and left arrows to navigate.</value>
+  </data>
+  <data name="VisualThroughputStepAriaLabel" xml:space="preserve">
+    <value>{0} FPS at {1}</value>
+    <comment>placeholder 0 is the fps value, and placeholder 1 is the formatted time</comment>
+  </data>
+  <data name="EventsTimelineAriaLabel" xml:space="preserve">
+    <value>A scrollable Gantt chart displaying the sequence of events that occurred within the current time selection. Press the up and down arrows to navigate.</value>
+  </data>
+  <data name="EventsTimelineEventAriaLabel" xml:space="preserve">
+    <value>{0} event with start time at {1} and duration {2}</value>
+    <comment>placeholder 0 is replaced with the event name, placeholder 1 is replaced with start time, placeholder 2 is replaced with duration</comment>
+  </data>
+  <data name="RulerAriaLabel" xml:space="preserve">
+    <value>Ruler has minimum value of {0} and maximum value of {1}</value>
+    <comment>placeholder 0 and placeholder 1 are time with units</comment>
+  </data>
+  <data name="RulerLeftSliderAriaLabel" xml:space="preserve">
+    <value>Left slider</value>
+  </data>
+  <data name="RulerRightSliderAriaLabel" xml:space="preserve">
+    <value>Right slider</value>
+  </data>
+  <data name="RulerSliderAriaValueText" xml:space="preserve">
+    <value>Current value is {0}. Minimum value is {1}. Maximum value is {2}.</value>
+    <comment>placeholder 0, placeholder 1 and placeholder 2 are time with units</comment>
+  </data>
+  <data name="DurationLabelExclusive" xml:space="preserve">
+    <value>Duration (self): {0}</value>
+    <comment>placeholder 0 is replaced with a string containing the number of ms</comment>
+  </data>
+  <data name="AlignedBeatEventDescription" xml:space="preserve">
+    <value>Pending visual changes that were made to the DOM were processed so that the app's display could be updated.</value>
+  </data>
+  <data name="GarbageCollectionEventDescription" xml:space="preserve">
+    <value>The CLR runtime audited the current memory usage in order to determine which objects aren’t being referenced anymore and could therefore be collected. Blocking garbage collections can impact app responsiveness as all the managed threads will be suspended during this time. Frequent and long running garbage collections can have a detrimental effect on app responsiveness.</value>
+  </data>
+  <data name="LayoutEventDescription" xml:space="preserve">
+    <value>Changes were made to XAML visual tree that required the size and/or position of all affected elements to be computed.</value>
+  </data>
+  <data name="GraphCollapseAriaLabel" xml:space="preserve">
+    <value>Press enter to collapse graph.</value>
+  </data>
+  <data name="GraphExpandAriaLabel" xml:space="preserve">
+    <value>Press enter to expand graph.</value>
+  </data>
+  <data name="OriginLabel" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="DimensionsLabel" xml:space="preserve">
+    <value>Dimensions</value>
+  </data>
+  <data name="ScriptContentPreviewLabel" xml:space="preserve">
+    <value>Content preview</value>
+  </data>
+  <data name="F12ToolTitle" xml:space="preserve">
+    <value>UI Responsiveness</value>
+  </data>
+  <data name="TASK_DoEnReNo" xml:space="preserve">
+    <value>(force layout)</value>
+  </data>
+  <data name="TASK_DoInsElm" xml:space="preserve">
+    <value>(insert element)</value>
+  </data>
+  <data name="TASK_Fi" xml:space="preserve">
+    <value>(style change detected)</value>
+  </data>
+  <data name="TASK_FiCmpFmt" xml:space="preserve">
+    <value>(style computation)</value>
+  </data>
+  <data name="UnknownTask" xml:space="preserve">
+    <value>(unknown task)</value>
+  </data>
+  <data name="TASK_TableBox" xml:space="preserve">
+    <value>generated parent for display:table</value>
+    <comment>display:table is code and should not be translated</comment>
+  </data>
+  <data name="TASK_SvgCssBox" xml:space="preserve">
+    <value>generated root container for SVG content</value>
+  </data>
+  <data name="TASK_PageFrame" xml:space="preserve">
+    <value>page of paginated flow</value>
+  </data>
+  <data name="TASK_DocumentResize" xml:space="preserve">
+    <value>document resize</value>
+  </data>
+  <data name="TASK_TextBlock" xml:space="preserve">
+    <value>text block</value>
+  </data>
+  <data name="TASK_LineBox" xml:space="preserve">
+    <value>text line</value>
+  </data>
+  <data name="UnknownElement" xml:space="preserve">
+    <value>unknown</value>
+  </data>
+  <data name="InclusiveTimeDetailsHeader" xml:space="preserve">
+    <value>Total time summary:</value>
+    <comment>Inclusive time details breakdown</comment>
+  </data>
+  <data name="UnknownTimerType" xml:space="preserve">
+    <value>Unknown timer</value>
+  </data>
+  <data name="MethodNameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SourceLocationLabel" xml:space="preserve">
+    <value>Source location</value>
+  </data>
+  <data name="EventTargetLabel" xml:space="preserve">
+    <value>Event target</value>
+  </data>
+  <data name="SourceLocationLink" xml:space="preserve">
+    <value>{0} ({1},{2})</value>
+  </data>
+  <data name="InclusiveTimeAriaLabel" xml:space="preserve">
+    <value>A donut chart that displays which event types consumed the highest percentage of CPU time on the UI thread.</value>
+  </data>
+  <data name="DonutSectorAriaLabel" xml:space="preserve">
+    <value> {0} event: {1} percent and {2}.</value>
+    <comment>placeholder 0 is the event name, placeholder 1 is the percent value of the event and placeholder 2 is the total exclusive time took to execute that event.</comment>
+  </data>
+  <data name="AccessTypeLabel" xml:space="preserve">
+    <value>Access type</value>
+  </data>
+  <data name="TargetElementLabel" xml:space="preserve">
+    <value>Target element</value>
+  </data>
+  <data name="DroppedEventsWarning" xml:space="preserve">
+    <value>Due to the target machine being overloaded at the time of collection, some performance data was lost. Information may be incomplete, inaccurate, or out of order.</value>
+  </data>
+  <data name="StylesheetUrlLabel" xml:space="preserve">
+    <value>Stylesheet URL</value>
+  </data>
+  <data name="InclusiveTimeSVGLabelString" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>placeholder 0 is the percent value of the Inclusive time summary's donut chart sector.</comment>
+  </data>
+  <data name="TimeoutLabel" xml:space="preserve">
+    <value>Delay</value>
+  </data>
+  <data name="VisualProfilerTooltip" xml:space="preserve">
+    <value>UI Responsiveness {0}</value>
+    <comment>The id must link up with the manifest file for the profiler tool. placeholder 0 is a keyboard shortcut, like (Ctrl+1)</comment>
+  </data>
+  <data name="DurationLabel" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="WarningIncompatibleStandardsModeF12" xml:space="preserve">
+    <value>This tool only supports document modes 10 or higher; therefore, information may be missing from the session. To improve accuracy, go to the Emulation tab, change your document mode to Edge and start a new session.</value>
+  </data>
+  <data name="WarningIncompatibleStandardsModeVS" xml:space="preserve">
+    <value>This tool only supports (1) Windows Store 8.1 apps running on Windows 8.1, (2) Windows Store 8.0 apps running on Windows 8.1, and (3) Internet Explorer 11 or higher running in document modes 10 or higher. Information may be missing from the data collected.</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>Navigation ({0})</value>
+    <comment>placeholder 0 is the URL that was navigated to.</comment>
+  </data>
+  <data name="UnableToNavigateToSource" xml:space="preserve">
+    <value>Source navigation failed because the requested file, line and/or column number could not be found.</value>
+  </data>
+  <data name="LayoutModeLabel" xml:space="preserve">
+    <value>Layout mode</value>
+  </data>
+  <data name="UserMarkTooltip" xml:space="preserve">
+    <value>Indicates calls to the performance.mark() method</value>
+  </data>
+  <data name="LifecycleMarkTooltip" xml:space="preserve">
+    <value>Indicates fundamental events during app lifetime</value>
+  </data>
+  <data name="VisualProfilerDisabledAtBreakpoint" xml:space="preserve">
+    <value>Profiling is disabled when paused at a breakpoint. You must stop debugging to enable profiling.</value>
+  </data>
+  <data name="RulerAggregatedMarks" xml:space="preserve">
+    <value>Merged mark</value>
+  </data>
+  <data name="SwimlaneCollapseAriaLabel" xml:space="preserve">
+    <value>Press enter to collapse graph.</value>
+  </data>
+  <data name="SwimlaneExpandAriaLabel" xml:space="preserve">
+    <value>Press enter to expand graph.</value>
+  </data>
+  <data name="ClearSelectionContextMenu" xml:space="preserve">
+    <value>Clear filter</value>
+  </data>
+  <data name="FilterToEventContextMenu" xml:space="preserve">
+    <value>Filter to event time range</value>
+  </data>
+  <data name="FilterToEventTypeContextMenu" xml:space="preserve">
+    <value>Filter to event type</value>
+  </data>
+  <data name="ClearFilterContextMenu" xml:space="preserve">
+    <value>Clear filter</value>
+  </data>
+  <data name="ViewSourceLabel" xml:space="preserve">
+    <value>View source</value>
+  </data>
+  <data name="EnterKey" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="SourceInfoFileLabel" xml:space="preserve">
+    <value>File:</value>
+  </data>
+  <data name="SourceInfoLineLabel" xml:space="preserve">
+    <value>Line:</value>
+  </data>
+  <data name="SourceInfoColumnLabel" xml:space="preserve">
+    <value>Column:</value>
+  </data>
+  <data name="SourceInfoEventLabel" xml:space="preserve">
+    <value>Event:</value>
+  </data>
+  <data name="FilteringMenuButtonTooltipText" xml:space="preserve">
+    <value>Configure the events displayed on the timeline</value>
+  </data>
+  <data name="FilterBackgroundActivities" xml:space="preserve">
+    <value>Background activity</value>
+  </data>
+  <data name="FilterIOActivities" xml:space="preserve">
+    <value>Disk and Network activity</value>
+  </data>
+  <data name="ProfileJustMyCode" xml:space="preserve">
+    <value>Profile just my code (Ctrl+J)</value>
+  </data>
+  <data name="ProfileAllCode" xml:space="preserve">
+    <value>Profile all code (Ctrl+J)</value>
+  </data>
+  <data name="RenderThread" xml:space="preserve">
+    <value>Render thread</value>
+  </data>
+  <data name="DownloadThread" xml:space="preserve">
+    <value>Download thread</value>
+  </data>
+  <data name="FilterDurationThreshold" xml:space="preserve">
+    <value>Negligible UI activity (&lt;{0})</value>
+    <comment>placeholder 0 is the time, like 1ms</comment>
+  </data>
+  <data name="Formatting" xml:space="preserve">
+    <value>Formatting</value>
+  </data>
+  <data name="ElementFormatting" xml:space="preserve">
+    <value>Element formatting</value>
+  </data>
+  <data name="TooltipTimeLabel" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TooltipValueLabel" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="F12StartButtonTooltip" xml:space="preserve">
+    <value>Start profiling session (Ctrl+E)</value>
+  </data>
+  <data name="F12StopButtonTooltip" xml:space="preserve">
+    <value>Stop profiling session (Ctrl+E)</value>
+  </data>
+  <data name="F12StartProfilingMessage" xml:space="preserve">
+    <value>Start profiling to begin a performance session (Ctrl+E)</value>
+  </data>
+  <data name="F12StopProfilingMessage" xml:space="preserve">
+    <value>Stop profiling to generate a report (Ctrl+E)</value>
+  </data>
+  <data name="IntervalTimerTypeLabel" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="TimelineSortTooltip" xml:space="preserve">
+    <value>Sort events either by duration or start time</value>
+  </data>
+  <data name="TimeoutTimerTypeLabel" xml:space="preserve">
+    <value>Timeout</value>
+  </data>
+  <data name="FilterScenarios" xml:space="preserve">
+    <value>Scenarios</value>
+  </data>
+  <data name="StartMarkName" xml:space="preserve">
+    <value>Start mark</value>
+  </data>
+  <data name="EndMarkName" xml:space="preserve">
+    <value>End mark</value>
+  </data>
+  <data name="Frame" xml:space="preserve">
+    <value>Frame</value>
+  </data>
+  <data name="FilterFrames" xml:space="preserve">
+    <value>Frames</value>
+  </data>
+  <data name="MillisecondsSelectedLabel" xml:space="preserve">
+    <value>milliseconds selected</value>
+  </data>
+  <data name="SecondsSelectedLabel" xml:space="preserve">
+    <value>seconds selected</value>
+  </data>
+  <data name="MinutesSelectedLabel" xml:space="preserve">
+    <value>minutes selected</value>
+  </data>
+  <data name="EventNameFilterPlaceholder" xml:space="preserve">
+    <value>Event name filter</value>
+  </data>
+  <data name="EventNameFilterTooltip" xml:space="preserve">
+    <value>Filter the top-level events by name or type</value>
+  </data>
+  <data name="MutationObserver" xml:space="preserve">
+    <value>Mutation observer</value>
+    <comment>This resource name is referenced in Timeline.Intervals.xml.</comment>
+  </data>
+  <data name="MutationObserverEventDescription" xml:space="preserve">
+    <value>One or more observed DOM elements were modified which resulted in the execution of a MutationObserver's associated callback.</value>
+  </data>
+  <data name="FrameGroupingTooltip" xml:space="preserve">
+    <value>Group top level events by frames</value>
+  </data>
+  <data name="F12OpenSessionButtonTooltip" xml:space="preserve">
+    <value>Import profiling session (Ctrl+O)</value>
+  </data>
+  <data name="F12SaveSessionButtonTooltip" xml:space="preserve">
+    <value>Export profiling session (Ctrl+S)</value>
+  </data>
+  <data name="OpenSessionFailedMessage" xml:space="preserve">
+    <value>The imported session doesn't include any valid performance data. Please try another file.</value>
+  </data>
+  <data name="SaveSessionFailedMessage" xml:space="preserve">
+    <value>An error occurred while exporting the profiling session. Please try again.</value>
+  </data>
+  <data name="FilterUIActivities" xml:space="preserve">
+    <value>UI activity</value>
+  </data>
+  <data name="WrongDataSource" xml:space="preserve">
+    <value>The underlying data is not in the proper format</value>
+  </data>
+  <data name="DurationFilterAll" xml:space="preserve">
+    <value>Event duration: All</value>
+  </data>
+  <data name="DurationFilterTimed" xml:space="preserve">
+    <value>Event duration: &gt;{0}</value>
+    <comment>placeholder 0 is the time threshold that is used for the filter (e.g. 1ms)</comment>
+  </data>
+  <data name="DurationFilterTooltip" xml:space="preserve">
+    <value>Filters top-level events by their total duration</value>
+  </data>
+  <data name="BackgroundActivityFilterTooltip" xml:space="preserve">
+    <value>Show events which occurred on a background thread (e.g. Image decoding, GC)</value>
+  </data>
+  <data name="IOFilterTooltip" xml:space="preserve">
+    <value>Show HTTP requests and Disk I/O operations</value>
+  </data>
+  <data name="UIActivityFilterTooltip" xml:space="preserve">
+    <value>Show events which occurred on the UI thread and/or render thread (e.g. DOM event handlers, Layout)</value>
+  </data>
+  <data name="ScenariosFilterTooltip" xml:space="preserve">
+    <value>Show Scenarios like User Measure events and Page Load and Input</value>
+  </data>
+  <data name="SectorTooltipFormat" xml:space="preserve">
+    <value>{0}: {1}% ({2})</value>
+    <comment>placeholder 0 is the name of the Event, placeholder 1 is the percent value and placeholder 2 is the timestamp of the event.</comment>
+  </data>
+  <data name="Idle" xml:space="preserve">
+    <value>Idle</value>
+  </data>
+  <data name="SelectionDurationLabel" xml:space="preserve">
+    <value>Selection duration: {0}</value>
+    <comment>placeholder 0 is replaced with a string-formatted duration (e.g.:  123 ms)</comment>
+  </data>
+  <data name="UIThreadSummaryHeader" xml:space="preserve">
+    <value>UI thread summary:</value>
+  </data>
+  <data name="GC" xml:space="preserve">
+    <value>Garbage collection</value>
+  </data>
+  <data name="XamlParsing" xml:space="preserve">
+    <value>Parsing</value>
+  </data>
+  <data name="AppCode" xml:space="preserve">
+    <value>App Code</value>
+  </data>
+  <data name="XamlLayout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="XamlOther" xml:space="preserve">
+    <value>Xaml Other</value>
+  </data>
+  <data name="ParsingEventDescription" xml:space="preserve">
+    <value>XAML content was encountered that required XAML files to be parsed and objects and/or elements to be created.</value>
+  </data>
+  <data name="ParsingIntervalExclusiveCount" xml:space="preserve">
+    <value>Elements (self)</value>
+  </data>
+  <data name="ParsingIntervalFileName" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="ParsingIntervalInclusiveCount" xml:space="preserve">
+    <value>Elements (total)</value>
+  </data>
+  <data name="GarbageCollectionIntervalCount" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="GarbageCollectionIntervalGeneration" xml:space="preserve">
+    <value>Generation</value>
+  </data>
+  <data name="GarbageCollectionIntervalReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="GarbageCollectionIntervalType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="GarbageCollectionReason0" xml:space="preserve">
+    <value>Small object heap allocation.</value>
+  </data>
+  <data name="GarbageCollectionReason1" xml:space="preserve">
+    <value>Induced.</value>
+  </data>
+  <data name="GarbageCollectionReason2" xml:space="preserve">
+    <value>Low memory.</value>
+  </data>
+  <data name="GarbageCollectionReason3" xml:space="preserve">
+    <value>Low memory.</value>
+  </data>
+  <data name="GarbageCollectionReason4" xml:space="preserve">
+    <value>Large object heap allocation.</value>
+  </data>
+  <data name="GarbageCollectionReason5" xml:space="preserve">
+    <value>Out of space (for small object heap).</value>
+  </data>
+  <data name="GarbageCollectionReason6" xml:space="preserve">
+    <value>Out of space (for large object heap).</value>
+  </data>
+  <data name="GarbageCollectionReason7" xml:space="preserve">
+    <value>Induced but not forced as blocking.</value>
+  </data>
+  <data name="GarbageCollectionType0" xml:space="preserve">
+    <value>Blocking garbage collection occurred outside background garbage collection.</value>
+  </data>
+  <data name="GarbageCollectionType1" xml:space="preserve">
+    <value>Background garbage collection.</value>
+  </data>
+  <data name="GarbageCollectionType2" xml:space="preserve">
+    <value>Blocking garbage collection occurred during background garbage collection.</value>
+  </data>
+  <data name="LayoutIntervalElementCount" xml:space="preserve">
+    <value>Elements affected</value>
+  </data>
+  <data name="NetworkEventDescription" xml:space="preserve">
+    <value>A network request was made in the application. An application’s perceived responsiveness might be affected if there are delays in servicing the request or if the data received / sent is large.</value>
+  </data>
+  <data name="NetworkIntervalContentType" xml:space="preserve">
+    <value>Content type</value>
+  </data>
+  <data name="NetworkIntervalMethod" xml:space="preserve">
+    <value>Method</value>
+  </data>
+  <data name="NetworkIntervalReceivedBytes" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="NetworkIntervalSentBytes" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="NetworkIntervalStatusCode" xml:space="preserve">
+    <value>Status code</value>
+  </data>
+  <data name="NetworkIntervalUrl" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Network" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="NetworkIntervalStatusCodeValue" xml:space="preserve">
+    <value>HTTP/1.1 {0} {1}</value>
+  </data>
+  <data name="GarbageCollectionReasonUnknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="GarbageCollectionTypeUnknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="NetworkIntervalDetailsHintTooltip" xml:space="preserve">
+    <value>Payload: {0}</value>
+  </data>
+  <data name="ParsingIntervalDetailsHintTooltip" xml:space="preserve">
+    <value>Total elements: {0}</value>
+  </data>
+  <data name="GCEventTooltip" xml:space="preserve">
+    <value>Garbage collection 
+Reason: {0}</value>
+  </data>
+  <data name="LayoutEventTooltip" xml:space="preserve">
+    <value>XAML Layout
+Elements affected: {0}</value>
+  </data>
+  <data name="NetworkEventTooltip" xml:space="preserve">
+    <value>Network
+Address: {0}</value>
+  </data>
+  <data name="ParsingEventTooltip" xml:space="preserve">
+    <value>XAML Parsing
+File: {0}</value>
+  </data>
+  <data name="ByteUnits" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="GigabyteUnits" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="IntervalDetailsHintText" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="KilobyteUnits" xml:space="preserve">
+    <value>KB</value>
+  </data>
+  <data name="MegabyteUnits" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="DetailsTabHeader" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="UIElementCostEventDescription" xml:space="preserve">
+    <value>Changes were made to this element that required the size and/or position of this element to be computed.</value>
+  </data>
+  <data name="UIElementCostEventTooltip" xml:space="preserve">
+    <value>{0}
+Elements (total): {1}</value>
+  </data>
+  <data name="UIElementCostClass" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="UIElementCostCount" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="UIElementCostName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="UIElementCostTemplateName" xml:space="preserve">
+    <value>Template Name</value>
+  </data>
+  <data name="UIElementCostTemplateName_Implicit" xml:space="preserve">
+    <value>Implicit Style</value>
+  </data>
+  <data name="UIElementCostTemplateName_Inline" xml:space="preserve">
+    <value>Inline definition</value>
+  </data>
+  <data name="UIElementCostTemplateName_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="XamlUIElementCost" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="FrameNavigationEventClass" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FrameNavigationEventDescription" xml:space="preserve">
+    <value>Visual content was loaded as a result of a frame navigation.</value>
+  </data>
+  <data name="FrameNavigationEventFromCache" xml:space="preserve">
+    <value>From Cache</value>
+  </data>
+  <data name="FrameNavigationEventNavigationMode0" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="FrameNavigationEventNavigationMode1" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="FrameNavigationEventNavigationMode2" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="FrameNavigationEventNavigationMode3" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="FrameNavigationEventNavigationModeUnknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="FrameNavigationEventTooltip" xml:space="preserve">
+    <value>XAML Page Load
+Type: {0}</value>
+  </data>
+  <data name="XamlFrameNavigation" xml:space="preserve">
+    <value>Page Load</value>
+  </data>
+  <data name="FrameNavigationEventNavigationModeLabel" xml:space="preserve">
+    <value>Navigation Mode</value>
+  </data>
+  <data name="DiskIo" xml:space="preserve">
+    <value>Disk</value>
+  </data>
+  <data name="DiskIODescription" xml:space="preserve">
+    <value>A Disk I/O request was made in the application. An application’s perceived responsiveness might be affected if disk access is slow or if the data that needs to written or read is large.</value>
+  </data>
+  <data name="DiskIOTooltip" xml:space="preserve">
+    <value>Disk
+Operation: {0}
+File name: {1}</value>
+  </data>
+  <data name="DiskIOIntervalDetailsHintTooltip" xml:space="preserve">
+    <value>Payload: {0}</value>
+  </data>
+  <data name="DiskIOType0" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="DiskIOType1" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="DiskIOType2" xml:space="preserve">
+    <value>Flush</value>
+  </data>
+  <data name="DiskIOTypeUnknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="DiskIOIntervalFileName" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="DiskIOIntervalSize" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="DiskIOIntervalOperation" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="XamlRender" xml:space="preserve">
+    <value>Render</value>
+  </data>
+  <data name="XamlRenderDescription" xml:space="preserve">
+    <value>Occurs when XAML elements are converted to their visual primitives and the resulting data is submitted to the composition pipeline.</value>
+  </data>
+  <data name="XamlRenderTooltip" xml:space="preserve">
+    <value>Render</value>
+  </data>
+  <data name="ImagePreviewHeader" xml:space="preserve">
+    <value>Image Preview ({0} x {1})</value>
+  </data>
+  <data name="DiskIOIntervalPath" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="ParsingIntervalPath" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="ParsingFromStringEventTooltip" xml:space="preserve">
+    <value>XAML Parsing
+File: From String</value>
+  </data>
+  <data name="ParsingFromStringValue" xml:space="preserve">
+    <value>From String</value>
+  </data>
+  <data name="IO" xml:space="preserve">
+    <value>I/O</value>
+  </data>
+  <data name="UIThreadIndicatorTooltip" xml:space="preserve">
+    <value>Operation was executed by the UI thread</value>
+  </data>
+  <data name="ViewSettingsMenuButtonTooltipText" xml:space="preserve">
+    <value>View Settings</value>
+  </data>
+  <data name="ShowDurationSelfInTimeline" xml:space="preserve">
+    <value>Show duration (self) in timeline</value>
+  </data>
+  <data name="ShowDurationSelfInTimelineTooltip" xml:space="preserve">
+    <value>Show duration (self) in timeline</value>
+  </data>
+  <data name="ShowHintTextInTimeline" xml:space="preserve">
+    <value>Show hint text in timeline</value>
+  </data>
+  <data name="ShowHintTextInTimelineTooltip" xml:space="preserve">
+    <value>Show hint text in timeline</value>
+  </data>
+  <data name="ShowQualifiersInEventNames" xml:space="preserve">
+    <value>Show qualifiers in event name</value>
+  </data>
+  <data name="ShowQualifiersInEventNamesTooltip" xml:space="preserve">
+    <value>Show qualifiers in event name</value>
+  </data>
+  <data name="ShowThreadIndicator" xml:space="preserve">
+    <value>Show thread indicator</value>
+  </data>
+  <data name="ShowThreadIndicatorTooltip" xml:space="preserve">
+    <value>Show thread indicator</value>
+  </data>
+  <data name="WindowResizedDescription" xml:space="preserve">
+    <value>The duration of time between when the window of the application is resized and the first frame is submitted to the Desktop Window Manager</value>
+  </data>
+  <data name="WindowResizedTooltip" xml:space="preserve">
+    <value>Window Resized</value>
+  </data>
+  <data name="WindowResized" xml:space="preserve">
+    <value>Window Resized</value>
+  </data>
+  <data name="AppStartup" xml:space="preserve">
+    <value>Application Startup</value>
+  </data>
+  <data name="AppStartupDescription" xml:space="preserve">
+    <value>The duration of time between when the application is launched by the OS and the first frame is submitted to the Desktop Window Manager</value>
+  </data>
+  <data name="AppStartupTooltip" xml:space="preserve">
+    <value>Application Startup</value>
+  </data>
+  <data name="VisualStateChanged" xml:space="preserve">
+    <value>VisualState Changed</value>
+  </data>
+  <data name="VisualStateChangedDescription" xml:space="preserve">
+    <value>Occurs when a control transitions between two states</value>
+  </data>
+  <data name="VisualStateChangedElementLabel" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="VisualStateChangedStateLabel" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="VisualStateChangedTooltip" xml:space="preserve">
+    <value>VisualState Changed
+State: {0}</value>
+  </data>
+  <data name="VisualStateChangedTypeLabel" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="XamlUIThreadFrame" xml:space="preserve">
+    <value>Frame</value>
+  </data>
+  <data name="UIThreadFrameDescription" xml:space="preserve">
+    <value>Changes were made to the visual tree that required a new UI thread frame to be created</value>
+  </data>
+  <data name="UIThreadFrameTooltip" xml:space="preserve">
+    <value>UI Thread Frame</value>
+  </data>
+</root>

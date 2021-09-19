@@ -1,0 +1,131 @@
+//
+// returns texture dimensions of the specified texture as a float2
+//
+float2 GetTextureDimensions(Texture2D tex)
+{
+    float x;
+    float y;
+
+    tex.GetDimensions(x,y);
+
+    return float2(x, y);
+}
+
+//
+// returns texel delta of the specified texture as a float2
+//
+float2 GetTexelDelta(Texture2D tex)
+{
+    float x;
+    float y;
+
+    tex.GetDimensions(x,y);
+
+    return float2(1.0f/x, 1.0f/y);
+}
+
+//
+// runs an edge detection filter on the input
+//
+float4 EdgeDetectionFilter(Texture2D tex, float2 uv)
+{
+    float dx;
+    float dy;
+    tex.GetDimensions(dx,dy);
+    dx = 1.0f/dx;
+    dy = 1.0f/dy;
+
+    float4 color0 = -2.0f * tex.Sample(TexSampler, uv + float2(-dx, 0));
+    float4 color1 = -tex.Sample(TexSampler, uv + float2(-dx, dy));
+    float4 color2 = -tex.Sample(TexSampler, uv + float2(-dx, -dy));
+    float4 color3 = 2.0f * tex.Sample(TexSampler, uv + float2(dx, 0));
+    float4 color4 = tex.Sample(TexSampler, uv + float2(dx, dy));
+    float4 color5 = tex.Sample(TexSampler, uv + float2(dx, -dy));
+    float4 sumX = color0 + color1 + color2 + color3 + color4 + color5;
+
+    float4 color6 = -2.0f * tex.Sample(TexSampler, uv + float2(0, -dy));
+    float4 color7 = -tex.Sample(TexSampler, uv + float2(dx, -dy));
+    float4 color8 = color2;
+    float4 color9 = 2.0f * tex.Sample(TexSampler, uv + float2(0, dy));
+    float4 color10 = color4;
+    float4 color11 = tex.Sample(TexSampler, uv + float2(-dx, dy));
+    float4 sumY= color6 + color7 + color8 + color9 + color10 + color11;
+
+    return sqrt(sumX * sumX + sumY * sumY);
+}
+
+
+//
+// runs a Gaussian blur filter on the input
+//
+float4 Blur(Texture2D tex, float2 uv)
+{
+    float dx;
+    float dy;
+    tex.GetDimensions(dx,dy);
+    dx = 1.0f/dx;
+    dy = 1.0f/dy;
+
+	float4 colorSum = float4(0,0,0,0);
+
+	colorSum += tex.Sample(TexSampler, uv + float2(-2 * dx, -2 * dy)) * 2;
+	colorSum += tex.Sample(TexSampler, uv + float2(-1 * dx, -2 * dy)) * 4;
+	colorSum += tex.Sample(TexSampler, uv + float2(      0, -2 * dy)) * 5;
+	colorSum += tex.Sample(TexSampler, uv + float2( 1 * dx, -2 * dy)) * 4;
+	colorSum += tex.Sample(TexSampler, uv + float2( 2 * dx, -2 * dy)) * 2;
+
+	colorSum += tex.Sample(TexSampler, uv + float2(-2 * dx, -1 * dy)) * 4;
+	colorSum += tex.Sample(TexSampler, uv + float2(-1 * dx, -1 * dy)) * 9;
+	colorSum += tex.Sample(TexSampler, uv + float2(      0, -1 * dy)) * 12;
+	colorSum += tex.Sample(TexSampler, uv + float2( 1 * dx, -1 * dy)) * 9;
+	colorSum += tex.Sample(TexSampler, uv + float2( 2 * dx, -1 * dy)) * 4;
+
+	colorSum += tex.Sample(TexSampler, uv + float2(-2 * dx,       0)) * 5;
+	colorSum += tex.Sample(TexSampler, uv + float2(-1 * dx,       0)) * 12;
+	colorSum += tex.Sample(TexSampler, uv + float2(      0,       0)) * 15;
+	colorSum += tex.Sample(TexSampler, uv + float2( 1 * dx,       0)) * 12;
+	colorSum += tex.Sample(TexSampler, uv + float2( 2 * dx,       0)) * 5;
+
+	colorSum += tex.Sample(TexSampler, uv + float2(-2 * dx,  1 * dy)) * 4;
+	colorSum += tex.Sample(TexSampler, uv + float2(-1 * dx,  1 * dy)) * 9;
+	colorSum += tex.Sample(TexSampler, uv + float2(      0,  1 * dy)) * 12;
+	colorSum += tex.Sample(TexSampler, uv + float2( 1 * dx,  1 * dy)) * 9;
+	colorSum += tex.Sample(TexSampler, uv + float2( 2 * dx,  1 * dy)) * 4;
+
+	colorSum += tex.Sample(TexSampler, uv + float2(-2 * dx,  2 * dy)) * 2;
+	colorSum += tex.Sample(TexSampler, uv + float2(-1 * dx,  2 * dy)) * 4;
+	colorSum += tex.Sample(TexSampler, uv + float2(      0,  2 * dy)) * 5;
+	colorSum += tex.Sample(TexSampler, uv + float2( 1 * dx,  2 * dy)) * 4;
+	colorSum += tex.Sample(TexSampler, uv + float2( 2 * dx,  2 * dy)) * 2;
+
+	return colorSum/159;
+}
+
+
+//
+// Sharpen filter
+//
+float4 Sharpen(Texture2D tex, float2 uv)
+{
+    float dx;
+    float dy;
+    tex.GetDimensions(dx,dy);
+    dx = 1.0f/dx;
+    dy = 1.0f/dy;
+
+	float4 colorSum = float4(0,0,0,0);
+
+	colorSum += tex.Sample(TexSampler, uv + float2(-1 * dx, -1 * dy)) * -1;
+	colorSum += tex.Sample(TexSampler, uv + float2(      0, -1 * dy)) * -1;
+	colorSum += tex.Sample(TexSampler, uv + float2( 1 * dx, -1 * dy)) * -1;
+
+	colorSum += tex.Sample(TexSampler, uv + float2(-1 * dx,       0)) * -1;
+	colorSum += tex.Sample(TexSampler, uv + float2(      0,       0)) * 17;
+	colorSum += tex.Sample(TexSampler, uv + float2( 1 * dx,       0)) * -1;
+
+	colorSum += tex.Sample(TexSampler, uv + float2(-1 * dx,  1 * dy)) * -1;
+	colorSum += tex.Sample(TexSampler, uv + float2(      0,  1 * dy)) * -1;
+	colorSum += tex.Sample(TexSampler, uv + float2( 1 * dx,  1 * dy)) * -1;
+
+	return colorSum/9;
+}

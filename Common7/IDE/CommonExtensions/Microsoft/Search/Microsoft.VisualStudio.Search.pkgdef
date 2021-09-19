@@ -1,0 +1,34 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{C98BC7B3-EF59-4423-881B-5C540C1A1521}]
+"name"="Microsoft.VisualStudio.Search"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Search.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{2260F0D3-6150-4DC5-BB16-EE174235606A}]
+"name"="Microsoft.VisualStudio.Search.Implementation"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Search.Implementation.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{AD78D69B-773D-4962-ACCE-4263E6569B4E}]
+"name"="Microsoft.VisualStudio.Platform.SearchProviders"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Platform.SearchProviders.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"
+
+// Command scopes (menus) opted into search:
+[$RootKey$\Search\CommandScopes]
+
+// Editor Menus
+"EditorFileHealthIndicatorMenu"="{160961B3-909D-4B28-9353-A1BEF587B4A6};35"
+"EditorContextMenu"="{d309f791-903f-11d0-9efc-00a0c911004f};1037"
+"EditorNavigateMenu"="{160961B3-909D-4B28-9353-A1BEF587B4A6};9"
+
+// Includes the 'Publish'/Source control menu in the IDE status bar.
+"PublishMenu"="{24FC9963-73A7-4B4D-AAA2-87D424E87BC7};4096"
+
+// Team Explorer 'Team' commands.
+"TeamExplorerTeamMenu"="{d309f791-903f-11d0-9efc-00a0c911004f};1792"

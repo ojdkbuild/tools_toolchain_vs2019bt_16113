@@ -1,0 +1,147 @@
+[$RootKey$\CLSID\{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}]
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\resedit.dll"
+@="VsResEditPackage Class"
+
+[$RootKey$\CLSID\{74AAD8B3-3294-49CB-BB5D-E9BAB132BFD5}]
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\resedit.dll"
+@="ResPropPages Class"
+
+[$RootKey$\CLSID\{74AAD8B3-3294-49CB-BB5D-E9BAB132BFD5}]
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\resedit.dll"
+@="ResPropPages Class"
+
+[$RootKey$\Editors\{177559E0-D141-11D0-92DF-00A0C9138C45}]
+"CommonPhysicalViewAttributes"=dword:00000003
+"EditorTrustLevel"=dword:00000001
+"DisplayName"="#28120"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="Resource Editor"
+
+[$RootKey$\Editors\{177559E0-D141-11D0-92DF-00A0C9138C45}\Extensions]
+"acm"=dword:00000028
+"ax"=dword:00000028
+"bmp"=dword:00000032
+"com"=dword:00000028
+"cpl"=dword:00000028
+"cur"=dword:00000032
+"dib"=dword:00000032
+"dll"=dword:00000028
+"drv"=dword:00000028
+"exe"=dword:00000028
+"ico"=dword:00000032
+"ime"=dword:00000028
+"jpg"=dword:00000032
+"ocx"=dword:00000028
+"png"=dword:00000032
+"rc"=dword:00000032
+"rct"=dword:00000032
+"res"=dword:00000032
+"scr"=dword:00000028
+"sys"=dword:00000028
+"tsp"=dword:00000028
+"*"=dword:00000001
+
+[$RootKey$\Editors\{543E0C02-8C85-4E43-933A-5EF320E3431F}]
+"CommonPhysicalViewAttributes"=dword:00000003
+"EditorTrustLevel"=dword:00000001
+"DisplayName"="#28123"
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="VC Dialog Editor"
+
+[$RootKey$\Editors\{58442DA9-10DA-4AA9-A2AF-96E4d481379b}]
+"CommonPhysicalViewAttributes"=dword:00000003
+"EditorTrustLevel"=dword:00000001
+"DisplayName"="#28121"
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="VC String Editor"
+
+[$RootKey$\Editors\{EB56D0B5-BEE7-4D0C-8BE6-88A8ED256695}]
+"CommonPhysicalViewAttributes"=dword:00000003
+"EditorTrustLevel"=dword:00000001
+"DisplayName"="#28122"
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="VC Accelerator Editor"
+
+[$RootKey$\KeyBindingTables\{543E0C02-8C85-4E43-933A-5EF320E3431F}]
+"AllowNavKeyBinding"=dword:00000001
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="#28123"
+
+[$RootKey$\KeyBindingTables\{58442DA9-10DA-4AA9-A2AF-96E4d481379b}]
+"AllowNavKeyBinding"=dword:00000001
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="#28121"
+
+[$RootKey$\Editors\{C0BA70ED-069E-412B-9C06-7442E28A11B9}]
+"CommonPhysicalViewAttributes"=dword:00000003
+"EditorTrustLevel"=dword:00000001
+"DisplayName"="#28098"
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="VC Image Editor"
+
+[$RootKey$\KeyBindingTables\{C0BA70ED-069E-412B-9C06-7442E28A11B9}]
+"AllowNavKeyBinding"=dword:00000001
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="#28098"
+
+[$RootKey$\KeyBindingTables\{EB56D0B5-BEE7-4D0C-8BE6-88A8ED256695}]
+"AllowNavKeyBinding"=dword:00000001
+"Package"="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+@="#28122"
+
+[$RootKey$\Menus]
+"{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"=", 989, 15"
+
+[$RootKey$\Packages\{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}]
+"About"="Visual C++ Resource Editor Package"
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\resedit.dll"
+@="Visual C++ Resource Editor Package"
+
+[$RootKey$\Packages\{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}\SatelliteDll]
+"DllName"="reseditui.dll"
+"Path"="$BaseInstallDir$\Common7\IDE\VC\VCPackages"
+
+[$RootKey$\Packages\{5B98C2C0-CD7B-11D0-92DF-00A0C9138C45}\Preload]
+@=dword:00000000
+
+[$RootKey$\Editors\{25834150-CD7E-11D0-92DF-00A0C9138C45}]
+"CommonPhysicalViewAttributes"=dword:00000003
+"EditorTrustLevel"=dword:00000001
+"DisplayName"="#27967"
+"Package"="{5B98C2C0-CD7B-11D0-92DF-00A0C9138C45}"
+@="Binary Editor"
+
+[$RootKey$\Editors\{25834150-CD7E-11D0-92DF-00A0C9138C45}\Extensions]
+"bin"=dword:00000032
+"*"=dword:0000000A
+
+[$RootKey$\Packages\{5B98C2C0-CD7B-11D0-92DF-00A0C9138C45}]
+"About"="Visual Studio Binary Editor Package"
+"InprocServer32"="$BaseInstallDir$\Common7\IDE\VC\vcpackages\bined.dll"
+@="Visual Studio Binary Editor Package"
+
+[$RootKey$\Packages\{5B98C2C0-CD7B-11D0-92DF-00A0C9138C45}\SatelliteDll]
+"DllName"="reseditui.dll"
+"Path"="$BaseInstallDir$\Common7\IDE\VC\VCPackages"
+
+[$RootKey$\Packages\{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}\Toolbox]
+"Default Items"=dword:00000001
+@=dword:00000001
+
+[$RootKey$\Services\{5E2DC842-D128-11D0-92DF-00A0C9138C45}]
+"Name"="VCWin32ResourceService"
+@="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+
+[$RootKey$\Services\{5E2DC842-D128-11D0-92DF-00A0C9138C45}]
+@="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+
+[$RootKey$\ToolWindows\{5B6781C0-E99D-11D0-9954-00A0C91BC8E5}]
+"Name"="VC Color Palette"
+@="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+
+[$RootKey$\ToolWindows\{5B6781C0-E99D-11D0-9954-00A0C91BC8E5}]
+@="{74AAD8B2-3294-49CB-BB5D-E9BAB132BFD5}"
+
+[$RootKey$\ToolWindows\{5B6781C0-E99D-11D0-9954-00A0C91BC8E5}\Visibility]
+"{C0BA70ED-069E-412B-9C06-7442E28A11B9}"=dword:00000000

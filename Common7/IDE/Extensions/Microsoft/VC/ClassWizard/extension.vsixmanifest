@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Vsix Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="Microsoft.VCClassWizard.ClassWizardPackage">
+    <Name>Visual C++ Class Wizard Package Implementation</Name>
+    <Author>Microsoft</Author>
+    <Version>14.0</Version>
+    <Description>Visual C++ Class Wizard Package Implementation</Description>
+    <Locale>1033</Locale>
+    <SupportedProducts>
+      <VisualStudio Version="14.0">
+        <Edition>Premium</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+    <SystemComponent>true</SystemComponent>
+  </Identifier>
+
+  <References />
+
+  <Content>
+    <VsPackage>ClwWizard.pkgdef</VsPackage>
+  </Content>
+</Vsix>

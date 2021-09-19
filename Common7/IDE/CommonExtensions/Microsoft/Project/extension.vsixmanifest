@@ -1,0 +1,31 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.ProjectSystem" Version="16.10.340.1743" Language="en-US" Publisher="Microsoft Corporation" />
+    <DisplayName>Visual Studio Common Project System</DisplayName>
+    <Description>A general and extensible project system.</Description>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <Installation SystemComponent="true" AllUsers="true" Experimental="false">
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.Project.VS.Implementation.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.ProjectSystem.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="codesharingproj.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="msbuildproj.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="SharedProjectFilesPackage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.ProjectSystem.Implementation.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.ProjectSystem.VS.Implementation.dll" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.VisualStudio.ProjectSystem.dll" AssemblyName="Microsoft.VisualStudio.ProjectSystem, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.VisualStudio.ProjectSystem.VS.dll" AssemblyName="Microsoft.VisualStudio.ProjectSystem.VS, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

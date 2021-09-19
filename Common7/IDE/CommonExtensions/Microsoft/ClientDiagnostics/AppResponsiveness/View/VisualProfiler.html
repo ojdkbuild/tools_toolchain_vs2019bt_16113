@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <title>UI Responsiveness</title>
+    <link id="controls.css" rel="stylesheet" href="DiagnosticsCommon/controls/controls.css" type="text/css" data-plugin-theme="true" />
+    <link id="listControl.css" rel="stylesheet" href="DiagnosticsCommon/listControl/listControl.css" type="text/css" data-plugin-theme="true" />
+    <link id="TabControl.css" rel="stylesheet" href="DiagnosticsCommon/TabControl.css" type="text/css" data-plugin-theme="true" />
+    <link id="menuControl.css" rel="stylesheet" href="PerfToolsCommon/controls/menuControl.css" type="text/css" data-plugin-theme="true" />
+
+    <link id="ruler.css" rel="stylesheet" href="CSS/hubGraphs/ruler.css" type="text/css" data-plugin-theme="true" />
+    <link id="StackedBarChart.css" rel="stylesheet" href="CSS/hubGraphs/StackedBarChart.css" type="text/css" data-plugin-theme="true" />
+
+    <link id="SourceInfoTooltip.css" rel="stylesheet" href="PerfToolsCommon/controls/SourceInfoTooltip.css" type="text/css" data-plugin-theme="true" />
+    <link id="TokenExtractor.css" rel="stylesheet" href="PerfToolsCommon/TokenExtractor.css" type="text/css" data-plugin-theme="true" />
+
+    <link id="VisualProfiler.css" rel="stylesheet" href="VisualProfiler.css" type="text/css" data-plugin-theme="true" />
+    <link id="DataCategoryStyles.css" rel="stylesheet" href="DataCategoryStyles.css" type="text/css" />
+    <link id="Divider.css" rel="stylesheet" href="CSS/controls/Divider.css" type="text/css" data-plugin-theme="true" />
+
+    <script type="text/javascript" src="DiagnosticsCommon/isDebugBuild.js"></script>
+    <script type="text/javascript" src="PerfToolsCommon/plugin.js"></script>
+    <script type="text/javascript" src="PerfToolsCommon/DiagnosticsHub.js"></script>
+    <script type="text/javascript" src="PerfToolsCommon/controls/hubControls.js"></script>
+    <script type="text/javascript" src="DiagnosticsCommon/Bpt.Diagnostics.CommonMerged.js"></script>
+    <script type="text/javascript" src="PerfToolsCommon/Bpt.Diagnostics.PerfTools.CommonMerged.js"></script>
+
+    <script type="text/javascript" src="VisualProfilerMerged.js"></script>
+
+    <script id="errorViewTemplate" type="text/html">
+        <div class="errorGrid">
+            <div class="errorFrown">:(</div>
+            <div id="errorMessage" class="errorMessage"></div>
+        </div>
+    </script>
+    <script id="timelineViewTemplate" type="text/html">
+        <div id="timelineViewGroup" class="timelineViewGroup">
+            <div id="timelineLabel" class="timelineLabel"></div>
+            <div id="sortFilterSection" class="sortFilterSection"></div>
+            <div id="dataProcessingProgressDiv" class="dataProcessingProgressDiv">
+                <div class="progressBarDiv">
+                    <progress />
+                </div>
+            </div>
+            <div id="timelineViewAndDetails" class="timelineViewAndDetails">
+                <div id="timelineEventHeaderLabel" class="timelineEventHeaderLabel"></div>
+                <div id="timelineEventHeaderDivider" class="timelineEventHeaderDivider"></div>
+                <div id="timelineRuler" class="timelineRuler"></div>
+                <div id="timelineView" class="timelineView"></div>
+                <div id="timelineDetailsHeader" class="timelineDetailsHeader">
+                    <div id="eventDetailsIndicator" class="eventDetailsIndicator"></div>
+                    <div id="eventDetailsTitle" class="eventDetailsTitle"></div>
+                </div>
+                <div id="timelineDetailsPaneContainer" class="timelineDetailsPaneContainer"></div>
+            </div>
+        </div>
+    </script>
+    <script id="eventDetailsTemplate" type="text/html">
+        <div class="eventDetails">
+            <div id="detailHeaderSeparator" class="detailSeparator"></div>
+            <div class="eventDetailsTable">
+                <div id="durationIncRow" class="eventRow BPT-hidden">
+                    <div id="durationLabelInc" class="eventCell name"></div>
+                    <div id="durationValueInc" class="eventCell value"></div>
+                </div>
+                <div class="eventRow">
+                    <div id="durationLabelExc" class="eventCell name"></div>
+                    <div id="durationValueExc" class="eventCell value"></div>
+                </div>
+                <div class="eventRow">
+                    <div id="startTimeLabel" class="eventCell name"></div>
+                    <div id="startTimeValue" class="eventCell value"></div>
+                </div>
+                <div id="threadContextRow" class="eventRow BPT-hidden">
+                    <div id="threadContextLabel" class="eventCell name"></div>
+                    <div id="threadContextValue" class="eventCell value"></div>
+                </div>
+            </div>
+            <div id="detailSeparator" class="detailSeparator"></div>
+            <div id="additionalDetails" class="eventDetailsTable"></div>
+            <div id="eventDetailsDescription" class="eventDetailsDescription BPT-hidden"></div>
+            <div id="inclusiveTimeDetailSeparator" class="detailSeparator BPT-hidden"></div>
+            <div id="inclusiveTimeBreakDownDetails" class="BPT-hidden"></div>
+            <div id="imagePreviewSeparator" class="detailSeparator BPT-hidden"></div>
+            <div id="imagePreviewContainer" class="imagePreviewContainer BPT-hidden">
+                <div id="imagePreviewHeader"></div>
+                <img id="imagePreview" class="imagePreview"></img>
+            </div>
+        </div>
+    </script>
+    <script id="dividerTemplate" type="text/html">
+        <div id="dividerBackdrop" class="dividerBackdrop"></div>
+        <div id="divider" class="divider"></div>
+    </script>
+    <script id="eventDataTemplate" type="text/html">
+        <div class="eventDataTemplate">
+            <div id="eventDataTemplateNameCell" class="eventDataTemplateNameCell">
+                <div id="threadIndicator" class="eventDataTemplateThreadIndicator"></div>
+                <div id="expander"></div>
+                <div id="eventName" class="eventDataTemplateName"></div>
+            </div>
+            <div id="eventData" class="eventDataTemplateDataCell">
+                <div id="bar" class="eventBar"></div>
+                <div id="durationText" class="durationText"></div>
+                <div id="hintText" class="hintText"></div>
+            </div>
+        </div>
+    </script>
+    <script id="eventDataTooltip" type="text/html">
+        <div id="tooltip">
+            <div id="durationInc"></div>
+            <div id="durationExc"></div>
+            <div id="startTime"></div>
+        </div>
+    </script>
+    <script id="swimLanesView" type="text/html">
+        <div class="swimLanesView">
+            <div id="graphRulerViewContainer" class="graphRulerViewContainer">
+                <div id="graphRulerView"></div>
+            </div>
+            <div id="swimlanesContainer" class="swimlanesContainer"></div>
+        </div>
+    </script>
+    <script id="mainViewTemplateVS" type="text/html">
+        <div id="mainView" class="mainView">
+            <div id="dataViewContainer" class="dataViewContainer">
+                <div class="warningViewContainer" tabindex="-1">
+                    <div id="warningView" class="warningView">
+                        <div id="warningMessage" class="warningMessage"></div>
+                    </div>
+                </div>
+
+                <div id="detailedViewsContainer" class="detailedViewsContainer">
+                    <div id="timelineViewContainer" class="timelineViewContainer"></div>
+                </div>
+            </div>
+        </div>
+    </script>
+</head>
+
+<body tabindex="-1">
+    <div id="mainContainer"></div>
+</body>
+
+</html>

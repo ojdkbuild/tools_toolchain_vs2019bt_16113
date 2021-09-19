@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="1146"/>
+    <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="1147"/>
+    <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="600"/>
+    <TemplateID>Microsoft.VisualC.Item.OpenFolder.Class</TemplateID>
+    <ProjectType>OpenFolderVC</ProjectType>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Class</DefaultName>
+    <LocationField>Disabled</LocationField>
+  </TemplateData>
+  <TemplateContent/>
+  <WizardExtension>
+    <Assembly>Microsoft.VC.Wizards, Version=16.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.VC.Wizards.AddClass.OpenFolderAddClassWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

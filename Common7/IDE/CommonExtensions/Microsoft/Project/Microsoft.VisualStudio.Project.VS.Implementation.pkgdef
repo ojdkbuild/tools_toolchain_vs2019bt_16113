@@ -1,0 +1,92 @@
+; The commented out lines don't work for builds outside Razzle
+;#include "versions.h"
+
+[$RootKey$\Packages\{3347BEE8-D7A1-4082-95E4-38A439553CC2}]
+@="Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectPackage"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectPackage"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.VS.Implementation.dll"
+
+[$RootKey$\CLSID\{83046B3F-8984-444B-A5D2-8029DEE2DB70}]
+;"Assembly"=MICROSOFT_VISUALSTUDIO_PROJECTSYSTEM_VS_IMPLEMENTATION_ASSEMBLY_IDENTITY_REF_A
+"Assembly"="Microsoft.VisualStudio.ProjectSystem.VS.Implementation, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Build.VsMSBuildTaskFreeThreadedFileManager"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\BindingPaths\{3B48163E-DCB9-4403-8828-A94599D27BBA}]
+"$ShellFolder$Common7\IDE\CommonExtensions\Microsoft\Project"=""
+
+; The following keys have random GUIDs that don't have to match anything, but must be unique.
+; Every assembly not in the VS probing path must be defined here so that the CLR can find the assembly at runtime.
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{0FAC6242-7187-45BE-9D8C-2FB50CE10B5D}]
+"Name"="Microsoft.VisualStudio.ProjectSystem.Implementation"
+"PublicKeyToken"="b03f5f7f11d50a3a"
+"Culture"="neutral"
+"Version"="16.0.0.0"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.Implementation.dll"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{3E67564F-09A4-4DA8-A9BA-4404D953473D}]
+"Name"="Microsoft.VisualStudio.ProjectSystem.VS.Implementation"
+"PublicKeyToken"="b03f5f7f11d50a3a"
+"Culture"="neutral"
+"Version"="16.0.0.0"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.VS.Implementation.dll"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{311DADC8-9AA2-4164-89A6-922A6A3D8A95}]
+"name"="Microsoft.VisualStudio.ProjectSystem.Implementation"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.Implementation.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"oldVersion"="15.0.0.0"
+"newVersion"="16.0.0.0"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{DA5C651C-002B-47B8-B350-501288646178}]
+"name"="Microsoft.VisualStudio.ProjectSystem.VS.Implementation"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.VS.Implementation.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"oldVersion"="15.0.0.0"
+"newVersion"="16.0.0.0"
+
+// Common project system prefetch factory registration
+[$RootKey$\ProjectPrefetch\{3998970A-AEE1-4216-A54F-0A99D20A1FAB}]
+"Package"="{3347BEE8-D7A1-4082-95E4-38A439553CC2}"
+
+[$RootKey$\Menus]
+"{3347BEE8-D7A1-4082-95E4-38A439553CC2}"=", Menus.ctmenu, 2"
+
+// Settings that roam -------------------------------------------------------------------------
+[$RootKey$\Settings\SolutionNavigator.DoubleClickOpenProjectFile]
+"IsRoamed"=dword:00000001
+"IsShared"=dword:00000001
+"IsStoredOnDisk"=dword:00000000
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.ProjectSystem.ItemPropertiesService]
+@="{8558A0E2-ED27-44C3-A47D-C696168CE9C1}"
+; AllowTransitiveGuestClients = false
+"allowguestclients"=dword:00000000
+; ServiceAudience = AllClientsIncludingGuests
+"Audience"=dword:00000503
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Internal.ProjectFileInvisibleEditorTracker\0.1]
+@="{7B8ED703-689E-48CE-A1B1-E61951E25F15}"
+; AllowTransitiveGuestClients = false
+"allowguestclients"=dword:00000000
+; ServiceAudience = AllClientsIncludingGuests
+"Audience"=dword:00000503
+
+[$RootKey$\Editors\{990036EB-F67A-4B8A-93D4-4663DB2A1033}]
+@="Project Properties Editor"
+"CommonPhysicalViewAttributes"=dword:00000000
+"DisplayName"="#200"
+"Package"="{3347BEE8-D7A1-4082-95E4-38A439553CC2}"
+;"ExcludeInFileExtnMapping"=dword:00000001
+"EditorTrustLevel"=dword:00000001
+"DeferUntilIntellisenseIsReady"=dword:00000000
+[$RootKey$\Editors\{990036EB-F67A-4B8A-93D4-4663DB2A1033}\LogicalViews]
+"{7651A700-06E5-11D1-8EBD-00A0C90F26EA}"=""
+"{7651A701-06E5-11D1-8EBD-00A0C90F26EA}"=""
+"{7651A702-06E5-11D1-8EBD-00A0C90F26EA}"=""
+"{7651A703-06E5-11D1-8EBD-00A0C90F26EA}"=""

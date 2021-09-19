@@ -1,0 +1,11 @@
+{
+  "host": "desktopClr.x86",
+  "hostId": "VSDetouredHost",
+  "entryPoint":
+  {
+    "assemblyPath": "Microsoft.VisualStudio.ExtensionManager.ServiceModule.dll",
+    "fullClassName": "Microsoft.VisualStudio.ExtensionManager.ServiceModule.ExtensionManagerServiceModule",
+    "appBasePath": "%VSAPPIDDIR%",
+    "configPath": "%PkgDefApplicationConfigFile%"
+  }
+}

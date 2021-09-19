@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2008" />
+    <Description Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="2009" />
+    <Icon Package="{976cf7d5-2a72-47a3-9e46-5b7c3db95f17}" ID="503" />
+    <ProjectType>VC</ProjectType>
+    <SortOrder>120</SortOrder>
+    <TemplateID>Microsoft.VisualC.Project.MakeFile</TemplateID>
+    <CreateNewFolder>false</CreateNewFolder>
+    <DefaultName>Project</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <CreateInPlace>true</CreateInPlace>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="CustomWizard" IgnoreProjectParameter="VCWizard"/>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Microsoft.VC.Wizards, Version=16.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.VC.Wizards.MakeFile.Wizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

@@ -1,0 +1,12 @@
+﻿[$RootKey$\Packages\{10ca1b00-c23a-4b59-bce7-512501f4e68a}]
+@="CommandsClientPackage"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.Commands.Client.Packaging.CommandsClientPackage"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.Commands.dll"
+"AllowsBackgroundLoad"=dword:00000001
+
+[$RootKey$\Services\{ca11ab1e-7535-43b6-84f9-f639b7445a63}]
+@="{10ca1b00-c23a-4b59-bce7-512501f4e68a}"
+"Name"="SVsRemotableCommandInteropService"
+"IsAsyncQueryable"=dword:00000001
+"IsCacheable"=dword:00000000

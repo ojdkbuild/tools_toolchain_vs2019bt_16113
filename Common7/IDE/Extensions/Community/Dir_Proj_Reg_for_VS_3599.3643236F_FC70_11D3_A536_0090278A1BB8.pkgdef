@@ -1,0 +1,18 @@
+[$RootKey$\Menus]
+"{DE353D20-56EB-11D2-BF19-00C04F79EFBC}"=",105,1"
+
+[$RootKey$\Packages\{DE353D20-56EB-11D2-BF19-00C04F79EFBC}]
+@="Visual Studio Project Persistence Package"
+"InprocServer32"="$ShellFolder$\Common7\Packages\dirprj.dll"
+
+[$RootKey$\Packages\{DE353D20-56EB-11D2-BF19-00C04F79EFBC}\SatelliteDll]
+"DllName"="dirprjui.dll"
+"Path"="$ShellFolder$\Common7\Packages\"
+
+[$RootKey$\Services\{B24AB8EB-652B-11D2-BF1A-00C04F79EFBC}]
+@="{DE353D20-56EB-11D2-BF19-00C04F79EFBC}"
+"Name"="DirPrjFpService"
+
+[$RootKey$\Services\{DE353D22-56EB-11D2-BF19-00C04F79EFBC}]
+@="{DE353D20-56EB-11D2-BF19-00C04F79EFBC}"
+"Name"="DirPrjService"

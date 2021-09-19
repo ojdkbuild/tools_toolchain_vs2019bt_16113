@@ -1,0 +1,50 @@
+﻿.sourceInfoTooltip {
+    -ms-grid-columns: auto 5px auto;
+    -ms-grid-rows: 4;
+    display: -ms-grid;
+    width: 237px;
+}
+
+    .sourceInfoTooltip .sourceInfoNameLabel {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+
+    .sourceInfoTooltip .sourceInfoName {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+        word-break: break-all;
+    }
+
+    .sourceInfoTooltip .sourceInfoFileLabel {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+    }
+
+    .sourceInfoTooltip .sourceInfoFile {
+        -ms-grid-column: 3;
+        -ms-grid-row: 2;
+        word-break: break-all;
+    }
+
+    .sourceInfoTooltip .sourceInfoLineLabel {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+
+    .sourceInfoTooltip .sourceInfoLine {
+        -ms-grid-column: 3;
+        -ms-grid-row: 3;
+        word-break: break-all;
+    }
+
+    .sourceInfoTooltip .sourceInfoColumnLabel {
+        -ms-grid-column: 1;
+        -ms-grid-row: 4;
+    }
+
+    .sourceInfoTooltip .sourceInfoColumn {
+        -ms-grid-column: 3;
+        -ms-grid-row: 4;
+        word-break: break-all;
+    }

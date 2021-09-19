@@ -1,0 +1,19 @@
+﻿; Register the locations of our reference assemblies so the VS assembly resolver can find them
+
+; Redirect all requests for the host interfaces library to the current version
+[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{0753B6BA-84F8-4D57-A0E2-6AC42F495654}]
+"name"="Microsoft.VisualStudio.Debugger.DebugAdapterHost.Interfaces"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"oldVersion"="1.0.0.0-1.6.0.0"
+"newVersion"="1.6.0.0"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Debugger.DebugAdapterHost.Interfaces.dll"
+
+; Redirect all requests for the protocol library to the current version
+[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{27A3EDBF-8027-45B3-A304-ABA1BD567607}]
+"name"="Microsoft.VisualStudio.Shared.VSCodeDebugProtocol"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"oldVersion"="15.0.0.0-16.9.0.0"
+"newVersion"="16.9.0.0"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Shared.VSCodeDebugProtocol.dll"

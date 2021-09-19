@@ -1,0 +1,6 @@
+VSWIZARD 7.0
+Wizard=VsWizard.VsWizardEngine.16.0
+Param="WIZARD_NAME = XMLSchema"
+Param="RELATIVE_PATH = VCWizards\CodeWiz\.NET"
+Param="WIZARD_UI = FALSE"
+Param="WIZARD_ID = 39"

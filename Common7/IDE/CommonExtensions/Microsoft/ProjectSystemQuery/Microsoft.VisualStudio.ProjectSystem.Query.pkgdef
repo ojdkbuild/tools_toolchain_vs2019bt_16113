@@ -1,0 +1,40 @@
+﻿
+[$RootKey$\Packages\{84977506-D75D-4895-A0B3-C709C7141C8E}]
+@="Microsoft.VisualStudio.ProjectSystem.Query.VS.ProjectSystemQueryServicePackage"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.ProjectSystem.Query.VS.ProjectSystemQueryServicePackage"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.Query.VS.dll"
+
+[$RootKey$\BindingPaths\{1DF825C7-66C2-42E1-980C-7512C1B04181}]
+"$PackageFolder$"=""
+
+[$RootKey$\Services\{8FA4E6C9-88D7-4504-A71F-CCAD6412A63F}]
+@="{84977506-D75D-4895-A0B3-C709C7141C8E}"
+"Name"="IProjectSystemQueryService"
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.ProjectSystem.Query.Remoting.QueryExecutionService\0.1]
+@="{84977506-D75D-4895-A0B3-C709C7141C8E}"
+; ServiceAudience = AllClientsIncludingGuests
+"Audience"=dword:00000503
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.ProjectSystem.Query.Remoting.QueryExecutionService\0.2]
+@="{84977506-D75D-4895-A0B3-C709C7141C8E}"
+; ServiceAudience = AllClientsIncludingGuests
+"Audience"=dword:00000503
+
+; The following keys have random GUIDs that don't have to match anything, but must be unique.
+; Every assembly not in the VS probing path must be defined here so that the CLR can find the assembly at runtime.
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{12800038-B91B-4192-A51F-32D94C6BB94D}]
+"Name"="Microsoft.VisualStudio.ProjectSystem.Query"
+"PublicKeyToken"="b03f5f7f11d50a3a"
+"Culture"="neutral"
+"Version"="16.0.0.0"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.Query.dll"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{3BD1E65B-525F-4691-9563-C115D67DD151}]
+"Name"="Microsoft.VisualStudio.ProjectSystem.Query.VS"
+"PublicKeyToken"="b03f5f7f11d50a3a"
+"Culture"="neutral"
+"Version"="16.0.0.0"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.ProjectSystem.Query.VS.dll"

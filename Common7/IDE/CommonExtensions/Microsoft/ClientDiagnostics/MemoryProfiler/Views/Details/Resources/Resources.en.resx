@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+    <comment>Filter Caption</comment>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Find</value>
+    <comment>Find Caption</comment>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Count</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="TotalCount" xml:space="preserve">
+    <value>Total Count</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="CountDiff" xml:space="preserve">
+    <value>Count Diff.</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="TotalCountDiff" xml:space="preserve">
+    <value>Total Count Diff.</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size (Bytes)</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="SizeDiff" xml:space="preserve">
+    <value>Size Diff (Bytes)</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="TotalSize" xml:space="preserve">
+    <value>Total Size (Bytes)</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="TotalSizeDiff" xml:space="preserve">
+    <value>Total Size Diff. (Bytes)</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>Module</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="ModuleTooltip" xml:space="preserve">
+    <value>The module(s) where the stack frame occurred</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="Identifier" xml:space="preserve">
+    <value>Identifier</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="IdentifierTooltip" xml:space="preserve">
+    <value>The identifiers of the allocation</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="SizeTooltip" xml:space="preserve">
+    <value>Size of the objects in memory</value>
+    <comment>Tooltip for Column Size in managed view</comment>
+  </data>
+  <data name="OutstandingAllocationsSizeTooltip" xml:space="preserve">
+    <value>The size of outstanding allocations</value>
+    <comment>Tooltip for Column Size in native view</comment>
+  </data>
+  <data name="TotalAllocationSizeTooltip" xml:space="preserve">
+    <value>The sum of the size of outstanding and freed allocations</value>
+    <comment>Tooltip for Column Total Size in native view</comment>
+  </data>
+  <data name="ViewSourceTooltipIdentifier" xml:space="preserve">
+    <value>Identifier</value>
+    <comment>Identifier label for view source item tooltip</comment>
+  </data>
+  <data name="ViewSourceTooltipFilename" xml:space="preserve">
+    <value>File</value>
+    <comment>Filename label for view source item tooltip</comment>
+  </data>
+  <data name="ViewSourceTooltipLine" xml:space="preserve">
+    <value>Line</value>
+    <comment>Line label for view source item tooltip</comment>
+  </data>
+  <data name="ViewSourceTooltipCol" xml:space="preserve">
+    <value>Column</value>
+    <comment>Column label for view source item tooltip</comment>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Object Type</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="Instance" xml:space="preserve">
+    <value>Instance</value>
+    <comment>Objects view instance column header</comment>
+  </data>
+  <data name="LoadRowDataText" xml:space="preserve">
+    <value>Retrieving...</value>
+  </data>
+  <data name="ContextMenuAddWatch" xml:space="preserve">
+    <value>Add Watch</value>
+    <comment>Context Menu Label</comment>
+  </data>
+  <data name="ContextMenuCopy" xml:space="preserve">
+    <value>Copy</value>
+    <comment>Context Menu Label</comment>
+  </data>
+  <data name="ContextMenuViewSource" xml:space="preserve">
+    <value>View Source</value>
+    <comment>Context Menu Label</comment>
+  </data>
+  <data name="ContextMenuViewSourceError" xml:space="preserve">
+    <value>Cannot navigate to source</value>
+    <comment>Navigation error</comment>
+  </data>
+  <data name="SelectDefault" xml:space="preserve">
+    <value>Select baseline</value>
+    <comment>Drop Down Initial Default</comment>
+  </data>
+  <data name="SelectDefaultNone" xml:space="preserve">
+    <value>&lt;None&gt;</value>
+    <comment>Drop Down - return to the normal view, i.e., close diff view</comment>
+  </data>
+  <data name="GridTrimLimit" xml:space="preserve">
+    <value>[Only {0} rows can be shown]</value>
+    <comment>The last row in a trimmed view</comment>
+  </data>
+  <data name="ObjectNotAvailable" xml:space="preserve">
+    <value>Objects of this type are not present in the current snapshot.</value>
+    <comment>Text on Expand</comment>
+  </data>
+  <data name="RefGraphHeader" xml:space="preserve">
+    <value>Reference Graph</value>
+    <comment>Graph view header</comment>
+  </data>
+  <data name="RefGraphNoData" xml:space="preserve">
+    <value>Select a type or instance to view its reference graph.</value>
+    <comment>The message is displaying by the graph view when no object is selected</comment>
+  </data>
+  <data name="AllocationListHeader" xml:space="preserve">
+    <value>Allocations</value>
+    <comment>The title of the allocation list view</comment>
+  </data>
+  <data name="AllocationListNoData" xml:space="preserve">
+    <value>Select an identifier to show its allocations.</value>
+    <comment>The message is displaying by the graph view when no object is selected</comment>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AddressTooltip" xml:space="preserve">
+    <value>Address of allocation</value>
+  </data>
+  <data name="SelectBrowse" xml:space="preserve">
+    <value>Browse...</value>
+    <comment>Drop Down Browse Option Text</comment>
+  </data>
+  <data name="TypeRefGraphRetainedCountColumn" xml:space="preserve">
+    <value>Reference Count</value>
+    <comment>The retained count column header</comment>
+  </data>
+  <data name="TypeRefGraphRetainedCountDiffColumn" xml:space="preserve">
+    <value>Reference Count Diff.</value>
+    <comment>The retained count difference column header</comment>
+  </data>
+  <data name="SamplingEnabledTooltip" xml:space="preserve">
+    <value>Due to the large number of objects in the target process a representative sample of objects were evaluated.  Counts and sizes are the total numbers in the target process, but reference counts reflect an accurate percentage of the total references.</value>
+    <comment>The tooltip we show when the data is sampled</comment>
+  </data>
+  <data name="RetainedSize" xml:space="preserve">
+    <value>Inclusive Size (Bytes)</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="RetainedSizeDiff" xml:space="preserve">
+    <value>Inclusive Size Diff. (Bytes)</value>
+    <comment>Column Header</comment>
+  </data>
+  <data name="CountDiffTooltip" xml:space="preserve">
+    <value>Count difference between the current snapshot and the baseline</value>
+    <comment>Tooltip for Column Count Diff.</comment>
+  </data>
+  <data name="OutstandingCountDiffTooltip" xml:space="preserve">
+    <value>The change in outstanding count between two snapshots</value>
+    <comment>Tooltip for Column Outstanding Count Diff</comment>
+  </data>
+  <data name="CountTooltip" xml:space="preserve">
+    <value>Number of instances of the type</value>
+    <comment>Tooltip for Column Count in managed view</comment>
+  </data>
+  <data name="OutstandingAllocationsCountTooltip" xml:space="preserve">
+    <value>The number of outstanding allocations</value>
+    <comment>Tooltip for Column Count in native view</comment>
+  </data>
+  <data name="TotalAllocationCountTooltip" xml:space="preserve">
+    <value>The sum of count of outstanding and freed allocations</value>
+    <comment>Tooltip for Column Total Count in native view</comment>
+  </data>
+  <data name="RetainedSizeDiffTooltip" xml:space="preserve">
+    <value>Inclusive size difference between the current snapshot and the baseline</value>
+    <comment>Tooltip for Column Inclusive Size Diff.</comment>
+  </data>
+  <data name="TotalAllocationSizeDiffTooltip" xml:space="preserve">
+    <value>The change in total size between two snapshots</value>
+    <comment>Tooltip for Column Total Size Diff Native view.</comment>
+  </data>
+  <data name="OutstandingSizeDiffTooltip" xml:space="preserve">
+    <value>The change in outstanding size between two snapshots</value>
+    <comment>Tooltip for Column Outstanding Size Diff.</comment>
+  </data>
+  <data name="RetainedSizeTooltip" xml:space="preserve">
+    <value>Size of the objects plus the size of all child objects</value>
+    <comment>Tooltip for Column Inclusive Size</comment>
+  </data>
+  <data name="TotalSizeDiffTooltip" xml:space="preserve">
+    <value>Size difference between the current snapshot and the baseline</value>
+    <comment>Tooltip for Column Size Diff.</comment>
+  </data>
+  <data name="TypeRefGraphRetainedCountColumnTooltip" xml:space="preserve">
+    <value>The number of references from the parent object types to the child object types</value>
+    <comment>Tooltip for Column Reference Count</comment>
+  </data>
+  <data name="TypeRefGraphRetainedCountDiffColumnTooltip" xml:space="preserve">
+    <value>Reference count difference between the current snapshot and the baseline</value>
+    <comment>Tooltip for Column Reference Count Diff.</comment>
+  </data>
+  <data name="TotalAllocationCountDiffTooltip" xml:space="preserve">
+    <value>The change in total count between two snapshots</value>
+    <comment>Tooltip for Column Total Count Diff Native view.</comment>
+  </data>
+  <data name="TypeTooltip" xml:space="preserve">
+    <value>The full type name of objects</value>
+    <comment>Tooltip for Column Type</comment>
+  </data>
+  <data name="InstanceTooltip" xml:space="preserve">
+    <value>Instance</value>
+    <comment>Objects view instance tooltip</comment>
+  </data>
+  <data name="ManagedMemoryLabelWithProcessName" xml:space="preserve">
+    <value>Managed Memory ({0})</value>
+    <comment>MMA caption - Managed Memory (process name)</comment>
+  </data>
+  <data name="ReferencingGraph" xml:space="preserve">
+    <value>Paths to Root</value>
+    <comment>Paths to root from the current item</comment>
+  </data>
+  <data name="ReferencedGraphLabelTypesView" xml:space="preserve">
+    <value>Referenced Types</value>
+    <comment>Types referenced by the current one</comment>
+  </data>
+  <data name="ReferencedGraphLabelObjectView" xml:space="preserve">
+    <value>Referenced Objects</value>
+    <comment>Objects referenced by the current one</comment>
+  </data>
+  <data name="SummaryViewSize" xml:space="preserve">
+    <value>{0} bytes</value>
+    <comment>MMA caption - (total size) bytes</comment>
+  </data>
+  <data name="SummaryViewCount" xml:space="preserve">
+    <value>{0} objects</value>
+    <comment>MMA caption - (total count) objects</comment>
+  </data>
+  <data name="SummaryViewBaseline" xml:space="preserve">
+    <value>Baseline</value>
+    <comment>Shown instead of diff numbers for the first snapshot</comment>
+  </data>
+  <data name="SummaryViewButton" xml:space="preserve">
+    <value>Take Snapshot</value>
+    <comment>Text that appears on the take snapshot button</comment>
+  </data>
+  <data name="ManagedMemoryLabel" xml:space="preserve">
+    <value>Managed Memory</value>
+    <comment>MMA Caption - Managed Memory</comment>
+  </data>
+  <data name="ViewSettingsMenuCaption" xml:space="preserve">
+    <value>View Settings</value>
+    <comment>View Setting menu caption element</comment>
+  </data>
+  <data name="ViewSettingsJustMyCodeMenuItem" xml:space="preserve">
+    <value>Just My Code</value>
+    <comment>Just My Code menu item in view settings menu</comment>
+  </data>
+  <data name="ViewSettingsCollapseSmallObjectsMenuItem" xml:space="preserve">
+    <value>Collapse Small Objects</value>
+    <comment>Collapse Small Objects menu item in view settings menu</comment>
+  </data>
+  <data name="NotificationBarJMCEnabled" xml:space="preserve">
+    <value>Just My Code</value>
+    <comment>Notification bar displays this message when JMC is on</comment>
+  </data>
+  <data name="NotificationBarCollapseSmallObjectsEnabled" xml:space="preserve">
+    <value>Collapse Small Objects</value>
+    <comment>Notification bar displays this message when Collapse Small Objects is on</comment>
+  </data>
+  <data name="NotificationBarMessage" xml:space="preserve">
+    <value>View Settings filters are applied ({0})</value>
+    <comment>Notification bar message</comment>
+  </data>
+  <data name="ReferencesViewNoViewMessage" xml:space="preserve">
+    <value>View settings are not applied in the referenced objects view</value>
+    <comment>Tooltip message that appears in the reference objects view when JMC or collapse small objects is on</comment>
+  </data>
+  <data name="CompareToCaption" xml:space="preserve">
+    <value>Compare to:</value>
+    <comment>Compare to Label</comment>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Value</value>
+    <comment>Objects view value column header</comment>
+  </data>
+  <data name="ValueTooltip" xml:space="preserve">
+    <value>Object value</value>
+    <comment>Objects view value tooltip</comment>
+  </data>
+  <data name="InstancesOfHeader" xml:space="preserve">
+    <value>Instances of {0}</value>
+    <comment>Instances of type header</comment>
+  </data>
+  <data name="BreadCrumbType" xml:space="preserve">
+    <value>Type</value>
+    <comment>"Type" in the breadcrumb</comment>
+  </data>
+  <data name="ViewSettingsShowTransientBytesMenuItem" xml:space="preserve">
+    <value>Include Freed Allocations</value>
+    <comment>Show Transient Bytes menu item in view settings menu</comment>
+  </data>
+  <data name="managedHeap" xml:space="preserve">
+    <value>Managed Heap</value>
+    <comment>Managed heap view tab title</comment>
+  </data>
+  <data name="managedHeapTooltip" xml:space="preserve">
+    <value>Managed heap data</value>
+    <comment>Managed heap view tab title tooltip</comment>
+  </data>
+  <data name="nativeHeap" xml:space="preserve">
+    <value>Native Heap</value>
+    <comment>Native heap view tab title</comment>
+  </data>
+  <data name="nativeHeapTooltip" xml:space="preserve">
+    <value>Heap data</value>
+    <comment>Native heap view tab title tooltip</comment>
+  </data>
+  <data name="ProcessingSnapshot" xml:space="preserve">
+    <value>Processing snapshot...</value>
+  </data>
+  <data name="ErrorWhileProcessing" xml:space="preserve">
+    <value>An error occurred while processing the snapshot:</value>
+  </data>
+  <data name="ManagedSnapshotError" xml:space="preserve">
+    <value>Failed to process managed heap. </value>
+    <comment>Space after period needs to retained.</comment>
+  </data>
+  <data name="FilterTooltip" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="NotificationBarShowTransientBytesEnabled" xml:space="preserve">
+    <value>Include Freed Allocations</value>
+    <comment>Notification bar displays this message when Show Transient Bytes is on</comment>
+  </data>
+  <data name="SettingsMenuButtonTooltipText" xml:space="preserve">
+    <value>Change settings</value>
+  </data>
+  <data name="AggregationToggleBottom" xml:space="preserve">
+    <value>Callee</value>
+  </data>
+  <data name="AggregationToggleTabLabel" xml:space="preserve">
+    <value>Aggregate call stack by:</value>
+    <comment>NativeHeap View Aggregation Direction Toggle label</comment>
+  </data>
+  <data name="AggregationToggleTop" xml:space="preserve">
+    <value>Caller</value>
+  </data>
+  <data name="NativeFindNoResultsString" xml:space="preserve">
+    <value>No results are available</value>
+  </data>
+  <data name="PathsToRootLabelObjectViewTooltip" xml:space="preserve">
+    <value>The set of objects and its references that is preventing the selected instance from being garbage collected</value>
+    <comment>Tooltip for the Paths to Root label when an object is selected</comment>
+  </data>
+  <data name="PathsToRootLabelTypesViewTooltip" xml:space="preserve">
+    <value>The set of types and its references that is preventing the selected type from being garbage collected</value>
+    <comment>Tooltip for the Paths to Root label when a type is selected</comment>
+  </data>
+  <data name="ReferencedGraphLabelObjectViewTooltip" xml:space="preserve">
+    <value>The set of objects that is referenced by the selected instance</value>
+    <comment>Tooltip for the Referenced Objects label</comment>
+  </data>
+  <data name="ReferencedGraphLabelTypesViewTooltip" xml:space="preserve">
+    <value>The set of types that is referenced  by the selected type</value>
+    <comment>Tooltip for the Referenced Types label</comment>
+  </data>
+  <data name="AllocationListHeaderTooltip" xml:space="preserve">
+    <value>The set of allocations that can be attributed to the selected frame</value>
+    <comment>The allocation list header tooltip</comment>
+  </data>
+  <data name="CallersToggleButtonTooltip" xml:space="preserve">
+    <value>Aggregated by the Top frame in the stack</value>
+  </data>
+  <data name="CalleesToggleButtonTooltip" xml:space="preserve">
+    <value>Aggregated by the Bottom frame in the stack</value>
+  </data>
+  <data name="RowViewSourceAriaLabelExtension" xml:space="preserve">
+    <value>, F12 to view source</value>
+  </data>
+  <data name="SymbolsLoaded" xml:space="preserve">
+    <value>Symbols loaded for {0}</value>
+    <comment>placeholder 0 is replaced with the binary name</comment>
+  </data>
+  <data name="SymbolsNotFound" xml:space="preserve">
+    <value>Matching symbols not found for {0}</value>
+    <comment>placeholder 0 is replaced with the binary name</comment>
+  </data>
+  <data name="ViewHeapContents" xml:space="preserve">
+    <value>View Heap Contents</value>
+    <comment>View heap contents on context menu</comment>
+  </data>
+  <data name="ViewHeapContentToolTip" xml:space="preserve">
+    <value>Opens up a new page to view allocations, and allocation content, by type.</value>
+    <comment>Opens up a new page to view allocations based on types and its contents</comment>
+  </data>
+  <data name="SortedAscending" xml:space="preserve">
+    <value>Sorted ascending</value>
+    <comment>Aria label for sorting icon</comment>
+  </data>
+  <data name="SortedDescending" xml:space="preserve">
+    <value>Sorted descending</value>
+    <comment>Aria label for sorting icon</comment>
+  </data>
+  <data name="ManagedHeapGridViewer_Name" xml:space="preserve">
+    <value>Managed heap tree grid view</value>
+  </data>
+  <data name="ManagedRefHeapGridViewer_Name" xml:space="preserve">
+    <value>Managed refererence heap tree grid view</value>
+  </data>
+  <data name="NativeHeapAllocationListViewer_Name" xml:space="preserve">
+    <value>Native heap allocations list tree grid view</value>
+  </data>
+  <data name="NativeHeapGridViewer_Name" xml:space="preserve">
+    <value>Native heap tree grid view</value>
+  </data>
+</root>

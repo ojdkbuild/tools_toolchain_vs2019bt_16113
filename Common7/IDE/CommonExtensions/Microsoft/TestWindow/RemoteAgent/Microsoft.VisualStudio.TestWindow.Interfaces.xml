@@ -1,0 +1,1424 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.VisualStudio.TestWindow.Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IAppContainerTestContainer">
+             <summary>
+             An <see cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer"/> for Windows Store app tests.
+             </summary>
+             <remarks>
+             --------------------------------------------------------------------------------------------------------------------
+             TODO:
+             --------------------------------------------------------------------------------------------------------------------
+             This interface is pretty much unused at the moment. However, we can choose to make this interface public if we
+             ever run across a case where an external consumer of <see cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer"/> needs to know path to the
+             recipe file for a UWP test project. We think this scenario is very rare at the moment.
+            
+             The <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.Source"/> for a UWP container matches the project output path (something.exe) for
+             the corresponding project. Because most of our interactions (with Roslyn, code lens, project system,
+             IVsSolution etc.) involve looking up containers and tests based on project output path, our internal data
+             structures (TestContainerProvider, TestContainerRecord, TestCaseRecord etc.) operate primarily on project output
+             path. However, test platform only knows about the recipe file (something.appxrecipe) for UWP tests. So whenever
+             we need to interact with the test platform, we translate from the project output path to the recipe file (and
+             vice-versa). For example, when we request test execution we map the project output path present in
+             TestCaseRecord.Source to the recipe file and specify this recipe file in TestCase.Source. Similarly, when test
+             platform tells us about discovered tests, we map the recipe file specified in TestCase.Source to the project
+             output path and store this project output path in TestCaseRecord.Source.
+            
+             In the rare case where an extension that consumes <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsConfigurationInfo.TestContainers"/>
+             needs to interact with test platform (and also needs to support UWP test projects), the extension would need to
+             do the same mapping from <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.Source"/> to
+             <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.IAppContainerTestContainer.RecipeFile"/>. If we make <see cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.IAppContainerTestContainer"/>
+             public, this mapping can be performed by checking <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.IsAppContainerTestContainer"/> and
+             casting the <see cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer"/> to <see cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.IAppContainerTestContainer"/> to retrive the
+             <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.IAppContainerTestContainer.RecipeFile"/>.
+             --------------------------------------------------------------------------------------------------------------------
+             </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IAppContainerTestContainer.RecipeFile">
+            <summary>
+            Path for the .appxrecipe file associated with the Windows Store app tests.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IBuildableTestContainer">
+            <summary>
+            Test container that handles its own building
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IBuildableTestContainer.BuildAsync(System.Threading.CancellationToken)">
+            <summary>
+            Builds the code for the test container. 
+            </summary>
+            <returns>boolean indicating success or not</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IBuildableTestContainer.GetIsUpToDateAsync(System.Threading.CancellationToken)">
+            <summary>
+            Indicates if a build is required or not
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ICustomSettingsImporter">
+            <summary>
+            Imports a custom settings file and returns a runsettings xml. 
+            </summary>
+            <remarks>
+            With runsettings having an extensible format to specify extension specific settings, there 
+            isn't a requirement to support multiple custom settings files. Extensions can always provide 
+            additional settings in IDE work flows through the IRunSettingsService.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ICustomSettingsImporter.SettingsFileExtension">
+            <summary>
+            Extension of the settings file which need to be imported. 
+            
+            It should be non-null and should be valid file extension like ".mysettings".
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ICustomSettingsImporter.Import(System.String,System.Xml.XPath.IXPathNavigable)">
+            <summary>
+            Imports the parameter settings file in the default runsettings. 
+            </summary>
+            <param name="settingsFile">Settings file which need to be imported. The file extension of the settings file will be specified by <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ICustomSettingsImporter.SettingsFileExtension"/> property.</param>
+            <param name="defaultRunSettings">Input RunSettings document to which settings file need to be imported.</param>
+            <returns>Updated RunSetting Xml document with imported settings.</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ILogger">
+            <summary>
+            Used for logging error warning and informational messages.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ILogger.Log(Microsoft.VisualStudio.TestWindow.Extensibility.MessageLevel,System.String)">
+            <summary>
+            Sends a message to the enabled loggers.
+            </summary>
+            <param name="messageLevel">Level of the message.</param>
+            <param name="message">The message to be sent.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ILogger.Clear">
+            <summary>
+            Clear content in the logger.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IOpenTarget">
+            <summary>
+            Defines a target to open.
+            </summary>
+            <remarks>
+            This interface is primarily used internally to open files/hyper links.
+            Please use VS shell supported APIs to do the same for your extensions.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IOpenTarget.Name">
+            <summary>
+            The name of the target to open.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IOpenTarget.Enabled">
+            <summary>
+            Indicates whether opening functionality is enabled.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IOpenTarget.FilePath">
+            <summary>
+            The file path of the target to open.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IOpenTarget.FileName">
+            <summary>
+            The file name of the target to open.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IOpenTarget.LineNumber">
+            <summary>
+            The line number of the target to open.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IRefreshableTestContainer">
+            <summary>
+            An update to the container contract that adds additional functionality for test containers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IRefreshableTestContainer.TryGetLatestContainerAsync">
+            <summary>
+            Gets the latest version of a selected container.
+            Unlike <see cref="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.Snapshot"/> the returned container has updated
+            information about the project's properties such as output path or target framework.
+            </summary>
+            <returns>
+            Latest version of the container or <c>null</c> if the container no longer exists (for instance, if the project was unloaded).
+            </returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IRunFromContextFileExtensions">
+            <summary>
+            Interface which allows test adapter writer to supply file extensions which are used to determine whether 
+            context menu "Run/Debug Tests" are enable/disabled in the code file.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunFromContextFileExtensions.FileTypes">
+            <summary>
+            Returns a collection of file types which adapter can run/debug tests. 
+            This is optionally used in conjunction with <seealso cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestMethodResolver"/> to determine 
+            what exact test can be run. In the event where there's no ITestMethodResolver specified, all
+            tests in the file will be run.
+            Valid format is a dot followed by file extension. E.g. ".cs" represents a C# file.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IStackTraceParser">
+            <summary>
+            Interface to provide stack trace parser support.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IStackTraceParser.ExecutorUri">
+            <summary>
+             Returns ExecutorUri which is capable of parsing stack trace result for TestCase with the same ExecutorUri.
+             This is the same string specified in custom attribute DefaultExecutorUri defined in the adapter.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IStackTraceParser.GetStackFrames(System.String)">
+            <summary>
+            Returns the parsed StackFrames for the given raw error stack trace from adapters.
+            </summary>
+            <param name="errorStackTrace">raw stack trace result from adapter</param>
+            <returns>parsed stack frames</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IStackTraceParsersProvider">
+            <summary>
+            Provides services for getting additional debug engine to be used when debugging unit tests.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IStackTraceParsersProvider.GetStackTrace(System.Uri,System.String)">
+            <summary>
+             Return the parsed StackFrame collection of the given uri and raw stack trace 
+            </summary>
+            <param name="executorUri">uri indicates where the strack trace comes from</param>
+            <param name="errorStackTrace">raw stack trace result from adapter</param>
+            <returns>parsed StackTrace which contains stack frames</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer">
+            <summary>
+            Interface to represents a test container returned by ITestContainerDiscoverer.GetTestContainersWithDiscoveredTests method
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.Discoverer">
+            <summary>
+            The <seealso cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainerDiscoverer"/> that discoverered the container
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.Source">
+            <summary>
+            Return test container source which allows the test adapter to discover tests within it.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.DebugEngines">
+            <summary>
+            Returns the debug engine(s) to be used by VisualStudio debugger
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.TargetFramework">
+            <summary>
+            Target .net framework of this test container. Use FrameworkVersion.None if this property is not applicable. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.TargetPlatform">
+            <summary>
+            Target platform of this test container. Use Architecture.Default if this property is not applicable. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.IsAppContainerTestContainer">
+            <summary>
+            True if this is a test container for Windows Store app tests. False otherwise.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.DeployAppContainer">
+            <summary>
+            Deploys the Windows Store app test container and returns info about the deployment, or does nothing and returns null if this is not a Windows Store app test container.
+            </summary>
+            <remarks>
+            [Do not use] Deployment of app containers through this mechanism is no longer 
+            supported for apps built against later UWP SDKs.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.CompareTo(Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer)">
+            <summary>
+            Compares with <paramref name="other"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainer.Snapshot">
+            <summary>
+            Creates an snapshot in time of the container
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainerDiscoverer">
+            <summary>
+            Interface implemented to discover test containers. A class that implements this
+            interface will be available for use if it exports its type via MEF, and if its
+            containing assembly is placed in the Extensions folder
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainerDiscoverer.ExecutorUri">
+            <summary>
+            The Uri for the test adapter that handles test from containers from this discoverer
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainerDiscoverer.TestContainers">
+            <summary>
+            Gets test containers which will be used as the source to discover individual tests
+            </summary>
+            <returns>Collection of ITestContainer which holds the test container and debug engine ID(s)</returns>
+        </member>
+        <member name="E:Microsoft.VisualStudio.TestWindow.Extensibility.ITestContainerDiscoverer.TestContainersUpdated">
+            <summary>
+            Event that is fired when test containers maybe updated.
+            (For example on build or save)
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestMethodResolver">
+            <summary>
+            Interface to provide test method resolver. This is extensibility point where 3rd parties 
+            can provide code logic to determine what test is selected in the given file line number with
+            character offset.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestMethodResolver.ExecutorUri">
+            <summary>
+             Returns ExecutorUri which identifies this ITestMethodResolver.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestMethodResolver.GetCurrentTest(System.String,System.Int32,System.Int32)">
+            <summary>
+            Returns the fully qualified method name for the given filePath with the specified location.
+            </summary>
+            <param name="filePath">file where the test exists</param>
+            <param name="line">line position in the file</param>
+            <param name="lineCharOffset">Current character offset in the line</param>
+            <returns>selected method name. Return null if it cannot determine the selected method</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IUWPTestContainer">
+            <summary>
+            Interface to represents specifics of UWP test container
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IUWPTestContainer.GetDeploymentData">
+            <summary>
+            Gets the deployment data for current UWP app. For e.g it's location, recipeFile. etc..
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IUWPTestContainer.IsNativeProject">
+            <summary>
+            Gets whether the UWP project C++ project
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.MessageLevel">
+            <summary>
+            Levels for messages from the Unit Test Explorer
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.MessageLevel.None">
+            <summary>
+            No message.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.MessageLevel.Error">
+            <summary>
+            Error message.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.MessageLevel.Warning">
+            <summary>
+            Warning message.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.MessageLevel.Informational">
+            <summary>
+            Informational message.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.MessageLevel.Diagnostic">
+            <summary>
+            Debug only message
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.MessageLevel.Trace">
+            <summary>
+            Includes diagnostic logging from the test platform as well.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame">
+            <summary>
+             Class to describe stack frames for failed unit test's callstack 
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.#ctor(System.String,System.Boolean)">
+            <summary>
+            ctor for creating a stack frame.
+            </summary>
+            <param name="methodDisplayName">display method name</param>
+            <param name="wellFormed">true to indicate this is a well-formed parsed stack frame</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.#ctor(System.String)">
+            <summary>
+            ctor for describing a well-formed stack frame.
+            </summary>
+            <param name="methodDisplayName">display method name</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            ctor for describing a stack frame with additional filePath and line number.
+            </summary>
+            <param name="methodDisplayName">display method name</param>
+            <param name="filePath">full path name</param>
+            <param name="lineNumber">line number</param>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.WellFormed">
+            <summary>
+            Returns whether the stack frame is well formed
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.FileName">
+            <summary>
+             Returns file name of the current StackFrame
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.MethodDisplayName">
+            <summary>
+             Returns the method display name
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.Name">
+            <summary>
+            The name of the target to open.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.Enabled">
+            <summary>
+            Indicates whether opening funcationality is enabled.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.FilePath">
+            <summary>
+            The file path of the target to open.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame.LineNumber">
+            <summary>
+            The line number of the target to open.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.StackTrace">
+            <summary>
+             Class holds a collection of StackFrame. See also <seealso cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.StackTrace.#ctor(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestWindow.Extensibility.StackFrame})">
+            <summary>
+             ctor which takes a collection of parsed StackFrame object.
+            </summary>
+            <param name="frames"></param>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.StackTrace.StackFrames">
+            <summary>
+            Returns a readonly collection of frames.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ExecutionPlatform">
+            <summary>
+            Represents the target platform in which test run will be executed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.ExecutionPlatform.x86">
+            <summary>
+            Execute tests in target platform 'x86'
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.ExecutionPlatform.x64">
+            <summary>
+            Execute tests in target platform 'x64'
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.ExecutionPlatform.Auto">
+            <summary>
+            By default set no architecture preference
+            <see cref="T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Architecture"/>
+            As of this writing the known defaults
+            for AnyCPU projects are as follows:
+                .NET Fx - x86  (when auto selected)
+                .NET Core -x64 (when auto selected)
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ICommandContainer">
+            <summary>
+            Interface the exposes a set of commands
+            </summary>
+            <remarks>
+            Unlike <seealso cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.IUICommandContainer"/>, <seealso cref="M:Microsoft.VisualStudio.TestWindow.Extensibility.ICommandContainer.InitializeCommands"/> is called during the package initialization
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ICommandContainer.InitializeCommands">
+            <summary>
+            Initializes commands
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IDeployService">
+            <summary>
+            Service for application deployment on target.
+            </summary>
+            <remarks>
+            This API is no longer supported for deployment of UWP based apps.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IDeployService.GetSelectedDeviceId(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)">
+            <summary>
+            Device ID selected in device toolbar.
+            </summary>
+            <param name="hierarchy">project hierarchy in context</param>
+            <returns>device ID as string</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IDeployService.DeployPackage(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.String,System.String,Microsoft.VisualStudio.TestWindow.Extensibility.ILogger)">
+            <summary>
+            deploy the project choosing the output as per specified project canonical name and device Id
+            </summary>
+            <param name="hierarchy">project hierarchy in context</param>
+            <param name="projectCanonicalName">project canonical name</param>
+            <param name="deviceId">device ID</param>
+            <param name="logger">logger</param>
+            <returns>packagename in the format : productGuid_xap</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IDeployService.IsEmulator(System.String)">
+            <summary>
+            Check if device specified by device id is emulator or not.
+            </summary>
+            <param name="deviceId">device Id</param>
+            <returns>whether emulator or not</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IOperation">
+            <summary>
+            Represents an operation performed by the TestWindow.
+            For example test discovery or test execution.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IOperation.Kind">
+            <summary>
+            The kind of operation this is (Discovery or Execution)
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IOperation.TotalRuntime">
+            <summary>
+            Total run time of the operation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IOperation.GetRunSettingsDataCollectorResultUri(System.Uri)">
+            <summary>
+            Uri of result files consumable by data collectors
+            </summary>
+            <param name="collectorUri">Uri of data collector</param>
+            <returns>Collection of Uri result file</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IOperationState">
+            <summary>
+            Represents a type that broadcasts operation state changes.
+            </summary>
+        </member>
+        <member name="E:Microsoft.VisualStudio.TestWindow.Extensibility.IOperationState.StateChanged">
+            <summary>
+            Event that indicates an operation's state has changed.
+            For example test discovery or execution finishing.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IProperty">
+            <summary>
+            Property of a <seealso cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITest"/> or an <seealso cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.IResult"/>
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IProperty.PropertyId">
+            <summary>
+            Property Id
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IProperty.Attributes">
+            <summary>
+            Attributes
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IProperty.Name">
+            <summary>
+            Property name
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IProperty.Value">
+            <summary>
+            Property value
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IResult">
+            <summary>
+            The result of a <seealso cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITest"/>
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.DisplayName">
+            <summary>
+            Name used in the user interface
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.RunId">
+            <summary>
+            Run Id of where this result comes from
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.ReceivedOrder">
+            <summary>
+            Ordinal received position of this result from backend
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.Outcome">
+            <summary>
+            The outcome of the test.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.State">
+            <summary>
+            Returns the state of the test.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.ErrorStackTrace">
+            <summary>
+            The string of the stack trace if any
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.ErrorMessage">
+            <summary>
+            Error message from the test failure
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.Duration">
+            <summary>
+            Amount of time taken to execute
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.StandardOutput">
+            <summary>
+            The standard output
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.StandardError">
+            <summary>
+            The standard error
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IResult.AttachmentsString">
+            <summary>
+            Returns the attachment in raw form.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IRunCommands">
+            <summary>
+            Interface the exposes a set of RunCommands to the TestWindow
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunCommands.PrimaryCommand">
+            <summary>
+            The primary run command in this set of run commands.
+            This command is displayed on the toolbar in the TestWindow.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunCommands.Commands">
+            <summary>
+            Collection of all the RunCommands exposed by this object.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettings">
+            <summary>
+            Run settings file provided by plugins
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettings.SetActiveRunSettings(System.String)">
+            <summary>
+            Makes the parameter setting file active in UTE. 
+            </summary>
+            <param name="settingsFilePath">Path to the settings file</param>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettings.TargetPlatform">
+            <summary>
+            Default processor architecture for the test run.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsConfigurationInfo">
+            <summary>
+            Interface that holds information needed for run settings configuration.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsConfigurationInfo.ResultsDirectory">
+            <summary>
+             Returns results folder where the tests output are staged
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsConfigurationInfo.SolutionDirectory">
+            <summary>
+            Returns solution directory.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsConfigurationInfo.TestContainers">
+            <summary>
+            List of tests containers in current test run
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsConfigurationInfo.RequestState">
+            <summary>
+            State of Request. Used to disambiguate discovery or execution.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.RunSettingConfigurationInfoState">
+            <summary>
+            Enum to specify if configuration was created during discovery or execution
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RunSettingConfigurationInfoState.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RunSettingConfigurationInfoState.Discovery">
+            <summary>
+            Discovery
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RunSettingConfigurationInfoState.Execution">
+            <summary>
+            Execution
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsService">
+            <summary>
+            Run settings provided by plugins.
+            (For example data collector settings)
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsService.Name">
+            <summary>
+            Name of the setting service
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsService.AddRunSettings(System.Xml.XPath.IXPathNavigable,Microsoft.VisualStudio.TestWindow.Extensibility.IRunSettingsConfigurationInfo,Microsoft.VisualStudio.TestWindow.Extensibility.ILogger)">
+            <summary>
+            Add run settings node to passed in RunSetting Xml document.
+            </summary>
+            <param name="inputRunSettingDocument">Input RunSettings document to which additional settings nodes will be added.</param>
+            <param name="configurationInfo">RunSettings configuration information.</param>
+            <param name="log">The logger</param>
+            <returns>Updated RunSetting Xml document with added xml nodes.</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ISolutionOption">
+            <summary>
+            Interface that exposes data persistable via a .suo file.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ISolutionOption.OptionKey">
+            <summary>
+            Gets the name of the user options key used by this container.
+            </summary>
+            <remarks>
+            Override this property in the descendant classes that need to save options in solution user file.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ISolutionOption.LoadOptions(System.IO.Stream)">
+            <summary>
+            Loads options from a solution user file.
+            </summary>
+            <param name="stream">A <see cref="T:System.IO.Stream"/> with the <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ISolutionOption.OptionKey"/> provided by this container.</param>
+            <remarks>
+            Override this method in the descendant classes that need to save options in solution user file.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ISolutionOption.SaveOptions(System.IO.Stream)">
+            <summary>
+            Saves options in a solution user file.
+            </summary>
+            <param name="stream">A <see cref="T:System.IO.Stream"/> with the <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ISolutionOption.OptionKey"/> provided by this container.</param>
+            <remarks>
+            Override this method in the descendant classes that need to save options in solution user file.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ISolutionOption.ResetOptions">
+            <summary>
+            Resets options stored in this container.
+            </summary>
+            <remarks>
+            Override this method in the descendant classes that need to save options in solution user file.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITabbedCommandProvider">
+            <summary>
+            Provider of command command containers for a specific test window tab.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITabbedCommandProvider.CreateCommandContainer(System.IServiceProvider)">
+            <summary>
+            Returns a container with commands for one tab.
+            </summary>
+            <param name="tabServices">
+            Services specific to a given tab.
+            The passed in service provider contains an IMenuCommandService that
+            allows to register commands for that particular tab.
+            </param>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITest">
+            <summary>
+            A test
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Id">
+            <summary>
+            Unique id of the test
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.FullyQualifiedName">
+            <summary>
+            Fully qualified name
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.DisplayName">
+            <summary>
+            Display name used in the user interface
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Duration">
+            <summary>
+            Amount of time this test took to run.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.StateValue">
+            <summary>，InMemoryUnitTestWriter.cs
+            This the int representation of a <seealso cref="T:Microsoft.VisualStudio.TestWindow.Extensibility.TestState"/>. 
+            </summary>
+            <remarks>
+            Please use the <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.State"/> field instead.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.StalenessValue">
+            <summary>
+            This the int representation of a Test whether it's currently CurrentlyBeingRun/IsNotStale/Stale
+            The following are the possible values.
+                 0 - Indicating TestData is currently running by the runner. Note that this means that the test is considered staled as well.
+                 1 - Test is not stale. Indicating that test result has been received from the current run.
+                 2 - Test is stale. Indicating that test is not being run in the current run operation or we have not yet received result for this test yet.
+            </summary>
+            <remarks>
+            Please use <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Stale"/> or <see cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.IsCurrentlyRunning"/> to determine staleness instead.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.State">
+            <summary>
+            State of the test based on <seealso cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Results"/>
+            Does not support deferred execution.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Stale">
+            <summary>
+            False if <seealso cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Results"/> is up to date
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.IsCurrentlyRunning">
+            <summary>
+            Indicates whether the test is currently being run at the moment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.FilePath">
+            <summary>
+            The source code file that defines the test
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.ProjectId">
+            <summary>
+            The project id
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.LineNumber">
+            <summary>
+            Line number in <seealso cref="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.FilePath"/> where the test is defined
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Source">
+            <summary>
+            The test container that contains the test
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Results">
+            <summary>
+            The result of the execution of the test
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.Properties">
+            <summary>
+            Properties on the testdata
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest.ExecutorUri">
+            <summary>
+            The unique id of the runner for this test
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITest2">
+            [API Removal log]
+            This API was added in the 15.* timeline primarliy for internal usage.
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest2.IsPending">
+            <summary>
+            Indicates whether the test is to be run.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITest2.PropertiesAsEnumerable">
+            <summary>
+            Properties on the testdata
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService">
+            <summary>
+            Service to provider access to unit tests
+            </summary>
+            <remarks>
+            This API structure is known to cause a performance bottleneck especially
+            with the <see cref="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService.GetTestsAsEnumerableAsync"/> API. Avoid usage unless absolutely needed.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService.GetTestsAsEnumerableAsync">
+            <summary>
+            Gets a query to get tests (currently filtered by playlist)
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService.GetTestsAsEnumerableAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            Gets a query to get tests (currently filtered by playlist) for the given set of Id
+            </summary>
+            <param name="testIds">set of test ids</param>
+            <returns>collection of ITest which matches the given ids</returns>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService.IsTestServiceRunning">
+            <summary>
+            Status of test service readyness to get tests
+            </summary>
+        </member>
+        <member name="E:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService.TestServiceStarted">
+            <summary>
+            Notify when service gets started
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService.RunTestsAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+             Run the specified test
+            </summary>
+            <param name="tests">Test id </param>
+            <returns>The task that performs the run</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService.DebugTestsAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+             Debug the specified tests
+            </summary>
+            <param name="tests">collection of test Ids</param>
+            <returns>The task that performs the debug</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ITestsService.OpenTestOutput(System.Guid,System.String,Microsoft.VisualStudio.TestWindow.Extensibility.IResult)">
+            <summary>
+            For the given result, method tries tries to result into VisualStudio provisional document
+            </summary>
+            <param name="testId">testId of the open result</param>
+            <param name="testDisplayName">test name</param>
+            <param name="result">result to be opened in provisional tab</param>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IUICommandContainer">
+            <summary>
+            Container for UI commands.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IUICommandContainer.InitializeCommands">
+            <summary>
+            Initializes commands
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IUnitTestNotifyChanged">
+            <summary>
+             Interface for UnitTestWriter to raise event notification 
+            </summary>
+        </member>
+        <member name="E:Microsoft.VisualStudio.TestWindow.Extensibility.IUnitTestNotifyChanged.OnUnitTestChanged">
+            <summary>
+             Handler for notifying when TestCases/TestResults are written to the data store!
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.Model.IDeploymentData">
+            <summary>
+            Holds data related to Windows Store app project deployment
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Model.IDeploymentData.PackageFullName">
+            <summary>
+            The PackageFullName of the deployed project
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Model.IDeploymentData.Location">
+            <summary>
+            The location of the deployed project
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Model.IDeploymentData.RecipeFile">
+            <summary>
+            The location of the appx recipe file
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Model.IDeploymentData.ProjectUniqueName">
+            <summary>
+            Unique name of deployed project
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Model.IDeploymentData.AppUserModelId">
+            <summary>
+            The AppUserModelID of deployed project
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Model.IDeploymentData.PackageMoniker">
+            <summary>
+            The PackageMoniker of deployed project
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Model.IDeploymentData.AppContainerBootstrapperLogger">
+            <summary>
+            The AppContainerBootstrapperLogger logger for target bootstrap 
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.OperationStateChangedEventArgs">
+            <summary>
+            EventArgs data for Operation StateChanged events.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.OperationStateChangedEventArgs.State">
+            <summary>
+            The new state of the operation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.OperationStateChangedEventArgs.Operation">
+            <summary>
+            The operation that changed.
+            Null if no operation changed.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.OperationStateChangedEventArgs.#ctor(Microsoft.VisualStudio.TestWindow.Extensibility.IOperation,Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates)">
+            <summary>
+            Creates a new OperationStateChangedEventArgs
+            </summary>
+            <param name="operation">The operation that has changed.</param>
+            <param name="state">The new state of the operation.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.OperationStateChangedEventArgs.#ctor(Microsoft.VisualStudio.TestWindow.Extensibility.IOperation,Microsoft.VisualStudio.TestWindow.Extensibility.TestOperationStates)">
+            <summary>
+            Creates a new OperationStateChangedEventArgs
+            </summary>
+            <param name="operation">The operation that has changed.</param>
+            <param name="state">The new state of the operation.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.OperationStateChangedEventArgs.#ctor(Microsoft.VisualStudio.TestWindow.Extensibility.TestOperationStates)">
+            <summary>
+            Creates a new OperationStateChangedEventArgs
+            </summary>
+            <param name="state">The new state of the operation.</param>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.OperationStateChangedEventArgs.Empty">
+            <summary>
+            Empty default OperationStateChangedEventArgs with no Operation.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ISmartPlaylist">
+            <summary>
+            Interface used by Live Unit Testing to control playlist.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Playlist.ILiveUnitTestingToolWindowClientView.ViewId">
+            <summary>
+            Test Store side view ID for Live Unit Testing tab.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.Playlist.ILiveUnitTestingToolWindowClientView.SmartPlaylist">
+            <summary>
+            Controller for the playlist of Live Unit Testing.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates">
+            <summary>
+            Defines the set of possible states for a Request
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates.None">
+            <summary>
+            Indeterminate state
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates.Starting">
+            <summary>
+            The request is about to be started
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates.Running">
+            <summary>
+            Request is running tests
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates.Cancel">
+            <summary>
+            Request is scheduled for cancel.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates.Canceling">
+            <summary>
+            User has requested that the Request be canceled.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates.Completed">
+            <summary>
+            Request has completed the run
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.RequestStates.Canceled">
+            <summary>
+            The Request has been Canceled.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.RunCommand">
+            <summary>
+            Represents the various possible run commands.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.SelectionCommand">
+            <summary>
+            Represents the various possible commands given a selection of tests
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.TabId">
+            <summary>
+            An identifier which uniquely identifies a single tab.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.TabKind">
+            <summary>
+            Defines the kind of a tool window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TabKind.Default">
+            <summary>
+            This is a default test explorer window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TabKind.Playlist">
+            <summary>
+            This represents a playlist window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TabKind.LiveUnitTesting">
+            <summary>
+            This represents a live unit testing window.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.TestOperationStates">
+            <summary>
+            Describes the possible TestOperation states
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.FilterMatchKind">
+            <remarks>
+            The first three values need to directly correspond to the VS shell's __VSSEARCHFILTERTOKENTYPE enum.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.FilterMatchKind.MatchSubset">
+            <summary>
+            If a property can have multiple values, this flag determines if the
+            result match if any of the values matches (flag is off) or all values match the filter.
+            In particular this ensures the special way that the table control filters items out.
+            It specifies which items to exclude, even though for multi value properties it should only
+            exclude properties which have their values as a subset of the search filter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestService.IsServiceAvailable">
+            <summary>
+            Indicates whether the test service is available to service test related operations.
+            </summary>
+        </member>
+        <member name="E:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestService.OnReady">
+            <summary>
+            Event fired when the test infrastructure is fully initialized and is ready to take test requests.
+            </summary>
+            <remarks>
+            Fired typically when a solution/folder is opened.
+            </remarks>
+        </member>
+        <member name="E:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestService.OnInactive">
+            <summary>
+            Event fired when the test infrastructure is no longer able to service test requests.
+            </summary>
+            <remarks>
+            Fired typically when a solution/folder is closed.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestService.GetTestsAsync(Microsoft.VisualStudio.TestWindow.Extensibility.TestQuery,System.Threading.CancellationToken)">
+            <summary>
+            Gets tests that satisfy the specified filter.
+            </summary>
+            <param name="query">The test filter</param>
+            <param name="cancellationToken"></param>
+            <returns>The filtered test list</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestService.RunTestsAsync(Microsoft.VisualStudio.TestWindow.Extensibility.TestQuery,System.Threading.CancellationToken)">
+            <summary>
+            Runs tests that satisfy the specified filter.
+            </summary>
+            <param name="query">The test filter</param>
+            <param name="cancellationToken"></param>
+            <returns>True if the operation is successful</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestService.DebugTestsAsync(Microsoft.VisualStudio.TestWindow.Extensibility.TestQuery,System.Threading.CancellationToken)">
+            <summary>
+            Debugs all tests that satisfy the specified filter.
+            </summary>
+            <param name="query">The test filter</param>
+            <param name="cancellationToken"></param>
+            <returns>True if the operation is successful</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestServiceInternal">
+            <summary>
+            The primary reason this exists is so that we can support internal extensions like 
+            Code lens or Live Unit Testing without exposing too much to the external surface.
+            We should be able to pull in APIs of interest from here to the external facing surface if there is a customer ask.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestServiceInternal.RunLiveUnitTestsAsync(Microsoft.VisualStudio.TestWindow.Extensibility.TestQuery,System.Threading.CancellationToken)">
+            <summary>
+            Gets the latest LUT discovered tests that match a filter and runs them.
+            </summary>
+            <param name="query">The test filter</param>
+            <param name="cancellationToken"></param>
+            <returns>True if the operation was successful</returns>
+            <remarks>
+            Although we do request to run/debug tests discovered by LUT, the store runner smartly determines
+            if we can find a full fidelity Assembly Based Test with the same test case id and if so, runs that instead. This test is expected to
+            be up-to-date because we perform a discovery before the run operation.
+            If we do not find one we end up running the low fidelity LUT test by name instead.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.IVsTestServiceInternal.DebugLiveUnitTestsAsync(Microsoft.VisualStudio.TestWindow.Extensibility.TestQuery,System.Threading.CancellationToken)">
+            <summary>
+            Gets the latest LUT discovered tests that match a filter and debugs them.
+            </summary>
+            <param name="query">The test filter</param>
+            <param name="cancellationToken"></param>
+            <returns>True if the operation was successful</returns>
+            <remarks>
+            Although we do request to run/debug tests discovered by LUT, the store runner smartly determines
+            if we can find a full fidelity Assembly Based Test with the same test case id and if so, runs that instead. This test is expected to
+            be up-to-date because we perform a discovery before the run operation.
+            If we do not find one we end up running the low fidelity LUT test by name instead.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.TestState">
+            <summary>
+            State of the last result from a test run 
+            </summary>
+            <remarks>
+            Be careful when changing this enum. The order of these enum values is also the order they are displayed in the UI.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TestState.None">
+            <summary>
+            Indicates the test has no state yet.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TestState.Failed">
+            <summary>
+            Indicates that the test has failed
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TestState.Skipped">
+            <summary>
+            Indicates that the test has skipped
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TestState.Passed">
+            <summary>
+            Indicates that the test has passed
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TestState.NotFound">
+            <summary>
+            Indicates that the test cannot be found.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TestWindow.Extensibility.TestState.NotRun">
+            <summary>
+            Indicates that the test has not been run
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs">
+            <summary>
+            event notification object used by IUnitTestNotifyChanged.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs.Kind">
+            <summary>
+            Specifies the kind of the operation that unit 
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs.DeletedTests">
+            <summary>
+            Specifies guids of the tests that are deleted if any.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs.ClearTests">
+            <summary>
+            Indicate all tests has been cleared.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs.CancellationToken">
+            <summary>
+            Returns the cancellation token. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs.#ctor(Microsoft.VisualStudio.TestWindow.Extensibility.TestOperationStates,System.Boolean,System.Threading.CancellationToken,System.Guid[])">
+            <summary>
+             Event handler when data store has process rows of TestCase/TestResult from TestPlatform.
+            </summary>
+            <param name="kind">the kind of the operation that unit</param>
+            <param name="clearTests">true of clear tests occurred in the storage.</param>
+            <param name="token">Cancellation token</param>
+            <param name="deletedTests">tests deleted in the storage</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs.#ctor(Microsoft.VisualStudio.TestWindow.Extensibility.TestOperationStates,System.Boolean)">
+            <summary>
+             Event handler when data store has process rows of TestCase/TestResult from TestPlatform.
+            </summary>
+            <param name="kind">the kind of the operation that unit</param>
+            <param name="clearTests">true of clear tests occurred in the storage.</param>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs.IsCancellable">
+            <summary>
+            Returns whether the event is cancellable.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.UnitTestChangedEventArgs.ToString">
+            <summary>
+            Returns 
+            </summary>
+            <returns>string representation of the object.</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArg">
+            <summary>
+            Helper to validate parameters.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArg.NotNull``1(``0,System.String)">
+            <summary>
+            Throws ArgumentNullException if the argument is null, otherwise passes it through.
+            </summary>
+            <param name="arg">The argument to check.</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArg.NotNegative(System.Int32,System.String)">
+            <summary>
+            Throws ArgumentOutOfRangeException if the argument is less than zero.
+            </summary>
+            <param name="arg">The argument to check.</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArg.NotNegative(System.Int64,System.String)">
+            <summary>
+            Throws ArgumentOutOfRangeException if the argument is less than zero.
+            </summary>
+            <param name="arg">The argument to check.</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArg.NotNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Throws ArgumentNullException if the string is null, ArgumentException if the string is empty.
+            </summary>
+            <param name="arg">The argument to check.</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArg.TypeOf``1(System.Object,System.String)">
+            <summary>
+            Throws ArgumentNullException if the argument is null, ArgumentException if the argument is not the correct type.
+            </summary>
+            <param name="arg">The argument to check.</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+            <typeparam name="T">The type of the expected argument.</typeparam>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgProperty">
+            <summary>
+            Helper to validate parameter properties.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgProperty.NotNull(System.Object,System.String,System.String)">
+            <summary>
+            Throws ArgumentException if the argument is null.
+            </summary>
+            <param name="arg">The argument to check (e.g. Param1.PropertyA).</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+            <param name="propertyName">The property name of the argument.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgProperty.NotNegative(System.Int32,System.String,System.String)">
+            <summary>
+            Throws ArgumentException if the argument is less than zero.
+            </summary>
+            <param name="arg">The argument to check (e.g. Param1.PropertyA).</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+            <param name="propertyName">The property name of the argument.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgProperty.NotNullOrEmpty(System.String,System.String,System.String)">
+            <summary>
+            Throws ArgumentException if the argument string is null or empty.
+            </summary>
+            <param name="arg">The argument to check (e.g. Param1.PropertyA).</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+            <param name="propertyName">The property name of the argument.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgProperty.TypeOf``1(System.Object,System.String,System.String)">
+            <summary>
+            Throws ArgumentException if the argument is null or is not the correct type.
+            </summary>
+            <param name="arg">The argument to check (e.g. Param1.PropertyA).</param>
+            <param name="parameterName">The parameter name of the argument.</param>
+            <param name="propertyName">The property name of the argument.</param>
+            <typeparam name="T">The type of the expected argument.</typeparam>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Extensibility.ValidatedNotNullAttribute">
+            <summary>
+            Secret attribute that tells the CA1062 validate arguments rule that this method validates the argument is not null.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgStrings.Error_ArgumentIsEmpty">
+            <summary>The specified argument cannot be empty.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgStrings.Error_ArgumentIsNegative">
+            <summary>The specified argument cannot be negative.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgStrings.Error_ArgumentNotTypeOf">
+            <summary>The specified argument must have the following type: {0}.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgStrings.Error_ArgumentPropertyIsEmpty">
+            <summary>The specified argument has the following property, which cannot be an empty string: {0}.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgStrings.Error_ArgumentPropertyIsNegative">
+            <summary>The  specified argument has the following property, which cannot be negative: {0}.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgStrings.Error_ArgumentPropertyIsNull">
+            <summary>The specified argument has the following property, which cannot be null: {0}.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestWindow.Extensibility.ValidateArgStrings.Error_ArgumentPropertyNotTypeOf">
+            <summary>The specified argument has the following property: {0}. This property must have the following type: {1}.</summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Messages.ITestNode">
+            <summary>
+            A test node represents a node under the test store hierarchy.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TestWindow.Messages.ITestNodeRunDetails">
+            <summary>
+            Run details of a test node.
+            </summary>
+        </member>
+    </members>
+</doc>

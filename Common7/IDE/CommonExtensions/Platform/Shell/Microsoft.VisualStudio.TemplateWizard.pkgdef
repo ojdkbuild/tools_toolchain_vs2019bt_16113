@@ -1,0 +1,13 @@
+[$RootKey$\CLSID\{C28C4281-6E29-41AB-A120-9B6336BAC906}]
+@="Microsoft.VisualStudio.TemplateWizard.Wizard.8.0"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="Microsoft.VisualStudio.TemplateWizard.Wizard"
+"Assembly"="Microsoft.VisualStudio.TemplateWizard,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"CodeBase"="$ShellFolder$\Common7\IDE\Microsoft.VisualStudio.TemplateWizard.dll"
+[$RootKey$\CLSID\{C28C4281-6E29-41AB-A120-9B6336BAC906}\InprocServer32\16.0.0.0]
+"Class"="Microsoft.VisualStudio.TemplateWizard.Wizard"
+"Assembly"="Microsoft.VisualStudio.TemplateWizard,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+"CodeBase"="$ShellFolder$\Common7\IDE\Microsoft.VisualStudio.TemplateWizard.dll"
+[$RootKey$\CLSID\{C28C4281-6E29-41AB-A120-9B6336BAC906}\ProgId]
+@="Microsoft.VisualStudio.TemplateWizard.Wizard.8.0"

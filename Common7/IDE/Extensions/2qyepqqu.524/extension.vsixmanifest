@@ -1,0 +1,17 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.Cache.Service" Version="16.10.57.29057" Language="en-US" Publisher="Microsoft Corporation" />
+    <DisplayName>Microsoft Visual Studio Cache Service</DisplayName>
+    <Description>Provides the cache brokered service.</Description>
+  </Metadata>
+  <Installation SystemComponent="true" AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.9, 17.0)" />
+  </Installation>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.ServiceHub.Service" Path="Microsoft.VisualStudio.Cache.Service.ServiceHub.service.json" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.Cache.Service.pkgdef" />
+  </Assets>
+</PackageManifest>

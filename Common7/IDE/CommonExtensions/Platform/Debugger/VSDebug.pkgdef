@@ -1,0 +1,899 @@
+[$RootKey$]
+
+[$RootKey$\AD7Metrics]
+
+[$RootKey$\AD7Metrics\EEExtensions]
+
+[$RootKey$\AD7Metrics\EEExtensions\{274F994E-C88C-4894-9054-97DAE30B5ACF}]
+"ExtensionDll"="$BaseInstallDir$\Common7\Packages\Debugger\vsdebug.dll"
+"RegistersEntryPoint"="EEExtension_UserRegister"
+"RegistersSupported"="$user"
+
+[$RootKey$\AD7Metrics\Engine]
+
+[$RootKey$\AD7Metrics\Engine\{3B476D35-A401-11D2-AAD4-00C04F990171}]
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6008"
+@="guidNativeOnlyEng"
+
+[$RootKey$\AD7Metrics\Engine\{449EC4CC-30D2-4032-9256-EE18EB41B62B}]
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6012"
+@="guidCOMPlusOnlyEng"
+
+[$RootKey$\AD7Metrics\Engine\{5FFF7536-0C87-462D-8FD2-7971D948E6DC}]
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6048"
+@="guidCOMPlusOnlyEng2"
+
+[$RootKey$\AD7Metrics\Engine\{92EF0900-2251-11D2-B72E-0000F87572EF}]
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6013"
+@="guidCOMPlusNativeEng"
+
+[$RootKey$\AD7Metrics\Engine\{E04BDE58-45EC-48DB-9807-513F78865212}]
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6012"
+@="guidCOMPlusSQLLocalEng"
+
+[$RootKey$\AD7Metrics\Engine\{FB0D4648-F776-4980-95F8-BB7F36EBC1EE}]
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6049"
+@="guidCOMPlusOnlyEng4"
+
+[$RootKey$\AD7Metrics\PortSupplier]
+
+[$RootKey$\AD7Metrics\PortSupplier\{971E52EF-BDE3-4DED-A040-EFC534BC8110}]
+@="guidDockerWindowsPortSupplier"
+"CLSID"="{EC9B3DF2-7C1D-466F-A05B-59219E893908}"
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6081"
+"Description"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6082"
+; AuthMode value is 9999
+"VsDebugRemoteAuthenticationMode"=dword:0000270F
+"PortPickerCLSID"="{AE75778B-70E8-4F53-B3FE-59E048D3D01B}"
+
+[$RootKey$\AppCommandLine]
+"ExeName"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"JitDebug"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\AppCommandLine\JITDebugParam]
+"Arguments"="1"
+"DemandLoad"=dword:00000000
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\AppCommandLine\Configfirewall]
+"Arguments"="0"
+"DemandLoad"=dword:00000001
+"ElevationRequired"=dword:00000001
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\AppCommandLine\vs7jitdebugginghelp]
+"Arguments"="0"
+"DemandLoad"=dword:00000000
+"HelpString"="#5078"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\AutomationProperties]
+
+[$RootKey$\AutomationProperties\Debugging]
+
+[$RootKey$\AutomationProperties\Debugging\EditAndContinue]
+"Name"="Debugging.EditAndContinue"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\AutomationProperties\Debugging\General]
+"Name"="Debugging.General"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\AutomationProperties\Debugging\JustInTime]
+"Name"="Debugging.JustInTime"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\AutomationProperties\Debugging\Native]
+"Name"="Debugging.Native"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\CLSID]
+
+[$RootKey$\CLSID\{4FF9DEF4-8922-4D02-9379-3FFA64D1D639}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\vsdebug.dll"
+"ThreadingModel"="Apartment"
+@="CLSID_SDMProgramProvider"
+
+[$RootKey$\CLSID\{5CEB3CEF-F536-428B-A798-D1A31C67167C}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\vsdebug.dll"
+"ThreadingModel"="Apartment"
+@="VSDebugFindSourcePage"
+
+[$RootKey$\CLSID\{5EB7D9F7-AF21-400E-A2C4-7FD6396F8641}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\vsdebug.dll"
+"ThreadingModel"="Apartment"
+@="Session Debug Manager"
+
+[$RootKey$\CLSID\{019e07aa-9ad6-406c-878d-d6e2987209ac}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\vsdebug.dll"
+"ThreadingModel"="Apartment"
+@="DebugRemoteDiscovery"
+
+[$RootKey$\CLSID\{EC9B3DF2-7C1D-466F-A05B-59219E893908}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\vsdebug.dll"
+"ThreadingModel"="Apartment"
+@="DockerPortSupplier"
+
+[$RootKey$\Debugger]
+"AspProcessNames"="inetinfo.exe;mtx.exe;dllhost.exe;w3wp.exe"
+"GeneratedFileExtensions"=hex(7):2e,00,61,00,73,00,70,00,78,00,00,00,2e,00,61,\
+  00,73,00,70,00,00,00,2e,00,61,00,73,00,68,00,78,00,00,00,2e,00,61,00,78,00,\
+  64,00,00,00,2e,00,63,00,73,00,68,00,74,00,6d,00,6c,00,00,00,2e,00,76,00,62,\
+  00,68,00,74,00,6d,00,6c,00,00,00,00,00
+"StopDebuggingMessageFilterTimeout"=dword:00001388
+"DispatcherDll"="$BaseInstallDir$\Common7\IDE\vsdebugeng.dll"
+
+[$RootKey$\Debugger\Docker]
+"DebuggerInstallDirectory"="c:\.vs-debugger"
+"AltDebuggerDirectory"="c:\remote_debugger"
+;VS Major Version, VS Major Version, VS Minor Version, Architecture
+"SvcVersionUrlFormat"="https://aka.ms/vs/%d/release/%d.%d/debugger/OneCore.Msvsmon.%s.enu.zip"
+;VS Major Version, Architexture   NOTE: *.enu.zip file has all languages. The language 'enu' is a publishing requirement only
+"LatestVersionUrlFormat"="https://aka.ms/vs/%d/release/OneCore.Msvsmon.%s.enu.zip"
+;Architecture
+"DownloadFileNameFormat"="OneCore.Msvsmon.%s.enu.zip"
+;Below is used for servicing only
+;"MinimumVersion"=""
+
+[$RootKey$\FontAndColors]
+
+[$RootKey$\FontAndColors\AllDebuggerVarWnds]
+"Category"="{35B25E75-AB53-4C5D-80EA-6682EBB2BBBD}"
+"NameID"=dword:00000326
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\Autos]
+"Category"="{A7EE6BEE-D0AA-4B2F-AD9D-748276A725F6}"
+"NameID"=dword:00000321
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\CallStack]
+"Category"="{FD2219AF-EBF8-4116-A801-3B503C48DFF0}"
+"NameID"=dword:00000323
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\DataTips]
+"Category"="{F7B7B222-E186-48DF-A5EE-174E8129891B}"
+"NameID"=dword:00000325
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\DebugLocation]
+"Category"="{B20C0001-0836-4535-A5E8-96E595B1F094}"
+"NameID"=dword:00001435
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\Locals]
+"Category"="{8259ACED-490A-41B3-A0FB-64C842CCDC80}"
+"NameID"=dword:00000322
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\Parallel Watch]
+"Category"="{E02A3CCD-2D8E-4628-97D7-1C0921DFA2F3}"
+"NameID"=dword:00000327
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\Threads]
+"Category"="{BB8FE807-A186-404A-81FA-D20B908CA93B}"
+"NameID"=dword:00000324
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\Watch]
+"Category"="{358463D0-D084-400F-997E-A34FC570BC72}"
+"NameID"=dword:00000320
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\Performance Tips]
+"Category"="{7A4C6CC9-8404-4B95-AF88-F11B657C7268}"
+"NameID"=dword:00001FBE
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\FontAndColors\TextVisualizer]
+"Category"="{036D356B-F2FE-45F8-BCEB-7FCC4DAF2023}"
+"NameID"=dword:00000345
+"Package"="{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}"
+
+[$RootKey$\HandleInComingCall]
+
+[$RootKey$\HandleInComingCall\{037EDD0F-8551-4F7F-8CA0-04D9E29F532D}]
+@="IDebugDocumentPositionOffset2"
+
+[$RootKey$\HandleInComingCall\{0EA91CF7-8542-4780-8D6B-7BD686CD2471}]
+@="IDebugBreakpointChecksumRequest2"
+
+[$RootKey$\HandleInComingCall\{12C1180E-C257-4485-9800-AF484B699713}]
+@="IDebugCoreServer3"
+
+[$RootKey$\HandleInComingCall\{17BF8FA3-4C5A-49A3-B2F8-5942E1EA287E}]
+@="IDebugCoreServer2"
+
+[$RootKey$\HandleInComingCall\{1EDE3B4B-35E7-4B97-8133-02845D600174}]
+@="IDebugFunctionPosition2"
+
+[$RootKey$\HandleInComingCall\{302F0F55-1EDE-4777-9B38-115E1F229D56}]
+@="IDebugDefaultPort2"
+
+[$RootKey$\HandleInComingCall\{33EC72E3-002F-4966-B91C-5CE2F7BA5124}]
+@="IDebugDocumentTextEvents2"
+
+[$RootKey$\HandleInComingCall\{43286FEA-6997-4543-803E-60A20C473DE5}]
+@="IDebugProcess2"
+
+[$RootKey$\HandleInComingCall\{5C18A5FE-7150-4E66-8246-27BFB0E7BFD9}]
+@="IDebugBreakpointRequest3"
+
+[$RootKey$\HandleInComingCall\{6015FD18-8257-4DF3-AC42-F074DEDD4CBD}]
+@="IDebugBreakpointRequest2"
+
+[$RootKey$\HandleInComingCall\{69D172EF-F2C4-44E1-89F7-C86231E706E9}]
+@="IDebugProgram2"
+
+[$RootKey$\HandleInComingCall\{79293CC8-D9D9-43F5-97AD-0BCC5A688776}]
+@="IDebugPort2"
+
+[$RootKey$\HandleInComingCall\{80F3A462-2B43-45A5-98A4-7A519B114899}]
+@="IDebugCausalityEventCallback90"
+
+[$RootKey$\HandleInComingCall\{8948300F-8BD5-4728-A1D8-83D172295A9D}]
+@="IDebugSession2"
+
+[$RootKey$\HandleInComingCall\{8D36BEB8-9BFE-47DD-A11B-7BA1DE18E449}]
+@="IDebugPortRequest2"
+
+[$RootKey$\HandleInComingCall\{ADE2EEB9-FC85-4F5B-B5D9-D431B4AAC31A}]
+@="IDebugEventCallback2"
+
+[$RootKey$\HandleInComingCall\{BB7BE481-DA8F-4B9E-89CB-0A8DDE6BC5D7}]
+@="IEEHostServices"
+
+[$RootKey$\HandleInComingCall\{BDDE0EEE-3B8D-4C82-B529-33F16B42832E}]
+@="IDebugDocumentPosition2"
+
+[$RootKey$\HandleInComingCall\{C43CC2F3-90AF-4E93-9112-DFB8B36749B5}]
+@="INotifySink2"
+
+[$RootKey$\HandleInComingCall\{F239E580-DB73-11D0-938A-00A0C9034910}]
+@="ISqlDebugEvent"
+
+[$RootKey$\HandleInComingCall\{F239E584-DB73-11D0-938A-00A0C9034910}]
+@="ISqlDebugEvent2"
+
+[$RootKey$\Languages]
+
+[$RootKey$\Languages\Language Services]
+
+[$RootKey$\Languages\Language Services\Memory]
+"LangResID"=dword:00000099
+"NotALanguage"=dword:00000001
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"ShowCompletion"=dword:00000000
+"ShowSmartIndent"=dword:00000000
+"FontColorDefaults"=hex:36,01,00,00,0c,00,00,00,01,00,00,00,91,79,18,e0,58,b4,7e,4f,8c,a9,42,c9,a5,73,b5,6c,00,04,00,00,00,0b,00,00,00,4d,65,6d,6f,72,79,20,44,61,74,61,01,01,00,00,01,01,00,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,31,35,31,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,00,00,00,00,1e,00,00,00,00,00,00,00,0e,00,00,00,4d,65,6d,6f,72,79,20,43,68,61,6e,67,65,64,01,01,00,00,01,01,0c,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,31,35,32,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,00,00,00,00,1e,00,00,00,00,00,00,00,0e,00,00,00,4d,65,6d,6f,72,79,20,41,64,64,72,65,73,73,01,01,00,00,01,01,0b,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,31,35,36,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,00,00,00,00,1e,00,00,00,00,00,00,00,11,00,00,00,4d,65,6d,6f,72,79,20,55,6e,72,65,61,64,61,62,6c,65,01,ee,ef,e6,00,01,02,00,00,01,ff,ff,ff,ff,01,05,00,00,00,23,34,39,38,32,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,00,00,00,00,1e,00,00,00,00,00,00,00
+@="{DF38847E-CC19-11D2-8ADA-00C04F79E479}"
+
+[$RootKey$\Languages\Language Services\Register]
+"LangResID"=dword:00001360
+"NotALanguage"=dword:00000001
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"ShowCompletion"=dword:00000000
+"ShowSmartIndent"=dword:00000000
+"FontColorDefaults"=hex:f7,00,00,00,0c,00,00,00,01,00,00,00,91,79,18,e0,58,b4,7e,4f,8c,a9,42,c9,a5,73,b5,6c,00,03,00,00,00,15,00,00,00,52,65,67,69,73,74,65,72,20,44,61,74,61,20,43,68,61,6e,67,65,64,01,01,00,00,01,01,0c,00,00,01,ff,ff,ff,ff,01,05,00,00,00,23,34,39,35,39,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,00,00,00,00,1e,00,00,00,00,00,00,00,0d,00,00,00,52,65,67,69,73,74,65,72,20,44,61,74,61,01,01,00,00,01,01,00,00,00,01,ff,ff,ff,ff,01,05,00,00,00,23,34,39,38,36,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,00,00,00,00,1e,00,00,00,00,00,00,00,0c,00,00,00,52,65,67,69,73,74,65,72,20,4e,41,54,01,01,00,00,01,01,0a,00,00,01,ff,ff,ff,ff,01,05,00,00,00,23,35,30,33,30,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,00,00,00,00,1e,00,00,00,00,00,00,00
+@="{13F6A341-59C0-11D3-994C-00C04F68FDAF}"
+
+[$RootKey$\Menus]
+"{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"=", 1000, 1"
+
+[$RootKey$\OutputWindow]
+
+[$RootKey$\OutputWindow\{FC076020-078A-11D1-A7DF-00A0C9110051}]
+"ContentType"="DebugOutput"
+"InitiallyInvisible"=dword:00000001
+"Name"="Debug"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+@="#66"
+
+[$RootKey$\Packages]
+
+[$RootKey$\Packages\{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}]
+"InprocServer32"="$BaseInstallDir$\Common7\Packages\Debugger\vsdebug.dll"
+"Preload"=dword:00000000
+@="Visual Studio Debugger"
+
+[$RootKey$\Packages\{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}\Automation]
+"Debugger"="Visual Studio Debugger"
+
+[$RootKey$\Packages\{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}\AutomationEvents]
+"DebuggerEvents"="Visual Studio Debugger Events"
+
+[$RootKey$\Packages\{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}\SatelliteDll]
+"DllName"="VSDebugUI.dll"
+"Path"="$BaseInstallDir$\Common7\Packages\Debugger\"
+
+[$RootKey$\Services]
+
+[$RootKey$\Services\{13F6A341-59C0-11D3-994C-00C04F68FDAF}]
+"Name"="Register Language Service"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\Services\{3B70A4AE-BB91-4ABE-A05C-C4DE07B9763E}]
+"Name"="Debugger Window Font and Color Service"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\Services\{44B05627-95C2-4CE8-BDCD-4AA722785093}]
+"Name"="Debugger Marker Service"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\Services\{7d960b16-7af8-11d0-8e5e-00a0c911005a}]
+"Name"="IVsDebugger"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\Services\{DF38847E-CC19-11D2-8ADA-00C04F79E479}]
+"Name"="Memory Language Service"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\Services\{0F6A40B8-D6B5-44B9-86E9-1D6B1B208E3F}]
+"Name="="VSDebug Script Install Check"
+@="{D549BC66-C17B-4409-8729-583E60DC0BC1}"
+
+[$RootKey$\Services\{26285349-C245-494F-AE0C-7CDA257CEE0B}]
+"Name"="IModulesWindowService"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\Services\{62166866-2F12-4324-A9A6-48B2081053D1}]
+"Name"="SID_SVsDebuggerLaunchAsync"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\Text Editor]
+
+[$RootKey$\Text Editor\External Markers]
+
+[$RootKey$\Text Editor\External Markers\{030EF597-983E-4DC8-BFE2-A57508256636}]
+"DisplayName"="#271"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:75,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,2d,20,4d,61,70,70,65,64,20,28,45,6e,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,37,31,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Mapped Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{095C01F2-B8AB-4FBB-9404-6EFCD125E4F8}]
+"DisplayName"="#248"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6d,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,15,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,28,44,69,73,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,34,38,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{1915461E-0F61-44C5-8F2C-9CE3CA05B2C1}]
+"DisplayName"="#272"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:73,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1b,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,2d,20,4d,61,70,70,65,64,20,28,45,72,72,6f,72,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,37,32,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Mapped Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{1B7D8015-15FF-4EC9-9C8C-5B83499C8468}]
+"DisplayName"="#263"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:78,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,20,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,44,69,73,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,36,33,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,01,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Breakpoint Advanced Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{1E36D6FC-803F-4FD3-BD00-435A4EEF8911}]
+"DisplayName"="#255"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:77,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1f,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,45,6e,61,62,6c,65,64,29,01,96,3a,46,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,04,00,00,00,23,32,35,35,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Advanced Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{1F66BCD8-0239-4A9B-A3F9-F51321D3368C}]
+"DisplayName"="#249"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6a,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,12,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,28,45,72,72,6f,72,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,34,39,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{2138B8A9-9D8F-4073-90AC-88678AC755A5}]
+"DisplayName"="#273"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:75,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,2d,20,4d,61,70,70,65,64,20,28,57,61,72,6e,69,6e,67,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,37,33,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Mapped Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{237C7135-D8A7-48C4-832C-DF1FB8CEFD0E}]
+"DisplayName"="#266"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:78,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,20,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,44,69,73,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,36,36,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Advanced Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{2DAA2998-36A1-4B85-B8E9-4CDA438DDF8C}]
+"DisplayName"="#269"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:77,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1f,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,57,61,72,6e,69,6e,67,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,36,39,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Advanced Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{2FA576FC-EA49-49B0-93D6-85133168BA82}]
+"DisplayName"="#270"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:76,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1e,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,2d,20,4d,61,70,70,65,64,20,28,44,69,73,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,37,30,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Mapped Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{37469172-F83A-4BFA-864B-6900D34EA6F0}]
+"DisplayName"="#247"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,14,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,28,45,6e,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,34,37,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{3DDBBA3A-4C4A-493B-BAD1-70E2B47B421C}]
+"DisplayName"="#265"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:77,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1f,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,57,61,72,6e,69,6e,67,29,01,96,3a,46,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,04,00,00,00,23,32,36,35,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Advanced Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{546FAD73-6000-4138-BA73-9B4746C38324}]
+"DisplayName"="#251"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:75,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,4d,61,70,70,65,64,20,28,57,61,72,6e,69,6e,67,29,01,96,3a,46,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,04,00,00,00,23,32,35,31,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Mapped Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{59E4355F-5663-45B8-B4F3-51ED22561DED}]
+"DisplayName"="#201"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:76,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1e,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,4d,61,70,70,65,64,20,28,44,69,73,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,30,31,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,01,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Breakpoint Mapped Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{61DF72D6-D8F7-472E-A78D-4DDF06ED7391}]
+"DisplayName"="#253"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:73,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1b,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,4d,61,70,70,65,64,20,28,45,72,72,6f,72,29,01,96,3a,46,00,01,ff,db,a3,00,ff,ff,ff,ff,01,04,00,00,00,23,32,35,33,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Mapped Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{69DA1285-D454-4DA1-AB7A-1039C71F3F80}]
+"DisplayName"="#264"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:75,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,45,72,72,6f,72,29,01,96,3a,46,00,01,ff,db,a3,00,ff,ff,ff,ff,01,04,00,00,00,23,32,36,34,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Advanced Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{6D799B25-7F32-4173-A4EB-521827D4AE4F}]
+"DisplayName"="#199"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:69,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,11,00,00,00,43,75,72,72,65,6e,74,20,53,74,61,74,65,6d,65,6e,74,01,ff,ee,62,00,01,00,00,00,00,ff,ff,ff,ff,01,04,00,00,00,23,31,39,39,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,23,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Current Statement Marker"
+
+[$RootKey$\Text Editor\External Markers\{6D799B26-7F31-4173-A4EB-521827D4AE4F}]
+"DisplayName"="#5159"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,13,00,00,00,45,78,65,63,75,74,69,6e,67,20,54,68,72,65,61,64,20,49,50,01,ff,ee,62,00,01,00,00,00,00,ff,ff,ff,ff,01,05,00,00,00,23,35,31,35,37,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,23,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Current Statement (New Context) Marker"
+
+[$RootKey$\Text Editor\External Markers\{79BC1EA2-8729-4E27-8A45-876B2AC41D49}]
+"DisplayName"="#5158"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:78,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1f,00,00,00,43,75,72,72,65,6e,74,20,53,74,61,74,65,6d,65,6e,74,20,28,6e,65,77,20,63,6f,6e,74,65,78,74,29,01,18,00,00,01,01,0a,00,00,01,ff,ff,ff,ff,01,05,00,00,00,23,35,31,35,39,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,01,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Executing Threads Ip Marker"
+
+[$RootKey$\Text Editor\External Markers\{7E2ED083-0516-4366-A84E-3FECB4369799}]
+"DisplayName"="#195"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6d,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,15,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,28,44,69,73,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,31,39,35,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,01,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Breakpoint Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{9D00A12E-9336-4585-A4A6-27B87383312D}]
+"DisplayName"="#196"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6a,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,12,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,28,45,72,72,6f,72,29,01,96,3a,46,00,01,ff,db,a3,00,ff,ff,ff,ff,01,04,00,00,00,23,31,39,36,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{9E96A88C-A98E-4711-B610-F2783EEFD731}]
+"DisplayName"="#268"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:75,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,45,72,72,6f,72,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,36,38,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Advanced Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{A5998F84-BB45-4885-B552-0A9A6D98BE26}]
+"DisplayName"="#197"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,14,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,28,57,61,72,6e,69,6e,67,29,01,96,3a,46,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,04,00,00,00,23,31,39,37,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{BABF7B70-3291-4063-BD30-78A0066597D8}]
+"DisplayName"="#7004"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6e,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,15,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,53,65,6c,65,63,74,65,64,01,18,00,00,01,01,0f,00,00,01,ff,ff,ff,ff,01,05,00,00,00,23,37,30,30,35,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,01,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Selected Breakpoint Marker"
+
+[$RootKey$\Text Editor\External Markers\{BF443FF9-5FB3-44D8-B087-E2A50E6D1E56}]
+"DisplayName"="#5157"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6e,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,15,00,00,00,45,78,65,63,75,74,69,6e,67,20,54,68,72,65,61,64,73,20,49,50,73,01,18,00,00,01,01,0a,00,00,01,ff,ff,ff,ff,01,05,00,00,00,23,35,31,35,38,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,01,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Executing Thread Ip Marker"
+
+[$RootKey$\Text Editor\External Markers\{C362E2C6-C242-425D-95D4-9A52B27096A8}]
+"DisplayName"="#194"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,14,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,28,45,6e,61,62,6c,65,64,29,01,96,3a,46,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,04,00,00,00,23,31,39,34,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{CCB8B9D5-1643-4B41-8395-53C5B5ED5284}]
+"DisplayName"="#198"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:63,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,0b,00,00,00,43,61,6c,6c,20,52,65,74,75,72,6e,01,b4,e4,b4,00,01,00,00,00,00,ff,ff,ff,ff,01,04,00,00,00,23,31,39,38,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,23,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Call Return Marker"
+
+[$RootKey$\Text Editor\External Markers\{CCB8B9D6-1642-4B41-8395-53C5B5ED5284}]
+"DisplayName"="#5175"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:72,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,19,00,00,00,43,61,6c,6c,20,52,65,74,75,72,6e,20,28,6e,65,77,20,63,6f,6e,74,65,78,74,29,01,b4,e4,b4,00,01,00,00,00,00,ff,ff,ff,ff,01,05,00,00,00,23,35,31,37,35,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,23,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Call Return (New Context) Marker"
+
+[$RootKey$\Text Editor\External Markers\{D49BF491-8D10-4535-BC7E-379Fb551A1D6}]
+"DisplayName"="#8001"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:76,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,43,61,6c,6c,20,52,65,74,75,72,6e,20,28,68,69,73,74,6f,72,69,63,61,6c,20,6d,6f,64,65,29,01,fe,cb,ac,00,01,00,00,00,00,ff,ff,ff,ff,01,05,00,00,00,23,38,30,30,31,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,23,20,00,00,1f,00,00,00,00,00,00,00
+@="Call Return (historical mode) Marker"
+
+[$RootKey$\Text Editor\External Markers\{DCEBFA0F-BBDB-45FA-BA34-3A85A8AABD57}]
+"DisplayName"="#8000"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:7c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,23,00,00,00,43,75,72,72,65,6e,74,20,53,74,61,74,65,6d,65,6e,74,20,28,68,69,73,74,6f,72,69,63,61,6c,20,6d,6f,64,65,29,01,fe,cb,ac,00,01,00,00,00,00,ff,ff,ff,ff,01,05,00,00,00,23,38,30,30,30,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,23,20,00,00,1f,00,00,00,00,00,00,00
+@="Current Statement (historical mode) Marker"
+
+[$RootKey$\Text Editor\External Markers\{E3AA0043-8E3E-4441-BDC5-79F72387E807}]
+"DisplayName"="#267"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:77,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1f,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,45,6e,61,62,6c,65,64,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,36,37,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Advanced Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{E52A924F-0A81-4CE0-B5A2-C4BAE0BF29E3}]
+"DisplayName"="#200"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:75,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,42,72,65,61,6b,70,6f,69,6e,74,20,2d,20,4d,61,70,70,65,64,20,28,45,6e,61,62,6c,65,64,29,01,96,3a,46,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,04,00,00,00,23,32,30,30,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Debugger Breakpoint Mapped Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{F7218A30-4648-4994-8A38-2FAF8A992E4F}]
+"DisplayName"="#250"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,14,00,00,00,54,72,61,63,65,70,6f,69,6e,74,20,28,57,61,72,6e,69,6e,67,29,01,18,00,00,01,01,04,00,00,01,ff,ff,ff,ff,01,04,00,00,00,23,32,35,30,00,01,00,00,00,08,01,00,00,00,01,0f,00,00,00,04,25,21,00,00,13,00,00,00,00,00,00,00
+@="Debugger Tracepoint Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{7B8B5465-6B81-42A0-AAAA-3671C4562AF9}]
+"DisplayName"="#8301"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,13,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,28,45,6e,61,62,6c,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,31,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{03B3A94E-3499-4236-980D-3E5CCCA0FB06}]
+"DisplayName"="#8302"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6d,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,14,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,28,44,69,73,61,62,6c,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,32,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{CC185475-37D3-449E-9ECA-6C98693B1E29}]
+"DisplayName"="#8303"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,13,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,28,57,61,72,6e,69,6e,67,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,33,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{478029C1-2932-4346-B3B4-4AE625A49736}]
+"DisplayName"="#8304"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6a,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,11,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,28,45,72,72,6f,72,29,01,80,00,80,00,01,ff,db,a3,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,34,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{05AE274B-9548-4512-9B87-428521C5B643}]
+"DisplayName"="#8309"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6a,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,11,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,28,41,6c,65,72,74,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,39,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Alert Marker"
+
+[$RootKey$\Text Editor\External Markers\{D2CC5149-8ED6-4582-9376-A4A3347A1840}]
+"DisplayName"="#8310"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6b,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,12,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,28,44,61,73,68,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,30,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Dashed Marker"
+
+[$RootKey$\Text Editor\External Markers\{CA139EEB-4F00-40D2-A4F1-8683F135E20E}]
+"DisplayName"="#8311"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,13,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,28,43,68,65,63,6b,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,31,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Checked Marker"
+
+[$RootKey$\Text Editor\External Markers\{B0C16B6D-BB6F-4C2B-B585-BFBC28FC6462}]
+"DisplayName"="#8305"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:77,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1e,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,45,6e,61,62,6c,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,35,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Advanced Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{CC6FB6F0-93B0-4076-AE52-88975A92CAF3}]
+"DisplayName"="#8306"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:78,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1f,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,44,69,73,61,62,6c,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,36,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Advanced Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{B9115E4E-4C73-4326-8184-33E78C21F699}]
+"DisplayName"="#8307"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:77,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1e,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,57,61,72,6e,69,6e,67,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,37,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Advanced Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{9ABD2145-BAE6-4DAB-ADDA-9B45B75BC058}]
+"DisplayName"="#8308"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:75,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1c,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,45,72,72,6f,72,29,01,80,00,80,00,01,ff,db,a3,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,30,38,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Advanced Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{13D646B1-216C-4A23-8C80-DFE810C20F3B}]
+"DisplayName"="#8312"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:75,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1c,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,41,6c,65,72,74,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,32,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Advanced Alert Marker"
+
+[$RootKey$\Text Editor\External Markers\{50DAC0F8-F35A-424F-B7CD-4358BB7DF176}]
+"DisplayName"="#8313"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:77,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1e,00,00,00,53,6e,61,70,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,43,68,65,63,6b,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,33,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,01,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Snappoint Advanced Checked Marker"
+
+[$RootKey$\Text Editor\External Markers\{9336DFB6-6E99-498B-8C1F-DA1485CF966E}]
+"DisplayName"="#8314"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6b,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,12,00,00,00,4c,6f,67,70,6f,69,6e,74,20,28,45,6e,61,62,6c,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,34,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{DB310737-BFEB-4927-8157-2C5116BC00D7}]
+"DisplayName"="#8315"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6c,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,13,00,00,00,4c,6f,67,70,6f,69,6e,74,20,28,44,69,73,61,62,6c,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,35,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{752E95EC-60DA-4561-86B9-6B166AC24617}]
+"DisplayName"="#8316"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6b,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,12,00,00,00,4c,6f,67,70,6f,69,6e,74,20,28,57,61,72,6e,69,6e,67,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,36,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{F7645558-0784-4629-AD58-867E92A8C1A5}]
+"DisplayName"="#8317"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:69,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,10,00,00,00,4c,6f,67,70,6f,69,6e,74,20,28,45,72,72,6f,72,29,01,80,00,80,00,01,ff,db,a3,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,37,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{8B781619-03DD-4C80-8589-B55F129873A6}]
+"DisplayName"="#8318"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:69,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,10,00,00,00,4c,6f,67,70,6f,69,6e,74,20,28,41,6c,65,72,74,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,38,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Alert Marker"
+
+[$RootKey$\Text Editor\External Markers\{6B303F73-BCA5-4287-BB8D-756A4B47C4DB}]
+"DisplayName"="#8319"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:6a,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,11,00,00,00,4c,6f,67,70,6f,69,6e,74,20,28,44,61,73,68,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,31,39,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Dashed Marker"
+
+[$RootKey$\Text Editor\External Markers\{01B0B134-61DC-4C8C-B787-481372A10DF0}]
+"DisplayName"="#8320"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:76,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,4c,6f,67,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,45,6e,61,62,6c,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,32,30,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Advanced Enabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{0AEF41C5-7259-4C98-990A-2725843EE04E}]
+"DisplayName"="#8321"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:77,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1e,00,00,00,4c,6f,67,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,44,69,73,61,62,6c,65,64,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,32,31,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Advanced Disabled Marker"
+
+[$RootKey$\Text Editor\External Markers\{55BB7B63-0CC3-4B79-AC84-9BAC1BE18899}]
+"DisplayName"="#8322"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:76,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1d,00,00,00,4c,6f,67,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,57,61,72,6e,69,6e,67,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,32,32,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Advanced Warning Marker"
+
+[$RootKey$\Text Editor\External Markers\{5192EDDD-02C2-4E08-B110-2CE64129B023}]
+"DisplayName"="#8323"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:74,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1b,00,00,00,4c,6f,67,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,45,72,72,6f,72,29,01,80,00,80,00,01,ff,db,a3,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,32,33,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Advanced Error Marker"
+
+[$RootKey$\Text Editor\External Markers\{729FF811-A177-4800-9626-DC2876623D4A}]
+"DisplayName"="#8324"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Service"="{44B05627-95C2-4CE8-BDCD-4AA722785093}"
+"ColorData"=hex:74,00,00,00,0c,00,00,00,01,00,00,00,00,98,34,ff,43,ea,c1,46,8c,98,87,8e,78,f4,65,01,00,01,00,00,00,1b,00,00,00,4c,6f,67,70,6f,69,6e,74,20,2d,20,41,64,76,61,6e,63,65,64,20,28,41,6c,65,72,74,29,01,80,00,80,00,01,ff,ff,ff,00,ff,ff,ff,ff,01,05,00,00,00,23,38,33,32,34,00,01,01,00,00,01,01,00,00,00,01,0f,00,00,00,04,25,20,00,00,1f,00,00,00,00,00,00,00
+@="Logpoint Advanced Alert Marker"
+
+[$RootKey$\ToolsOptionsPages]
+
+[$RootKey$\ToolsOptionsPages\Debugger]
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Sort"=dword:00000004
+@="#5000"
+
+[$RootKey$\ToolsOptionsPages\Debugger\General]
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Page"="{FA9EB535-C624-13D0-AE1F-00A0190FF4C3}"
+"Keywords"="#1220;#1206;#286;#1210;#1203;#1221;#8161;#1214;#202;#7021;#7025;#5121;#5125;#295;#297;#8058;#8071;#8181;#8262;#1207;#1216;#285;#5126;#700;#8203;#8029;#8010;#8044;#8079;#8102;#8131;#8128;#8149;#8136;#8138;#8139;#8140;#8141;#8171;#8261;#8263;#8404;#8415;#8434;#8436"
+"IsServerAware"=dword:00000001
+@="#5001"
+
+[$RootKey$\ToolsOptionsPages\Debugger\Symbols]
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"Page"="{1F5E080F-CBD2-459C-8267-39FD83032166}"
+"Keywords"="#8049"
+@="#5051"
+
+[$RootKey$\ToolsOptionsPages\Debugger\VisibilityCmdUIContexts]
+"{338492A6-3F51-407C-8DE5-D25445BFFCDD}"="1"
+
+[$RootKey$\ToolWindows]
+
+[$RootKey$\ToolWindows\{0504FF91-9D61-11D0-A794-00A0C9110051}]
+"Name"="Call Stack"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{0504FF91-9D61-11D0-A794-00A0C9110051}\Visibility]
+"{ADFC4E61-0397-11D1-9F4E-00A0C911004F}"=dword:00000000
+
+[$RootKey$\ToolWindows\{350F9856-A72B-11D2-8AD0-00C04F79E479}]
+"Name"="Memory"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{350F9856-A72B-11D2-8AD0-00C04F79E479}\Visibility]
+"{ADFC4E61-0397-11D1-9F4E-00A0C911004F}"=dword:00000000
+
+[$RootKey$\ToolWindows\{37ABA9BE-445A-11D3-9949-00C04F68FD0A}]
+"Name"="Modules"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{37ABA9BE-445A-11D3-9949-00C04F68FD0A}\Visibility]
+"{ADFC4E61-0397-11D1-9F4E-00A0C911004F}"=dword:00000000
+"{C22BCF10-E1EB-42C6-95A5-E01418C08A29}"=dword:00000000
+
+[$RootKey$\ToolWindows\{4A18F9D0-B838-11D0-93EB-00A0C90F2734}]
+"Name"="Locals"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{4A18F9D0-B838-11D0-93EB-00A0C90F2734}\Visibility]
+"{ADFC4E61-0397-11D1-9F4E-00A0C911004F}"=dword:00000000
+
+[$RootKey$\ToolWindows\{51C76317-9037-4CF2-A20A-6206FD30B4A1}]
+"Name"="Processes"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{51C76317-9037-4CF2-A20A-6206FD30B4A1}\Visibility]
+"{ADFC4E61-0397-11D1-9F4E-00A0C911004F}"=dword:00000000
+
+[$RootKey$\ToolWindows\{90243340-BD7A-11D0-93EF-00A0C90F2734}]
+"Name"="Watch"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{90243340-BD7A-11D0-93EF-00A0C90F2734}\Visibility]
+"{ADFC4E61-0397-11D1-9F4E-00A0C911004F}"=dword:00000000
+
+[$RootKey$\ToolWindows\{BE4D7042-BA3F-11D2-840E-00C04F9902C1}]
+"Float"="200, 200, 700, 450"
+"Name"="Breakpoints"
+"Style"="Tabbed"
+"Window"="{4A9B7E51-AA16-11D0-A8C5-00A0C921A4D2}"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{BE4D7042-BA3F-11D2-840E-00C04F9902C1}\Visibility]
+"{F1536EF8-92EC-443C-9ED7-FDADF150DA82}"=dword:00000000
+
+[$RootKey$\ToolWindows\{CA4B8FF5-BFC7-11D2-9929-00C04F68FDAF}]
+"Name"="Registers"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{CA4B8FF5-BFC7-11D2-9929-00C04F68FDAF}\Visibility]
+"{ADFC4E61-0397-11D1-9F4E-00A0C911004F}"=dword:00000000
+
+[$RootKey$\ToolWindows\{F2E84780-2AF1-11D1-A7FA-00A0C9110051}]
+"Name"="Autos"
+@="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+
+[$RootKey$\ToolWindows\{F2E84780-2AF1-11D1-A7FA-00A0C9110051}\Visibility]
+"{ADFC4E61-0397-11D1-9F4E-00A0C911004F}"=dword:00000000
+
+[$RootKey$\UserSettings]
+
+[$RootKey$\UserSettings\Debugger]
+"AlternateParent"="AutomationProperties"
+"Category"="{EEDBF29A-5C8B-4E01-827C-263382C18CFE}"
+"Description"="#310"
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+"VsSettingsMigration"=dword:00000001
+@="#5000"
+
+[$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\VSDebug]
+@="$PackageFolder$\OpenFolderSchema.json"
+
+; debugger\idl\ad7.hrc
+[$RootKey$\Debugger\ErrorResources\4]
+"ResourceDll"="$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll"
+"HRCTable"=dword:00000001
+
+; VSDebugError.hrc
+[$RootKey$\Debugger\ErrorResources\971]
+"ResourceDll"="$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll"
+"HRCTable"=dword:00000002
+
+; concord\src\api\Errors.hrc
+[$RootKey$\Debugger\ErrorResources\1233]
+"ResourceDll"="$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll"
+"HRCTable"=dword:00000003
+
+; concord\src\api\XapiCompiler\XapiErrors.hrc
+[$RootKey$\Debugger\ErrorResources\EDE]
+"ResourceDll"="$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll"
+"HRCTable"=dword:00000004
+
+[$RootKey$\KeyBindingTables\{F2E84780-2AF1-11D1-A7FA-00A0C9110051}]
+"AllowNavKeyBinding"=dword:00000000
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+@="#8400"
+
+[$RootKey$\KeyBindingTables\{4A18F9D0-B838-11D0-93EB-00A0C90F2734}]
+"AllowNavKeyBinding"=dword:00000000
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+@="#8401"
+
+[$RootKey$\KeyBindingTables\{90243340-BD7A-11D0-93EF-00A0C90F2734}]
+"AllowNavKeyBinding"=dword:00000000
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+@="#8402"
+
+[$RootKey$\KeyBindingTables\{37ABA9BE-445A-11D3-9949-00C04F68FD0A}]
+"AllowNavKeyBinding"=dword:00000000
+"Package"="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}"
+@="#8438"
+
+[$RootKey$\UIContextRules\{C0E3FA40-AB04-4790-8308-919B35BC2313}]
+@="UICONTEXT_HotReloadVisible"
+"Expression"="CSharpProjectExistsInWorkspaceUIContext | VisualBasicProjectExistsInWorkspaceUIContext | VCProjectUIContext"
+; From: [https://github.com/dotnet/roslyn/blob/main/src/VisualStudio/Core/Def/Guids.cs]
+"CSharpProjectExistsInWorkspaceUIContext"="{CA719A03-D55C-48F9-85DE-D934346E7F70}"
+"VisualBasicProjectExistsInWorkspaceUIContext"="{EEC3DF0D-6D3F-4544-ABF9-8E26E6A90275}"
+"VCProjectUIContext"="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"

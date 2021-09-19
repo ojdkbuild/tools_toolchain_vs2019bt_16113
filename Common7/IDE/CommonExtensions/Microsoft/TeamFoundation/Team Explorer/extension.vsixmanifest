@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.TeamFoundation.TeamExplorer.Extensions" Version="16.11.31604.3" Language="en-US" Publisher="Microsoft"/>
+    <DisplayName xml:space="preserve">Team Explorer</DisplayName>
+    <Description xml:space="preserve">Team Foundation extensions for Microsoft Visual Studio</Description>
+    <PackageId>Microsoft.VisualStudio.TeamExplorer</PackageId>
+    <AllowClientRole>true</AllowClientRole>
+  </Metadata>
+  <Installation InstalledByMsi="false" AllUsers="true" SystemComponent="true" Scope="ProductExtension">
+    <InstallationTarget Id="Microsoft.VisualStudio.IntegratedShell" Version="[16.0,17.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Express_All" Version="[16.0,17.0)" />
+  </Installation>
+  <Dependencies />
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor"/>
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="TeamExplorer.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="TeamExplorer.CodeBase.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="TeamExplorerThemes.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.Build.Controls.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.CodeReview.Controls.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.CodeReview.Components.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.Controls.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.Git.Controls.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.Git.HostingProvider.AzureDevOps.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.Git.HostingProvider.GitHub.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.Git.Provider.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.TeamExplorer.Navigation.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.VersionControl.Controls.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.TeamFoundation.WorkItemTracking.Controls.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.CodeReview.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.ContextManagement.Package.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.Commenting.Presentation.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.DiffBase.Internal.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.Merge.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.TeamFoundation.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.TeamFoundation.Build.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.TeamFoundation.NuGetCredentialProvider.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.TeamFoundation.SharePointReporting.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.TeamFoundation.VersionControl.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll" />
+  </Assets>
+  <Installer>
+    <Actions>
+      <Action Type="Ngen" Path="Microsoft.TeamFoundation.Git.dll" />
+      <Action Type="Ngen" Path="Microsoft.TeamFoundation.Git.Controls.dll" />
+      <Action Type="Ngen" Path="Microsoft.TeamFoundation.Git.CoreServices.dll" />
+      <Action Type="Ngen" Path="Microsoft.TeamFoundation.Git.Provider.dll" />
+      <Action Type="Ngen" Path="TF.exe" />
+    </Actions>
+  </Installer>
+</PackageManifest>

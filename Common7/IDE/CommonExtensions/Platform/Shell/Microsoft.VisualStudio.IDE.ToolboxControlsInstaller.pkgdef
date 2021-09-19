@@ -1,0 +1,7 @@
+[$RootKey$\Packages\{2c298b35-07da-45f1-96a3-be55d91c8d7a}]
+@="Toolbox Controls Installer Package"
+"InprocServer32"="$WinDir$\system32\mscoree.dll"
+"Class"="Microsoft.VisualStudio.IDE.ToolboxControlsInstaller.ToolboxInstallerPackage"
+"Assembly"="Microsoft.VisualStudio.IDE.ToolboxControlsInstaller,version=16.0.0.0,publicKeyToken=b03f5f7f11d50a3a,culture=neutral"
+[$RootKey$\Packages\{2c298b35-07da-45f1-96a3-be55d91c8d7a}\Toolbox]
+"Default Items"=dword:00000001

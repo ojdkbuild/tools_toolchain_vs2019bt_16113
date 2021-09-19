@@ -1,0 +1,1078 @@
+//=================================================================================================
+// Build
+//=================================================================================================
+
+[$RootKey$\Editors\{19D8ED1B-FFD3-4DFA-B329-E47AD8752E9E}]
+@="RequestEditorFactory"
+"DisplayName"="#108"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"Package"="{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"
+"CommonPhysicalViewAttributes"=dword:3
+
+[$RootKey$\Editors\{19D8ED1B-FFD3-4DFA-B329-E47AD8752E9E}\LogicalViews]
+@=""
+
+[$RootKey$\Editors\{787F353C-A61F-4450-B10D-3B8CEBE41B93}]
+@="BuildDefinitionEditorFactory"
+"DisplayName"="#107"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"Package"="{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"
+"CommonPhysicalViewAttributes"=dword:0
+
+[$RootKey$\Editors\{787F353C-A61F-4450-B10D-3B8CEBE41B93}\LogicalViews]
+@=""
+
+[$RootKey$\Editors\{86306a97-84f2-4f5a-889b-1318501aeb5f}]
+@="BuildReportEditorFactory"
+"DisplayName"="#106"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"Package"="{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"
+"CommonPhysicalViewAttributes"=dword:3
+
+[$RootKey$\Editors\{86306a97-84f2-4f5a-889b-1318501aeb5f}\LogicalViews]
+@=""
+
+[$RootKey$\Menus]
+"{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"=", 1000.ctmenu, 1"
+
+[$RootKey$\Packages\{739f34b3-9ba6-4356-9178-ac3ea81bdf47}]
+@="Microsoft.VisualStudio.TeamFoundation.Build.BuildPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.Build.BuildPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.Build, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Packages\{739f34b3-9ba6-4356-9178-ac3ea81bdf47}\Automation]
+"Microsoft.VisualStudio.TeamFoundation.Build.VsTeamFoundationBuild"=""
+
+[$RootKey$\Services\{521129AB-BD67-4051-8BCE-33F2E1C89630}]
+@="{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"
+"Name"="TeamProjectCreationPlugin"
+
+[$RootKey$\Services\{8a6842f1-5735-4d30-8a22-2faabbf4ea59}]
+@="{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"
+"Name"="ICheckinExceptionHandler"
+
+[$RootKey$\Services\{bc1bc260-83fb-4a6c-b701-cbe5a5e86289}]
+@="{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"
+"Name"="BuildClientLinking"
+
+[$RootKey$\Services\{BCF3BA35-61AD-4ef1-BB72-00A3C8E841A7}]
+@="{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"
+"Name"="IVsTeamFoundationBuild"
+
+[$RootKey$\TeamSystemPlugins\Project Creation Plugins\Microsoft.ProjectCreationWizard.Build]
+@="521129AB-BD67-4051-8BCE-33F2E1C89630"
+"Enabled"=dword:1
+
+[$RootKey$\TeamSystemPlugins\Team System Client Linking Plugins\Build]
+@="bc1bc260-83fb-4a6c-b701-cbe5a5e86289"
+"Enabled"=dword:1
+
+[$RootKey$\ToolWindows\{e77209ba-064a-4625-b8ce-dfd1d7967cd1}]
+@="{739f34b3-9ba6-4356-9178-ac3ea81bdf47}"
+"Name"="Microsoft.VisualStudio.TeamFoundation.Build.TeamBuildBrowserToolWindow"
+"Float"="100, 100, 800, 600"
+"Style"="MDI"
+"DontForceCreate"=dword:1
+
+//=================================================================================================
+// Code Review
+//=================================================================================================
+
+[$RootKey$\BindingPaths\{87AB66A2-B7A2-42ED-9AF5-B8F3E2A3BC23}]
+"$PackageFolder$"=""
+
+[$RootKey$\Menus]
+"{87ab66a2-b7a2-42ed-9af5-b8f3e2a3bc23}"=", Menus.ctmenu, 1"
+
+[$RootKey$\Packages\{87ab66a2-b7a2-42ed-9af5-b8f3e2a3bc23}]
+@="CodeReviewTextViewCreationListener"
+"InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
+"Class"="Microsoft.TeamFoundation.CodeReview.Components.CodeReviewTextViewCreationListener"
+"Assembly"="Microsoft.TeamFoundation.CodeReview.Components, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Services\{16e9fa29-e232-4afc-8d33-325183088c9f}]
+@="{87ab66a2-b7a2-42ed-9af5-b8f3e2a3bc23}"
+"Name"="CodeReviewClientLinking"
+
+[$RootKey$\TeamSystemPlugins\Team System Client Linking Plugins\CodeReview]
+@="16e9fa29-e232-4afc-8d33-325183088c9f"
+"Enabled"=dword:1
+
+//=================================================================================================
+// Git
+//=================================================================================================
+
+[$RootKey$\AppCommandLine\GitClone]
+"Arguments"="1"
+"DemandLoad"=dword:1
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+
+[$RootKey$\AutoLoadPackages\{11b8e6d7-c08b-4385-b321-321078cdd1f8}]
+"{7FE5C29F-58EC-45F0-AF68-EC00D9ECD138}"=dword:00000000
+
+[$RootKey$\BrokeredServices\GitProvider.GitRepositoryManager\1.1]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"audience"=dword:503
+"allowguestclients"=dword:00000001 
+
+[$RootKey$\BrokeredServices\GitProvider.GitRepository\1.1]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"audience"=dword:503
+"allowguestclients"=dword:00000001 
+
+[$RootKey$\BrokeredServices\GitProvider.GitRepository\1.2]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"audience"=dword:503
+"allowguestclients"=dword:00000001 
+
+[$RootKey$\BrokeredServices\GitProvider.GitRepository\1.3]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"audience"=dword:503
+"allowguestclients"=dword:00000001 
+
+[$RootKey$\BrokeredServices\GitProvider.VsHost\1.1]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"audience"=dword:503
+"allowguestclients"=dword:00000001 
+
+[$RootKey$\FeatureFlags\Git\Operation\CreateHostedPullRequests]
+"Description"="Makes it easy to create Azure DevOps Pull Requests in Visual Studio without needing to switch windows or use the web."
+"Value"=dword:00000000
+
+[$RootKey$\FeatureFlags\Git\Operation\OpenHostedPullRequests]
+"Description"="Enables Azure DevOps Pull Requests Reviews in Visual Studio which includes the ability to comment using markdown, emojis, and likes."
+"Value"=dword:00000000
+
+[$RootKey$\FeatureFlags\Git\UX\NewGitUX1611]
+"Description"="Use the new Git menu and tool window."
+"Value"=dword:1
+"Title"="New Git user experience"
+"PreviewPaneChannels"="*"
+"FeedbackUrl"="https://aka.ms/vsgitsurvey1611"
+"LearnMoreUrl"="https://aka.ms/vsgitdocs"
+"RequiredAction"=""
+
+[$RootKey$\KeyBindingTables\{7605A6B0-118F-45BF-95CC-7DB110BF44FD}]
+@="#100"
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"AllowNavKeyBinding"=dword:0
+
+[$RootKey$\Menus]
+"{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"=", 1000.ctmenu, 1"
+
+[$RootKey$\Menus]
+"{7FE5C29F-58EC-45F0-AF68-EC00D9ECD138}"=", 2000.ctmenu, 1"
+
+[$RootKey$\OutputWindow\{fbc10bf4-c9f8-4f0d-9cde-69304226a68f}]
+@="#101"
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"InitiallyInvisible"=dword:1
+"ClearWithSolution"=dword:0
+
+[$RootKey$\OutputWindow\{FFA652DB-B9CA-4E71-AC93-6894645C2F70}]
+@="#102"
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"InitiallyInvisible"=dword:1
+"ClearWithSolution"=dword:0
+
+[$RootKey$\Packages\{7fe30a77-37f9-4cf2-83dd-96b207028e1b}]
+@="SccProviderPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.TeamFoundation.Git.Provider.SccProviderPackage"
+"Assembly"="Microsoft.TeamFoundation.Git.Provider, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Packages\{7FE5C29F-58EC-45F0-AF68-EC00D9ECD138}]
+@="SccProviderStubPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.TeamFoundation.Git.Provider.SccProviderStubPackage"
+"Assembly"="Microsoft.TeamFoundation.Git.Provider, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Services\{28c35eb2-67ea-4c5f-b49d-dacf73a66989}]
+@="{7FE5C29F-58EC-45F0-AF68-EC00D9ECD138}"
+"Name"="SccService"
+
+[$RootKey$\Services\{61BC5C25-F1CA-44F6-9EF0-4C133862F9B9}]
+@="{7FE30A77-37F9-4CF2-83DD-96B207028E1B}"
+"Name"="SccVsClientLinkingService"
+
+[$RootKey$\Services\{54DC88D2-5ECF-45C3-93C1-66EEE3FD69FB}]
+@="{7FE30A77-37F9-4CF2-83DD-96B207028E1B}"
+"Name"="IGitActionsExt"
+
+[$RootKey$\Services\{87B82775-3B46-4EE4-919B-07B6B1742024}]
+@="{7FE30A77-37F9-4CF2-83DD-96B207028E1B}"
+"Name"="IGitActionsExt2"
+
+[$RootKey$\Services\{7F5C57F9-1EDE-4293-91C2-186E91CB5780}]
+@="{7FE5C29F-58EC-45F0-AF68-EC00D9ECD138}"
+"Name"="IGitExt"
+
+[$RootKey$\Services\{C999A59D-4A8D-4DF9-ADC5-8367f333A25C}]
+@="{7FE5C29F-58EC-45F0-AF68-EC00D9ECD138}"
+"Name"="IGitExt2"
+
+[$RootKey$\Services\{C36924AF-B3DF-4EFE-9DE6-E8539EB1B650}]
+@="{7FE5C29F-58EC-45F0-AF68-EC00D9ECD138}"
+"Name"="IGitExt3"
+
+[$RootKey$\SourceControlProviders]
+@="{11b8e6d7-c08b-4385-b321-321078cdd1f8}"
+
+[$RootKey$\SourceControlProviders\{11b8e6d7-c08b-4385-b321-321078cdd1f8}]
+@="GitSccProvider"
+"Service"="{28c35eb2-67ea-4c5f-b49d-dacf73a66989}"
+"IsPublishSupported"=dword:1
+
+[$RootKey$\SourceControlProviders\{11b8e6d7-c08b-4385-b321-321078cdd1f8}\Commands]
+"OpenCommand"="{57735D06-C920-4415-A2E0-7D6E6FBDFA99}|4134"
+"ShareCommand"="{57735D06-C920-4415-A2E0-7D6E6FBDFA99}|4135"
+
+[$RootKey$\SourceControlProviders\{11b8e6d7-c08b-4385-b321-321078cdd1f8}\Name]
+@="#100"
+"Package"="{7FE5C29F-58EC-45F0-AF68-EC00D9ECD138}"
+
+[$RootKey$\TeamFoundation\GitSourceControl\Git]
+"GitCredentialManagerCoreExePath"="$PackageFolder$\Git\mingw32\libexec\git-core\git-credential-manager-core.exe"
+"GitCredentialManagerExePath"="$PackageFolder$\Git\mingw32\libexec\git-core\git-credential-manager.exe"
+
+[$RootKey$\TeamSystemPlugins\Team System Client Linking Plugins\Git]
+@="61bc5c25-f1ca-44f6-9ef0-4c133862f9b9"
+"Enabled"=dword:1
+
+[$RootKey$\TeamSystemPlugins\Team System Client Linking Plugins\Legacy]
+@="61bc5c25-f1ca-44f6-9ef0-4c133862f9b9"
+"Enabled"=dword:1
+
+[$RootKey$\ToolsOptionsPages\Source Control\Git Global Settings]
+@="#104"
+"Keywords"="#100"
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Page"="{498AF26D-055C-4D74-A44D-359344ED0E9B}"
+"Sort"=dword:1
+
+[$RootKey$\ToolsOptionsPages\Source Control\Git Global Settings\VisibilityCmdUIContexts]
+"{11B8E6D7-C08B-4385-B321-321078CDD1F8}"="1"
+
+[$RootKey$\ToolsOptionsPages\Source Control\Git Repository Settings]
+@="#105"
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+
+[$RootKey$\ToolsOptionsPages\Source Control\Git Repository Settings\General]
+@="#106"
+"Keywords"="#100"
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Page"="{6A794C67-9E80-4F91-A9D2-5AB58B93F978}"
+"Sort"=dword:10
+
+[$RootKey$\ToolsOptionsPages\Source Control\Git Repository Settings\Remotes]
+@="#107"
+"Keywords"="#100"
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Page"="{73291C5D-5709-47BD-80E4-F78AE5EBA453}"
+"Sort"=dword:20
+
+[$RootKey$\ToolsOptionsPages\Source Control\Git Repository Settings\VisibilityCmdUIContexts]
+"{11B8E6D7-C08B-4385-B321-321078CDD1F8}"="1"
+
+[$RootKey$\ToolWindows\{116d2292-e37d-41cd-a077-ebacac4c8cc4}]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Name"="Microsoft.TeamFoundation.Git.Provider.History.HistoryToolWindow"
+"Style"="MDI"
+"DontForceCreate"=dword:1
+
+[$RootKey$\ToolWindows\{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Name"="Microsoft.TeamFoundation.Git.Provider.Annotate.AnnotateToolWindow"
+"Style"="MDI"
+"DontForceCreate"=dword:1
+
+[$RootKey$\ToolWindows\{1c4feeaa-4718-4aa9-859d-94ce25d182ba}]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Name"="Microsoft.TeamFoundation.Git.Provider.FocusedWindow.FocusedToolWindow"
+"Style"="MDI"
+"DontForceCreate"=dword:1
+
+[$RootKey$\ToolWindows\{1c64b9c2-e352-428e-a56d-0ace190b99a6}]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Name"="Microsoft.TeamFoundation.Git.Provider.GitWindow.GitToolWindow"
+"Window"="{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+"Style"="Tabbed"
+
+[$RootKey$\ToolWindows\{1fc202d4-d401-403c-9834-5b218574bb67}]
+@="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Name"="Microsoft.TeamFoundation.Git.Provider.Details.DetailsToolWindow"
+"Style"="MDI"
+"DontForceCreate"=dword:1
+
+[$RootKey$\UserSettings\Git Version Control_GitSccProvider]
+@="101"
+"Package"="{7fe30a77-37f9-4cf2-83dd-96b207028e1b}"
+"Category"="{33a4cda9-b7a6-3f4f-9e1f-e4d71f0a9cfa}"
+"VSSettingsMigration"=dword:1
+
+//=================================================================================================
+// Merge
+//=================================================================================================
+
+[$RootKey$\Packages\{BF0F8831-2CA2-4057-B64E-FF1CED3CEFA2}]
+@="MergePackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.Merge.VsPackage.MergePackage"
+"Assembly"="Microsoft.VisualStudio.Merge, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Editors\{9E0531FA-FD8C-4007-BD8D-DBB03EBDB4B3}]
+@="ModernMergeEditorFactory"
+"DisplayName"="#100"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"Package"="{BF0F8831-2CA2-4057-B64E-FF1CED3CEFA2}"
+"EditorTrustLevel"=dword:1
+"CommonPhysicalViewAttributes"=dword:0
+
+[$RootKey$\Services\{099AAE7C-30C3-48FC-93D4-D1FE108C76B5}]
+@="{BF0F8831-2CA2-4057-B64E-FF1CED3CEFA2}"
+"Name"="SModernMergeService"
+
+[$RootKey$\Menus]
+"{BF0F8831-2CA2-4057-B64E-FF1CED3CEFA2}"=", Menus.ctmenu, 1"
+
+//=================================================================================================
+// GitHub
+//=================================================================================================
+
+[$RootKey$\Packages\{C183AB49-D8D8-4069-B420-309679EF3A09}]
+@="GitHubPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.TeamFoundation.Git.HostingProvider.GitHub.VSPackage.GitHubPackage"
+"Assembly"="Microsoft.TeamFoundation.Git.HostingProvider.GitHub, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\CodeContainerProviders]
+[$RootKey$\CodeContainerProviders\{A945E52B-7ED0-4C0B-9A41-99A407651715}]
+"Name"="GitHubCCP"
+"PackageGuid"="{C183AB49-D8D8-4069-B420-309679EF3A09}"
+"ImageMoniker"="{BD2963DC-E6D4-4126-B976-D71384BA1001}:1"
+"DisplayNameResourceId"="#100"
+"DisplayDetailResourceId"="#101" 
+
+//=================================================================================================
+// Lab
+//=================================================================================================
+
+[$RootKey$\Packages\{e0910062-da1f-411c-b152-a3fc6392ee1f}]
+@="Microsoft.VisualStudio.TeamFoundation.Lab.LabPcwPluginPackage, Microsoft.VisualStudio.TeamFoundation.Lab"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.Lab.LabPcwPluginPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.Lab, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"ID"=dword:cc
+"MinEdition"="Standard"
+"ProductVersion"="16.0.0.0"
+"ProductName"="LabPcwPluginPackage"
+"CompanyName"="Microsoft Corporation"
+
+[$RootKey$\Services\{8e30edb6-9ed4-4f69-a04f-de9b59a03dab}]
+@="{e0910062-da1f-411c-b152-a3fc6392ee1f}"
+"Name"="LabPcwPlugin"
+
+[$RootKey$\TeamSystemPlugins\Project Creation Plugins\Microsoft.ProjectCreationWizard.Lab]
+@="8e30edb6-9ed4-4f69-a04f-de9b59a03dab"
+"Enabled"=dword:1
+
+//=================================================================================================
+// My Work
+//=================================================================================================
+
+[$RootKey$\Packages\{4a2f8f5f-1bcb-4c7a-b0d6-6f82fd6fdbc8}]
+@="ContextManagementPackagePackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.ContextManagement.ContextManagementPackagePackage"
+"Assembly"="Microsoft.VisualStudio.ContextManagement.Package, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+//=================================================================================================
+// PCW
+//=================================================================================================
+
+[$RootKey$\Packages\{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}]
+@="Microsoft.VisualStudio.TeamFoundation.PCW.PcwPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.PCW.PcwPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.PCW, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Services\{1d5564ff-7571-48f9-ad34-e456b56bae6d}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="CssPcwPlugin"
+
+[$RootKey$\Services\{205f1da0-2817-4f10-be98-2fee6cb169ae}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="GssPcwPlugin"
+
+[$RootKey$\Services\{6af75b24-7cc9-4973-b400-67e97ea0096f}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="IPortalSettingsLauncher"
+
+[$RootKey$\Services\{8ca00a2a-cab4-4bdb-a253-d638f74a9e0a}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="RosettaPcwPlugin"
+
+[$RootKey$\Services\{af59fba9-3669-3153-a7f0-5b88ccf5bd6b}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="ITemplateImporter"
+
+[$RootKey$\Services\{D2E07D5A-2DA2-4118-9C6E-31E8EFEDB9BC}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="IProjectCreation"
+
+[$RootKey$\Services\{e9e3586b-e007-4762-b598-b76b30fb6ada}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="IProcessTemplateManagerLauncher"
+
+[$RootKey$\Services\{f1822f90-bc62-320e-8751-1de43431925d}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="ITemplateValidator"
+
+[$RootKey$\Services\{f97a0a8d-bfc4-3cf2-aa01-1565312e1edf}]
+@="{17c5d08a-602c-4dfb-82b5-8e0f7f50c9d7}"
+"Name"="ITemplateExporter"
+
+[$RootKey$\TeamSystemPlugins\Project Creation Plugins\Microsoft.ProjectCreationWizard.Classification]
+@="1d5564ff-7571-48f9-ad34-e456b56bae6d"
+"Enabled"=dword:1
+
+[$RootKey$\TeamSystemPlugins\Project Creation Plugins\Microsoft.ProjectCreationWizard.Groups]
+@="205f1da0-2817-4f10-be98-2fee6cb169ae"
+"Enabled"=dword:1
+
+[$RootKey$\TeamSystemPlugins\Project Creation Plugins\Microsoft.ProjectCreationWizard.Reporting]
+@="8ca00a2a-cab4-4bdb-a253-d638f74a9e0a"
+"Enabled"=dword:1
+
+//=================================================================================================
+// Services Integration Package / Connection Management / Context Management
+//=================================================================================================
+
+[$RootKey$\BindingPaths\{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}]
+"$PackageFolder$"=""
+
+[$RootKey$\Packages\{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}]
+@="Microsoft.VisualStudio.Services.Integration.ServicesPackage, Microsoft.VisualStudio.Services.Integration"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.Services.Integration.ServicesPackage"
+"Assembly"="Microsoft.VisualStudio.Services.Integration, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Services\{C4EDF2C2-A987-4AFC-AC67-8E8ADE6D2E13}]
+@="{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}"
+"Name"="ITeamFoundationContextManager"
+
+[$RootKey$\Services\{9CCFE978-9849-4338-AB18-194EA5A646C5}]
+@="{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}"
+"Name"="ITeamFoundationContextManager2"
+
+[$RootKey$\Services\{98BCADF2-C5C0-4D64-A685-48F60A7DB87E}]
+@="{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}"
+"Name"="ITeamFoundationContextManager3"
+
+[$RootKey$\Services\{992CE4A5-D4ED-447E-BDEA-566A75BBB2CF}]
+@="{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}"
+"Name"="ITeamFoundationContextManager4"
+
+[$RootKey$\Services\{0CFE311C-3DEF-4EFF-8E33-6414C2339725}]
+@="{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}"
+"Name"="ITeamFoundationContextManager5"
+
+[$RootKey$\Services\{E0E7F8CE-55C6-46A0-99A9-2F51EE1E60E0}]
+@="{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}"
+"Name"="ITeamFoundationConnectionManager"
+
+//=================================================================================================
+// SharePoint / Reporting
+//=================================================================================================
+
+[$RootKey$\Menus]
+"{8e01ec3e-2928-4aa5-b720-e28c163818e6}"=", 1000.ctmenu, 1"
+
+[$RootKey$\Packages\{8e01ec3e-2928-4aa5-b720-e28c163818e6}]
+@="Microsoft.TeamFoundation.Client.ServicesHostPackage, Microsoft.VisualStudio.TeamFoundation.SharePointReporting"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.TeamFoundation.Client.ServicesHostPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.SharePointReporting, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Packages\{8e01ec3e-2928-4aa5-b720-e28c163818e6}\Automation]
+"PortfolioExplorer"=""
+
+[$RootKey$\Services\{3eeb95a4-9e55-3cff-b07a-08c18019c009}]
+@="{8e01ec3e-2928-4aa5-b720-e28c163818e6}"
+"Name"="IProcessGuidance"
+
+//=================================================================================================
+// TF.Package / Team Explorer
+//=================================================================================================
+
+[$RootKey$\AppCommandLine\TfsLink]
+"Arguments"="1"
+"DemandLoad"=dword:1
+"HelpString"="#300"
+"Package"="{b80b010d-188c-4b19-b483-6c20d52071ae}"
+
+[$RootKey$\InstalledProducts\Team Explorer]
+@="#9"
+"LogoID"="#1110"
+"Package"="{8e01ec3e-2928-4aa5-b720-e28c163818e6}"
+"ProductDetails"="#10"
+"UseVsProductID"=dword:1
+
+[$RootKey$\KeyBindingTables\{7AA20502-9463-47B7-BF43-341BAF51157C}]
+@="#100"
+"Package"="{B80B010D-188C-4B19-B483-6C20D52071AE}"
+"AllowNavKeyBinding"=dword:0
+
+[$RootKey$\Menus]
+"{b80b010d-188c-4b19-b483-6c20d52071ae}"=", 1000.ctmenu, 1"
+
+[$RootKey$\Packages\{75DF55D4-EC28-47FC-88AC-BE56203C9012}]
+@="Microsoft.VisualStudio.TeamFoundation.Initialization.InitializationPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.Initialization.InitializationPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.InitializationPackage, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Packages\{b80b010d-188c-4b19-b483-6c20d52071ae}]
+@="Microsoft.VisualStudio.TeamFoundation.TeamFoundationHost"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.TeamFoundationHost"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Packages\{b80b010d-188c-4b19-b483-6c20d52071ae}\Automation]
+"Microsoft.VisualStudio.TeamFoundation.TeamFoundationServerExt"=""
+
+[$RootKey$\TeamFoundation\RegisteredCredentialProviders]
+"{0B93CCC5-BC52-40E9-91A3-7B8B58C4526B}"="$PackageFolder$\Microsoft.VisualStudio.Services.Integration.dll"
+
+[$RootKey$\Services\{9E25592D-327D-421F-B816-860E7A2177B2}]
+@="{75DF55D4-EC28-47FC-88AC-BE56203C9012}"
+"Name"="ITeamFoundationInitializationService"
+
+[$RootKey$\Services\{0db37430-15b8-3a9f-a109-5a8c9cf74a36}]
+@="{b80b010d-188c-4b19-b483-6c20d52071ae}"
+"Name"="IClientLinking"
+
+[$RootKey$\Services\{71d440d1-b8cd-32d9-8f3f-e3d52bc20420}]
+@="{b80b010d-188c-4b19-b483-6c20d52071ae}"
+"Name"="ITeamFoundationHost"
+
+[$RootKey$\Services\{73CABA5D-2A8F-48A7-BFD0-E7D2F8455E77}]
+@="{B80B010D-188C-4B19-B483-6C20D52071AE}"
+"Name"="ITeamExplorer"
+
+[$RootKey$\Services\{e5e1aed9-fb7a-3657-8d6b-10c91e9a03f7}]
+@="{b80b010d-188c-4b19-b483-6c20d52071ae}"
+"Name"="PluginCatalogFactory"
+
+[$RootKey$\ToolWindows\{131369F2-062D-44A2-8671-91FF31EFB4F4}]
+@="{b80b010d-188c-4b19-b483-6c20d52071ae}"
+"Name"="Microsoft.VisualStudio.TeamFoundation.TeamExplorer.ToolWindowTeamExplorer"
+"Window"="{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+"Style"="Tabbed"
+"TitleIconMoniker"="{ae27a6b0-e345-4288-96df-5eaf394ee369};3065"
+"TitleStringId"="TeamExplorerCaption"
+
+[$RootKey$\ToolWindows\{13143d73-808b-4a2f-bebb-ccbe9c93fe37}]
+@="{b80b010d-188c-4b19-b483-6c20d52071ae}"
+"Name"="Microsoft.VisualStudio.TeamFoundation.TeamExplorer.TeamExplorerUndockableToolWindow"
+"Window"="{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+"Style"="Tabbed"
+"TitleIconMoniker"="{ae27a6b0-e345-4288-96df-5eaf394ee369};3065"
+"TitleStringId"="TeamExplorerCaption"
+
+[$RootKey$\CodeContainerProviders]
+[$RootKey$\CodeContainerProviders\{472386b1-de23-494d-9132-a9e91a0c24e3}]
+"Name"="TFSCCP"
+"PackageGuid"="{B80B010D-188C-4B19-B483-6C20D52071AE}"
+"ImageMoniker"="{ae27a6b0-e345-4288-96df-5eaf394ee369}:493"
+"DisplayNameResourceId"="#400"
+"DisplayDetailResourceId"="#410" 
+
+//=================================================================================================
+// Test Management
+//=================================================================================================
+
+[$RootKey$\Menus]
+"{4DAD8305-87C9-4431-99FF-FFE413A59F4B}"=", 1000, 1"
+
+[$RootKey$\Packages\{4DAD8305-87C9-4431-99FF-FFE413A59F4B}]
+@="Test Management"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.TeamFoundation.TestManagement.ClientPackage"
+"Assembly"="Microsoft.TeamFoundation.TestManagement.ClientPackage, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Packages\{4DAD8305-87C9-4431-99FF-FFE413A59F4B}\SatelliteDll]
+"Path"="$RootFolder$\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer"
+"DllName"="Microsoft.TeamFoundation.TestManagement.ClientPackageUI.dll"
+
+[$RootKey$\Packages\{fc5875e7-a59e-4b0a-9b8f-c515f5f24049}]
+@="TestManagementPCW"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.TeamFoundation.TestManagement.PcwPlugin.TestManagementPluginPackage"
+"Assembly"="Microsoft.TeamFoundation.TestManagement.PcwPlugin, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Services\{25F5025D-2D8F-4f5f-9A90-BFD597CC47BC}]
+@="{fc5875e7-a59e-4b0a-9b8f-c515f5f24049}"
+"Name"="TestManagementPcwPlugin"
+
+[$RootKey$\Services\{3D23AB3A-36BB-4274-B25E-8855199F4235}]
+@="{4dad8305-87c9-4431-99ff-ffe413a59f4b}"
+"Name"="IEnvironmentHelper"
+
+[$RootKey$\Services\{f8412940-eefe-4587-816a-753dbc971787}]
+@="{4dad8305-87c9-4431-99ff-ffe413a59f4b}"
+"Name"="LinkHandler"
+
+[$RootKey$\TeamSystemPlugins\Project Creation Plugins\Microsoft.ProjectCreationWizard.TestManagement]
+@="25F5025D-2D8F-4f5f-9A90-BFD597CC47BC"
+"Enabled"=dword:1
+
+[$RootKey$\TeamSystemPlugins\Team System Client Linking Plugins\TestManagement]
+@="f8412940-eefe-4587-816a-753dbc971787"
+"Enabled"=dword:1
+
+//=================================================================================================
+// TF Version Control
+//=================================================================================================
+
+[$RootKey$\AutoLoadPackages\{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}]
+"{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}"=dword:0
+
+[$RootKey$\AutoLoadPackages\{FC199842-686C-47B7-B0E-1C1D8CADA59C}]
+"{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}"=dword:0
+
+[$RootKey$\Editors\{9A9A8AAA-ACD2-4DB6-BD81-8D64176C52B6}]
+@="MergeEditorFactory"
+"DisplayName"="#140"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"Package"="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"EditorTrustLevel"=dword:1
+"CommonPhysicalViewAttributes"=dword:0
+
+[$RootKey$\Editors\{C002714D-63EE-4979-B1DC-F94BFC6CA424}]
+@="LabelEditorFactory"
+"DisplayName"="#120"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"Package"="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"EditorTrustLevel"=dword:1
+"CommonPhysicalViewAttributes"=dword:0
+
+[$RootKey$\FontAndColors\Folder Difference]
+"Category"="{B36B0228-DBAD-4db0-B9C7-2AD3E572010F}"
+"Package"="{7E6D6852-E8F6-43bd-B17F-E3EA76085404}"
+
+[$RootKey$\HandleInComingCall\{CF470F11-D48B-418E-A42E-F8A5DBB507DC}]
+@="IVsSccDlgControl"
+
+[$RootKey$\Menus]
+"{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"=", 1000.ctmenu, 1"
+"{5BF14E63-E267-4787-B20B-B814FD043B38}"=",1,6"
+
+[$RootKey$\OutputWindow\{0EE13505-C0BC-40C3-8F1D-0F65A9F71616}]
+@="#508"
+"Package"="{5BF14E63-E267-4787-B20B-B814FD043B38}"
+"InitiallyInvisible"=dword:1
+"ContentType"="TFSourceControlOutput"
+"ClearWithSolution"=dword:0
+
+[$RootKey$\Packages\{1b4f495a-280a-3ba4-8db0-9c9b735e98ce}]
+@="Microsoft.VisualStudio.TeamFoundation.VersionControl.SccPcwPluginPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.VersionControl.SccPcwPluginPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.VersionControl, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Packages\{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}]
+@="Microsoft.VisualStudio.TeamFoundation.VersionControl.HatPackage"
+"ID"=dword:cc
+"MinEdition"="standard"
+"ProductVersion"="16.0.0.0"
+"ProductName"="Team Foundation Version Control Package"
+"CompanyName"="Microsoft"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.VersionControl.HatPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.VersionControl, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\Packages\{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}\Automation]
+"Microsoft.VisualStudio.TeamFoundation.VersionControl.VersionControlExt"=""
+
+[$RootKey$\Packages\{5BF14E63-E267-4787-B20B-B814FD043B38}]
+@="Team Foundation Server Provider Package"
+"InprocServer32"="$PackageFolder$\Tfsprovider.dll"
+"CompanyName"="Microsoft"
+"ProductName"="Team Foundation Server Provider Package"
+"ProductVersion"="16.0.0.0"
+"MinEdition"="standard"
+"ID"=dword:1ca2
+
+[$RootKey$\Packages\{5BF14E63-E267-4787-B20B-B814FD043B38}\SatelliteDll]
+"Path"="$PackageFolder$"
+"DllName"="TfsProviderUI.dll"
+
+[$RootKey$\Packages\{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}]
+@="team foundation server provider stub package"
+"InprocServer32"="$PackageFolder$\Tfsproviderstub.dll"
+"CompanyName"="Microsoft"
+"ProductName"="Team Foundation Server Provider Stub Package"
+"ProductVersion"="16.0.0.0"
+"MinEdition"="standard"
+"ID"=dword:66
+
+[$RootKey$\Packages\{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}\SatelliteDll]
+"Path"="$PackageFolder$"
+"DllName"="TfsProviderStubUI.dll"
+
+[$RootKey$\Services\{1b4f495a-280a-3ba4-8db0-9c9b735e98cf}]
+@="{1b4f495a-280a-3ba4-8db0-9c9b735e98ce}"
+"Name"="SccPcwPlugin"
+
+[$RootKey$\Services\{2EFC686D-C73D-4C4B-9564-5A1EE73356D8}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="IVersionControlService"
+
+[$RootKey$\Services\{34D4713E-EB24-4746-938B-BE5640D03210}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="SVsFileMergeService"
+
+[$RootKey$\Services\{358a4fc2-d632-4372-a43f-12093631b16b}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="SccToolClientLinking"
+
+[$RootKey$\Services\{3AAFEE99-FCD7-4256-AE16-186A3E1CE896}]
+@="{5BF14E63-E267-4787-B20B-B814FD043B38}"
+"Name"="Enlistment Manager Proxy Lookup Service"
+
+[$RootKey$\Services\{4A7EF89D-65FF-45DF-B260-9D52243447D4}]
+@="{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}"
+"Name"="Dont Show Dialog Again Service"
+
+[$RootKey$\Services\{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="HatPackage"
+
+[$RootKey$\Services\{5E95ED77-02A2-4895-9943-37B87EF3F8B6}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="MergeFontAndColorsService"
+
+[$RootKey$\Services\{7E6D6852-E8F6-43bd-B17F-E3EA76085404}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="FolderDiffFontAndColorDefaultsProvider"
+
+[$RootKey$\Services\{822283BF-CDDA-4449-8E7B-49505EDB9997}]
+@="{5BF14E63-E267-4787-B20B-B814FD043B38}"
+"Name"="Private SccManager Service"
+
+[$RootKey$\Services\{9AD1FC5B-4244-4E80-95BB-E319D6FD9C8A}]
+@="{5BF14E63-E267-4787-B20B-B814FD043B38}"
+"Name"="TeamFoundation VssProvider Service"
+
+[$RootKey$\Services\{C903B230-77C3-491F-A36A-444068C70AC4}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="ISourceControlSettingsLauncher"
+
+[$RootKey$\Services\{CF470F11-D48B-418E-A42E-F8A5DBB507DC}]
+@="{5BF14E63-E267-4787-B20B-B814FD043B38}"
+"Name"="Team Dialog Controls GUIDs"
+
+[$RootKey$\Services\{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}]
+@="{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}"
+"Name"="Microsoft Scc Providers Service"
+
+[$RootKey$\Services\{E178A806-CFDF-4476-8B66-DDB1B0934233}]
+@="{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}"
+"Name"="VS External Dialog Munger Service"
+
+[$RootKey$\SolutionPersistence\TeamFoundationVersionControl]
+@="{5BF14E63-E267-4787-B20B-B814FD043B38}"
+
+[$RootKey$\SourceControlProviders\{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}]
+@="Visual Studio Team Foundation Server"
+"Service"="{D79B7E0A-F994-4D4D-8FAE-CAE147279E21}"
+
+[$RootKey$\SourceControlProviders\{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}\Commands]
+"OpenCommand"="{5BF14E63-E267-4787-B20B-B814FD043B38}|21537"
+"ShareCommand"="{5BF14E63-E267-4787-B20B-B814FD043B38}|21538"
+
+[$RootKey$\SourceControlProviders\{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}\Name]
+@="#1011"
+"Package"="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+
+[$RootKey$\TeamFoundation\SourceControl\Checkin Policies]
+"Microsoft.TeamFoundation.Build.Controls"="$PackageFolder$\Microsoft.TeamFoundation.Build.Controls.dll"
+"Microsoft.TeamFoundation.VersionControl.Controls"="$PackageFolder$\Microsoft.TeamFoundation.VersionControl.Controls.dll"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffTools]
+"FallBackExe"="$RootFolder$\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\vsDiffMerge.exe"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffTools\.*\Compare]
+"Arguments"=""
+"Command"="Microsoft.VisualStudio.TeamFoundation.VersionControl, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Type"="Microsoft.VisualStudio.TeamFoundation.VersionControl.DiffMerge.DifferenceProvider"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffTools\.*\Merge]
+"Arguments"=""
+"Command"="Microsoft.VisualStudio.TeamFoundation.VersionControl, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Type"="Microsoft.VisualStudio.TeamFoundation.VersionControl.DiffMerge.MergeProvider"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffToolsDefaults\araxis]
+"Compare"="/wait /2 /title1:%6 /title2:%7 %1 %2"
+"Merge"="/wait /swap /a3 /3 /title1:%6 /title2:%7 /title3:%8 %1 %2 %3 %4"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffToolsDefaults\bc3]
+"Compare"="%1 %2 /title1=%6 /title2=%7"
+"Merge"="%1 %2 %3 %4 /title1=%6 /title2=%7 /title3=%8 /title4=%9"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffToolsDefaults\codecompare]
+"Compare"="%1 %2"
+"Merge"="-MF=%1 -TF=%2 -BF=%3 -RF=%4"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffToolsDefaults\kdiff3]
+"Compare"="%1 --fname %6 %2 --fname %7"
+"Merge"="%3 --fname %8 %2 --fname %7 %1 --fname %6 -o %4"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffToolsDefaults\p4merge]
+"Compare"="%1 %2"
+"Merge"="%3 %2 %1 %4"
+
+[$RootKey$\TeamFoundation\SourceControl\DiffToolsDefaults\TortoiseMerge]
+"Compare"="/base:%1 /mine:%2 /basename:%6 /minename:%7"
+"Merge"="/base:%3 /mine:%2 /theirs:%1 /basename:%8 /minename:%7 /theirsname:%6 /merged:%4 /mergedname:%9"
+
+[$RootKey$\TeamSystemPlugins\Project Creation Plugins\Microsoft.ProjectCreationWizard.VersionControl]
+@="1b4f495a-280a-3ba4-8db0-9c9b735e98cf"
+"Enabled"=dword:1
+
+[$RootKey$\TeamSystemPlugins\Team System Client Linking Plugins\VersionControl]
+@="358a4fc2-d632-4372-a43f-12093631b16b"
+"Enabled"=dword:1
+
+[$RootKey$\ToolsOptionsPages\Source Control\TeamFoundation]
+@="#1011"
+"Keywords"="#1012"
+"Package"="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Page"="{2A718788-A6D9-44C5-90EF-438BF5B06A74}"
+
+[$RootKey$\ToolsOptionsPages\Source Control\TeamFoundation\VisibilityCmdUIContexts]
+"{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"="1"
+
+[$RootKey$\ToolsOptionsPages\Source Control\TeamFoundationEnvironment]
+@="#510"
+"Keywords"="#512"
+"Page"="{7BB350E5-C6FD-486F-9500-F81080F0302E}"
+"Package"="{5BF14E63-E267-4787-B20B-B814FD043B38}"
+"Sort"=dword:1
+
+[$RootKey$\ToolsOptionsPages\Source Control\TeamFoundationEnvironment\VisibilityCmdUIContexts]
+"{FC199842-686C-47B7-B0E-1C1D8CADA59C}"="1"
+"{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"="1"
+
+[$RootKey$\ToolWindows\{2456bd12-ecf7-4988-a4a6-67d49173f565}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="Microsoft.TeamFoundation.VersionControl.Package.ToolWindowHistory"
+"DontForceCreate"=dword:1
+"Style"="MDI"
+
+[$RootKey$\ToolWindows\{65DDF8C3-8F89-4077-A6C6-DBB8853AAB13}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="Microsoft.VisualStudio.TeamFoundation.VersionControl.ToolWindowAnnotate"
+"DontForceCreate"=dword:1
+
+[$RootKey$\ToolWindows\{80454082-9AB8-47d4-AF23-82BF6739E2A9}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="Microsoft.VisualStudio.TeamFoundation.VersionControl.ToolWindowHierarchyVisualizer"
+"DontForceCreate"=dword:1
+
+[$RootKey$\ToolWindows\{809F6FF3-8092-454A-8003-6D4091F9B5BB}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="Microsoft.VisualStudio.TeamFoundation.VersionControl.ToolWindowTrackingVisualizer"
+"DontForceCreate"=dword:1
+
+[$RootKey$\ToolWindows\{99b8fa2f-ab90-4f57-9c32-949f146f1914}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="Microsoft.TeamFoundation.VersionControl.Package.ToolWindowSccExplorer"
+"Style"="MDI"
+
+[$RootKey$\ToolWindows\{A975660A-81E4-4830-AA25-1B824C3BF732}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="Microsoft.VisualStudio.TeamFoundation.VersionControl.ToolWindowResolveConflicts"
+"DontForceCreate"=dword:1
+
+[$RootKey$\ToolWindows\{E3FC08BE-3924-11DB-8AF6-B622A1EF5492}]
+@="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Name"="Microsoft.VisualStudio.TeamFoundation.VersionControl.ToolWindowFolderDiff"
+"DontForceCreate"=dword:1
+
+[$RootKey$\UserSettings\Source Control_TeamFoundation]
+@="#1011"
+"ToolsOptionsPath"="Source Control"
+"Package"="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}"
+"Category"="{2A718788-A6D9-44C5-90EF-438BF5B06A74}"
+"VSSettingsMigration"=dword:1
+
+//=================================================================================================
+// Work Item Tracking
+//=================================================================================================
+
+[$RootKey$\Editors\{40a91d9d-8076-4d28-87c5-5af9f0acfe0f}]
+@="WorkItemEditorFactory"
+"EditorTrustLevel"=dword:1
+"DisplayName"="#113"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"CommonPhysicalViewAttributes"=dword:0
+"Package"="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+
+[$RootKey$\Editors\{40a91d9d-8076-4d28-87c5-5af9f0acfe0f}\LogicalViews]
+@=""
+
+[$RootKey$\Editors\{7026002d-01f6-44e7-95cf-a896c00da3f8}]
+@="TriageEditorFactory"
+"DisplayName"="#116"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"CommonPhysicalViewAttributes"=dword:0
+"EditorTrustLevel"=dword:1
+"Package"="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+
+[$RootKey$\Editors\{7026002d-01f6-44e7-95cf-a896c00da3f8}\LogicalViews]
+@=""
+
+[$RootKey$\Editors\{b6303490-b828-410c-9216-ae727d0e282d}]
+@="QueryEditorFactory"
+"DisplayName"="#114"
+"DeferUntilIntellisenseIsReady"=dword:00000000
+"Package"="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"EditorTrustLevel"=dword:1
+"CommonPhysicalViewAttributes"=dword:0
+
+[$RootKey$\Editors\{b6303490-b828-410c-9216-ae727d0e282d}\Extensions]
+"wiq"=dword:64
+
+[$RootKey$\Editors\{b6303490-b828-410c-9216-ae727d0e282d}\LogicalViews]
+@=""
+
+[$RootKey$\KeyBindingTables\{7026002d-01f6-44e7-95cf-a896c00da3f8}]
+@="#116"
+"Package"="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"AllowNavKeyBinding"=dword:0
+
+[$RootKey$\KeyBindingTables\{b6303490-b828-410c-9216-ae727d0e282d}]
+@="#114"
+"Package"="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"AllowNavKeyBinding"=dword:0
+
+[$RootKey$\Menus]
+"{ca39e596-31ed-4b34-aa36-5f0240457a7e}"=", 1000.ctmenu, 1"
+
+[$RootKey$\Packages\{6238f138-0c0c-49ec-b24b-215ee59d84f0}]
+@="Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.WitPcwPackage, Microsoft.VisualStudio.TeamFoundation.WorkItemTracking"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.WitPcwPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.WorkItemTracking, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"ID"=dword:1
+"MinEdition"="Standard"
+"ProductVersion"="16.0.0.0"
+"ProductName"="Work Item Tracking"
+"CompanyName"="Microsoft Corporation"
+
+[$RootKey$\Packages\{ca39e596-31ed-4b34-aa36-5f0240457a7e}]
+@="Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.WitPackage, Microsoft.VisualStudio.TeamFoundation.WorkItemTracking"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.WitPackage"
+"Assembly"="Microsoft.VisualStudio.TeamFoundation.WorkItemTracking, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"ID"=dword:1
+"MinEdition"="Standard"
+"ProductVersion"="16.0.0.0"
+"ProductName"="Work Item Tracking"
+"CompanyName"="Microsoft Corporation"
+
+[$RootKey$\Packages\{ca39e596-31ed-4b34-aa36-5f0240457a7e}\Automation]
+"Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.DocumentService"=""
+
+[$RootKey$\Services\{2ccea2dd-8287-46f1-ae65-251dcec55860}]
+@="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"Name"="IWorkItemGridValueProvider"
+
+[$RootKey$\Services\{40beac94-c7c0-429c-bc59-72748e8a597e}]
+@="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"Name"="DocumentService"
+
+[$RootKey$\Services\{50cc33ab-c5af-4937-ba8b-476e09c1229b}]
+@="{6238f138-0c0c-49ec-b24b-215ee59d84f0}"
+"Name"="WitPcwPlugin"
+
+[$RootKey$\Services\{5A18A9BA-A52D-4334-84E4-6CABCBA9F310}]
+@="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"Name"="ITeamExplorerSearchService"
+
+[$RootKey$\Services\{5d72c78a-11a1-40d2-86c8-59b823b0e296}]
+@="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"Name"="WitClientLinking"
+
+[$RootKey$\Services\{7c33d957-342e-444c-b0bd-3bde908eaa67}]
+@="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"Name"="IProjectAlertsLauncher"
+
+[$RootKey$\Services\{c0a33ff0-668a-47eb-9e5a-101a20338d3b}]
+@="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"Name"="IWorkItemStoreService"
+
+[$RootKey$\Services\{c823b363-9cb6-4be4-baa3-bc4154409114}]
+@="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"Name"="IWorkItemControlHost"
+
+[$RootKey$\Services\{F671FDD2-CE1C-4CAC-8EA8-F570FAE2477D}]
+@="{ca39e596-31ed-4b34-aa36-5f0240457a7e}"
+"Name"="RequirementsClientLinking"
+
+[$RootKey$\TeamSystemPlugins\Project Creation Plugins\Microsoft.ProjectCreationWizard.WorkItemTracking]
+@="50cc33ab-c5af-4937-ba8b-476e09c1229b"
+"Enabled"=dword:1
+
+[$RootKey$\TeamSystemPlugins\Team System Client Linking Plugins\Requirements]
+@="F671FDD2-CE1C-4CAC-8EA8-F570FAE2477D"
+"Enabled"=dword:1
+
+[$RootKey$\TeamSystemPlugins\Team System Client Linking Plugins\WorkItemTracking]
+@="5d72c78a-11a1-40d2-86c8-59b823b0e296"
+"Enabled"=dword:1
+
+// Add WorkItemTracking options pages to VS settings dialog
+[$RootKey$\ToolsOptionsPages\Work Items]
+@="#117"
+"Package"="{CA39E596-31ED-4B34-AA36-5F0240457A7E}"
+"Sort"=dword:1
+
+[$RootKey$\ToolsOptionsPages\Work Items\General]
+@="#118"
+"Keywords"="#119"
+"Package"="{CA39E596-31ED-4B34-AA36-5F0240457A7E}"
+"Page"="{89E620E1-9593-402C-905A-B1944CED0C38}"
+
+[$RootKey$\UserSettings\Work Items_TeamFoundation]
+@="#117"
+"ToolsOptionsPath"="Work Items"
+"Package"="{CA39E596-31ED-4B34-AA36-5F0240457A7E}"
+"Category"="{89E620E1-9593-402C-905A-B1944CED0C38}"
+"VSSettingsMigration"=dword:1
+
+//=================================================================================================
+// Pull Requests
+//=================================================================================================
+
+[$RootKey$\Packages\{e4d5e716-901f-439c-bec8-6bee6df17532}]
+@="PullRequestPackage"
+"InprocServer32"="$System$\mscoree.dll"
+"Class"="Microsoft.TeamFoundation.Git.Provider.CodeReview.PullRequestPackage"
+"Assembly"="Microsoft.TeamFoundation.Git.Provider, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+[$RootKey$\ToolWindows\{9412628f-8519-457a-8c06-f97979bfccb5}]
+@="{e4d5e716-901f-439c-bec8-6bee6df17532}"
+"Name"="Microsoft.TeamFoundation.Git.Provider.CodeReview.TimelineWindow.TimelineToolWindow"
+"Style"="MDI"
+"DontForceCreate"=dword:1
+
+[$RootKey$\ToolWindows\{3025d882-e580-40d5-b0ff-869e60dbae57}]
+@="{e4d5e716-901f-439c-bec8-6bee6df17532}"
+"Name"="Microsoft.VisualStudio.Commenting.Presentation.Comments.ToolWindow.CommentToolWindow"
+"Style"="Tabbed"
+"Window"="{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+"DontForceCreate"=dword:1

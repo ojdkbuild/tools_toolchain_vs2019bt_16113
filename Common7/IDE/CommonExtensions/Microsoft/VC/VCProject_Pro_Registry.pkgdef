@@ -1,0 +1,14 @@
+[$RootKey$\NewProjectTemplates\TemplateDirs\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\/1]
+"TemplatesDir"="$BaseInstallDir$\Common7\IDE\VC\VCProjects"
+
+// Template locations for C++ projects
+[$RootKey$\Projects\{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}]
+"DesignerTemplatesDir"="$BaseInstallDir$\Common7\IDE\VC\DesignerTemplates"
+"ProjectTemplatesDir"="$BaseInstallDir$\Common7\IDE\VC\VCProjects"
+
+[$RootKey$\Projects\{8BC9CEBA-8B4A-11D0-8D11-00A0C91BC942}\AddItemTemplates\TemplateDirs\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\/3]
+"TemplatesDir"="$BaseInstallDir$\Common7\IDE\VC\vcprojectitems"
+
+[$RootKey$\Services\{89656351-BDF5-46DC-B5E3-F1BDD30C32BA}]
+"Name"="VC Project Engine"
+@="{F1C25864-3097-11D2-A5C5-00C04F7968B4}"

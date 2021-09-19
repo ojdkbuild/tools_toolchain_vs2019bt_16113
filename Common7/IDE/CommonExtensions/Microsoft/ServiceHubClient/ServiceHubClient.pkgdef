@@ -1,0 +1,15 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{B2A2C036-A61B-4ABC-BCC8-8CF9EB4FDF85}]
+"name"="Microsoft.ServiceHub.Client"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"oldVersion"="0.0.0.0-2.0.0.0"
+"newVersion"="2.0.0.0"
+"codeBase"="$PackageFolder$\Microsoft.ServiceHub.Client.dll"
+
+[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{4771a59b-2230-4dba-b758-896ade016e95}]
+"name"="Microsoft.ServiceHub.Framework"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"oldVersion"="0.0.0.0-2.0.0.0"
+"newVersion"="2.0.0.0"
+"codeBase"="$PackageFolder$\Microsoft.ServiceHub.Framework.dll"

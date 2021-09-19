@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ImageManifest 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+
+  <Symbols>
+    <Guid Name="TSCImageGuid" Value="{E2F80851-F87F-4A85-B233-508AAB1CCF89}" />
+    <ID Name="TscCancelTask" Value="1" />
+    <ID Name="TscCloseTask" Value="2"/>
+    <ID Name="TscFaultedTask" Value="3"/>
+    <ID Name="TscCompletedTask" Value="4"/>
+    <ID Name="TscEmptyStatus" Value="5"/>
+    <ID Name="TscCompletedStatus" Value="6"/>
+    <ID Name="TscInProgressStatus" Value="7"/>
+    <ID Name="TscFaultedStatus" Value="8"/>
+    <ID Name="TscInProgressAnimationImage0" Value="9"/>
+    <ID Name="TscInProgressAnimationImage1" Value="10"/>
+    <ID Name="TscInProgressAnimationImage2" Value="11"/>
+    <ID Name="TscInProgressAnimationImage3" Value="12"/>
+    <ID Name="TscInProgressAnimationImage4" Value="13"/>
+    <ID Name="TscInProgressAnimationImage5" Value="14"/>
+    <ID Name="TscInProgressAnimationImage6" Value="15"/>
+    <String Name="Resources" Value="/Microsoft.VisualStudio.Shell.UI.Internal;Component/Packages/TaskStatusCenter/Icons" />
+  </Symbols>
+
+  <Images>
+
+    <!-- The next 4 icons are for displaying in each single TaskHandlerView display -->
+
+    <!-- Cancel Icon for cancelling a running tasks -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscCancelTask)">
+      <Source Uri="$(Resources)/CancelIcon/StatusStopOutline_noHalo_16x.xaml" />
+      <Source Uri="$(Resources)/CancelIcon/StatusStopOutline_noHalo_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <!-- Close Icon for dismissing tasks -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscCloseTask)">
+      <Source Uri="$(Resources)/CloseIcon/Close_noHalo_16x.xaml" />
+      <Source Uri="$(Resources)/CloseIcon/Close_noHalo_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <!-- Faulted Icon for a single task in the TaskStatusCenter -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscFaultedTask)">
+      <Source Uri="$(Resources)/FaultedIcon/StatusWarning_noHalo_16x.xaml" />
+      <Source Uri="$(Resources)/FaultedIcon/StatusWarning_noHalo_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <!-- Completed Icon for a single task in the TaskStatusCenter.  Indicates a task has Ran To Completion. -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscCompletedTask)">
+      <Source Uri="$(Resources)/CompletedIcon/StatusOK_noHalo_16x.xaml" />
+      <Source Uri="$(Resources)/CompletedIcon/StatusOK_noHalo_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <!-- Below are the Icons for the Status Bar In Visual Studio -->
+
+    <!-- Icon for not tasks running at all -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscEmptyStatus)">
+      <Source Uri="$(Resources)/StatusBarIcons/NoTasksIcon/TaskCenterIdle_whiteNohalo_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/NoTasksIcon/TaskCenterIdle_whiteNohalo_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <!-- Icon for only completed tasks and no faulted tasks -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscCompletedStatus)">
+      <Source Uri="$(Resources)/StatusBarIcons/CompletedTasksIcon/TaskCenterPositive_whiteNohalo_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/CompletedTasksIcon/TaskCenterPositive_whiteNohalo_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <!-- Icon for inprogress tasks with no faulted tasks -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscInProgressStatus)">
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressTasksIcon/TaskCenter_whiteNohalo_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressTasksIcon/TaskCenter_whiteNohalo_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <!-- Icon for when the TaskStatusCenter has a single faulted Task -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscFaultedStatus)">
+      <Source Uri="$(Resources)/StatusBarIcons/FaultedTasksIcon/TaskCenterNegative_whiteNohalo_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/FaultedTasksIcon/TaskCenterNegative_whiteNohalo_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <!-- In progress animation icons -->
+    <Image Guid="$(TSCImageGuid)" ID="$(TscInProgressAnimationImage0)">
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_00_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_00_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+
+    <Image Guid="$(TSCImageGuid)" ID="$(TscInProgressAnimationImage1)">
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_01_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_01_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+
+    <Image Guid="$(TSCImageGuid)" ID="$(TscInProgressAnimationImage2)">
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_02_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_02_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+
+    <Image Guid="$(TSCImageGuid)" ID="$(TscInProgressAnimationImage3)">
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_03_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_03_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+
+    <Image Guid="$(TSCImageGuid)" ID="$(TscInProgressAnimationImage4)">
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_04_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_04_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+
+    <Image Guid="$(TSCImageGuid)" ID="$(TscInProgressAnimationImage5)">
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_05_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_05_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+
+    <Image Guid="$(TSCImageGuid)" ID="$(TscInProgressAnimationImage6)">
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_06_16x.xaml" />
+      <Source Uri="$(Resources)/StatusBarIcons/InProgressAnimationIcons/TaskCenterStatusBarAni_06_16x.png">
+        <Size Value="16" />
+      </Source>
+    </Image>
+  </Images>
+
+</ImageManifest>

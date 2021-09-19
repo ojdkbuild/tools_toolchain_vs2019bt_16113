@@ -1,0 +1,8 @@
+{
+  "host": "desktopClr.x86",
+  "entryPoint": {
+    "assemblyPath": "Microsoft.VisualStudio.Cache.Service.dll",
+    "fullClassName": "Microsoft.VisualStudio.Cache.Service.Factory"
+  },
+  "versionRange": "[0.2]"
+}

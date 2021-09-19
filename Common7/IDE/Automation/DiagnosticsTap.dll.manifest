@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity type="win32" processorArchitecture="x86" name="Automation\DiagnosticsTap.dll" version="1.0.0.0" />
+  <file name="DiagnosticsTap.dll" hashalg="SHA1">
+    <comClass clsid="{5E6040A1-972E-41B5-A7CA-63A459617519}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" threadingModel="Apartment"></comClass>
+    <comClass clsid="{F733784D-7B05-4CD4-B7F5-C8478400BDA0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}"></comClass>
+    <comClass clsid="{A9F2DE13-34E2-4039-9D3C-61C2EDE4E08F}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}"></comClass>
+    <comClass clsid="{8C0C6302-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}"></comClass>
+    <comClass clsid="{8C0C6304-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}"></comClass>
+    <comClass clsid="{8C0C6306-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}"></comClass>
+    <typelib tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" resourceid="1" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <comInterfaceExternalProxyStub name="ITapObject" iid="{8C0C62E8-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{8C0C62E8-37F1-11E3-8259-6C3BE516EAD0}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IDiagnosticsScriptEngineSite" iid="{30510858-98B5-11CF-BB82-00AA00BDCE0B}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{30510858-98B5-11CF-BB82-00AA00BDCE0B}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IActiveScriptError" iid="{EAE1BA61-A4ED-11CF-8F20-00805F2CD064}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{EAE1BA61-A4ED-11CF-8F20-00805F2CD064}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="ILocalDebuggeeScriptHostFactory2" iid="{525871DC-8C6E-4833-AA7B-D0DEF2E8CD74}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IDiagnosticsMessageHandler" iid="{8C0C62B3-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IDebugEngineSite" iid="{8C0C62EF-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IScriptEventProvider" iid="{8C0C62B1-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IMessageDispatch" iid="{8C0C62F5-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IDebugMessagePort" iid="{8C0C62F9-37F1-11E3-8259-6C3BE516EAD0}" tlbid="{8C0C62FC-37F1-11E3-8259-6C3BE516EAD0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+</assembly>

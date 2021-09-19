@@ -1,0 +1,23 @@
+[$RootKey$\AD7Metrics\Engine\{1202F5B4-3522-4149-BAD8-58B2079D704F}]
+"AlwaysLoadLocal"=dword:00000001
+"AlwaysLoadProgramProviderLocal"=dword:00000001
+"Attach"=dword:00000001
+"AutoSelectPriority"=dword:0000000A
+"CLSID"="{3B476D3A-A401-11D2-AAD4-00C04F990171}"
+"FunctionBP"=dword:00000001
+"HitCountBP"=dword:00000001
+"PortSupplier"="{708C1ECA-FF48-11D2-904F-00C04FA302A1}"
+"ProgramProvider"="{4FF9DEF4-8922-4D02-9379-3FFA64D1D639}"
+"RemoteDebugging"=dword:00000001
+
+[$RootKey$\AD7Metrics\ExpressionEvaluator\{3A12D0B9-C26C-11D0-B442-00A0244A1DD2}\{994B45C4-E6E9-11D2-903F-00C04FA302A1}]
+"Language"="T-SQL"
+"Name"="Microsoft SQL"
+
+[$RootKey$\AD7Metrics\ExpressionEvaluator\{3A12D0B9-C26C-11D0-B442-00A0244A1DD2}\{994B45C4-E6E9-11D2-903F-00C04FA302A1}\Engine]
+"0"="{1202F5B4-3522-4149-BAD8-58B2079D704F}"
+
+[$RootKey$\CLSID\{3B476D3A-A401-11D2-AAD4-00C04F990171}]
+@="SQL Debug Engine Class"
+"InprocServer32"="$ShellFolder$\Common7\Packages\Debugger\sqlde.dll"
+"ThreadingModel"="Free"

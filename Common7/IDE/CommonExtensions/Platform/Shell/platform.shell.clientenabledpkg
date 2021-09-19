@@ -1,0 +1,10 @@
+CmdDefUI.Pkgdef
+Microsoft.VisualStudio.Pkgdef
+Microsoft.VisualStudio.CommonIDE.pkgdef
+Microsoft.VisualStudio.ComponentModelHost.Implementation.pkgdef
+Microsoft.VisualStudio.Dialogs.pkgdef
+Microsoft.VisualStudio.Platform.WindowManagement.pkgdef
+Microsoft.VisualStudio.Shell.UI.Internal.pkgdef
+Microsoft.VisualStudio.TemplateWizard.pkgdef
+Msenv.Core.Pkgdef
+VsAppDomainManager.pkgdef

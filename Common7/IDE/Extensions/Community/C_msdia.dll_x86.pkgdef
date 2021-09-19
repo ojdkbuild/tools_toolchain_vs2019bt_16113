@@ -1,0 +1,14 @@
+[$RootKey$\CLSID\{91904831-49ca-4766-b95c-25397e2dd6dc}]
+@="Debug Information Accessor w/o Global Memory Usage"
+"InprocServer32"="$ShellFolder$\Common7\Packages\Debugger\msdia140.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\CLSID\{ce4a85db-5768-475b-a4e1-c0bca2112a6b}]
+@="Generic StackWalker"
+"InprocServer32"="$ShellFolder$\Common7\Packages\Debugger\msdia140.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\CLSID\{e6756135-1e65-4d17-8576-610761398c3c}]
+@="Debug Information Accessor"
+"InprocServer32"="$ShellFolder$\Common7\Packages\Debugger\msdia140.dll"
+"ThreadingModel"="Both"

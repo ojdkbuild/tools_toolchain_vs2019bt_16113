@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  <Symbols>
+    <Import Manifest="$(ManifestFolder)\..\..\Platform\Shell\Microsoft.VisualStudio.ImageCatalog.imagemanifest" />
+    <Guid Name="VCImageLists" Value="{0ad026d5-8182-40cf-ab06-e5332fe95f36}" />
+    <ID Name="ISenseError_ImageList" Value="2000" />
+  </Symbols>
+  <Images />
+  <ImageLists>
+    <ImageList Guid="$(VCImageLists)" ID="$(ISenseError_ImageList)">
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ErrorSquiggleActive)" External="true" />
+      <ContainedImage Guid="$(ImageCatalogGuid)" ID="$(ErrorSquiggleInactive)" External="true" />
+    </ImageList>
+  </ImageLists>
+</ImageManifest>

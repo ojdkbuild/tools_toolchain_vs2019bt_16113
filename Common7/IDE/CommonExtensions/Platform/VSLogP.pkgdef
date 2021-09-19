@@ -1,0 +1,16 @@
+[$RootKey$\CLSID\{C1F63D0C-4CAE-4907-BE74-EEB75D386ECB}]
+@="PSFactoryBuffer"
+
+[$RootKey$\CLSID\{C1F63D0C-4CAE-4907-BE74-EEB75D386ECB}\InProcServer32]
+@="$CommonFiles$\Microsoft Shared\MSEnv\VsLogP.dll"
+"ThreadingModel"="Both"
+
+[$RootKey$\Interface\{4AAEA0BD-4327-44E0-B958-365EBCBEF679}]
+@="IVsLog"
+"AutoRegister"=dword:00000001
+
+[$RootKey$\Interface\{4AAEA0BD-4327-44E0-B958-365EBCBEF679}\NumMethods]
+@="3"
+
+[$RootKey$\Interface\{4AAEA0BD-4327-44E0-B958-365EBCBEF679}\ProxyStubClsid32]
+@="{C1F63D0C-4CAE-4907-BE74-EEB75D386ECB}"

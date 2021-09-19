@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <file name="vsdebug.dll" hashalg="SHA1">
+    <comClass clsid="{5CEB3CEF-F536-428B-A798-D1A31C67167C}" tlbid="{81845511-3225-4D12-9F9D-921EF1145397}" description="VSDebug FindSource Page">
+    </comClass>
+    <comClass clsid="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}" tlbid="{81845511-3225-4D12-9F9D-921EF1145397}" description="VSDebug Package">
+    </comClass>
+    <typelib tlbid="{81845511-3225-4D12-9F9D-921EF1145397}" resourceid="1" version="9.0" helpdir="" flags="HASDISKIMAGE">
+    </typelib>
+  </file>
+  <comInterfaceExternalProxyStub name="IVsDebugTextBuffer" iid="{6D41D08A-918F-11D0-8C46-00C04FC2AB22}" tlbid="{81845511-3225-4D12-9F9D-921EF1145397}" proxyStubClsid32="{6D41D08A-918F-11D0-8C46-00C04FC2AB22}">
+  </comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IVsCustomDataTip" iid="{80DD0557-F6FE-48E3-9651-398C5E7D8D78}" tlbid="{81845511-3225-4D12-9F9D-921EF1145397}" proxyStubClsid32="{80DD0557-F6FE-48E3-9651-398C5E7D8D78}">
+  </comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="ScriptDocumentProperties" iid="{FF95BEF3-649C-41F1-B888-071C3CA27801}" tlbid="{81845511-3225-4D12-9F9D-921EF1145397}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}">
+  </comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="ScriptProcessProperties" iid="{BDB4B17A-BBB3-4D1B-9A44-F50ED75B99A1}" tlbid="{81845511-3225-4D12-9F9D-921EF1145397}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}">
+  </comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IVsTextMarkerPopupClient" iid="{168E193F-E42A-4397-98C1-4B696E0E1B60}" tlbid="{81845511-3225-4D12-9F9D-921EF1145397}" proxyStubClsid32="{168E193F-E42A-4397-98C1-4B696E0E1B60}">
+  </comInterfaceExternalProxyStub>
+</assembly>

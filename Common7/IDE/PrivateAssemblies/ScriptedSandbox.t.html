@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Plug-in not responding dialog</title>
+    <script>
+        window.__hostMessageReceived = function __hostMessageReceived(message) {
+            try {
+                var parts = message.split(':');
+                switch (parts[0]) {
+                    case "Message":
+                        var msg = document.getElementById("msg");
+                        msg.innerText = parts[1];
+                        window.external.postMessage("MessageSet");
+                        break;
+                    case "Size":
+                        window.external.postMessage("Size: " + document.getElementById("body").clientWidth + ", " + document.getElementById("body").clientHeight);
+                        break;
+                    case "Disable":
+                        var button = document.getElementById("terminate");
+                        button.disabled = true;
+                        window.external.postMessage("Disabled");
+                        break;
+                }
+            }
+            catch (e) {
+                window.external.postMessage("Error:" + e.message);
+            }
+        }
+        function cancelPressed() {
+            window.external.postMessage("Cancel");
+        }
+        function terminatePressed() {
+            window.external.postMessage("Terminate");
+        }
+        window.external.postMessage("Ready");
+    </script>
+    <style>
+        body {
+            font-family: Verdana;
+            font-size: 11px;
+            margin: 0;
+        }
+
+        div.outer {
+            border: 1px solid #000000;
+            padding: 1px;
+        }
+
+        div.container {
+            padding: 6px 6px 6px 13px;
+            border-top: solid 6px #f2b100;
+            min-height: 25px;
+        }
+
+        div.container p {
+            margin: 2px;
+            width: 70%;
+            float: left;
+        }
+
+        button {
+            padding: 3px 16px;
+            font-family: Verdana;
+            font-size: 11px;
+            margin-botton: 5px;
+        }
+
+        div.container button, a {
+            float: right;
+        }
+
+        div.container a {
+            margin: 9px 2px 5px 12px;
+            display: block;
+            width: 8px;
+            height: 8px;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAIAAAB/FOjAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALJJREFUeNqUkLENg0AMRY8ToTsJMgMU6TNB2IdhGIMBSAXpwhAwQ0CiuiMKeYolp8bV9/ez7+ui4Tksy3wryyRJjDEhhL7r0jS7PPptHM91bZ3D/6zrq6pORWGhl3kGCr9C0GJCv6cJCFRoWszIey9QmmVcEsGDsfcCxXmOL4IHo33f9TADoSWeHkYLTTxrDtbxSPe2VYiBLl+bRiF8Xbb8oOamELSY/OA/t3MIWsyvAAMAp8iecFKNFTUAAAAASUVORK5CYII=") 0 0;
+            text-decoration: none;
+        }
+
+        div.container a:hover {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAIAAAB/FOjAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALJJREFUeNqUkLENg0AMRY8ToTsJMgMU6TNB2IdhGIMBSAXpwhAwQ0CiuiMKeYolp8bV9/ez7+ui4Tksy3wryyRJjDEhhL7r0jS7PPptHM91bZ3D/6zrq6pORWGhl3kGCr9C0GJCv6cJCFRoWszIey9QmmVcEsGDsfcCxXmOL4IHo33f9TADoSWeHkYLTTxrDtbxSPe2VYiBLl+bRiF8Xbb8oOamELSY/OA/t3MIWsyvAAMAp8iecFKNFTUAAAAASUVORK5CYII=") 8px 0;
+        }
+
+        .clear {
+            clear: both;
+            height: 1px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="outer">
+        <div id="container" class="container">
+            <p>
+                <span id="msg" class="msg">The tool is currently busy and not responding to messages, you can continue to wait or terminate the tool now.</span>
+            </p>
+            <a class="Cancel" href="#" onclick="cancelPressed()"></a>
+            <button id="terminate" class="terminate" onclick="terminatePressed()">Terminate</button>
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>
+</body>
+</html>

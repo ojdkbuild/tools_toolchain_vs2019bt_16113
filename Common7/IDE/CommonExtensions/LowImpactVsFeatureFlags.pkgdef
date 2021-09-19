@@ -1,0 +1,4 @@
+[$RootKey$\FeatureFlags\Shell\FirstLaunch\ProfileImportOptimization]
+"Value"=dword:00000001
+[$RootKey$\FeatureFlags\Shell\FirstLaunch\SkipFontColorCachePrep]
+"Value"=dword:00000000

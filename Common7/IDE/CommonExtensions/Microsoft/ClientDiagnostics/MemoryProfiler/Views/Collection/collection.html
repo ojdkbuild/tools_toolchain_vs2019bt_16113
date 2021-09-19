@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- If in future we support win 8, then we have to change this value to 10-->
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta http-equiv="Content-Type" content="text/html" />
+  <title>Memory Profiler Collection View</title>
+
+  <link id="TabControl.css" rel="stylesheet" href="../Common/CSS/TabControl.css" type="text/css" data-plugin-theme="true" />
+  <link id="SnapshotTileView.css" rel="stylesheet" href="CSS/SnapshotTileView.css" type="text/css" data-plugin-theme="true" />
+  <link id="CollectionView.css" rel="stylesheet" href="CSS/CollectionView.css" type="text/css" data-plugin-theme="true" />
+  <link id="Toolbar.css" rel="stylesheet" href="CSS/Toolbar.css" type="text/css" data-plugin-theme="true" />
+
+  <script type="text/javascript" src="../Common/Script/plugin.js"></script>
+    <script type="text/javascript" src="../Common/Script/DiagnosticsHub.js"></script>
+    <script type="text/javascript" src="../Common/Script/Controls.js"></script>
+  <script type="text/javascript" src="../Common/Script/CommonMerged.js"></script>
+  <script type="text/javascript" src="Script/CollectionViewMerged.js"></script>
+  
+  <script id="CollectionViewTemplate" type="text/html">
+    <div class="toolbarSection"></div>
+    <div class="collectionView">
+      <div id="warningSection" class="warningMessage"></div>
+      <div id="tilesContainer" class="snapshotTilesContainer">
+        <div id="takeSnapshotTile" class="snapshotTile snapshotTileBlank">
+          <div id="snapshotError" class="snapshotError">
+            <span id="snapshotErrorLabel"></span>
+            <span id="snapshotErrorMsg"></span>
+          </div>
+          <div class="snapshotTileInner">
+            <button id="takeSnapshotButton" class="takeSnapshotButton">
+              <div class="snapshotTileTextContainer">
+                <div id="takeSnapshotIcon" class="takeSnapshotIcon"><div data-plugin-svg="image-snapshot"></div></div>
+                <div id="takeSnapshotLabel" class="takeSnapshotLabel" data-plugin-vs-tooltip='{"resource":"TakeSnapshotTooltip"}'></div>
+              </div>
+              <progress id="takeSnapshotProgress"></progress>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="SnapshotTileTemplate" type="text/html">
+    <div id="snapshotTile" class="snapshotTile snapshotTileTaken">
+      <div class="snapshotTileInner">
+        <div id="snapshotTileHeader" class="snapshotTileHeader" tabindex="0">
+          <div id="snapshotTileTitle" class="snapshotTileTitle"></div>
+          <div id="snapshotTakenDate" class="snapshotTakenDate"></div>
+        </div>
+        <div id="snapshotTileImageHolder" class="snapshotTileImageHolder">
+          <img id="snapshotTileImage" class="snapshotTileImage" />
+        </div>
+          <div id="stopToSeeSnapshotDetails" class="stopToSeeSnapshotDetailsMessage"></div>
+          <div id="screenshotNotAvailableMessage" class="screenshotNotAvailableMessage"></div>
+      </div>
+    </div>
+  </script>
+</head>
+  
+<body tabindex="-1">
+  <div id="mainContainer">
+  </div>
+</body>
+</html>

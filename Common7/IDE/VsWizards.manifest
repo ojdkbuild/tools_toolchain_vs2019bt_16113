@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (C) 1981-2007 Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <noInheritable/>
+<assemblyIdentity type="win32" processorArchitecture="x86" name="VsWizards" version="1.0.0.0" />
+<file name="VsWizard.dll">
+    <comClass clsid="{ace8d0ab-91c1-47ae-83fe-f9d4693dd008}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+    <comClass clsid="{d4d285dc-2447-11d7-8bf6-00b0d03daa06}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+    <comClass clsid="{fc1ae18b-0282-42f1-90ae-bbd8f0181013}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+    <typelib tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}" version="16.0" helpdir=""/>
+</file>
+  <comInterfaceExternalProxyStub name="IVCWizCtl" iid="{cbd91164-8149-4e68-9b2e-5b8cf4f69ea9}" numMethods="9" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="IVCWizCtlUI" iid="{accc8ac8-1d95-4e53-8f26-bfe3a21494d6}" numMethods="95" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="ICollection" iid="{2d8dd713-f25d-42b4-98ee-62dfd56b1c45}" numMethods="12" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="ITypeLibInfo" iid="{378cd6b8-2eef-40e7-adf7-aaedd435d100}" numMethods="25" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="_ITypeInfo" iid="{31a78406-d50e-4ca5-8178-d4f9b2d43eb8}" numMethods="10" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="ITypeInfo" iid="{00020401-0000-0000-c000-000000000046}" numMethods="19" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="ITypeComp" iid="{00020403-0000-0000-c000-000000000046}" numMethods="2" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="ITypeLib" iid="{00020402-0000-0000-c000-000000000046}" numMethods="10" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="IInterfaceInfo" iid="{f367372d-0440-49b1-9292-203c664f5051}" numMethods="18" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="IFuncInfo" iid="{945e97d9-5a8e-48b7-9183-340bf0f09cee}" numMethods="28" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="IVarInfo" iid="{1e5df92f-4fc6-4808-ab39-9c914ecf2b8b}" numMethods="19" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="IParamInfo" iid="{33201af5-cd68-44ab-b4a1-279bde05ee9f}" numMethods="17" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="IEnumInfo" iid="{711affa6-9aa3-4623-aa76-19e9fd877569}" numMethods="9" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="ICoclassInfo" iid="{5fbf6d95-6d01-4b6a-8e35-1e05bb8b94a3}" numMethods="10" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="IControl" iid="{09a84f61-f98e-4846-a537-96564962792e}" numMethods="22" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="_IDispWizComboEvents" iid="{b66b0c44-3d7d-4607-b843-b7b0382cb62a}" numMethods="2" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+  <comInterfaceExternalProxyStub name="IWizCombo" iid="{666e6b65-1d7a-43c7-9a82-3ef6b988a02d}" numMethods="21" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" tlbid="{c0029a5b-6601-4fa9-970b-a0f2768f03d6}"/>
+</assembly>

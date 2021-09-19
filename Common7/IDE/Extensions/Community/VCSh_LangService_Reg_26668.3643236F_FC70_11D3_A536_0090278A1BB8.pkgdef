@@ -1,0 +1,25 @@
+[$RootKey$\Languages\CodeExpansions\CSharp]
+@="{694DD9B6-B865-4C5B-AD85-86356E9C88DC}"
+"DisplayName"="131"
+"IndexPath"="%InstallRoot%\VC#\Snippets\%LCID%\SnippetsIndex.xml"
+"LangStringID"="csharp"
+"Package"="{A066E284-DCAB-11D2-B551-00C04F68D4DB}"
+"ShowRoots"=dword:00000000
+
+[$RootKey$\Languages\CodeExpansions\CSharp\ForceCreateDirs]
+"Microsoft Visual CSharp"="%InstallRoot%\VC#\Snippets\%LCID%\Visual C#\;%InstallRoot%\VC#\Snippets\%LCID%\Refactoring\;%MyDocs%\Code Snippets\Visual C#\My Code Snippets\"
+
+[$RootKey$\Languages\CodeExpansions\CSharp\Paths]
+"Microsoft Visual CSharp"="%InstallRoot%\VC#\Snippets\%LCID%\Visual C#\;%InstallRoot%\VC#\Snippets\%LCID%\Refactoring\;%MyDocs%\Code Snippets\Visual C#\My Code Snippets\"
+
+[$RootKey$\Languages\Language Services\CSharp]
+"DefaultToInsertSpaces"=dword:00000001
+"DesignerLoader"="Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader, Microsoft.VisualStudio.Design, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"EnableAdvancedMembersOption"=dword:00000001
+"ShowBraceCompletion"=dword:00000001
+"ShowCompletion"=dword:00000001
+"ShowSmartIndent"=dword:00000001
+"SupportsImageCaching"=dword:00000001
+
+[$RootKey$\Languages\Language Services\CSharp\Debugger Languages\{3F5162F8-07C6-11D3-9053-00C04FA302A1}]
+@="CSharp"

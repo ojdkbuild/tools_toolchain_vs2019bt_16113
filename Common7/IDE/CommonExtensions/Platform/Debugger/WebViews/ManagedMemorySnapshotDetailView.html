@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <link id="grid.css" rel="stylesheet" href="grid.css" type="text/css" data-plugin-theme="true" />
+    <link id="ManagedMemorySnapshotDetailView.css" rel="stylesheet" href="ManagedMemorySnapshotDetailView.css" type="text/css" data-plugin-theme="true" />
+    <script type="text/javascript" src="plugin.js"></script>
+    <script type="text/javascript" src="ManagedMemoryHelpers.js"></script>
+    <script type="text/javascript" src="BptDiagnosticCommon\JSTreeDynamicGridControl.js"></script>
+    <script type="text/javascript" src="ManagedHeapViewer.js"></script>
+    <!--[if IE 9]>    
+    <script type="text/javascript">
+        // disable select of nontext elements, in IE10+ Daytona handles this
+        document.onselectstart = function(event) { return event.srcElement.type === "text"; }
+    </script>
+    <![endif]-->
+
+    <!-- Templates -->
+    <script id="IconTemplate" type="text/html">
+        <div data-id="container" class="ImageTile">
+            <img class="Spacer" alt="" src="spacer.png" />
+            <img data-id="icon" class="Sprite" alt="" src="mma_icons.png" />
+        </div>
+    </script>
+</head>
+
+<!--  encode browser version into the class of the body -->
+<!--[if IE 9]>
+    <body class="IE9">
+<![endif]-->
+<!--[if !IE 9]> -->
+    <body>
+<!-- <![endif]-->
+
+<div id="snapshotViewContainer" class="SnapshotViewContainer">
+    <!-- toolbar -->
+    <div id="snapshotViewToolbar" class="SnapshotViewToolbar">
+        <div id="goBackDiv" class="HeaderCaptionDiv">
+            <div id="goBackButton" class="GoBackDiv" tabindex="0" role="button">
+                <div id="goBackIcon" class="ImageTile">
+                    <img class="Spacer" alt="" src="spacer.png" />
+                    <img class="Sprite BackIcon" alt="" src="mma_icons.png" />
+                </div>
+            </div>
+            <span id="goBackCaption" role="banner" tabindex="0"></span>
+        </div>
+        <div id="viewGeneralCaptionDiv" class="HeaderCaptionDiv GeneralCaptionDiv" role="banner"></div>
+        <div class="SnapshotToolbarDiv">
+            <div id="diffDropDownDiv" class="DiffDropDownDiv">
+                <label id="diffDropDownCaption" class="ToolbarLabel"></label>
+                <div class="DiffDropDownGrid">
+                    <select id="diffDropDown" aria-labelledby="diffDropDownCaption"></select>
+                </div>
+            </div>
+            <div class="ProgressBarDiv" id="diffProgressDiv">
+                <progress id="diffProgress"></progress>
+            </div>
+            <div id="viewSettingsDiv" class="ViewSettingsDiv" tabindex="0" role="menu" aria-describedby="viewSettingsHelpText">
+                <div class="ImageTile">
+                    <img class="Spacer" alt="" src="spacer.png" />
+                    <img class="Sprite ViewFilterIcon" alt="" src="mma_icons.png" />
+                </div>
+            </div>
+            <div id="searchFilterDiv" class="SearchFilterDiv">
+                <input id="filterInput" class="FilterInput" role="search" type="text" />
+                <progress id="filterInputProgressBar" class="FilterInputProgressBar" max="100"></progress>
+            </div>
+            <div id="heapSelectDropDownDiv" class="SelectHeapDropDownDiv">
+                <label id="heapSelectCaption" class="ToolbarLabel"></label>
+                <select id="heapSelectDropDown" aria-labelledby="heapSelectCaption"></select>
+            </div>
+            <div id="viewModeDropDownDiv" class="ViewModeDropDownDiv">
+                <label id="viewModeCaption" class="ToolbarLabel"></label>
+                <select id="viewModeDropDown" aria-labelledby="viewModeCaption"></select>
+            </div>
+            <div id="toggleButtonDiv" class="ToggleButton" role="radiogroup">
+                <div id="aggregationToggleTabLabel" class="toggleTabLabel"></div>
+                <div id="aggregationToggleTabTopButton" class="toggleTabButtonContainer toggleTabFirstButtonContainer" tabindex="0" role="radio"></div>
+                <div id="aggregationToggleTabBottomButton" class="toggleTabButtonContainer toggleTabSecondButtonContainer" tabindex="0" role="radio"></div>
+            </div>
+        </div>
+        <div id="notificationBar" class="NotificationBar">
+            <div id="notificationBarInfoIcon" class="ImageTile NotificationBarInfoIcon">
+                <img class="Spacer" alt="" src="spacer.png" />
+                <img class="Sprite NotificationIcon" alt="" src="mma_icons.png" />
+            </div>
+            <div id="notificationBarMessage" class="NotificationBarMessage"></div>
+        </div>
+        <!-- This span holds the help text for the view settings menu item for accesibility purposes, it should not be visible or accessible to the user -->
+        <!-- The content of this span, will be added programatically -->
+        <span id="viewSettingsHelpText" style="visibility: hidden;"></span>
+    </div>
+
+    <div id="snapshotView" class="SnapshotView">
+        <!-- Types/objects viewer -->
+        <div class="TypesObjectsViewer">
+            <div id="typesObjectsEmptyMessageDiv" class="ViewDisabledMessage"><p id="typesObjectsEmptyMessage"></p></div>
+            <div id="managedHeapTypesViewerContainer"></div>
+            <div id="managedHeapObjectsViewerContainer"></div>
+            <div id="aggregatedCallStacksViewerContainer"></div>
+        </div>
+
+        <!-- splitter -->
+        <div id="splitter" class="Splitter"></div>
+
+        <!-- References viewer -->
+        <div class="RefGraph">
+            <div id="refGraphHeader" class="RefGraphHeader">
+                <span class="RefGraphDirection">
+                    <span><a id="referencingGraph" tabindex="0"></a></span>
+                    <span class="Separator">|</span>
+                    <span><a id="referencedGraph" tabindex="0"></a></span>
+                </span>
+            </div> 
+            <div id="managedHeapViewerForwardRefGraphContainer" class="RefGraphContainer"></div>
+            <div id="managedHeapViewerBackwardRefGraphContainer" class="RefGraphContainer"></div>
+            <div id="managedHeapViewerForwardTypeRefGraphContainer" class="RefGraphContainer"></div>
+            <div id="managedHeapViewerBackwardTypeRefGraphContainer" class="RefGraphContainer"></div>
+            <!---Stack Viewer-->
+            <div id="stackHeader" class="RefGraphHeader">
+                <span class="RefGraphDirection">
+                    <span><a id="StackHeaderContent" tabindex="0"></a></span>
+                </span>
+            </div>
+            <div id="nativeStackViewerContainer" class="RefGraphContainer"></div>
+            <div id="nativeAllocationListContainer" class="RefGraphContainer"></div>
+            <div id="allocationStackEmptyMessageDiv" class="ViewDisabledMessage"><p id="allocationStackEmptyMessage"></p></div>
+            <div id="managedHeapViewerRefGraphNoData" class="RefGraphNoData"></div>
+        </div>
+    </div>
+</div>
+
+</body>        
+</html>

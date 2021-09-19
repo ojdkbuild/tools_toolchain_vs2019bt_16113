@@ -1,0 +1,68 @@
+[$RootKey$\ToolsOptionsPages\Text Editor\Advanced]
+@="#601"
+"Package"="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+"Page"="{efd55f3d-23c1-4a1d-a58b-77295611c7d4}"
+"Sort"=dword:00000001
+"Keywords"="@AdvancedKeywords"
+
+[$RootKey$\ToolsOptionsPages\Text Editor\General]
+@="#501"
+"Package"="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+"Page"="{c178af61-531a-46f0-bd57-102d9e42c711}"
+"Keywords"="@GeneralKeywords"
+
+[$RootKey$\UserSettings\Text Editor_Advanced]
+@="601"
+"Package"="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+"Category"="{efd55f3d-23c1-4a1d-a58b-77295611c7d4}"
+"ToolsOptionsPath"="Text Editor"
+"AlternateParent"="AutomationProperties\TextEditor"
+"Description"="602"
+"VSSettingsMigration"=dword:00000001
+
+[$RootKey$\UserSettings\Text Editor_General]
+@="501"
+"Package"="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+"Category"="{c178af61-531a-46f0-bd57-102d9e42c711}"
+"ToolsOptionsPath"="Text Editor"
+"AlternateParent"="AutomationProperties\TextEditor"
+"Description"="502"
+
+[$RootKey$\ToolWindows\{6324226f-61b6-4f28-92ee-18d4b5fe1e48}]
+@="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+"Float"="100, 100, 550, 520"
+"Name"="Find In Files"
+"Window"="6324226f-61b6-4f28-92ee-18d4b5fe1e48"
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Shell.OpenDocumentService\1.0]
+@="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+"audience"=dword:00000803
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Shell.OpenDocumentService\1.1]
+@="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+"audience"=dword:00000803
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Editor.FindService\1.0]
+@="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+// ServiceAudience.RemoteExclusiveClient: The service is running on a Nexus server it is available to the Nexus client.
+"Audience"=dword:00000100
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Editor.FindService\1.1]
+@="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+// ServiceAudience.RemoteExclusiveClient: The service is running on a Nexus server it is available to the Nexus client.
+"Audience"=dword:00000100
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Shell.DiagnosticManagerService\1.0]
+@="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+// ServiceAudience.AllClientsIncludingGuests
+"Audience"=dword:00000503
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Shell.DiagnosticViewerService\1.0]
+@="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+// ServiceAudience.AllClientsIncludingGuests
+"Audience"=dword:00000503
+
+[$RootKey$\BrokeredServices\Microsoft.VisualStudio.Shell.DiagnosticManagerBroadcastService\1.0]
+@="{e269b994-ef71-4ce0-8bcd-581c217372e8}"
+// ServiceAudience.AllClientsIncludingGuests
+"Audience"=dword:00000503

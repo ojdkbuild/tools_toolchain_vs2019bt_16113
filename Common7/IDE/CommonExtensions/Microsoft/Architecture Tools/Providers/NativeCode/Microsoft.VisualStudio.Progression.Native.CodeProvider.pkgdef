@@ -1,0 +1,6 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{E17E0E4A-430D-4F30-974B-4DD5E5E3C847}]
+"name"="Microsoft.VisualStudio.Progression.Native.CodeProvider"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.Progression.Native.CodeProvider.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="16.0.0.0"

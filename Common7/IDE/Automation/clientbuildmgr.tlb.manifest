@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity type="win32" name="Automation\clientbuildmgr.tlb" processorArchitecture="X86" version="1.0.0.0"></assemblyIdentity>
+  <file name="clientbuildmgr.tlb" hashalg="SHA1">
+    <comClass clsid="{DE151B74-6EE2-45FD-9364-71D6D8C90961}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" description="Web Project CBM Service Provider"></comClass>
+    <comClass clsid="{4EABA6E2-3512-4643-8E1B-093C55BBD5A8}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" description="Web Project CBM Wrapper Site"></comClass>
+    <comClass clsid="{41CCA30A-8925-4F44-80B4-8E2502FAD674}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" description="Web Project CBM Event Sink"></comClass>
+    <comClass clsid="{4343C300-533D-47FA-9918-087EE78F1E6D}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" description="Config Value provider work item callback"></comClass>
+    <comClass clsid="{01719701-1A20-480C-9828-B04F96A55516}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" description="Web Project Build Feedback"></comClass>
+    <typelib tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <comInterfaceExternalProxyStub name="IVsClientBuildManagerEventSink" iid="{5A936FF6-CE26-4C59-9862-C71999BCFAC9}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IVsClientBuildManagerService" iid="{F01B7EAD-EF12-442A-8698-1E556F809C1F}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IVsClientBuildManagerSite" iid="{2E630DEB-F8E0-4FC1-A2A7-D8C5449E4ECE}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <!-- Problem: Standard COM interface -->
+  <!--<comInterfaceExternalProxyStub name="IServiceProvider" iid="{6D5140C1-7436-11CE-8034-00AA006009FA}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" proxyStubClsid32="{6D5140C1-7436-11CE-8034-00AA006009FA}"></comInterfaceExternalProxyStub>-->
+  <comInterfaceExternalProxyStub name="ICBMAsyncResultSink" iid="{6A35873E-123E-449F-ACD3-D1BE18E01815}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IVenusCompProcessFeedback" iid="{C71B6089-2C79-456F-B935-6B402AE3C254}" tlbid="{F3736FDE-95D6-41F2-8870-69B367CDC0C5}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+</assembly>

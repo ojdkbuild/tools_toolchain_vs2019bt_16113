@@ -1,0 +1,14 @@
+{
+  "Registrations": [
+    {
+      "Component": {
+        "Type": "git",
+        "git": {
+          "repositoryUrl": "https://github.com/zxh0/vscode-proto3",
+          "commitHash": "0326cb42a1bf4ccee20f2d28d0b1017ecd5dca57"
+        }
+      }
+    }
+  ],
+  "Version": 1
+}

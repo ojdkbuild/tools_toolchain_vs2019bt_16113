@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="8EAF6C8E-1283-4EEE-AB6E-F0F087BFCBFD" Version="16.11.31626.159" Language="en-us" Publisher="Microsoft"/>
+    <DisplayName>Visual Studio Product Updates</DisplayName>
+    <Description>Updates to Visual Studio</Description>
+  </Metadata>
+  <Installation Scope="ProductExtension" AllUsers="true" InstalledByMsi="true">
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.IntegratedShell" ProductUpdate="true"/>
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.Express_All" ProductUpdate="true"/>
+  </Installation>
+  <Dependencies/>
+  <Assets/>
+</PackageManifest>

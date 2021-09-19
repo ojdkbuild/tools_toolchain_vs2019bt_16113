@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2013">
+  <!-- Windows-->
+  <Module Name="?:\Windows\System32\*.dll" />
+  <Module Name="?:\Windows\SysWOW64\*.dll" />
+  <Module Name="?:\Windows\WinSxs\*" />
+
+  <Module Name="ntoskrnl.exe" />
+  <Module Name="win32k.sys" />
+  <Module Name="Windows.NI.WinMD" />
+  <Module Name="Windows.UI.Xaml.winmd" />
+  <Module Name="Windows.WinMD" />
+
+  <!-- CRT-->
+  <Module Name="msvcr*.dll" />
+  <Module Name="msvcp*.dll" />
+  <Module Name="vccorlib*.dll" />
+  <File Name="*\vctools\crt\* "/>
+  <File Name="*\internalApis\vctools\inc\* "/>
+
+  <!-- CLR -->
+  <Module Name="?:\Windows\Microsoft.NET\*" />
+  <Module Name="*\NativeImages*\*.ni.dll" />
+
+  <!-- Standard C++ header files-->
+  <File Name="*\VC\include\*" />
+  <File Name="*\VC\atlmfc\*" />
+
+  <!-- Generated files-->
+  <File Name="*.g.h" />
+  <File Name="*.g.cpp" />
+  <File Name="*.g.hpp" />
+  
+  <!-- Platform namespaces -->
+  <Function Name="*__abi_*" />
+  <Function Name="__winRT::*" />
+  <Function Name="Concurrency::*" />
+  <Function Name="Microsoft::*" />
+  <Function Name="Platform::*" />
+  <Function Name="XamlTypeInfo::*" />
+  <Function Name="Windows::*" />
+  <Function Name="VSHeapTracker::*" />
+  
+  <!-- Common template library namespaces -->
+  <Function Name="boost::*" />
+  <Function Name="std::*" />
+
+  <!-- CRT Exception implementation-->
+  <Function Name="__abi_ThrowIfFailed" ExceptionImplementation="true" />
+  <Function Name="__abi_WinRTraiseAccessDeniedException" ExceptionImplementation="true" />
+  <Function Name="__abi_WinRTraiseException" ExceptionImplementation="true" />
+  <Function Name="_CxxThrowException" ExceptionImplementation="true" />
+  <Function Name="RaiseException" Module ="kernelbase.dll" ExceptionImplementation="true" />
+  <Function Name="RaiseException" Module ="kernel32.dll" ExceptionImplementation="true" />
+</NonUserCode>
